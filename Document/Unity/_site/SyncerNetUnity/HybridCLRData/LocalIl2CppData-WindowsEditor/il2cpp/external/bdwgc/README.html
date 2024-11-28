@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Boehm-Demers-Weiser Garbage Collector | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Boehm-Demers-Weiser Garbage Collector | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="boehm-demers-weiser-garbage-collector">Boehm-Demers-Weiser Garbage Collector</h1>
+
+<p><a href="https://travis-ci.org/ivmai/bdwgc"><img src="https://travis-ci.org/ivmai/bdwgc.svg?branch=master" alt="Travis-CI build status"></a>
+<a href="https://ci.appveyor.com/project/ivmai/bdwgc"><img src="https://ci.appveyor.com/api/projects/status/github/ivmai/bdwgc?branch=master&amp;svg=true" alt="AppVeyor CI build status"></a>
+<a href="https://coveralls.io/github/ivmai/bdwgc"><img src="https://coveralls.io/repos/github/ivmai/bdwgc/badge.png?branch=master" alt="Coveralls test coverage status"></a>
+<a href="https://scan.coverity.com/projects/ivmai-bdwgc"><img src="https://scan.coverity.com/projects/10813/badge.svg" alt="Coverity Scan build status"></a></p>
+<p>This is version 7.7.0 (next release development) of a conservative garbage
+collector for C and C++.</p>
+<h2 id="download">Download</h2>
+<p>You might find a more recent/stable version on the
+<a href="https://github.com/ivmai/bdwgc/wiki/Download">Download</a> page, or
+<a href="http://www.hboehm.info/gc/">BDWGC site</a>.</p>
+<p>Also, the latest bug fixes and new features are available in the
+<a href="https://github.com/ivmai/bdwgc">development repository</a>.</p>
+<h2 id="overview">Overview</h2>
+<p>This is intended to be a general purpose, garbage collecting storage
+allocator.  The algorithms used are described in:</p>
+<ul>
+<li><p>Boehm, H., and M. Weiser, &quot;Garbage Collection in an Uncooperative
+Environment&quot;, Software Practice &amp; Experience, September 1988, pp. 807-820.</p>
+</li>
+<li><p>Boehm, H., A. Demers, and S. Shenker, &quot;Mostly Parallel Garbage Collection&quot;,
+Proceedings of the ACM SIGPLAN '91 Conference on Programming Language Design
+and Implementation, SIGPLAN Notices 26, 6 (June 1991), pp. 157-164.</p>
+</li>
+<li><p>Boehm, H., &quot;Space Efficient Conservative Garbage Collection&quot;, Proceedings
+of the ACM SIGPLAN '91 Conference on Programming Language Design and
+Implementation, SIGPLAN Notices 28, 6 (June 1993), pp. 197-206.</p>
+</li>
+<li><p>Boehm H., &quot;Reducing Garbage Collector Cache Misses&quot;, Proceedings of the
+2000 International Symposium on Memory Management.</p>
+</li>
+</ul>
+<p>Possible interactions between the collector and optimizing compilers are
+discussed in</p>
+<ul>
+<li>Boehm, H., and D. Chase, &quot;A Proposal for GC-safe C Compilation&quot;,
+The Journal of C Language Translation 4, 2 (December 1992).</li>
+</ul>
+<p>and</p>
+<ul>
+<li>Boehm H., &quot;Simple GC-safe Compilation&quot;, Proceedings of the ACM SIGPLAN '96
+Conference on Programming Language Design and Implementation.</li>
+</ul>
+<p>Unlike the collector described in the second reference, this collector
+operates either with the mutator stopped during the entire collection
+(default) or incrementally during allocations.  (The latter is supported
+on fewer machines.)  On the most common platforms, it can be built
+with or without thread support.  On a few platforms, it can take advantage
+of a multiprocessor to speed up garbage collection.</p>
+<p>Many of the ideas underlying the collector have previously been explored
+by others.  Notably, some of the run-time systems developed at Xerox PARC
+in the early 1980s conservatively scanned thread stacks to locate possible
+pointers (cf. Paul Rovner, &quot;On Adding Garbage Collection and Runtime Types
+to a Strongly-Typed Statically Checked, Concurrent Language&quot;  Xerox PARC
+CSL 84-7).  Doug McIlroy wrote a simpler fully conservative collector that
+was part of version 8 UNIX (tm), but appears to not have received
+widespread use.</p>
+<p>Rudimentary tools for use of the collector as a
+<a href="doc/leak.md">leak detector</a> are included,
+as is a fairly sophisticated string package &quot;cord&quot; that makes use of the
+collector.  (See doc/README.cords and H.-J. Boehm, R. Atkinson, and M. Plass,
+&quot;Ropes: An Alternative to Strings&quot;, Software Practice and Experience 25, 12
+(December 1995), pp. 1315-1330.  This is very similar to the &quot;rope&quot; package
+in Xerox Cedar, or the &quot;rope&quot; package in the SGI STL or the g++ distribution.)</p>
+<p>Further collector documentation can be found in the
+<a href="doc/overview.md">overview</a>.</p>
+<h2 id="general-description">General Description</h2>
+<p>This is a garbage collecting storage allocator that is intended to be
+used as a plug-in replacement for C's malloc.</p>
+<p>Since the collector does not require pointers to be tagged, it does not
+attempt to ensure that all inaccessible storage is reclaimed.  However,
+in our experience, it is typically more successful at reclaiming unused
+memory than most C programs using explicit deallocation.  Unlike manually
+introduced leaks, the amount of unreclaimed memory typically stays
+bounded.</p>
+<p>In the following, an &quot;object&quot; is defined to be a region of memory allocated
+by the routines described below.</p>
+<p>Any objects not intended to be collected must be pointed to either
+from other such accessible objects, or from the registers,
+stack, data, or statically allocated bss segments.  Pointers from
+the stack or registers may point to anywhere inside an object.
+The same is true for heap pointers if the collector is compiled with
+<code>ALL_INTERIOR_POINTERS</code> defined, or <code>GC_all_interior_pointers</code> is otherwise
+set, as is now the default.</p>
+<p>Compiling without <code>ALL_INTERIOR_POINTERS</code> may reduce accidental retention
+of garbage objects, by requiring pointers from the heap to the beginning
+of an object.  But this no longer appears to be a significant
+issue for most programs occupying a small fraction of the possible
+address space.</p>
+<p>There are a number of routines which modify the pointer recognition
+algorithm.  <code>GC_register_displacement</code> allows certain interior pointers
+to be recognized even if <code>ALL_INTERIOR_POINTERS</code> is nor defined.
+<code>GC_malloc_ignore_off_page</code> allows some pointers into the middle of
+large objects to be disregarded, greatly reducing the probability of
+accidental retention of large objects.  For most purposes it seems
+best to compile with <code>ALL_INTERIOR_POINTERS</code> and to use
+<code>GC_malloc_ignore_off_page</code> if you get collector warnings from
+allocations of very large objects.  See <a href="doc/debugging.md">here</a> for details.</p>
+<p><em>WARNING</em>: pointers inside memory allocated by the standard <code>malloc</code> are not
+seen by the garbage collector.  Thus objects pointed to only from such a
+region may be prematurely deallocated.  It is thus suggested that the
+standard <code>malloc</code> be used only for memory regions, such as I/O buffers, that
+are guaranteed not to contain pointers to garbage collectible memory.
+Pointers in C language automatic, static, or register variables,
+are correctly recognized.  (Note that <code>GC_malloc_uncollectable</code> has
+semantics similar to standard malloc, but allocates objects that are
+traced by the collector.)</p>
+<p><em>WARNING</em>: the collector does not always know how to find pointers in data
+areas that are associated with dynamic libraries.  This is easy to
+remedy IF you know how to find those data areas on your operating
+system (see <code>GC_add_roots</code>).  Code for doing this under SunOS, IRIX
+5.X and 6.X, HP/UX, Alpha OSF/1, Linux, and win32 is included and used
+by default.  (See doc/README.win32 for Win32 details.)  On other systems
+pointers from dynamic library data areas may not be considered by the
+collector.  If you're writing a program that depends on the collector
+scanning dynamic library data areas, it may be a good idea to include
+at least one call to <code>GC_is_visible</code> to ensure that those areas are
+visible to the collector.</p>
+<p>Note that the garbage collector does not need to be informed of shared
+read-only data.  However if the shared library mechanism can introduce
+discontiguous data areas that may contain pointers, then the collector does
+need to be informed.</p>
+<p>Signal processing for most signals may be deferred during collection,
+and during uninterruptible parts of the allocation process.
+Like standard ANSI C mallocs, by default it is unsafe to invoke
+malloc (and other GC routines) from a signal handler while another
+malloc call may be in progress.</p>
+<p>The allocator/collector can also be configured for thread-safe operation.
+(Full signal safety can also be achieved, but only at the cost of two system
+calls per malloc, which is usually unacceptable.)</p>
+<p><em>WARNING</em>: the collector does not guarantee to scan thread-local storage
+(e.g. of the kind accessed with <code>pthread_getspecific</code>).  The collector
+does scan thread stacks, though, so generally the best solution is to
+ensure that any pointers stored in thread-local storage are also
+stored on the thread's stack for the duration of their lifetime.
+(This is arguably a longstanding bug, but it hasn't been fixed yet.)</p>
+<h2 id="installation-and-portability">Installation and Portability</h2>
+<p>As distributed, the collector operates silently
+In the event of problems, this can usually be changed by defining the
+<code>GC_PRINT_STATS</code> or <code>GC_PRINT_VERBOSE_STATS</code> environment variables.  This
+will result in a few lines of descriptive output for each collection.
+(The given statistics exhibit a few peculiarities.
+Things don't appear to add up for a variety of reasons, most notably
+fragmentation losses.  These are probably much more significant for the
+contrived program &quot;test.c&quot; than for your application.)</p>
+<p>On most Unix-like platforms, the collector can be built either using a
+GNU autoconf-based build infrastructure (type <code>./configure; make</code> in the
+simplest case), or with a classic makefile by itself (type
+<code>make -f Makefile.direct</code>).</p>
+<p>Please note that the collector source repository does not contain configure
+and similar auto-generated files, thus the full procedure of autoconf-based
+build of <code>master</code> branch of the collector could look like:</p>
+<pre><code>git clone git://github.com/ivmai/bdwgc.git
+cd bdwgc
+git clone git://github.com/ivmai/libatomic_ops.git
+./autogen.sh
+./configure
+make -j
+make check
+</code></pre>
+<p>Cloning of <code>libatomic_ops</code> is now optional provided the compiler supports
+atomic intrinsics.</p>
+<p>If you are getting &quot;syntax error near unexpected token ATOMIC_OPS&quot; during
+configure execution, this means pkg.m4 cannot be found, most probably
+you should run <code>pkg-config</code> once before running <code>./autogen.sh</code> (autoreconf).</p>
+<p>Below we focus on the collector build using classic makefile.
+For the Makefile.direct-based process, typing <code>make check</code> instead of <code>make</code>
+will automatically build the collector and then run <code>setjmp_test</code> and <code>gctest</code>.
+<code>Setjmp_test</code> will give you information about configuring the collector, which is
+useful primarily if you have a machine that's not already supported.  Gctest is
+a somewhat superficial test of collector functionality.  Failure is indicated
+by a core dump or a message to the effect that the collector is broken.  Gctest
+takes about a second to two to run on reasonable 2007 vintage desktops.  It may
+use up to about 30MB of memory.  (The multi-threaded version will use more.
+64-bit versions may use more.) <code>make test</code> will also, as its last step, attempt
+to build and test the &quot;cord&quot; string library.)</p>
+<p>Makefile.direct will generate a library gc.a which you should link against.
+Typing &quot;make cords&quot; will add the cord library to gc.a.</p>
+<p>The GNU style build process understands the usual targets.  <code>make check</code>
+runs a number of tests.  <code>make install</code> installs at least libgc, and libcord.
+Try <code>./configure --help</code> to see the configuration options.  It is currently
+not possible to exercise all combinations of build options this way.</p>
+<p>It is suggested that if you need to replace a piece of the collector
+(e.g. GC_mark_rts.c) you simply list your version ahead of gc.a on the
+ld command line, rather than replacing the one in gc.a.  (This will
+generate numerous warnings under some versions of AIX, but it still
+works.)</p>
+<p>All include files that need to be used by clients will be put in the
+include subdirectory.  (Normally this is just gc.h.  <code>make cords</code> adds
+&quot;cord.h&quot; and &quot;ec.h&quot;.)</p>
+<p>The collector currently is designed to run essentially unmodified on
+machines that use a flat 32-bit or 64-bit address space.
+That includes the vast majority of Workstations and X86 (X &gt;= 3) PCs.
+(The list here was deleted because it was getting too long and constantly
+out of date.)</p>
+<p>In a few cases (Amiga, OS/2, Win32, MacOS) a separate makefile
+or equivalent is supplied.  Many of these have separate README.system
+files.</p>
+<p>Dynamic libraries are completely supported only under SunOS/Solaris,
+(and even that support is not functional on the last Sun 3 release),
+Linux, FreeBSD, NetBSD, IRIX 5&amp;6, HP/UX, Win32 (not Win32S) and OSF/1
+on DEC AXP machines plus perhaps a few others listed near the top
+of dyn_load.c.  On other machines we recommend that you do one of
+the following:</p>
+<ol>
+<li>Add dynamic library support (and send us the code).</li>
+<li>Use static versions of the libraries.</li>
+<li>Arrange for dynamic libraries to use the standard malloc.
+This is still dangerous if the library stores a pointer to a
+garbage collected object.  But nearly all standard interfaces
+prohibit this, because they deal correctly with pointers
+to stack allocated objects.  (Strtok is an exception.  Don't
+use it.)</li>
+</ol>
+<p>In all cases we assume that pointer alignment is consistent with that
+enforced by the standard C compilers.  If you use a nonstandard compiler
+you may have to adjust the alignment parameters defined in gc_priv.h.
+Note that this may also be an issue with packed records/structs, if those
+enforce less alignment for pointers.</p>
+<p>A port to a machine that is not byte addressed, or does not use 32 bit
+or 64 bit addresses will require a major effort.  A port to plain MSDOS
+or win16 is hard.</p>
+<p>For machines not already mentioned, or for nonstandard compilers,
+some porting suggestions are provided <a href="doc/porting.md">here</a>.</p>
+<h2 id="the-c-interface-to-the-allocator">The C Interface to the Allocator</h2>
+<p>The following routines are intended to be directly called by the user.
+Note that usually only <code>GC_malloc</code> is necessary.  <code>GC_clear_roots</code> and
+<code>GC_add_roots</code> calls may be required if the collector has to trace
+from nonstandard places (e.g. from dynamic library data areas on a
+machine on which the collector doesn't already understand them.)  On
+some machines, it may be desirable to set <code>GC_stacktop</code> to a good
+approximation of the stack base.  (This enhances code portability on
+HP PA machines, since there is no good way for the collector to
+compute this value.)  Client code may include &quot;gc.h&quot;, which defines
+all of the following, plus many others.</p>
+<ol>
+<li><p><code>GC_malloc(nbytes)</code></p>
+<ul>
+<li>Allocate an object of size nbytes.  Unlike malloc, the object is
+cleared before being returned to the user.  <code>GC_malloc</code> will
+invoke the garbage collector when it determines this to be appropriate.
+GC_malloc may return 0 if it is unable to acquire sufficient
+space from the operating system.  This is the most probable
+consequence of running out of space.  Other possible consequences
+are that a function call will fail due to lack of stack space,
+or that the collector will fail in other ways because it cannot
+maintain its internal data structures, or that a crucial system
+process will fail and take down the machine.  Most of these
+possibilities are independent of the malloc implementation.</li>
+</ul>
+</li>
+<li><p><code>GC_malloc_atomic(nbytes)</code></p>
+<ul>
+<li>Allocate an object of size nbytes that is guaranteed not to contain any
+pointers.  The returned object is not guaranteed to be cleared.
+(Can always be replaced by <code>GC_malloc</code>, but results in faster collection
+times.  The collector will probably run faster if large character
+arrays, etc. are allocated with <code>GC_malloc_atomic</code> than if they are
+statically allocated.)</li>
+</ul>
+</li>
+<li><p><code>GC_realloc(object, new_size)</code></p>
+<ul>
+<li>Change the size of object to be <code>new_size</code>.  Returns a pointer to the
+new object, which may, or may not, be the same as the pointer to
+the old object.  The new object is taken to be atomic if and only if the
+old one was.  If the new object is composite and larger than the original
+object,then the newly added bytes are cleared (we hope).  This is very
+likely to allocate a new object, unless <code>MERGE_SIZES</code> is defined in
+gc_priv.h.  Even then, it is likely to recycle the old object only if the
+object is grown in small additive increments (which, we claim, is
+generally bad coding practice.)</li>
+</ul>
+</li>
+<li><p><code>GC_free(object)</code></p>
+<ul>
+<li>Explicitly deallocate an object returned by <code>GC_malloc</code> or
+<code>GC_malloc_atomic</code>.  Not necessary, but can be used to minimize
+collections if performance is critical.  Probably a performance
+loss for very small objects (&lt;= 8 bytes).</li>
+</ul>
+</li>
+<li><p><code>GC_expand_hp(bytes)</code></p>
+<ul>
+<li>Explicitly increase the heap size.  (This is normally done automatically
+if a garbage collection failed to <code>GC_reclaim</code> enough memory.  Explicit
+calls to <code>GC_expand_hp</code> may prevent unnecessarily frequent collections at
+program startup.)</li>
+</ul>
+</li>
+<li><p><code>GC_malloc_ignore_off_page(bytes)</code></p>
+<ul>
+<li>Identical to <code>GC_malloc</code>, but the client promises to keep a pointer to
+the somewhere within the first 256 bytes of the object while it is
+live.  (This pointer should normally be declared volatile to prevent
+interference from compiler optimizations.)  This is the recommended
+way to allocate anything that is likely to be larger than 100 Kbytes
+or so.  (<code>GC_malloc</code> may result in failure to reclaim such objects.)</li>
+</ul>
+</li>
+<li><p><code>GC_set_warn_proc(proc)</code></p>
+<ul>
+<li>Can be used to redirect warnings from the collector.  Such warnings
+should be rare, and should not be ignored during code development.</li>
+</ul>
+</li>
+<li><p><code>GC_enable_incremental()</code></p>
+<ul>
+<li>Enables generational and incremental collection.  Useful for large
+heaps on machines that provide access to page dirty information.
+Some dirty bit implementations may interfere with debugging
+(by catching address faults) and place restrictions on heap arguments
+to system calls (since write faults inside a system call may not be
+handled well).</li>
+</ul>
+</li>
+<li><p>Several routines to allow for registration of finalization code.
+User supplied finalization code may be invoked when an object becomes
+unreachable.  To call <code>(*f)(obj, x)</code> when obj becomes inaccessible, use
+<code>GC_register_finalizer(obj, f, x, 0, 0);</code>
+For more sophisticated uses, and for finalization ordering issues,
+see gc.h.</p>
+</li>
+</ol>
+<p>The global variable <code>GC_free_space_divisor</code> may be adjusted up from it
+default value of 3 to use less space and more collection time, or down for
+the opposite effect.  Setting it to 1 will almost disable collections
+and cause all allocations to simply grow the heap.</p>
+<p>The variable <code>GC_non_gc_bytes</code>, which is normally 0, may be changed to reflect
+the amount of memory allocated by the above routines that should not be
+considered as a candidate for collection.  Careless use may, of course, result
+in excessive memory consumption.</p>
+<p>Some additional tuning is possible through the parameters defined
+near the top of gc_priv.h.</p>
+<p>If only <code>GC_malloc</code> is intended to be used, it might be appropriate to define:</p>
+<pre><code>#define malloc(n) GC_malloc(n)
+#define calloc(m,n) GC_malloc((m)*(n))
+</code></pre>
+<p>For small pieces of VERY allocation intensive code, gc_inl.h includes
+some allocation macros that may be used in place of <code>GC_malloc</code> and
+friends.</p>
+<p>All externally visible names in the garbage collector start with <code>GC_</code>.
+To avoid name conflicts, client code should avoid this prefix, except when
+accessing garbage collector routines or variables.</p>
+<p>There are provisions for allocation with explicit type information.
+This is rarely necessary.  Details can be found in gc_typed.h.</p>
+<h2 id="the-c-interface-to-the-allocator-1">The C++ Interface to the Allocator</h2>
+<p>The Ellis-Hull C++ interface to the collector is included in
+the collector distribution.  If you intend to use this, type
+<code>make c++</code> after the initial build of the collector is complete.
+See gc_cpp.h for the definition of the interface.  This interface
+tries to approximate the Ellis-Detlefs C++ garbage collection
+proposal without compiler changes.</p>
+<p>Very often it will also be necessary to use gc_allocator.h and the
+allocator declared there to construct STL data structures.  Otherwise
+subobjects of STL data structures will be allocated using a system
+allocator, and objects they refer to may be prematurely collected.</p>
+<h2 id="use-as-leak-detector">Use as Leak Detector</h2>
+<p>The collector may be used to track down leaks in C programs that are
+intended to run with malloc/free (e.g. code with extreme real-time or
+portability constraints).  To do so define <code>FIND_LEAK</code> in Makefile.
+This will cause the collector to invoke the <code>report_leak</code>
+routine defined near the top of reclaim.c whenever an inaccessible
+object is found that has not been explicitly freed.  Such objects will
+also be automatically reclaimed.</p>
+<p>If all objects are allocated with <code>GC_DEBUG_MALLOC</code> (see next section), then
+the default version of report_leak will report at least the source file and
+line number at which the leaked object was allocated.  This may sometimes be
+sufficient.  (On a few machines, it will also report a cryptic stack trace.
+If this is not symbolic, it can sometimes be called into a symbolic stack
+trace by invoking program &quot;foo&quot; with &quot;tools/callprocs.sh foo&quot;.  It is a short
+shell script that invokes adb to expand program counter values to symbolic
+addresses.  It was largely supplied by Scott Schwartz.)</p>
+<p>Note that the debugging facilities described in the next section can
+sometimes be slightly LESS effective in leak finding mode, since in
+leak finding mode, <code>GC_debug_free</code> actually results in reuse of the object.
+(Otherwise the object is simply marked invalid.)  Also note that the test
+program is not designed to run meaningfully in <code>FIND_LEAK</code> mode.
+Use &quot;make gc.a&quot; to build the collector.</p>
+<h2 id="debugging-facilities">Debugging Facilities</h2>
+<p>The routines <code>GC_debug_malloc</code>, <code>GC_debug_malloc_atomic</code>, <code>GC_debug_realloc</code>,
+and <code>GC_debug_free</code> provide an alternate interface to the collector, which
+provides some help with memory overwrite errors, and the like.
+Objects allocated in this way are annotated with additional
+information.  Some of this information is checked during garbage
+collections, and detected inconsistencies are reported to stderr.</p>
+<p>Simple cases of writing past the end of an allocated object should
+be caught if the object is explicitly deallocated, or if the
+collector is invoked while the object is live.  The first deallocation
+of an object will clear the debugging info associated with an
+object, so accidentally repeated calls to <code>GC_debug_free</code> will report the
+deallocation of an object without debugging information.  Out of
+memory errors will be reported to stderr, in addition to returning <code>NULL</code>.</p>
+<p><code>GC_debug_malloc</code> checking  during garbage collection is enabled
+with the first call to <code>GC_debug_malloc</code>.  This will result in some
+slowdown during collections.  If frequent heap checks are desired,
+this can be achieved by explicitly invoking <code>GC_gcollect</code>, e.g. from
+the debugger.</p>
+<p><code>GC_debug_malloc</code> allocated objects should not be passed to <code>GC_realloc</code>
+or <code>GC_free</code>, and conversely.  It is however acceptable to allocate only
+some objects with <code>GC_debug_malloc</code>, and to use <code>GC_malloc</code> for other objects,
+provided the two pools are kept distinct.  In this case, there is a very
+low probability that <code>GC_malloc</code> allocated objects may be misidentified as
+having been overwritten.  This should happen with probability at most
+one in 2**32.  This probability is zero if <code>GC_debug_malloc</code> is never called.</p>
+<p><code>GC_debug_malloc</code>, <code>GC_malloc_atomic</code>, and <code>GC_debug_realloc</code> take two
+additional trailing arguments, a string and an integer.  These are not
+interpreted by the allocator.  They are stored in the object (the string is
+not copied).  If an error involving the object is detected, they are printed.</p>
+<p>The macros <code>GC_MALLOC</code>, <code>GC_MALLOC_ATOMIC</code>, <code>GC_REALLOC</code>, <code>GC_FREE</code>, and
+<code>GC_REGISTER_FINALIZER</code> are also provided.  These require the same arguments
+as the corresponding (nondebugging) routines.  If gc.h is included
+with <code>GC_DEBUG</code> defined, they call the debugging versions of these
+functions, passing the current file name and line number as the two
+extra arguments, where appropriate.  If gc.h is included without <code>GC_DEBUG</code>
+defined, then all these macros will instead be defined to their nondebugging
+equivalents.  (<code>GC_REGISTER_FINALIZER</code> is necessary, since pointers to
+objects with debugging information are really pointers to a displacement
+of 16 bytes form the object beginning, and some translation is necessary
+when finalization routines are invoked.  For details, about what's stored
+in the header, see the definition of the type oh in dbg_mlc.c file.)</p>
+<h2 id="incrementalgenerational-collection">Incremental/Generational Collection</h2>
+<p>The collector normally interrupts client code for the duration of
+a garbage collection mark phase.  This may be unacceptable if interactive
+response is needed for programs with large heaps.  The collector
+can also run in a &quot;generational&quot; mode, in which it usually attempts to
+collect only objects allocated since the last garbage collection.
+Furthermore, in this mode, garbage collections run mostly incrementally,
+with a small amount of work performed in response to each of a large number of
+<code>GC_malloc</code> requests.</p>
+<p>This mode is enabled by a call to <code>GC_enable_incremental</code>.</p>
+<p>Incremental and generational collection is effective in reducing
+pause times only if the collector has some way to tell which objects
+or pages have been recently modified.  The collector uses two sources
+of information:</p>
+<ol>
+<li><p>Information provided by the VM system.  This may be provided in
+one of several forms.  Under Solaris 2.X (and potentially under other
+similar systems) information on dirty pages can be read from the
+/proc file system.  Under other systems (currently SunOS4.X) it is
+possible to write-protect the heap, and catch the resulting faults.
+On these systems we require that system calls writing to the heap
+(other than read) be handled specially by client code.
+See os_dep.c for details.</p>
+</li>
+<li><p>Information supplied by the programmer.  The object is considered dirty
+after a call to <code>GC_end_stubborn_change</code> provided the library has been
+compiled suitably. It is typically not worth using for short-lived objects.
+Note that bugs caused by a missing <code>GC_end_stubborn_change</code> call are
+likely to be observed very infrequently and hard to trace.</p>
+</li>
+</ol>
+<h2 id="bugs">Bugs</h2>
+<p>Any memory that does not have a recognizable pointer to it will be
+reclaimed.  Exclusive-or'ing forward and backward links in a list
+doesn't cut it.</p>
+<p>Some C optimizers may lose the last undisguised pointer to a memory
+object as a consequence of clever optimizations.  This has almost
+never been observed in practice.</p>
+<p>This is not a real-time collector.  In the standard configuration,
+percentage of time required for collection should be constant across
+heap sizes.  But collection pauses will increase for larger heaps.
+They will decrease with the number of processors if parallel marking
+is enabled.</p>
+<p>(On 2007 vintage machines, GC times may be on the order of 5 msecs
+per MB of accessible memory that needs to be scanned and processor.
+Your mileage may vary.)  The incremental/generational collection facility
+may help in some cases.</p>
+<h2 id="feedback-contribution-questions-and-notifications">Feedback, Contribution, Questions and Notifications</h2>
+<p>Please address bug reports and new feature ideas to
+<a href="https://github.com/ivmai/bdwgc/issues">GitHub issues</a>.  Before the
+submission please check that it has not been done yet by someone else.</p>
+<p>If you want to contribute, submit
+a <a href="https://github.com/ivmai/bdwgc/pulls">pull request</a> to GitHub.</p>
+<p>If you need help, use
+<a href="https://stackoverflow.com/questions/tagged/boehm-gc">Stack Overflow</a>.
+Older technical discussions are available in <code>bdwgc</code> mailing list archive - it
+can be downloaded as a
+<a href="https://github.com/ivmai/bdwgc/files/1038163/bdwgc-mailing-list-archive-2017_04.tar.gz">compressed file</a>
+or browsed at <a href="http://bdwgc.opendylan.narkive.com">Narkive</a>.</p>
+<p>To get new release announcements, subscribe to
+<a href="https://github.com/ivmai/bdwgc/releases.atom">RSS feed</a>.
+(To receive the notifications by email, a 3rd-party free service like
+<a href="https://ifttt.com/feed">IFTTT RSS Feed</a> can be setup.)
+To be notified on all issues, please
+<a href="https://github.com/ivmai/bdwgc/watchers">watch</a> the project on
+GitHub.</p>
+<h2 id="copyright--warranty">Copyright &amp; Warranty</h2>
+<ul>
+<li>Copyright (c) 1988, 1989 Hans-J. Boehm, Alan J. Demers</li>
+<li>Copyright (c) 1991-1996 by Xerox Corporation.  All rights reserved.</li>
+<li>Copyright (c) 1996-1999 by Silicon Graphics.  All rights reserved.</li>
+<li>Copyright (c) 1999-2011 by Hewlett-Packard Development Company.</li>
+</ul>
+<p>The files pthread_stop_world.c and pthread_support.c are also</p>
+<ul>
+<li>Copyright (c) 1998 by Fergus Henderson.  All rights reserved.</li>
+</ul>
+<p>The files Makefile.am, and configure.in are</p>
+<ul>
+<li>Copyright (c) 2001 by Red Hat Inc. All rights reserved.</li>
+</ul>
+<p>Several files supporting GNU-style builds are copyrighted by the Free
+Software Foundation, and carry a different license from that given
+below.  The files included in the libatomic_ops distribution (included
+here) use either the license below, or a similar MIT-style license,
+or, for some files not actually used by the garbage-collector library, the
+GPL.</p>
+<p>THIS MATERIAL IS PROVIDED AS IS, WITH ABSOLUTELY NO WARRANTY EXPRESSED
+OR IMPLIED.  ANY USE IS AT YOUR OWN RISK.</p>
+<p>Permission is hereby granted to use or copy this program
+for any purpose,  provided the above notices are retained on all copies.
+Permission to modify the code and to distribute modified code is granted,
+provided the above notices are retained, and a notice that the code was
+modified is included with the above copyright notice.</p>
+<p>A few of the files needed to use the GNU-style build procedure come with
+slightly different licenses, though they are all similar in spirit.  A few
+are GPL'ed, but with an exception that should cover all uses in the
+collector. (If you are concerned about such things, I recommend you look
+at the notice in config.guess or ltmain.sh.)</p>
+<p>The atomic_ops library contains some code that is covered by the GNU General
+Public License, but is not needed by, nor linked into the collector library.
+It is included here only because the atomic_ops distribution is, for
+simplicity, included in its entirety.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<h2 id="1133---2022-07-12">[1.1.33] - 2022-07-12</h2>
+<ul>
+<li>Fixed an issue where using Assert.Expect with the same string multiple times can lead to incorrect errors in some cases (DSTR-442).</li>
+<li>Improved the logging when using multiple Assert.Expect that the logs appear in another order than expected (DSTR-442).</li>
+<li>Moved the targetPlatform specified when running tests in the TestRunnerApi from the Filter to the ExecutionSettings (DSTR-186).</li>
+<li>Fixed an issue where an inheritance of UnityPlatformAttribute which was not working (ESTT-70).</li>
+<li>Fixed the log of excluded platforms which was not displaying the right information.</li>
+<li>Added filename and linenumber to test finished message (DSTR-505).</li>
+<li>Add the possibility of running tests in a specified order from a test list (DSTR-494).</li>
+</ul>
+<h2 id="1132---2022-04-06">[1.1.32] - 2022-04-06</h2>
+<ul>
+<li>Ensured that BuildTargetGroup is set correctly before TestPlayerBuildModifier is invoked (DSTR-394).</li>
+<li>Added a TestSetting that allows to build an Android App Bundle instead of APK.</li>
+</ul>
+<h2 id="1131---2022-02-03">[1.1.31] - 2022-02-03</h2>
+<ul>
+<li>Fixed &quot;Open source code&quot; on tests when located inside a package.</li>
+<li>Added editor analytics events.</li>
+<li>Added <code>buildPlayerPath</code> argument. Path to where built player with tests is saved.</li>
+</ul>
+<h2 id="1130---2021-10-15">[1.1.30] - 2021-10-15</h2>
+<ul>
+<li>Added validation of IEnumerator return type for parameterized tests with UnityTest attribute (DSTP-743).</li>
+<li>Fixed runInBackground reset to original value after finishing to run playmode tests (DSTR-248).</li>
+<li>Fixed issue with circular assembly references when constructing the test tree (DSTR-300).</li>
+</ul>
+<h2 id="1129---2021-08-12">[1.1.29] - 2021-08-12</h2>
+<ul>
+<li>Nested enumerator execution order fix (DSTR-227).</li>
+<li>Fix UI not running any tests if run select on a nested namespaces (DSTR-256).</li>
+</ul>
+<h2 id="1128---2021-06-25">[1.1.28] - 2021-06-25</h2>
+<ul>
+<li>Fix CountDownEvent reference due to <code>com.unity.ext.nunit</code> update.</li>
+<li>Various performance optimization to fix &quot;Test execution timed out. No activity received from the player in 600 seconds.&quot;(DSTR-100).</li>
+</ul>
+<h2 id="1127---2021-06-15">[1.1.27] - 2021-06-15</h2>
+<ul>
+<li>Fix empty reason on passed tests results xml (DSTR-63)</li>
+<li>Fix Repeat and Retry attribute for UnityTest in PlayMode (DSTR-237).</li>
+<li>Remove XDK Xbox One platform after Unity 2020.3</li>
+<li>Fixed issue when <code>.</code> suffix was applied to BuildTargets without extension.</li>
+<li>Added support for <code>GameCoreXboxOne</code> and <code>GameCoreXboxSeries</code> reduced location path length.</li>
+</ul>
+<h2 id="1126---2021-05-25">[1.1.26] - 2021-05-25</h2>
+<ul>
+<li>Fix html bug in TestRunnerApi API code snippet (DS-1973).</li>
+<li>Fix typo bug in PreBuildSetup code example (DS-1974).</li>
+<li>Fix incorrect syntax in command line reference (DS-1971).</li>
+<li>Fixed a bug where test filter would match project or player path (DSTP-412).</li>
+<li>Added playerGraphicsAPI TestSettings parameter</li>
+</ul>
+<h2 id="1125---2021-05-05">[1.1.25] - 2021-05-05</h2>
+<ul>
+<li>Fixed a bug where test filter would match project or player path (DSTP-412).</li>
+<li>Added playerGraphicsAPI TestSettings parameter</li>
+</ul>
+<h2 id="1124---2021-03-04">[1.1.24] - 2021-03-04</h2>
+<ul>
+<li>Improving UTF documentation(DSTR-120)
+<ul>
+<li>Updated &quot;Actions outside of tests&quot; section of user manual. Added flow charts to clarify execution order for SetUp/TearDown, TestActions, and complete flow (DSTR-121).</li>
+<li>Fixed accepted values for scriptingBackend argument to be string literals instead of int values (DSTR-122).</li>
+<li>Fixed possible values of ResultState to be Passed, Failed, Skipped, Inconclusive, plus labels instead of Success and Failure (DSTR-125).</li>
+<li>Added NUNit version information (DSTR-130).</li>
+<li>Added namespace information for LogAsset in user manual (DSTR-124).</li>
+<li>Added instructions for creating additional sets of tests (DSTR-129).</li>
+<li>Added information on testResults XML output format and exit codes (DSTR-131).</li>
+<li>Updated description of testPlatform command line argument to clarify accepted values and their meaning (DSTR-123).</li>
+</ul>
+</li>
+<li>Reduce time taken by filtering operations when only a subset of tests is run.</li>
+<li>Reduced the time taken to rebuild the test tree and to scan for assets a test created but did not delete.</li>
+<li>Reduce the per-test overhead of running tests in the editor.</li>
+<li>Added profiler markers around test setup, teardown, and execution.</li>
+<li>Fixed unstable timeout bug (DSTR-21).</li>
+</ul>
+<h2 id="1123---2021-01-21">[1.1.23] - 2021-01-21</h2>
+<ul>
+<li>Improving UTF documentation(DSTR-120)
+<ul>
+<li>Updated &quot;Actions outside of tests&quot; section of user manual. Added flow charts to clarify execution order for SetUp/TearDown, TestActions, and complete flow (DSTR-121).</li>
+<li>Fixed accepted values for scriptingBackend argument to be string literals instead of int values (DSTR-122).</li>
+<li>Fixed possible values of ResultState to be Passed, Failed, Skipped, Inconclusive, plus labels instead of Success and Failure (DSTR-125).</li>
+<li>Added NUNit version information (DSTR-130).</li>
+<li>Added namespace information for LogAsset in user manual (DSTR-124).</li>
+<li>Added instructions for creating additional sets of tests (DSTR-129).</li>
+<li>Added information on testResults XML output format and exit codes (DSTR-131).</li>
+<li>Updated description of testPlatform command line argument to clarify accepted values and their meaning (DSTR-123).</li>
+</ul>
+</li>
+</ul>
+<h2 id="1122---2021-01-21">[1.1.22] - 2021-01-21</h2>
+<ul>
+<li>Fixed issue where test result of an explicit test was set to skipped in case it was passing and running from command line with testfilter set to the explicit test (DS-1236).</li>
+<li>Fixed an issue where tests located in assemblies that did not directly reference any test assemblies were not included (DSTR-30).</li>
+<li>Fixed an issue where UnitySetup methods were incorrectly being rerun when entering playmode, rather than being skipped (DSTR-68).</li>
+<li>Internal: Remove ##utp message AssemblyCompilationErrors (DS-1277)</li>
+<li>Fixed issue where if the timeout was exceeded in SetUp the timeout exception was not thrown(DSTR-21).</li>
+<li>Removed ability to <code>Enable playmode tests for all assemblies</code> from the TestRunner UI, since it is a deprecated behavior. It enforces to use of assembly definition files (DSTR-45).</li>
+<li>Fixed typo in <code>LogAssert.cs</code> documentation.</li>
+</ul>
+<h2 id="1121---2020-12-04">[1.1.21] - 2020-12-04</h2>
+<ul>
+<li>Fixed issue where test result of an explicit test was set to skipped in case it was passing and running from command line with testfilter set to the explicit test (DS-1236).</li>
+<li>Fixed an issue where tests located in assemblies that did not directly reference any test assemblies were not included (DSTR-30).</li>
+<li>Fixed an issue where UnitySetup methods were incorrectly being rerun when entering playmode, rather than being skipped (DSTR-68).</li>
+<li>Internal: Remove ##utp message AssemblyCompilationErrors (ds-1277)</li>
+<li>Fixed issue where if the timeout was exceeded in SetUp the timeout exception was not thrown(DSTR-21).</li>
+<li>Removed ability to <code>Enable playmode tests for all assemblies</code> from the TestRunner UI, since it is a deprecated behavior. It enforces to use of assembly definition files (DSTR-45).</li>
+</ul>
+<h2 id="1120---2020-12-04">[1.1.20] - 2020-12-04</h2>
+<ul>
+<li>The logscope is now available in OneTimeTearDown.</li>
+<li>Fixed an issue where failing tests would not result in the correct exit code if a domain reload happens after the test has run (DS-1304).</li>
+<li>If a player build fails, the test specific build settings should be cleaned up and the original values restored as intended (DS-1001).</li>
+<li>Added better error message when using TestRunCallbackAttribute and the implementation is stripped away (DS-454).</li>
+<li>Fixed an issue where the test results xml would have a zero end-time for tests executed before a domain reload (DSTR-63).</li>
+<li>Fixed OpenSource in case of a Test in a nested class (DSTR-6)</li>
+<li>UnityTests with a domain reload now works correctly in combination with Retry and Repeat attributes (DS-428).</li>
+<li>Fixed OpenSource in case of Tests located inside a package (DS-432)</li>
+</ul>
+<h2 id="1119---2020-11-17">[1.1.19] - 2020-11-17</h2>
+<ul>
+<li>Command line runs with an inconclusive test result now exit with exit code 2 (case DS-951).</li>
+<li>Fixed timeout during UnitySetUp which caoused test to pass instead of failing due to wrong time format.</li>
+<li>Timeout exeption thrown when timeout time is exeded in the UnitySetup when using <code>WaitForSeconds(n)</code>.</li>
+<li>Updating <code>com.unity.ext.nunit</code> version</li>
+<li>Method marked with UnityTest that are not returning IEnumerator is now giving a proper error (DS-1059).</li>
+</ul>
+<h2 id="1118---2020-10-07">[1.1.18] - 2020-10-07</h2>
+<ul>
+<li>Fixed issue of timeout during UnitySetUp which wasn't detected and allowed the test to pass instead of failing (case DSTR-21)</li>
+</ul>
+<h2 id="1117---2020-10-05">[1.1.17] - 2020-10-05</h2>
+<ul>
+<li>Fixed an issue where the WaitForDomainReload yield instruction would sometimes let the test continue for one frame before the domain reload.</li>
+<li>Added support for negation in filters using !. E.g. !CategoryToExclude.</li>
+<li>Fixed an issue where if the first test enters PlayMode from UnitySetup then the test body will not run on consecutive runs (case 1260901).</li>
+<li>Clear Results button clears the test results in the GUI (DSTR-16)</li>
+<li>Improved UI in Test Runner window, added new options:
+<ul>
+<li>Run Selected Tests in player</li>
+<li>Build/Export project with all tests in player</li>
+<li>Build/Export project with selected tests in player</li>
+</ul>
+</li>
+<li>Fixed issue on loading EditMode or Playmode test tree in the wrong tab when switching between tabs when TestRunner is loading (DS-865)</li>
+</ul>
+<h2 id="1116---2020-07-09">[1.1.16] - 2020-07-09</h2>
+<ul>
+<li>Follow up on fix when UTF picks up on outdated compilation errors</li>
+</ul>
+<h2 id="1115---2020-07-02">[1.1.15] - 2020-07-02</h2>
+<ul>
+<li>Fixed an issue where an exception is thrown on getting the enumerator of a UnityTest would result in stopping the test run instead of failing it (case 1212000).</li>
+<li>Including a trailing semi-colon in a testName filter no longer results in all tests being run (case 1171200).</li>
+<li>Fixed and issue when Unity Test Framework exits editor on an outdated script compilation error (during api updates)</li>
+</ul>
+<h2 id="1114---2020-04-03">[1.1.14] - 2020-04-03</h2>
+<ul>
+<li>Added the 'assemblyNames' command line argument for filtering on the assembly level.</li>
+<li>The dll and project level of the tree view should now correctly show the results when running tests in a player (case 1197026).</li>
+<li>Optimize usage of player connection when transfering test results (case 1229200).</li>
+<li>Ignore internal test framework tests assertions (case 1206961).</li>
+</ul>
+<h2 id="1113---2020-03-16">[1.1.13] - 2020-03-16</h2>
+<ul>
+<li>Fixed an issue where a combination of Entering / Exiting playmode and recompiling scripts would result in the test run repeating (case 1213958).</li>
+<li>Fixed a regression from 1.1.12 where prefabs left in the scene would be cleaned up to aggressively.</li>
+<li>Fixed Test execution timed out. No activity received from the player in 600 seconds error when player is not supposed to start (case 1225147)</li>
+</ul>
+<h2 id="1112---2020-03-02">[1.1.12] - 2020-03-02</h2>
+<ul>
+<li>Now 'Open error line' for a failed UTF test does not throw exceptions for corrupted testable pdb in Editor release mode (case 1118259)</li>
+<li>Fixed an issue where running a test fixture would also run other fixtures with the same full name (namespace plus classname) in other assemblies (case 1197385).</li>
+<li>Running tests with the same full name, with a domain reload inbetween, will no longer fail to initialize the fixture of the second class (case 1205240).</li>
+<li>Running a playmode tests with &quot;Maximize on Play&quot; will now correctly show the result of the tests in the test runner window (case 1014908).</li>
+<li>Fixed an issue where leaving a game object in a scene with a DontSaveInEditor hideFlags would result in an error on cleanup (case 1136883).</li>
+<li>Now ITestPlayerBuildModifier.ModifyOptions is called as expected when running tests on a device (case 1213845)</li>
+</ul>
+<h2 id="1111---2020-01-16">[1.1.11] - 2020-01-16</h2>
+<ul>
+<li>Fixed test runner dlls got included into player build (case 1211624)</li>
+<li>Passing a non-full-path of XML file for -testResults in Unity Batchmode issue resolved, now passing &quot;result.xml&quot; creates the result file in the project file directory (case 959078)</li>
+<li>Respect Script Debugging build setting when running tests</li>
+</ul>
+<h2 id="1110---2019-12-19">[1.1.10] - 2019-12-19</h2>
+<ul>
+<li>Introduced PostSuccessfulLaunchAction callback</li>
+<li>Fixed an issue where canceling a UnityTest while it was running would incorrectly mark it as passed instead of canceled.</li>
+<li>Added command line argument for running tests synchronously.</li>
+<li>The test search bar now handles null values correctly.</li>
+<li>The test output pane now retains its size on domain reloads.</li>
+</ul>
+<h2 id="119---2019-12-12">[1.1.9] - 2019-12-12</h2>
+<ul>
+<li>Rolled back refactoring to the test run system, as it caused issues in some corner cases.</li>
+</ul>
+<h2 id="118---2019-11-15">[1.1.8] - 2019-11-15</h2>
+<ul>
+<li>Ensured that a resumed test run is continued instantly.</li>
+</ul>
+<h2 id="117---2019-11-14">[1.1.7] - 2019-11-14</h2>
+<ul>
+<li>Fixed an issue with test runs after domain reload.</li>
+</ul>
+<h2 id="116---2019-11-12">[1.1.6] - 2019-11-12</h2>
+<ul>
+<li>Building a player for test will no longer look in unrelated assemblies for relevant attributes.</li>
+</ul>
+<h2 id="115---2019-10-23">[1.1.5] - 2019-10-23</h2>
+<ul>
+<li>Fixed a regression to synchronous runs introduced in 1.1.4.</li>
+</ul>
+<h2 id="114---2019-10-15">[1.1.4] - 2019-10-15</h2>
+<ul>
+<li>Running tests in batch mode now correctly returns error code 3 (RunError) when a timeout or a build error occurs.</li>
+<li>Fixed an issue where a test run in a player would time out, if the player takes longer than 10 minutes to run.</li>
+<li>Added command line argument and api setting for specifying custom heartbeat timeout for running on players.</li>
+</ul>
+<h2 id="113---2019-09-23">[1.1.3] - 2019-09-23</h2>
+<ul>
+<li>Fixed a regression where tests in a player would report a timeout after a test run is finished.</li>
+<li>Made it possible for the ui to change its test items when the test tree changes without script compilation.</li>
+<li>Added synchronous runs as an option to the TestRunnerApi.</li>
+</ul>
+<h2 id="112---2019-09-11">[1.1.2] - 2019-09-11</h2>
+<ul>
+<li>Fixed an issue where Run Selected would run all tests in the category, if a category filter was selected, regardless of what tests were selected.</li>
+<li>Unsupported attributes used in UnityTests now give an explicit error.</li>
+<li>Added support for the Repeat and Retry attributes in UnityTests (case 1131940).</li>
+<li>Tests with a explicit timeout higher than 10 minutes, no longer times out after running longer than 10 minutes when running from command line (case 1125991).</li>
+<li>Fixed a performance regression in the test runner api result reporting, introduced in 2018.3 (case 1109865).</li>
+<li>Fixed an issue where parameterized test fixtures would not run if selected in the test tree (case 1092244).</li>
+<li>Pressing Clear Results now also correctly clears the counters on the test list (case 1181763).</li>
+<li>Prebuild setup now handles errors logged with Debug.LogError and stops the run if any is logged (case 1115240). It now also supports LogAssert.Expect.</li>
+</ul>
+<h2 id="111---2019-08-07">[1.1.1] - 2019-08-07</h2>
+<ul>
+<li>Tests retrieved as a test list with the test runner api incorrectly showed both mode as their TestMode.</li>
+<li>Fixed a compatibility issue with running tests from rider.</li>
+</ul>
+<h2 id="110---2019-07-30">[1.1.0] - 2019-07-30</h2>
+<ul>
+<li>Introduced the TestRunnerApi for running tests programmatically from elsewhere inside the Editor.</li>
+<li>Introduced yield instructions for recompiling scripts and awaiting a domain reload in Edit Mode tests.</li>
+<li>Added a button to the Test Runner UI for clearing the results.</li>
+</ul>
+<h2 id="1018---2019-07-15">[1.0.18] - 2019-07-15</h2>
+<ul>
+<li>Included new full documentation of the test framework.</li>
+</ul>
+<h2 id="1017---2019-07-11">[1.0.17] - 2019-07-11</h2>
+<ul>
+<li>Fixed an issue where the Test Runner window wouldn’t frame selected items after search filter is cleared.</li>
+<li>Fixed a regression where playmode test application on the IOS platform would not quit after the tests are done.</li>
+</ul>
+<h2 id="1016---2019-06-20">[1.0.16] - 2019-06-20</h2>
+<ul>
+<li>Fixed an issue where the Test Runner window popped out if it was docked, or if something else was docked next to it, when re-opened (case 1158961)</li>
+<li>Fixed a regression where the running standalone playmode tests from the ui would result in an error.</li>
+</ul>
+<h2 id="1015---2019-06-18">[1.0.15] - 2019-06-18</h2>
+<ul>
+<li>Added new <code>[TestMustExpectAllLogs]</code> attribute, which automatically does <code>LogAssert.NoUnexpectedReceived()</code> at the end of affected tests. See docs for this attribute for more info on usage.</li>
+<li>Fixed a regression where no tests would be run if multiple filters are specified. E.g. selecting both a whole assembly and an individual test in the ui.</li>
+<li>Fixed an issue where performing <code>Run Selected</code> on a selected assembly would run all assemblies.</li>
+<li>Introduced the capability to do a split build and run, when running playmode tests on standalone devices.</li>
+<li>Fixed an error in ConditionalIgnore, if the condition were not set.</li>
+</ul>
+<h2 id="1014---2019-05-27">[1.0.14] - 2019-05-27</h2>
+<ul>
+<li>Fixed issue preventing scene creation in IPrebuildSetup.Setup callback when running standalone playmode tests.</li>
+<li>Fixed an issue where test assemblies would sometimes not be ordered alphabetically.</li>
+<li>Added module references to the package for the required modules: imgui and jsonserialize.</li>
+<li>Added a ConditionalIgnore attribute to help ignoring tests only under specific conditions.</li>
+<li>Fixed a typo in the player test window (case 1148671).</li>
+</ul>
+<h2 id="1013---2019-05-07">[1.0.13] - 2019-05-07</h2>
+<ul>
+<li>Fixed a regression where results from the player would no longer update correctly in the UI (case 1151147).</li>
+</ul>
+<h2 id="1012---2019-04-16">[1.0.12] - 2019-04-16</h2>
+<ul>
+<li>Added specific unity release to the package information.</li>
+</ul>
+<h2 id="1011---2019-04-10">[1.0.11] - 2019-04-10</h2>
+<ul>
+<li>Fixed a regression from 1.0.10 where test-started events were triggered multiple times after a domain reload.</li>
+</ul>
+<h2 id="1010---2019-04-08">[1.0.10] - 2019-04-08</h2>
+<ul>
+<li>Fixed an issue where test-started events would not be fired correctly after a test performing a domain reload (case 1141530).</li>
+<li>The UI should correctly run tests inside a nested class, when that class is selected.</li>
+<li>All actions should now correctly display a prefix when reporting test result. E.g. &quot;TearDown :&quot;.</li>
+<li>Errors logged with Debug.LogError in TearDowns now append the error, rather than overwriting the existing result (case 1114306).</li>
+<li>Incorrect implementations of IWrapTestMethod and IWrapSetUpTearDown now gives a meaningful error.</li>
+<li>Fixed a regression where the Test Framework would run TearDown in a base class before the inheriting class (case 1142553).</li>
+<li>Fixed a regression introduced in 1.0.9 where tests with the Explicit attribute could no longer be executed.</li>
+</ul>
+<h2 id="109---2019-03-27">[1.0.9] - 2019-03-27</h2>
+<ul>
+<li>Fixed an issue where a corrupt instance of the test runner window would block for a new being opened.</li>
+<li>Added the required modules to the list of package requirements.</li>
+<li>Fixed an issue where errors would happen if the test filter ui was clicked before the ui is done loading.</li>
+<li>Fix selecting items with duplicate names in test hierarchy of Test Runner window (case 987587).</li>
+<li>Fixed RecompileScripts instruction which we use in tests (case 1128994).</li>
+<li>Fixed an issue where using multiple filters on tests would sometimes give an incorrect result.</li>
+</ul>
+<h2 id="107---2019-03-12">[1.0.7] - 2019-03-12</h2>
+<h3 id="this-is-the-first-release-of-unity-package-comunitytest-framework">This is the first release of <em>Unity Package com.unity.test-framework</em>.</h3>
+<ul>
+<li>Migrated the test-framework from the current extension in unity.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

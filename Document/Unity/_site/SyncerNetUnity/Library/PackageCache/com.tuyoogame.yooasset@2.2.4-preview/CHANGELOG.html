@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CHANGELOG | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CHANGELOG | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">CHANGELOG</h1>
+
+<p>All notable changes to this package will be documented in this file.</p>
+<h2 id="224-preview---2024-08-15">[2.2.4-preview] - 2024-08-15</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>修复了HostPlayMode初始化卡死的问题。</li>
+</ul>
+<h2 id="223-preview---2024-08-13">[2.2.3-preview] - 2024-08-13</h2>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>(#311) 修复了断点续传下载器极小概率报错 : “416 Range Not Satisfiable”</li>
+</ul>
+<h3 id="improvements">Improvements</h3>
+<ul>
+<li><p>原生文件构建管线支持原生文件加密。</p>
+</li>
+<li><p>HostPlayMode模式下内置文件系统初始化参数可以为空。</p>
+</li>
+<li><p>场景加载增加了LocalPhysicsMode参数来控制物理运行模式。</p>
+</li>
+<li><p>默认的内置文件系统和缓存文件系统增加解密方法。</p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// 创建默认的内置文件系统参数
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;decryptionServices&quot;&gt;加密文件解密服务类&lt;/param&gt;
+/// &lt;param name=&quot;verifyLevel&quot;&gt;缓存文件的校验等级&lt;/param&gt;
+/// &lt;param name=&quot;rootDirectory&quot;&gt;内置文件的根路径&lt;/param&gt;
+public static FileSystemParameters CreateDefaultBuildinFileSystemParameters(IDecryptionServices decryptionServices, EFileVerifyLevel verifyLevel, string rootDirectory);
+
+/// &lt;summary&gt;
+/// 创建默认的缓存文件系统参数
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;remoteServices&quot;&gt;远端资源地址查询服务类&lt;/param&gt;
+/// &lt;param name=&quot;decryptionServices&quot;&gt;加密文件解密服务类&lt;/param&gt;
+/// &lt;param name=&quot;verifyLevel&quot;&gt;缓存文件的校验等级&lt;/param&gt;
+/// &lt;param name=&quot;rootDirectory&quot;&gt;文件系统的根目录&lt;/param&gt;
+public static FileSystemParameters CreateDefaultCacheFileSystemParameters(IRemoteServices remoteServices, IDecryptionServices decryptionServices, EFileVerifyLevel verifyLevel, string rootDirectory);
+</code></pre>
+</li>
+</ul>
+<h2 id="222-preview---2024-07-31">[2.2.2-preview] - 2024-07-31</h2>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>(#321) 修复了在Unity2022里编辑器下离线模式运行失败的问题。</li>
+<li>(#325) 修复了在Unity2019里编译报错问题。</li>
+</ul>
+<h2 id="221-preview---2024-07-10">[2.2.1-preview] - 2024-07-10</h2>
+<p>统一了所有PlayMode的初始化逻辑，EditorSimulateMode和OfflinePlayMode初始化不再主动加载资源清单！</p>
+<h3 id="added">Added</h3>
+<ul>
+<li>新增了IFileSystem.ReadFileData方法，支持原生文件自定义获取文本和二进制数据。</li>
+</ul>
+<h3 id="improvements-1">Improvements</h3>
+<ul>
+<li>优化了DefaultWebFileSystem和DefaultBuildFileSystem文件系统的内部初始化逻辑。</li>
+</ul>
+<h2 id="220-preview---2024-07-07">[2.2.0-preview] - 2024-07-07</h2>
+<p>重构了运行时代码，新增了文件系统接口（IFileSystem）方便开发者扩展特殊需求。</p>
+<p>新增微信小游戏文件系统示例代码，详细见Extension Sample/Runtime/WechatFileSystem</p>
+<h3 id="added-1">Added</h3>
+<ul>
+<li><p>新增了ResourcePackage.DestroyAsync方法</p>
+</li>
+<li><p>新增了FileSystemParameters类帮助初始化文件系统</p>
+<p>内置了编辑器文件系统参数，内置文件系统参数，缓存文件系统参数，Web文件系统参数。</p>
+<pre><code class="lang-csharp">public class FileSystemParameters
+{
+    /// &lt;summary&gt;
+    /// 文件系统类
+    /// &lt;/summary&gt;
+    public string FileSystemClass { private set; get; }
+
+    /// &lt;summary&gt;
+    /// 文件系统的根目录
+    /// &lt;/summary&gt;
+    public string RootDirectory { private set; get; }   
+
+    /// &lt;summary&gt;
+    /// 添加自定义参数
+    /// &lt;/summary&gt;
+    public void AddParameter(string name, object value)    
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>重构了InitializeParameters初始化参数</li>
+<li>重命名YooAssets.DestroyPackage方法为RemovePackage</li>
+<li>重命名ResourcePackage.UpdatePackageVersionAsync方法为RequestPackageVersionAsync</li>
+<li>重命名ResourcePackage.UnloadUnusedAssets方法为UnloadUnusedAssetsAsync</li>
+<li>重命名ResourcePackage.ForceUnloadAllAssets方法为UnloadAllAssetsAsync</li>
+<li>重命名ResourcePackage.ClearUnusedCacheFilesAsync方法为ClearUnusedBundleFilesAsync</li>
+<li>重命名ResourcePackage.ClearAllCacheFilesAsync方法为ClearAllBundleFilesAsync</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>移除了YooAssets.Destroy方法</li>
+<li>移除了YooAssets.SetDownloadSystemClearFileResponseCode方法</li>
+<li>移除了YooAssets.SetCacheSystemDisableCacheOnWebGL方法</li>
+<li>移除了ResourcePackage.GetPackageBuildinRootDirectory方法</li>
+<li>移除了ResourcePackage.GetPackageSandboxRootDirectory方法</li>
+<li>移除了ResourcePackage.ClearPackageSandbox方法</li>
+<li>移除了IBuildinQueryServices接口</li>
+<li>移除了IDeliveryLoadServices接口</li>
+<li>移除了IDeliveryQueryServices接口</li>
+</ul>
+<h2 id="212---2024-05-16">[2.1.2] - 2024-05-16</h2>
+<p>SBP库依赖版本升级至2.1.3</p>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>(#236) 修复了资源配置界面AutoCollectShader复选框没有刷新的问题。</li>
+<li>(#244) 修复了导入器在安卓平台导入本地下载的资源失败的问题。</li>
+<li>(#268) 修复了挂起场景未解除状态前无法卸载的问题。</li>
+<li>(#269) 优化场景挂起流程，支持中途取消挂起操作。</li>
+<li>(#276) 修复了HostPlayMode模式下，如果内置清单是最新版本，每次运行都会触发拷贝行为。</li>
+<li>(#289) 修复了Unity2019版本脚本IWebRequester编译报错。</li>
+<li>(#295) 解决了在安卓移动平台，华为和三星真机上有极小概率加载资源包失败 : Unable to open archive file</li>
+</ul>
+<h3 id="added-2">Added</h3>
+<ul>
+<li><p>新增GetAllCacheFileInfosOperation()获取缓存文件信息的方法。</p>
+</li>
+<li><p>新增LoadSceneSync()同步加载场景的方法。</p>
+</li>
+<li><p>新增IIgnoreRule接口，资源收集流程可以自定义。</p>
+</li>
+<li><p>新增IWechatQueryServices接口，用于微信平台本地文件查询。</p>
+<p>后续将会通过虚拟文件系统来支持！</p>
+</li>
+</ul>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>调整了UnloadSceneOperation代码里场景的卸载顺序。</li>
+</ul>
+<h3 id="improvements-2">Improvements</h3>
+<ul>
+<li>优化了资源清单的解析过程。</li>
+<li>移除资源包名里的空格字符。</li>
+<li>支持华为鸿蒙系统。</li>
+</ul>
+<h2 id="211---2024-01-17">[2.1.1] - 2024-01-17</h2>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li>(#224)  修复了编辑器模式打包时 SimulateBuild 报错的问题。</li>
+<li>(#223)  修复了资源构建界面读取配置导致的报错问题。</li>
+</ul>
+<h3 id="added-3">Added</h3>
+<ul>
+<li><p>支持共享资源打包规则，可以定制化独立的构建规则。</p>
+<pre><code class="lang-c#">public class BuildParameters
+{
+   /// &lt;summary&gt;
+    /// 是否启用共享资源打包
+    /// &lt;/summary&gt;
+    public bool EnableSharePackRule = false; 
+}
+</code></pre>
+</li>
+<li><p>微信小游戏平台，资源下载器支持底层缓存查询。</p>
+</li>
+</ul>
+<h2 id="210---2023-12-27">[2.1.0] - 2023-12-27</h2>
+<p>升级了 Scriptable build pipeline (SBP) 的版本，来解决图集引用的精灵图片冗余问题。</p>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>(#195) 修复了在EditorPlayMode模式下，AssetHandle.GetDownloadStatus()发生异常的问题。</li>
+<li>(#201) 修复了断点续传失效的问题。</li>
+<li>(#202) 修复了打包参数FileNameStyle设置为BundleName后，IQueryServices会一直返回true的问题。</li>
+<li>(#205) 修复了HybridCLR插件里创建资源下载器触发的异常。</li>
+<li>(#210) 修复了DownloaderOperation在未开始下载前，内部的PackageName为空的问题。</li>
+<li>(#220) 修复了资源收集界面关闭后，撤回操作还会生效的问题。</li>
+<li>修复了下载器合并后重新计算下载字节数不正确的问题。</li>
+</ul>
+<h3 id="improvements-3">Improvements</h3>
+<ul>
+<li>(#198) 资源收集界面禁用的分组不再检测合法性。</li>
+<li>(#203) 资源构建类容许自定义打包的输出目录。</li>
+<li>资源构建报告增加未依赖的资源信息列表。</li>
+</ul>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li><p>IBuildinQueryServices和IDeliveryQueryServices查询方法变更。</p>
+<pre><code class="lang-c#">    public interface IBuildinQueryServices
+    {
+        /// &lt;summary&gt;
+        /// 查询是否为应用程序内置的资源文件
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;packageName&quot;&gt;包裹名称&lt;/param&gt;
+        /// &lt;param name=&quot;fileName&quot;&gt;文件名称（包含文件的后缀格式）&lt;/param&gt;
+        /// &lt;param name=&quot;fileCRC&quot;&gt;文件哈希值&lt;/param&gt;
+        /// &lt;returns&gt;返回查询结果&lt;/returns&gt;
+        bool Query(string packageName, string fileName, string fileCRC);
+    }
+
+   	public interface IDeliveryQueryServices
+    {
+        /// &lt;summary&gt;
+        /// 查询是否为开发者分发的资源文件
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;packageName&quot;&gt;包裹名称&lt;/param&gt;
+        /// &lt;param name=&quot;fileName&quot;&gt;文件名称（包含文件的后缀格式）&lt;/param&gt;
+        /// &lt;param name=&quot;fileCRC&quot;&gt;文件哈希值&lt;/param&gt;
+        /// &lt;returns&gt;返回查询结果&lt;/returns&gt;
+        bool Query(string packageName, string fileName, string fileCRC);
+    }
+</code></pre>
+</li>
+</ul>
+<h3 id="removed-1">Removed</h3>
+<ul>
+<li>(#212)  移除了构建报告里的资源冗余信息列表。</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

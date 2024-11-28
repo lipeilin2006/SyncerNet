@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this package will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="122---2023-01-30">[1.2.2] - 2023-01-30</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed exception thrown when removing marker.</li>
+</ul>
+<h2 id="121---2023-01-02">[1.2.1] - 2023-01-02</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Updated What's New page</li>
+</ul>
+<h2 id="120---2023-01-02">[1.2.0] - 2023-01-02</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Added support for removing vsync time, so we can see actual CPU duration over multiple frames. A drop down has been added to 'remove' a marker from the analysis and has entries for &quot;FPS Wait&quot;, &quot;Present Wait&quot; and &quot;Custom&quot; where you can select any marker from the table using the right click context menu to &quot;Remove Marker&quot;.</li>
+<li>Added optional standard deviation (SD) column into marker table (on single view) for sorting data based on variation of marker timings in over the frames.</li>
+<li>Added export of the comparison table as CSV.</li>
+</ul>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>Improved profile analysis performance.</li>
+<li>Updated minimal suppourted version to Unity 2020.3.</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Fixed bug when depth filter and marker vsync removal both applied.</li>
+<li>Fixed commas in CSV export file.</li>
+</ul>
+<h2 id="111---2021-10-04">[1.1.1] - 2021-10-04</h2>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Fixed pulling frame data from the Profiler to exclude first and last frames if their main thread profiler data is incomplete, so that they don't skewer the analysis results <a href="https://issuetracker.unity3d.com/product/unity/issues/guid/1359686/">(case 1359686)</a>.</li>
+<li>Fixed IndexOutOfRangeException thrown when using Profiler or selecting Profiler frames in Profile Analyzer. <a href="https://issuetracker.unity3d.com/product/unity/issues/guid/1366931/">(1366931)</a></li>
+</ul>
+<h2 id="110---2021-07-23">[1.1.0] - 2021-07-23</h2>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>Fixed x axis display on frame time graph when capture doesn't match Unity Profiler contents.</li>
+<li>Fixed selected marker name to be updated even when Profiler fails to sync selection.</li>
+</ul>
+<h2 id="110-pre2---2021-04-16">[1.1.0-pre.2] - 2021-04-16</h2>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li>Ensured forward compilation compatibility of ProfilerWindow API usage.</li>
+</ul>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li>Fixed Frame View Dropdown not showing time in Microseconds when Microseconds are set as display unit type.</li>
+<li>Fixed ArgurmentOutOfRange exception on 'Clear Selection' usage in Frame Control.</li>
+<li>Improved loading and analysis progressbar progression to be monotonously incremental and reflect actual stage correctly.</li>
+<li>Fixed the marked frame time overlay so that it works on loaded data (case 1327888).</li>
+<li>Fixed keyboard frame controls so that they do not play an error sound (case 1327931).</li>
+<li>Fixed RangeSettings.IsEqual so that it doesn't throw an exception when there is a different dataView.selectedIndices.</li>
+</ul>
+<h2 id="110-pre1---2021-02-22">[1.1.0-pre.1] - 2021-02-22</h2>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>Used the new <code>EditorWindow.docked</code> API on 2020.1 and later to replace reflection usage.</li>
+<li>Made the <strong>Thread Selection</strong> window a utility window.</li>
+<li>Added a progress bar, which shows data loading progress.</li>
+<li><strong>All</strong> no longer collapses in the thread view because it was superfluous and held no discernible purpose.</li>
+<li>Added information to the frame summary tooltip to show the selected ranges.</li>
+<li>Selecting the <strong>Frame</strong>, <strong>Thread</strong>, and <strong>Marker Summary</strong> title labels now also toggles their foldout.</li>
+<li>Timings in tooltips now display up to seven digits with a unit type change if below 0.01. This ensures the value is readable and correct.</li>
+<li>Frame Time Graph selection modifiers (Next, Previous, Grow, Shrink etc.) now work when multiple regions are selected.</li>
+<li>Added new (hidden) columns to the comparison tab for <strong>Percentage Diff</strong> for each of the diff types</li>
+<li>The <strong>Depth Slice</strong> drop-down is searchable and scrollable for Unity versions 2019.1 or newer.</li>
+<li>Improved tooltips on the top 10 marker duration time.</li>
+</ul>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>The Thread Summary and Marker Summary views now correctly clip their contents when scrolling on 2018.4 and below.</li>
+<li>Marker detail bars are no longer drawn on top of the list's headers when scrolling.</li>
+<li>Fixed an issue with saving when there is no data loaded, which previously caused a null reference exception.</li>
+<li><strong>Add to</strong> and <strong>Remove from</strong> name filter is no longer case sensitive.</li>
+<li>Optimized frame selection with <strong>Show Filtered Threads</strong> option enabled and <strong>All Threads</strong> turned on.</li>
+<li>Fixed an issue where the <strong>Upper Quartile of frame time</strong> option did not fit in the Graph scale dropdown in <strong>Thread Summary</strong>.</li>
+<li>Improved the error message when the Profile Analyzer fails to load a .data file.</li>
+<li>Fixed an issue where changing the depth slice and right-clicking on a marker caused an error in 2018.4 and earlier.</li>
+<li>Fixed the automatic increase of an unsaved file counter in Single view.</li>
+<li>Improved the Marker Column mode so that it is separate for Single and Compare view.</li>
+<li>The tooltip of the frame graph's scale control is now clearer and matches the documentation.</li>
+<li>Fixed an issue where a frame of '0' was incorrectly shown in the <strong>Marker Summary</strong> when the marker had a duration of 0ms.</li>
+<li>Fixed an issue with <strong>Selection Synchronization</strong> between Profiler Window and Profile Analyzer in Unity 2021.1 or newer.</li>
+<li>Added a log message when the loading or analysis fails due to domain reload.</li>
+<li>Fixed an issue with the table context menu, where it was not disabled during data processing.</li>
+<li>Fixed an issue where exporting a marker table that contained markers with commas or quotation marks to the .csv format would break the format.</li>
+</ul>
+<h2 id="103---2020-07-31">[1.0.3] - 2020-07-31</h2>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>Fixed warnings in code so package will not break Unity projects that have warnings as errors enabled.</li>
+</ul>
+<h2 id="102---2020-06-30">[1.0.2] - 2020-06-30</h2>
+<h3 id="fixes-1">Fixes</h3>
+<ul>
+<li>Fixed issue where second profiler instance could appear after entering play mode when profile analyzer is open</li>
+<li>Improved performance of pulling data from Unity profiler</li>
+<li>Pull Data button now enabled when profiler is recording. This will stop the recording for the duration of the action of pulling of data.</li>
+<li>Fixed Median sorting in Comparison mode when value missing from one data set, Missing values always sorted before 0 values.</li>
+</ul>
+<h2 id="101---2020-06-16">[1.0.1] - 2020-06-16</h2>
+<h3 id="fixes-2">Fixes</h3>
+<ul>
+<li>Fixed &quot;median marker time (in currently selected frames)&quot; in tooltip for 'Top 10 markers'.</li>
+<li>Fixed profile analyzer 5.6 support</li>
+<li>Fixed minor visual artefact when no marker selection</li>
+<li>Fixed issue where frame time graph tooltips were not always appearing when hovering</li>
+<li>Marker Summary - Count Values are now correctly sorted in descending order</li>
+<li>Hiding selected marker in comparison view if lacking 2 valid data sets</li>
+<li>Corrected bucketing of histogram data for counts. Display was fractionally incorrect</li>
+<li>Fixed sorting of frames (by time/count) to be more stable by providing a secondary sort by frame index</li>
+<li>Marker table export now orders by descending median time (to match the default UI sort option).</li>
+</ul>
+<h2 id="100---2020-06-02">[1.0.0] - 2020-06-02</h2>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>Export window updates. Includes tooltips, better on screen positioning.
+<ul>
+<li>If opened and then new data set loaded. New data set now correctly exported.</li>
+</ul>
+</li>
+<li>Frame Time graph now shows border when selected
+<ul>
+<li>Keys 1 and 2 select the first or second frame time graph to take keyboard focus</li>
+</ul>
+</li>
+<li>Frame Time graph now shows highlighted when all frames selected, un highlighted when no frames selected.</li>
+</ul>
+<h3 id="fixes-3">Fixes</h3>
+<ul>
+<li>Improved histogram display when 0 range.</li>
+<li>Widened frame index buttons when frame value large</li>
+<li>'total number of markers' value in Compare tab now corrected to use unfiltered count</li>
+<li>Improved error messages when jumpping to frame when profiler data doesn't match profile analyzer data</li>
+</ul>
+<h2 id="070-preview4---2020-05-29">[0.7.0-preview.4] - 2020-05-29</h2>
+<h3 id="changes-1">Changes</h3>
+<ul>
+<li>Thread selection window
+<ul>
+<li>Now only applys thread selection changes when clicking 'Apply'. Closing the window no longer applies the changes automatically.</li>
+<li>Now contains buttons to Reset to previous thread selection, Select just &quot;Main Thread&quot; or &quot;Common&quot; set selection (Main, Render and Jobs).</li>
+<li>Apply button is now greyed out while analysis is running.</li>
+<li>Group column enabled and used to split off group from thread name, default to by group first</li>
+<li>Re sorted when selection changed (so states sort correctly when sorting by state)</li>
+<li>Sort order preserved when buttons pressed and re-opening</li>
+<li>Fixed sort order for threads (10 after 9 rather than between 1 and 2)</li>
+</ul>
+</li>
+<li>Marker sorting
+<ul>
+<li>Marker table column filtering now preserved when clicking Analyse or Compare or tab switching.</li>
+<li>Compare table bars to now sort by bar size (=delta value) rather than the left/right value.</li>
+<li>Marker table bars now start sorted by descending size which is more common usage.</li>
+</ul>
+</li>
+<li>Added depths columns into the comparison table and a 'Depth' option in the Marker Columns dropdown</li>
+<li>Added thread count into thread summary area</li>
+<li>Added threads column into marker tables (threads the marker occurs on)</li>
+<li>Thread summary now contains thread count, unique count per data set and selection count</li>
+<li>Frame time area now allows adding to the selection by holding CTRL (or COMMAND on Mac)</li>
+<li>Frame range value now includes tooltip to give more detail about the selection</li>
+<li>Improved text string for depth filter status on the top marker display</li>
+</ul>
+<h3 id="fixes-4">Fixes</h3>
+<ul>
+<li>Detected and ignored invalid frame markers (duration &lt; 0)</li>
+<li>Fixed/Removed warnings on loading data in compare view when selection active.</li>
+<li>Disabled &quot;Analyze&quot; button while analysis is already running</li>
+<li>Fixed Marker Summary 'Top' dropdown selection text width</li>
+<li>Fixed thread selection window sort order</li>
+<li>Fixed tooltip on 'count' bars to be scalar value (not a time unit)</li>
+<li>Clamped selected region shown when zoomed in on frame time graph</li>
+<li>Frame Control value no longer overlaps with drop-down list when Units are set to Microseconds</li>
+<li>Fixed thread count text when analysis completes after swapping single/compare tabs during analysis</li>
+<li>Fixed Frame View's tooltip &quot;total time&quot; when rapidly changing frames</li>
+<li>Fixed overlapping text when selecting single frame when zoomed in</li>
+<li>Histogram frame count now lists &quot;1 frame&quot; when single frame rather than &quot;1 frames&quot;</li>
+<li>Mode: text in top bar now same size as rest of text.</li>
+<li>Clear Selection in marker right click context menu now only shown if a selection has been made</li>
+<li>Cut/Paste now supported in the include/exclude marker name filter</li>
+<li>Frame Time graph frame selection grow/shrink now keeps current selection in paired graph</li>
+<li>Fixed frame start/end display for &quot;Select Frames that contain this marker (within whole data set)&quot;</li>
+<li>Corrected bucketing of histogram data. Display was fractionally incorrect</li>
+<li>Histogram now shows non zero height bar if an item in the bucket</li>
+<li>Fixed right click &quot;Remove from Included Filters&quot; when using (quoted) markers with spaces in names</li>
+<li>Fixed data auto-load from Single to Compare tab when capturing after entering playmode</li>
+<li>Fixed auto right calculation to use most common difference</li>
+<li>Fixed auto right display to show + or - and not both at the same time</li>
+<li>Fixed infinite analysis loop when auto right calculation was clamping to max depth in the other data set</li>
+<li>Auto right now clamps to min/max depth rather than reverting to 'all'</li>
+<li>Fixed thread count bug when using comparison mode and loading data on top of existing data</li>
+<li>Selected marker refocused in marker list when table is regenerated (e.g. when selecting all frames containing the marker).</li>
+<li>Column by which the Marker Details is sorted by is now maintained  when entering Play Mode</li>
+<li>Updated frame time graph context menu to make hotkeys more consistent with out Unity UI layouts</li>
+<li>Percent symbol no longer cut off in Mean frame contribution when the value is 100%</li>
+<li>Frame time graph now scales up when zooming when comparing data with different frame amounts</li>
+<li>Changing 'Auto Right' tick box no longer causes re-analysis if depth settings unchanged</li>
+<li>Most tooltips now show values without rounding, so its more obvious when low values give non zero deltas.</li>
+<li>Fixed individual max tooltip</li>
+<li>Disabled 'Pull data' button when Unity profiler is still capturing data (as the pull would not complete).</li>
+<li>Fixed right frame index in exported comparison CSV file.</li>
+<li>Frame selection no longer changed when moving the cursor in the Filter text box with arrow keys</li>
+<li>Help text now continues to be shown after entering play mode, while no data set loaded/pulled</li>
+<li>Fixed frame index button heights when alternative (Verdana) font used.</li>
+<li>Fixed cache styles to be updated when changing theme (to fix text colour in filters area)</li>
+<li>Single click (without drag) now always single frame rather than the group of frames in the pixel wide area.</li>
+<li>Split frame range into start and end rows to display more information when values large</li>
+<li>Marker Summary comparison times are now limited to 5 digits to prevent text clipping off</li>
+</ul>
+<h3 id="enhancements">Enhancements</h3>
+<ul>
+<li>Optimised filter processing for more responsive scrolling when a large marker filter list is supplied.</li>
+<li>Optimised thread name summary display</li>
+</ul>
+<h2 id="060-preview1---2020-02-04">[0.6.0-preview.1] - 2020-02-04</h2>
+<ul>
+<li>Fixed a crash with the thread selection API in Unity 2020.1</li>
+<li>Fixed marker and thread scroll bars</li>
+<li>Added extra documentation for public API elements</li>
+</ul>
+<h2 id="050-preview2---2019-09-19">[0.5.0-preview.2] - 2019-09-19</h2>
+<ul>
+<li>Minor documentation update to fix the changelog formatting</li>
+</ul>
+<h2 id="050-preview1---2019-09-18">[0.5.0-preview.1] - 2019-09-18</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Added self time option to display 'exclusive' time of markers excluding time in children.</li>
+<li>Added ability to filter to a parent marker to reduce the marker list to a part of the tree.</li>
+<li>Added option to filter the column list to set groups (including custom).</li>
+<li>Added column for total marker time over the frame</li>
+<li>Added copy to clipboard on table entries</li>
+<li>Added export option for marker table</li>
+</ul>
+<h3 id="enhancements-1">Enhancements</h3>
+<ul>
+<li>Improved Top N Markers graph to make it clearer this is for the median frames of each data set.</li>
+<li>Added thread count display (next to marker count).</li>
+<li>Added frame index to more tooltips to improve clarity of the data values (marker table, frame and marker summary).</li>
+<li>Added additional visual bars for total and count diffs. Added abs count column.</li>
+<li>Improved performance of adding to include/exclude filter via the right click menu by only refreshing the table (and no longer rerunning full analysis)</li>
+<li>Improved performance for scrolling by caching strings for profile table and comparison table.</li>
+<li>Added unaccounted time into the Top N Markers graph when total is less than the median frame time</li>
+<li>Added grow/shrink selection hot keys and menu options</li>
+<li>Added tooltip info for frame time duration for selection range</li>
+</ul>
+<h3 id="fixes-5">Fixes</h3>
+<ul>
+<li>Fixed issue with combined marker count when data sets have some unique markers.</li>
+<li>Fixed bars less than 1 pixel wide to clamp to min width of 1.</li>
+<li>Fixed help text for new editor skin in 2019.3</li>
+<li>Fixed bug with calculation of the auto right depth offset (see with 2017.4/2018.4 comparisons)</li>
+<li>Improved the frame offset times in the frame time and comparison frame time exports</li>
+<li>Fixed bug with missing first frame of data / frame offset incorrect when reloading .pdata</li>
+</ul>
+<h2 id="040-preview5---2019-04-02">[0.4.0-preview.5] - 2019-04-02</h2>
+<ul>
+<li>Updated package.json file to indicate this package is valid for all unity versions</li>
+</ul>
+<h2 id="040-preview4---2019-04-02">[0.4.0-preview.4] - 2019-04-02</h2>
+<ul>
+<li>Fixed issue in 2017.4 with unsupported analytics API and a GUI style.</li>
+</ul>
+<h2 id="040-preview3---2019-04-01">[0.4.0-preview.3] - 2019-04-01</h2>
+<ul>
+<li>First public release of Profile Analyzer.</li>
+</ul>
+<h2 id="010-preview---2018-12-07">[0.1.0-preview] - 2018-12-07</h2>
+<ul>
+<li>This is the first beta release of Profile Analyzer</li>
+</ul>
+<p>The profile analyzer tool augments the standard Unity Profiler. It provides multi frame analysis of the profiling data.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

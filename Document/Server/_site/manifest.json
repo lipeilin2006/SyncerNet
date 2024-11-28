@@ -1,0 +1,628 @@
+{
+  "source_base_path": "D:/SyncerNetDocument/Server",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Authenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Authenticator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Entity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Game.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.SyncerMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.SyncerMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.NetworkMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.NetworkMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Player.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.AnimatorSyncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.AnimatorSyncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.TransformSyncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.TransformSyncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.World.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.HotfixLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.HotfixLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Logging.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Logging.LogLevel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Logging.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Logging.Logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.NetworkServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.NetworkServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.AnimationCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.AnimationCurve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Bounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Bounds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.BoundsInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.BoundsInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Color.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Color32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Color32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Gradient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Gradient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.GradientAlphaKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.GradientAlphaKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.GradientColorKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.GradientColorKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.GradientMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.GradientMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Keyframe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Keyframe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.LayerMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.LayerMask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Matrix4x4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Matrix4x4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Quaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Quaternion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.RangeInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.RangeInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Rect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Rect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.RectInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.RectInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.RectOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.RectOffset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Vector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Vector2Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Vector2Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Vector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Vector3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Vector3Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Vector3Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.Vector4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.Vector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.WrapMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.WrapMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

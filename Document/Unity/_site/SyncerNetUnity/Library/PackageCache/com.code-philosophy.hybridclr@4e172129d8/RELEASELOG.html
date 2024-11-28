@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ReleaseLog | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ReleaseLog | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="releaselog">ReleaseLog</h1>
+
+<h2 id="6110">6.11.0</h2>
+<p>Release Date: 2024-10-31.</p>
+<h3 id="runtime">Runtime</h3>
+<ul>
+<li>[merge] Merges changes from Tuanjie versions 1.3.0 to 1.3.1</li>
+<li>[merge] Merges il2cpp code changes from version 2022.3.48f1 to 2022.3.51f1</li>
+</ul>
+<h2 id="6101">6.10.1</h2>
+<p>Release Date: 2024-10-24.</p>
+<h3 id="editor">Editor</h3>
+<ul>
+<li>[fix] Fixs HookUtils compile errors in Unity 2019 and 2020</li>
+<li>[change] remove README_zh.md.meta, add README_EN.md.meta</li>
+</ul>
+<h2 id="6100">6.10.0</h2>
+<p>Release Date: 2024-10-23.</p>
+<h3 id="runtime-1">Runtime</h3>
+<ul>
+<li>[new] Officially supports 6000.0.23f LTS version</li>
+<li>[merge] Merges changes from Tuanjie versions 1.2.6 to 1.3.0</li>
+<li>[fix] Fixed an issue in MonoHook where processorType was not handled correctly on some CPUs when the processorType was returned in all uppercase (e.g., some machines return 'INTEL' instead of 'Intel').</li>
+</ul>
+<h2 id="690">6.9.0</h2>
+<p>Release Date: 2024-9-30.</p>
+<h3 id="runtime-2">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where thrown exceptions did not call <code>il2cpp::vm::Exception::PrepareExceptionForThrow</code>, resulting in an empty stack trace.</li>
+<li>[merge] Merges changes from versions 2021.3.42f1 to 2021.3.44f1, fixing compilation errors introduced by il2cpp changes in version 2021.3.44.</li>
+<li>[merge] Merges changes from versions 2022.3.41f1 to 2022.3.48f1, fixing compilation errors introduced by il2cpp changes in version 2022.3.48.</li>
+<li>[merge] Merges code from 6000.0.19f1 to 6000.0.21f1, fixing compilation errors introduced by il2cpp changes in version 6000.0.20.</li>
+<li>[merge] Merges changes from Tuanjie versions 1.1.0 to 1.2.6</li>
+</ul>
+<h2 id="680">6.8.0</h2>
+<p>Release Date: 2024-9-14.</p>
+<h3 id="runtime-3">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where exception stacks did not include line numbers.</li>
+<li>[fix] Fixes the bug where <code>Il2CppGenericContextCompare</code> simply compared class_inst and method_inst pointers for equality, which is not the case for all GenericInst (e.g., <code>s_Il2CppMetadataRegistration-&gt;genericInsts</code>) that do not come from GenericInstPool, hence identical GenericInst are not pointer equal.</li>
+<li>[merge] Merges il2cpp code changes from version 6000.0.10 to 6000.0.19</li>
+</ul>
+<h2 id="671">6.7.1</h2>
+<p>Release Date: 2024-8-26.</p>
+<h3 id="runtime-4">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where there were compilation errors when publishing to the iOS platform with Unity 2019.</li>
+</ul>
+<h2 id="670">6.7.0</h2>
+<p>Release Date: 2024-8-26.</p>
+<h3 id="runtime-5">Runtime</h3>
+<ul>
+<li>[opt] No longer enables PROFILER in Release compilation mode, this optimization reduces the overhead of function calls by 10-15%, and overall performance is improved by approximately 2-4%.</li>
+<li>[opt] When publishing for WebGL targets, StackTrace is no longer maintained in Release compilation mode, which improves performance by about 1-2%.</li>
+<li>[fix] Fixes the bug where <code>Transform Enum::GetHashCode</code> did not change the variable type from <code>uintptr_t</code> to <code>int32_t</code> on the stack, leading to incorrect calculations when participating in subsequent numerical computations due to the parameter type being extended to 64 bits.</li>
+<li>[fix] Fixes the bug where a stack overflow was triggered by calling delegates extensively within interpreter functions.</li>
+</ul>
+<h3 id="editor-1">Editor</h3>
+<ul>
+<li>[new] HybridCLRSettings adds two new options: <code>enableProfilerInReleaseBuild</code> and <code>enableStackTraceInWebGLReleaseBuild</code>.</li>
+<li>[change] Fixes the issue where an assertion failure occurred when switching from the WebGL platform to other platforms (no substantial impact).</li>
+</ul>
+<h2 id="660">6.6.0</h2>
+<p>Release Date: 2024-8-12.</p>
+<h3 id="runtime-6">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>CustomAttribute</code> construction or namedArg includes a <code>typeof(T[])</code> parameter, causing a crash.</li>
+<li>[fix] Fixes the bug where <code>T[index].CallMethod()</code> throws an <code>ArrayTypeMismatchException</code> when <code>CallMethod</code> is an interface function of generic type T, and the array element is a subclass of T.</li>
+<li>[fix] Fixes the bug where <code>MethodBase.GetCurrentMethod</code> does not return the correct result. A new instinct instruction <code>MethodBaseGetCurrentMethod</code> is added.</li>
+<li>[fix] Fixes the bug where loading pdb on platforms like WebGL still does not display stack code line numbers.</li>
+<li>[fix] Fixes the bug where, after calling a sub-interpreter function and returning, logging prints the code line number of the called function due to <code>frame-&gt;ip</code> not being reset to <code>&amp;ip</code>.</li>
+<li>[fix] Fixes the bug where calling a sub-interpreter function displays the line number of the next statement in the parent function's code line number due to <code>frame-&gt;ip</code> pointing to the next instruction.</li>
+<li>[merge] Merges il2cpp code from 2021.3.42f1 and 2022.3.41f1, fixing compilation errors caused by the new <code>il2cpp_codegen_memcpy_with_write_barrier</code> function in versions 2021.3.42f1 and 2022.3.40f1.</li>
+</ul>
+<h2 id="650">6.5.0</h2>
+<p>Release Date: 2024-8-5.</p>
+<h3 id="runtime-7">Runtime</h3>
+<ul>
+<li>[new] Hot update function stacks for versions 2019-2020 can now correctly display code files and line numbers.</li>
+<li>[merge] Merges il2cpp changes from Unity versions 6000.0.1 to 6000.0.10</li>
+</ul>
+<h2 id="640">6.4.0</h2>
+<p>Release Date: 2024-7-25.</p>
+<h3 id="runtime-8">Runtime</h3>
+<ul>
+<li>[new] Supports loading dll and pdb symbol files with <code>Assembly.Load(byte[] assData, byte[] pdbData)</code>, displaying the correct code files and line numbers in function stacks when printing on versions 2021+.</li>
+<li>[fix] Fixes the bug where <code>InterpreterImage::GetEventInfo</code> and <code>GetPropertyInfo</code> might not initialize <code>method</code>, resulting in empty getter functions.</li>
+<li>[opt] Optimizes the order of function stacks printed by <code>StackTrace</code> and <code>UnityEngine.Debug</code>, displaying interpreter functions at the correct stack positions in most cases.</li>
+<li>[opt] Optimizes metadata memory.</li>
+</ul>
+<h3 id="editor-2">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>GenerateMethodBridge</code> did not consider <code>ClassLayout</code>, <code>Layout</code>, and <code>FieldOffset</code> factors when calculating equivalent classes.</li>
+<li>[fix] Fixes the bug where <code>PatchScriptingAssembliesJsonHook</code> throws an异常 when the <code>Library/PlayerDataCache</code> directory does not exist.</li>
+</ul>
+<h2 id="630">6.3.0</h2>
+<p>Release Date: 2024-7-15.</p>
+<h3 id="runtime-9">Runtime</h3>
+<ul>
+<li>[opt] Significantly optimizes metadata memory, reducing memory usage by 15-40% compared to version 6.2.0.</li>
+<li>[fix] Fixes the bug where memory was not released for <code>insts</code> in <code>IRBasicBlock</code> during transformation, causing a memory leak approximately 0.7-1.6 times the size of the dll.</li>
+<li>[fix] Fixes the bug where <code>ClassFieldLayoutCalculator</code> caused a memory leak.</li>
+<li>[fix] Fixes the bug where <code>MetadataAllocT</code> incorrectly used <code>HYBRIDCLR_MALLOC</code> instead of <code>HYBRIDCLR_METADATA_MALLOC</code>.</li>
+<li>[opt] Optimizes the native stack size occupied by <code>Interpreter::Execute</code> to avoid stack overflow errors when nesting is too deep.</li>
+</ul>
+<h3 id="editor-3">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where exporting an xcode project for Unity 2022 includes multiple ShellScript fragments, incorrectly deleting non-repeated fragments.</li>
+<li>[fix] Fixes the bug where the temporary directory name is <code>WinxinMiniGame{xxx}</code> when <code>TextureCompression</code> is not the default value on the WeChat Mini Games platform, causing the <code>scriptingassemblies.json</code> file to not be successfully modified.</li>
+<li>[fix] Fixes the bug where the WeChat Mini Games platform on the Unity Engine, due to the definition of both <code>UNITY_WEIXINMINIGAME</code> and <code>UNITY_WEBGL</code> macros, fails to find the <code>scriptingassemblies.json</code> file from the wrong path, resulting in a script missing bug at runtime.</li>
+</ul>
+<h2 id="620">6.2.0</h2>
+<p>Release Date: 2024-7-1.</p>
+<h3 id="runtime-10">Runtime</h3>
+<ul>
+<li>[merge] Merges changes from versions 2021.3.27f1 to 2021.3.40f1.</li>
+<li>[opt] Optimizes metadata memory, reducing memory usage by 20-25%.</li>
+<li>[opt] Optimizes the implementation of <code>GetHashCode</code> for enum types, no longer generating GC.</li>
+</ul>
+<h2 id="610">6.1.0</h2>
+<p>Release Date: 2024-6-17.</p>
+<h3 id="runtime-11">Runtime</h3>
+<ul>
+<li>[merge] Merges changes from versions 2022.3.23f1 to 2022.3.33f1, fixing incompatibility issues with version 2022.3.33.</li>
+<li>[new] Supports the new function return value Attribute added in version 2022.3.33.</li>
+<li>[fix] Fixes the bug where <code>FieldInfo</code> calling <code>GetFieldMarshaledSizeForField</code> crashes.</li>
+</ul>
+<h3 id="editor-4">Editor</h3>
+<ul>
+<li>[fix] Upgrades the dnlib version, fixing the serious bug where <code>ModuleMD</code> saves dlls without setting the assembly-qualified <code>mscorlib</code> assembly types to the current assembly.</li>
+<li>[fix] Fixes the issue where <code>Generate/LinkXml</code> generates a <code>link.xml</code> that preserves all <code>UnityEngine.Debug</code>, causing compilation errors on iOS and visionOS platforms with Unity 2023 and higher versions. This bug is caused by Unity, and we temporarily solve this problem by ignoring the <code>UnityEngine.Debug</code> class when generating <code>link.xml</code>.</li>
+</ul>
+<h2 id="600">6.0.0</h2>
+<p>Release Date: 2024-6-11.</p>
+<h3 id="runtime-12">Runtime</h3>
+<ul>
+<li>[new] Supports Unity 6000.x.y and Unity 2023.2.x versions.</li>
+<li>[refactor] Merges <code>ReversePInvokeMethodStub</code> into <code>MethodBridge</code>, and moves ReversePInvoke-related code from <code>MetadataModule</code> to <code>InterpreterModule</code>.</li>
+<li>[new] Supports MonoPInvokeCallback functions with parameters or return types as struct types.</li>
+</ul>
+<h3 id="editor-5">Editor</h3>
+<ul>
+<li>[new] Supports Unity 6000.x.y and Unity 2023.2.x versions.</li>
+<li>[new] Supports MonoPInvokeCallback functions with parameters or return types as struct types.</li>
+<li>[new] Adds <code>GeneratedAOTGenericReferenceExcludeExistsAOTClassAndMethods</code>, which calculates hot update references to AOT generic types and functions, excluding those already existing in AOT, ultimately generating a more accurate list of supplementary metadata assembly programs.</li>
+<li>[fix] Fixes the bug where <code>CopyStrippedAOTAssemblies</code> class has compilation errors on some Unity versions that do not support visionOS.</li>
+<li>[fix] Fixes the bug where calculating the <code>CallingConvention</code> of <code>MonoPInvokeCallback</code> is incorrectly treated as Winapi if the delegate is defined in another assembly, resulting in an incorrect wrapper signature calculation.</li>
+<li>[fix] PatchScriptingAssemblyList.cs has compilation errors on Unity 2023+ WebGL platforms.</li>
+<li>[fix] Fixes the bug where calculating Native2Manager bridge functions does not consider MonoPInvokeCallback functions, leading to <code>UnsupportedNative2ManagedMethod</code> when calling C# hot update functions from Lua or other languages.</li>
+<li>[refactor] Merges <code>ReversePInvokeMethodStub</code> into <code>MethodBridge</code>, and moves ReversePInvoke-related code from <code>MetadataModule</code> to <code>InterpreterModule</code>.</li>
+<li>[opt] Checks if the development option during packaging is consistent with the current development option. Switching the development option after <code>Generate/All</code> and then packaging will cause serious crashes.</li>
+<li>[opt] <code>Generate/All</code> checks if HybridCLR is installed before generating.</li>
+</ul>
+<h2 id="541">5.4.1</h2>
+<p>Release Date: 2024-5-30.</p>
+<h3 id="editor-6">Editor</h3>
+<ul>
+<li>[new] Supports the visionOS platform.</li>
+<li>[fix]<strong>[Serious]</strong> Fixes the bug where calculating <code>MonoPInvokeCallback</code>'s <code>CallingConvention</code> incorrectly treats it as Winapi if the delegate is defined in another assembly, resulting in an incorrect wrapper signature calculation.</li>
+<li>[fix] Fixes the bug where the wrong Unity-iPhone.xcodeproj path is used on tvOS platforms, causing the project.pbxproj to not be found.</li>
+</ul>
+<h2 id="540">5.4.0</h2>
+<p>Release Date: 2024-5-20.</p>
+<h3 id="runtime-13">Runtime</h3>
+<ul>
+<li>[new] ReversePInvoke supports CallingConvention.</li>
+<li>[fix] Fixes the bug where <code>calli</code>'s <code>argBasePtr=argIdx[0]</code> when the number of arguments is 0, due to <code>argIdxs</code> not being assigned, causing the function stack frame to point to the wrong location.</li>
+<li>[fix] Fixes the bug where <code>MetadataModule::GetReversePInvokeWrappe</code>'s <code>ComputeSignature</code> might deadlock.</li>
+<li>[fix] Fixes the bug where AOT base class virtual functions implementing hot update interface functions use <code>CallInterpVirtual</code>, causing runtime exceptions.</li>
+<li>[fix] Fixes the issue where some sub-instructions of the <code>PREFIX1</code> prefix instruction are missing and not sorted by instruction number in the Transform.</li>
+<li>[fix] Fixes the bug where the <code>no.{x}</code> prefix instruction is 3 bytes long but incorrectly treated as 2 bytes in the Transform.</li>
+<li>[fix] Fixes the bug where the <code>unaligned.{x}</code> prefix instruction is 3 bytes long but incorrectly treated as 2 bytes in the Transform.</li>
+<li>[opt] Removes unnecessary <code>INIT_CLASS</code> operations in <code>Interpreter_Execute</code>, as <code>PREPARE_NEW_FRAME_FROM_NATIVE</code> will always check.</li>
+<li>[opt] No longer caches MethodBody of non-generic functions, optimizing memory.</li>
+<li>[opt] <strong>Optimizes supplementary metadata memory</strong>, saving approximately 2.8 times the size of metadata dll memory.</li>
+<li>[refactor] Changes the type of the <code>_rawImage</code> field in <code>Image</code> from <code>RawImage</code> to <code>RawImage*</code>.</li>
+</ul>
+<h3 id="editor-7">Editor</h3>
+<ul>
+<li>[new] ReversePInvoke supports CallingConvention.</li>
+<li>[fix] Fixes the bug where calculating the equivalence of structs by flattening and expanding them does not apply on some platforms. For example, struct A { uint8_t x; A2 y; } struct A2 { uint8_t x; int32_t y;}; and struct B { uint8_t x; uint8_t y; int32_t z; } are not equivalent under the x86_64 ABI.</li>
+<li>[fix] Fixes the bug where appending to an existing xcode project causes the 'Run Script' command to be duplicated the first time and subsequently fails to find --external-lib-il2-cpp, printing an error log.</li>
+</ul>
+<h2 id="530">5.3.0</h2>
+<p>Release Date: 2024-4-22.</p>
+<h3 id="runtime-14">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where MachineState::CollectFramesWithoutDuplicates incorrectly uses <code>hybridclr::metadata::IsInterpreterMethod</code> to remove hot update functions, leading to an increasingly long StackFrames list and an infinite loop when printing the stack. The implementation is adjusted to uniformly use <code>il2cpp::vm::StackTrace::PushFrame</code> and <code>PopFrame</code> for perfect interpreter stack printing. The downside is the increased overhead of maintaining the stack when calling interpreter functions.</li>
+<li>[fix] Fixes the serious bug where <code>StringUtils::Utf16ToUtf8</code> does not correctly handle <code>maxinumSize==0</code>, causing a significant overflow when converting strings of length 0 in <code>InterpreterImage::ConvertConstValue</code>.</li>
+<li>[fix] Fixes the bug where <code>_ReversePInvokeMethod_XXX</code> functions do not set <code>Il2CppThreadContext</code>, causing a crash when obtaining thread variables from native threads.</li>
+<li>[merge] Merges il2cpp changes from versions 2021.3.34 to 2021.3.37f1.</li>
+<li>[merge] Merges il2cpp changes from versions 2022.3.19 to 2022.3.23f1.</li>
+</ul>
+<h3 id="editor-8">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where exporting a tvOS project does not modify xcode project settings, causing packaging to fail.</li>
+<li>[fix] Fixes the bug where building for tvOS targets does not copy the pruned AOT dll, causing bridge function generation to fail.</li>
+<li>[fix] Solves the issue where the locationPathName generated by <code>StripAOTDllCommand</code> is not standardized, causing incompatibility with some plugins like the Embedded Browser.</li>
+<li>[fix] Fixes the bug where deleting the <code>TUANJIE_2022</code> macro in Unity Engine 1.1.0 does not copy the pruned AOT assembly.</li>
+<li>[fix] Fixes the bug where <code>_ReversePInvokeMethod_XXX</code> functions do not set <code>Il2CppThreadContext</code>, causing a crash when obtaining thread variables from native threads.</li>
+<li>[fix] Fixes the bug where iOS platform mono-related header files are not found when the development build option is enabled.</li>
+</ul>
+<h2 id="521">5.2.1</h2>
+<p>Release Date: 2024-4-7.</p>
+<h3 id="runtime-15">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where stack logs are not printed on the WebGL platform.</li>
+<li>[fix] Fixes the bug where <code>RuntimeConfig::GetRuntimeOption</code> incorrectly returns <code>s_threadFrameStackSize</code> for <code>InterpreterThreadExceptionFlowSize</code>.</li>
+</ul>
+<h3 id="editor-9">Editor</h3>
+<ul>
+<li>[opt] Sets <code>mod.EnableTypeDefFindCache = true</code> in <code>LoadModule</code>, reducing the time to calculate bridge functions to one-third of the original.</li>
+<li>[fix] Fixes the bug where renaming the xcode project file to <code>Tuanjie-iPhone.xcodeproj</code> when exporting for the Unity Engine platform causes xcode project construction to fail.</li>
+</ul>
+<h2 id="520">5.2.0</h2>
+<p>Release Date: 2024-3-25.</p>
+<h3 id="runtime-16">Runtime</h3>
+<ul>
+<li>[new] Supports the Unity Engine.</li>
+<li>[new] Supports function pointers, supporting IL2CPP_TYPE_FNPTR type.</li>
+<li>[fix] Fixes the bug where the <code>SetMdArrElementVarVar_ref</code> instruction does not SetWriteBarrier.</li>
+<li>[fix] Fixes the bug where <code>InvokeSingleDelegate</code> crashes when calling a generic function without supplementary metadata.</li>
+<li>[fix] Fixes the bug where <code>InterpreterDelegateInvoke</code> crashes when calling a delegate pointing to a generic function without supplementary metadata.</li>
+<li>[fix] Fixes the bug where <code>RawImage::GetBlobFromRawIndex</code> fails when the BlobStream is empty.</li>
+<li>[change] Refactorizes the metadata index design, allowing up to 3 64M dlls, 16 16M dlls, 64 4M dlls, and 255 1M dlls to be allocated.</li>
+</ul>
+<h3 id="editor-10">Editor</h3>
+<ul>
+<li>[new] Supports the Unity Engine.</li>
+<li>[fix] Fixes the bug where <code>GenericArgumentContext</code> does not support <code>ElementType.FnPtr</code>.</li>
+<li>[change] Adds the <code>[Preserve]</code> attribute to RuntimeApi to prevent  it from being pruned.</li>
+</ul>
+<h2 id="510">5.1.0</h2>
+<p>Release Date: 2024-2-26.</p>
+<h3 id="runtime-17">Runtime</h3>
+<ul>
+<li>[fix] Fixes the runtime error caused by not implementing <code>System.ByReference</code>1's .ctor and get_Value functions in 2021, where il2cpp runs normally through special instinct functions.</li>
+<li>[opt] Optimizes metadata loading by delaying the loading of some metadata, reducing the execution time of <code>Assembly::Load</code> by approximately 30%.</li>
+<li>[change] Changes <code>tempRet</code> from a local variable in <code>Interpreter::Execute</code> to a local variable in <code>CallDelegateInvoke_xxx</code>, reducing the possibility of stack overflow when nesting is too deep.</li>
+</ul>
+<h2 id="500">5.0.0</h2>
+<p>Release Date: 2024-1-26.</p>
+<h3 id="runtime-18">Runtime</h3>
+<ul>
+<li>[new] Restores support for 2019.</li>
+<li>[fix] Fixes the bug where dlls are not loaded in dependency order, and since the assembly list at the time of image creation is cached, if dependent assemblies are loaded after this assembly, delayed access may result in <code>TypeLoadedException</code> due to not being in the cached assembly list.</li>
+</ul>
+<h3 id="editor-11">Editor</h3>
+<ul>
+<li>[new] Restores support for 2019.</li>
+<li>[new] Supports building 2019 on the iOS platform in source form.</li>
+<li>[new] Adds AOTAssemblyMetadataStripper to remove non-generic function metadata from AOT dlls.</li>
+<li>[new] Adds MissingMetadataChecker to check for missing types or function metadata.</li>
+<li>[opt] Optimizes AOTReference calculations; if all generic parameters of a generic are class-constrained, they are not added to the set of metadata that needs to be supplemented.</li>
+<li>[change] Makes some adjustments to support the Unity Engine (note that the il2cpp_plus branch supporting the Unity Engine has not been made public).</li>
+</ul>
+<h2 id="4015">4.0.15</h2>
+<p>Release Date: 2024-1-2.</p>
+<h3 id="runtime-19">Runtime</h3>
+<ul>
+<li>[fix] Fixes the serious bug where the size of the instance of a not fully instantiated generic class is calculated as <code>sizeof(void*)</code>, resulting in an invalid and excessively large instance. This causes an error when using the generic base class instance to overwrite the instance type value set during <code>LayoutFieldsLocked</code> in <code>UpdateInstanceSizeForGenericClass</code>.</li>
+<li>[change] Supports printing hot update stacks, although the order is not quite correct.</li>
+<li>[change] Replaces IL2CPP_MALLOC with HYBRIDCLR_MALLOC and similar allocation functions.</li>
+<li>[refactor] Refactorizes the Config interface to统一ly retrieve and set options through <code>GetRuntimeOption</code> and <code>SetRuntimeOption</code>.</li>
+<li>[opt] Removes unnecessary memset operations on structures for <code>NewValueTypeVar</code> and <code>NewValueTypeInterpVar</code> instructions.</li>
+</ul>
+<h3 id="editor-12">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where entering <code>-nullable:enable</code> in Additional Compiler Arguments throws an <code>InvalidCastException</code> in the Editor. Reported at <a href="https://github.com/focus-creative-games/hybridclr/issues/116">https://github.com/focus-creative-games/hybridclr/issues/116</a></li>
+<li>[fix] Fixes the error: <code>BuildFailedException: Build path contains a project previously built without the &quot;Create Visual Studio Solution&quot;</code></li>
+<li>[opt] Optimizes bridge function generation by mapping isomorphic structs to the same structure, reducing the number of bridge functions by 30-35%.</li>
+<li>[change] <code>StripAOTDllCommand</code> no longer sets the <code>BuildScriptsOnly</code> option when exporting.</li>
+<li>[change] Adjusts the display content of the Installer window.</li>
+<li>[refactor] Centralizes the functionality of setting hybridclr parameters in RuntimeApi through <code>GetRuntimeOption</code> and <code>SetRuntimeOption</code> functions.</li>
+</ul>
+<h2 id="4014">4.0.14</h2>
+<p>Release Date: 2023-12-11.</p>
+<h3 id="runtime-20">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where optimizing the <code>box; brtrue|brfalse</code> sequence unconditionally converts to an unconditional branch statement when the type is a class or nullable type.</li>
+<li>[fix] Fixes the bug where <code>ClassFieldLayoutCalculator</code> does not release value objects in each key-value pair of <code>_classMap</code>, causing a memory leak.</li>
+<li>[fix] Fixes the bug where calculating the native_size of a struct with <code>ExplicitLayout</code> is incorrect.</li>
+<li>[fix] Fixes the bug where when there are virtual functions with identical signatures and virtual generic functions, the override calculation does not consider the generic signature, incorrectly returning a non-matching function, resulting in an incorrect vtable.</li>
+<li>[fix][2021] Fixes the bug where when the faster (smaller) build option is enabled, some fully generic shared AOT functions do not use supplementary metadata to set function pointers, causing errors when called.</li>
+</ul>
+<h2 id="4013">4.0.13</h2>
+<p>Release Date: 2023-11-27.</p>
+<h3 id="runtime-21">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>ConvertInvokeArgs</code> might pass non-aligned args, causing <code>CopyStackObject</code> to crash on platforms like armv7 that require memory alignment.</li>
+<li>[fix] Fixes the serious bug where calculating <code>ClassFieldLayout</code> when the size is specified by <code>StructLayout</code>.</li>
+<li>[fix] Fixes the bug where instructions like <code>bgt</code> do not double-negate the judgment, causing incorrect branch execution when comparing floating-point numbers with NaN due to不对称性.</li>
+<li>[fix] Fixes the serious bug where <code>Class::FromGenericParameter</code> incorrectly sets <code>thread_static_fields_size=-1</code>, causing ThreadStatic memory allocation for it.</li>
+<li>[opt] Allocates <code>Il2CppGenericInst</code>统一ly using <code>MetadataCache::GetGenericInst</code> to allocate unique pool objects, optimizing memory allocation.</li>
+<li>[opt] Since some Il2CppGenericInst in the Interpreter uses <code>MetadataCache::GetGenericInst</code> uniformly, compare <code>Il2CppGenericContext</code> by directly comparing class_inst and method_inst pointers.</li>
+</ul>
+<h3 id="editor-13">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where pruning aot dll results in an exception when generating bridge functions if netstandard is referenced.</li>
+<li>[fix] Fixes the bug where unusual field names result in compilation errors in the generated bridge function code files.</li>
+<li>[change] Removes the unnecessaryDatas~/Templates directory, using the original files as templates directly.</li>
+<li>[refactor] Refactorizes <code>AssemblyCache</code> and <code>AssemblyReferenceDeepCollector</code> to eliminate redundant code.</li>
+</ul>
+<h2 id="4012">4.0.12</h2>
+<p>Release Date: 2023-11-02.</p>
+<h3 id="editor-14">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug in <code>BashUtil.RemoveDir</code> causing Installer installation to fail.</li>
+</ul>
+<h2 id="4011">4.0.11</h2>
+<p>Release Date: 2023-11-02.</p>
+<h3 id="runtime-22">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where when full generic sharing is enabled, for some <code>MethodInfo</code>, since <code>methodPointer</code> and <code>virtualMethodPointer</code> use the interpreter function with supplementary metadata, while <code>invoker_method</code> remains in the call form supporting full generic sharing, causing <code>invoker_method</code> to mismatch with <code>methodPointer</code> and <code>virtualMethodPointer</code>.</li>
+<li>[fix] Fixes the bug where <code>Il2CppGenericContextCompare</code> only compares inst pointers, causing a large number of duplicate generic functions in the hot update module.</li>
+<li>[fix] Fixes the bug where <code>MethodInfo</code> is not correctly set when full generic sharing is enabled.</li>
+</ul>
+<h3 id="editor-15">Editor</h3>
+<ul>
+<li>[new] Checks if the currently installed libil2cpp version matches the package version to avoid issues when upgrading the package without reinstalling.</li>
+<li>[new] <code>Generate</code> supports netstandard.</li>
+<li>[fix] Fixes the bug where <code>ReversePInvokeWrap</code> generates unnecessarily, parsing referenced dlls, causing parsing errors if aot dll references netstandard.</li>
+<li>[fix] Fixes the bug where <code>BashUtil.RemoveDir</code> occasionally fails to delete directories. Adds multiple retries.</li>
+<li>[fix] Fixes the bug where bridge function calculation does not reduce function parameter types, resulting in multiple functions with the same signature.</li>
+</ul>
+<h2 id="4010">4.0.10</h2>
+<p>Release Date: 2023-10-12.</p>
+<h3 id="runtime-23">Runtime</h3>
+<ul>
+<li>[merge][il2cpp] Merges il2cpp changes from versions 2022.3.10 to 2022.3.11f1, fixing incompatibility issues with version 2022.3.11.</li>
+</ul>
+<h2 id="409">4.0.9</h2>
+<p>Release Date: 2023-10-11.</p>
+<h3 id="runtime-24">Runtime</h3>
+<ul>
+<li>[merge][il2cpp][fix] Merges il2cpp changes from versions 2021.3.29 to 2021.3.31f1, fixing incompatibility issues with version 2021.3.31.</li>
+<li>[merge][il2cpp] Merges il2cpp changes from versions 2022.3.7 to 2022.3.10f1.</li>
+</ul>
+<h3 id="editor-16">Editor</h3>
+<ul>
+<li>[fix] Fixes the compilation error with <code>AddLil2cppSourceCodeToXcodeproj2022OrNewer</code> on the iOS platform for Unity 2022 versions.</li>
+</ul>
+<h2 id="408">4.0.8</h2>
+<p>Release Date: 2023-10-10.</p>
+<h3 id="runtime-25">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where calculating the bridge function signature for value type generic bridge functions incorrectly replaces the value type generic parameter type with the signature, resulting in an inconsistent signature with the Editor calculation.</li>
+<li>[fix][refactor] Changes RuntimeApi related functions from PInvoke to InternalCall, solving the issue of reloading libil2cpp.a when calling RuntimeApi on Android platforms.</li>
+</ul>
+<h3 id="editor-17">Editor</h3>
+<ul>
+<li>[refactor] Changes RuntimeApi related functions from PInvoke to InternalCall .</li>
+<li>[refactor] Adjusts some non-standard namespace names in the HybridCLR.Editor module.</li>
+</ul>
+<h2 id="407">4.0.7</h2>
+<p>Release Date: 2023-10-09.</p>
+<h3 id="runtime-26">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>initobj</code> calls <code>CopyN</code>, but <code>CopyN</code> does not consider object memory alignment, which may cause unaligned access exceptions on platforms like 32-bit.</li>
+<li>[fix] Fixes the bug where calculating the bridge function signature for not fully instantiated generic functions crashes.</li>
+<li>[fix] Fixes the bug where <code>GenericMethod::CreateMethodLocked</code> has issues when the Il2cpp code generation option is faster (smaller) for versions 2021 and 2022.</li>
+<li>[remove] Removes all array-related instructions with int64_t indices to simplify the code.</li>
+<li>[remove] Removes the <code>ldfld_xxx_ref</code> series of instructions.</li>
+</ul>
+<h3 id="editor-18">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where generating bridge functions does not generate bridge functions for an aot assembly if the hot update assembly does not directly reference any code, resulting in a <code>NotSupportNative2Managed</code> exception.</li>
+<li>[fix] Fixes the bug where copying files fails on Mac due to excessively long paths.</li>
+<li>[fix] Fixes the bug where publishing for PS5 targets does not process <code>ScriptingAssemblies.json</code>.</li>
+<li>[change] Clears the pruned aot dll directory when packaging.</li>
+</ul>
+<h2 id="406">4.0.6</h2>
+<p>Release Date: 2023-09-26.</p>
+<h3 id="runtime-27">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug with versions 2021 and 2022 when full generic sharing is enabled.</li>
+<li>[fix] Fixes the bug where loading a PlaceHolder Assembly does not increase <code>assemblyVersion</code>, causing <code>Assembly::GetAssemblies()</code> to incorrectly obtain an old assembly list.</li>
+</ul>
+<h2 id="405">4.0.5</h2>
+<p>Release Date: 2023-09-25.</p>
+<h3 id="runtime-28">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>Transform</code> does not destruct <code>pendingFlows</code>, causing a memory leak.</li>
+<li>[fix] Fixes the bug where <code>SetMdArrElement</code> does not distinguish between structures with and without ref.</li>
+<li>[fix] Fixes the bug where <code>CpobjVarVAr_WriteBarrier_n_4</code> does not set the size.</li>
+<li>[fix] Fixes the bug where calculating interface member function slots does not consider static and similar functions.</li>
+<li>[fix] Fixes the bug where <code>ExplicitLayout</code> is not set for layout.alignment in version 2022, resulting in a size of 0.</li>
+<li>[fix] Fixes the bug where <code>InterpreterInvoke</code> in full generic sharing may have inconsistent <code>methodPointer</code> and <code>virtualMethodPointer</code> for class types, causing an error in incrementing the this pointer by 1.</li>
+<li>[fix] Fixes the bug where <code>ldobj</code> does not expand data into an int when T is a type like byte with a size less than 4.</li>
+<li>[fix] Fixes the bug where <code>CopySize</code> does not consider memory alignment issues.</li>
+<li>[opt] Optimizes <code>stelem</code> when the element is a larger struct, unifying it as a structure containing ref.</li>
+<li>[opt] Adjusts the default memory block size of <code>TemporaryMemoryArena</code> from 1M to 8K.</li>
+<li>[opt] Changes <code>Assembly::GetAllAssemblies()</code> in <code>Image::Image</code> to <code>Assembly::GetAllAssemblies(AssemblyVector&amp;)</code>, avoiding the creation of an assembly snapshot and preventing unnecessary memory leaks.</li>
+</ul>
+<h3 id="editor-19">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>DllImport</code> for the StandaloneLinux platform has incorrect dllName and pruned dll path errors.</li>
+<li>[change] For Unity versions with minor incompatibility, installation is no longer prohibited, but a warning is displayed instead.</li>
+<li>[fix] Fixes the bug where <code>MetaUtil.ToShareTypeSig</code> calculates <code>Ptr</code> and <code>ByRef</code> as <code>IntPtr</code> in bridge function calculations, which should correctly be <code>UIntPtr</code>.</li>
+</ul>
+<h2 id="404">4.0.4</h2>
+<p>Release Date: 2023-09-11.</p>
+<h3 id="runtime-29">Runtime</h3>
+<ul>
+<li>[new][platform] Fully supports all platforms, including UWP and PS5.</li>
+<li>[fix][serious] Fixes the bug where calculating the bridge function signature for interpreter parts of enum types is incorrect.</li>
+<li>[fix] Fixes compilation errors on some platforms.</li>
+<li>[fix] Fixes the bug where converting STOBJ instructions does not correctly handle incremental GC.</li>
+<li>[fix] Fixes the bug where the <code>StindVarVar_ref</code> instruction does not correctly set WriteBarrier.</li>
+<li>[fix] Fixes the thread safety issue where <code>GenericMethod::CreateMethodLocked</code> calls <code>vm::MetadataAllocGenericMethod()</code> without holding the <code>s_GenericMethodMutex</code> lock in version 2020.</li>
+</ul>
+<h3 id="editor-20">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>AddLil2cppSourceCodeToXcodeproj2021OrOlder</code> includes two ThreadPool.cpp files in different directories, causing compilation errors in Unity 2020.</li>
+<li>[fix] Fixes the bug where obtaining <code>BuildGroupTarget</code> from <code>EditorUserBuildSettings.selectedBuildTargetGroup</code> is incorrect.</li>
+<li>[fix] <code>StripAOTDllCommand</code> generates AOT dlls with the current Player settings to avoid serious mismatches between supplementary metadata and bridge function generation when packaging with development enabled.</li>
+<li>[change] To better support all platforms, adjusts the implementation of dllName in RuntimeApi.cs to default to <code>__Internal</code>.</li>
+<li>[change] To better support all platforms, all AOT dll pruning since 2021 is done through MonoHook copying.</li>
+</ul>
+<h2 id="403">4.0.3</h2>
+<p>Release Date: 2023-08-31.</p>
+<h3 id="editor-21">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug in bridge function calculation.</li>
+</ul>
+<h2 id="402">4.0.2</h2>
+<p>Release Date: 2023-08-29.</p>
+<h3 id="runtime-30">Runtime</h3>
+<ul>
+<li>[fix][serious] Fixes the bug in <code>LdobjVarVar_ref</code> instruction. This bug was introduced by incremental GC code.</li>
+<li>[fix] Fixes the bug where <code>ResolveField</code> obtaining a Field as nullptr is not handled, causing a crash.</li>
+<li>[fix] Fixes the bug where AOT and interpreter interface explicitly implement parent interface functions are not correctly handled.</li>
+</ul>
+<h2 id="401">4.0.1</h2>
+<p>Release Date: 2023-08-28.</p>
+<h3 id="runtime-31">Runtime</h3>
+<ul>
+<li>[fix] Fixes the compilation error when incremental GC is enabled in version 2020.</li>
+</ul>
+<h2 id="400">4.0.0</h2>
+<p>Release Date: 2023-08-28.</p>
+<h3 id="runtime-32">Runtime</h3>
+<ul>
+<li>[new] Supports incremental GC.</li>
+<li>[refactor] Refactorizes bridge functions to fully support all platforms supported by il2cpp.</li>
+<li>[opt] Significantly optimizes Native2Managed direction parameter passing.</li>
+</ul>
+<h3 id="editor-22">Editor</h3>
+<ul>
+<li>[change] Removes incremental GC option checks.</li>
+<li>[refactor] Refactorizes bridge function generation.</li>
+</ul>
+<h2 id="342">3.4.2</h2>
+<p>Release Date: 2023-08-14.</p>
+<h3 id="runtime-33">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug in <code>RawImage::LoadTables</code> reading <code>_4byteGUIDIndex</code>.</li>
+<li>[version] Supports version 2022.3.7.</li>
+<li>[version] Supports version 2021.3.29.</li>
+</ul>
+<h3 id="editor-23">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where calculating AOTGenericReference does not consider generic calls on generics, resulting in fewer calculated generics and supplementary metadata.</li>
+</ul>
+<h2 id="341">3.4.1</h2>
+<p>Release Date: 2023-07-31.</p>
+<h3 id="runtime-34">Runtime</h3>
+<ul>
+<li>[fix] Fixes the memory visibility issue in <code>InitializeRuntimeMetadata</code>.</li>
+<li>[fix] Fixes the bug where <code>CustomAttribute</code> does not correctly handle parent NamedArg, causing a crash.</li>
+<li>[opt] Optimizes the code for Transform Instinct instructions, quickly looking up in the HashMap instead of matching one by one.</li>
+</ul>
+<h3 id="editor-24">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where <code>FilterHotFixAssemblies</code> only compares the tail of the assembly name, causing an assembly to be unexpectedly filtered if it matches the tail of an AOT assembly.</li>
+<li>[change] Checks that the assembly name in the hot update assembly list configuration in Settings is not empty.</li>
+</ul>
+<h2 id="340">3.4.0</h2>
+<p>Release Date: 2023-07-17.</p>
+<h3 id="runtime-35">Runtime</h3>
+<ul>
+<li>[version] Supports versions 2021.3.28 and 2022.3.4.</li>
+<li>[opt] Removes unnecessary memset after allocating <code>_StackBase</code> in <code>MachineState::InitEvalStack</code>.</li>
+<li>[fix] Fixes the exception mechanism bug.</li>
+<li>[fix] Fixes the bug where <code>CustomAttribute</code> does not support Type[] type parameters.</li>
+<li>[fix] Fixes the issue where the new string(xxx) syntax is not supported.</li>
+<li>[refactor] Refactorizes VTableSetup implementation.</li>
+<li>[fix] Fixes the bug where functions explicitly implementing parent interfaces in subinterfaces are not calculated.</li>
+<li>[opt] Lazily initializes <code>CustomAttributeData</code> instead of initializing all at load time, significantly reducing <code>Assembly.Load</code> time.</li>
+<li>[fix] Fixes the bug where new byte[]{a,b,c...} initialization of longer byte[] data returns incorrect data in version 2022.</li>
+</ul>
+<h3 id="editor-25">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where calculating bridge functions does not consider Native2Managed calls that may be included in generic class member functions.</li>
+<li>[change] The default output paths for link.xml and AOTGenericReferences.cs are changed to HybridCLRGenerate to avoid confusion  with the top-level HybridCLRData.</li>
+<li>[fix] Fixes the bug where the include path in the lump file generated on Windows uses \ as the directory separator, causing path not found errors when synchronized to Mac.</li>
+<li>[refactor] Refactorizes the Installer.</li>
+</ul>
+<h2 id="330">3.3.0</h2>
+<p>Release Date: 2023-07-03.</p>
+<h3 id="runtime-36">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where memory allocated by localloc is not released.</li>
+<li>[change] <code>MachineState</code> uses RegisterRoot to register the execution stack, avoiding GC scanning of the entire stack.</li>
+<li>[opt] Optimizes the performance of Managed2NativeCallByReflectionInvoke by calculating the parameter passing method in advance.</li>
+<li>[refactor] Refactorizes ConvertInvokeArgs.</li>
+</ul>
+<h3 id="editor-26">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where compiling libil2cpp.a for 2020-2021 does not include brotli-related code files, resulting in compilation errors.</li>
+<li>[fix] Fixes the bug where exporting an xcode project includes absolute paths, causing path not found errors when compiled on other machines.</li>
+<li>[fix] Solves the instability issues in generating LinkXml, MethodBridge, AOTGenericReference, and ReversePInvokeWrap.</li>
+<li>[fix] Fixes the exception when opening the Installer with an incompatible version.</li>
+<li>[change] When hybridclr is disabled, packaging iOS no longer modifies the exported xcode project.</li>
+</ul>
+<h2 id="321">3.2.1</h2>
+<h3 id="runtime-37">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where il2cpp TypeNameParser does not remove escape characters '' from type names, causing nested child types to not be found.</li>
+</ul>
+<h3 id="editor-27">Editor</h3>
+<ul>
+<li>[new] The Installer interface adds display of package version.</li>
+<li>[new] CompileDll adds MacOS, Linux, and WebGL targets.</li>
+<li>[fix] Fixes the help documentation link errors after refactoring the documentation site.</li>
+<li>[change] Adds using qualifiers to Analyzer to resolve compilation conflicts with project types that have the same name.</li>
+</ul>
+<h2 id="320">3.2.0</h2>
+<h3 id="runtime-38">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where if an Assembly is not in the PlaceHolder, and there is no interpreter stack, <code>Class::resolve_parse_info_internal</code> cannot find the type due to not being in the Assembly list.</li>
+</ul>
+<h3 id="editor-28">Editor</h3>
+<ul>
+<li>[new] Supports packaging iOS directly from source code, no longer needing to compile libil2cpp.a separately.</li>
+<li>[opt] Optimizes error prompts for incompatible versions, no longer throwing exceptions, but displaying &quot;incompatible with the current version&quot;.</li>
+</ul>
+<h2 id="311">3.1.1</h2>
+<h3 id="runtime-39">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where InterpreterModule::Managed2NativeCallByReflectionInvoke calls value type member functions in 2021 and higher versions, with an extra this=this-1 operation.</li>
+<li>[fix] Fixes the bug where parsing CustomAttribute Enum[] type fields.</li>
+<li>[fix] Fixes the bug where invoking the Invoke function of a closed Delegate via reflection in 2021 and higher versions does not repair the target pointer.</li>
+</ul>
+<h3 id="editor-29">Editor</h3>
+<ul>
+<li>[fix] Fixes compilation errors for Win32, Android32, and WebGL platforms.</li>
+<li>[fix] Fixes the bug where calculating bridge functions does not consider supplementary metadata generic instantiation, which may access some non-public functions, resulting in fewer necessary bridge functions being generated.</li>
+<li>[opt] When generating AOTGenericReferences, the supplementary metadata assembly list is changed from comments to List<string> lists for easy direct use in code.</string></li>
+<li>[change] CheckSettings no longer automatically sets Api Compatible Level.</li>
+</ul>
+<h2 id="310">3.1.0</h2>
+<h3 id="runtime-40">Runtime</h3>
+<ul>
+<li>[rollback] Reverts support for Unity 2020.3.x.</li>
+<li>[fix] Fixes the WebGL platform ABI bug.</li>
+</ul>
+<h3 id="editor-30">Editor</h3>
+<ul>
+<li>[rollback] Reverts support for Unity 2020.3.x.</li>
+</ul>
+<h2 id="303">3.0.3</h2>
+<h3 id="runtime-41">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where Enum::GetValues returns incorrect values.</li>
+</ul>
+<h2 id="302">3.0.2</h2>
+<h3 id="runtime-42">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where creating a memory snapshot in Memory Profiler crashes.</li>
+</ul>
+<h3 id="editor-31">Editor</h3>
+<ul>
+<li>[remove] Removes the <code>HybridCLR/CreateAOTDllSnapshot</code> menu.</li>
+</ul>
+<h2 id="301">3.0.1</h2>
+<h3 id="runtime-43">Runtime</h3>
+<ul>
+<li>[new] Supports version 2022.3.0.</li>
+</ul>
+<h2 id="300">3.0.0</h2>
+<h3 id="runtime-44">Runtime</h3>
+<ul>
+<li>[fix] Fixes the bug where accessing CustomData fields and values is not supported.</li>
+<li>[remove] Removes support for 2019 and 2020 versions.</li>
+</ul>
+<h3 id="editor-32">Editor</h3>
+<ul>
+<li>Changes the package name to com.code-philosophy.hybridclr.</li>
+<li>Removes the UnityFS plugin.</li>
+<li>Removes the Zip plugin.</li>
+<li>Adjusts the HybridCLR menu location.</li>
+</ul>
+<h2 id="242">2.4.2</h2>
+<h3 id="runtime-45">Runtime</h3>
+<ul>
+<li>[version] Supports 2020.3.48, the last 2020 LTS version.</li>
+<li>[version] Supports 2021.3.25.</li>
+</ul>
+<h2 id="241">2.4.1</h2>
+<h3 id="runtime-46">Runtime</h3>
+<h3 id="editor-33">Editor</h3>
+<ul>
+<li>[fix] Fixes the遗漏 RELEASELOG.md.meta file issue.</li>
+</ul>
+<h2 id="240">2.4.0</h2>
+<h3 id="runtime-47">Runtime</h3>
+<h3 id="editor-34">Editor</h3>
+<ul>
+<li>[new] CheckSettings checks ScriptingBackend and ApiCompatibleLevel, switching to the correct values.</li>
+<li>[new] Adds MsvcStdextWorkaround.cs to solve stdext compilation errors in 2020 vs.</li>
+<li>[fix] Fixes the bug where calculating bridge function signatures for structs containing only one float or double field is incorrect on arm64.</li>
+</ul>
+<h2 id="231">2.3.1</h2>
+<h3 id="runtime-48">Runtime</h3>
+<h3 id="editor-35">Editor</h3>
+<ul>
+<li>[fix] Fixes the bug where copying libil2cpp locally still downloads and installs from the repository.</li>
+</ul>
+<h2 id="230">2.3.0</h2>
+<h3 id="runtime-49">Runtime</h3>
+<h3 id="editor-36">Editor</h3>
+<ul>
+<li>[new] The Installer supports copying modified libil2cpp from a local directory.</li>
+<li>[fix] Fixes the bug where the MonoBleedingEdge subdirectory in version 2019 includes files with excessively long paths, causing the Installer to fail when copying files.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

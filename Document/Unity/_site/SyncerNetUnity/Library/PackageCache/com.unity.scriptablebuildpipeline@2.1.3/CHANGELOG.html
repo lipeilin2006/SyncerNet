@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this package will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="213---2024-04-09">[2.1.3] - 2024-04-09</h2>
+<ul>
+<li>Fixed error where key was already in a dictionary and we try to add it again</li>
+<li>Fixed issue where SpriteAtlas addressable bundle size is doubled if previous build cache is not cleared</li>
+</ul>
+<h2 id="212---2024-01-19">[2.1.2] - 2024-01-19</h2>
+<ul>
+<li>Fixed a bug where calculating scene dependency data could throw an error</li>
+<li>Fixed a bug that lead to builds being much slower than they should be</li>
+<li>Fixed issue where &quot;Build Task CalculateSceneDependencyData failed with exception: Object reference not set to an instance of an object&quot; is thrown when building.</li>
+</ul>
+<h2 id="211---2023-12-11">[2.1.1] - 2023-12-11</h2>
+<ul>
+<li>Fixing error in GeBuildWindowExtension in newer versions of the Editor</li>
+</ul>
+<h2 id="210---2023-10-30">[2.1.0] - 2023-10-30</h2>
+<ul>
+<li>Fixing compile issue with custom build script in ECS package.</li>
+</ul>
+<h2 id="201---2023-08-30">[2.0.1] - 2023-08-30</h2>
+<ul>
+<li>Fix issue where source textures aren't stripped when assets reference explicit packed sprites.</li>
+</ul>
+<h2 id="1219---2023-08-16">[1.21.9] - 2023-08-16</h2>
+<ul>
+<li>Removed Cache ServerV1 support</li>
+</ul>
+<h2 id="1218---2023-08-03">[1.21.8] - 2023-08-03</h2>
+<ul>
+<li>Fix CalculateSceneDependencyData given changed sprite atlas</li>
+</ul>
+<h2 id="1217---2023-06-14">[1.21.7] - 2023-06-14</h2>
+<ul>
+<li>Building addressables for il2cpp fails with unclear error when il2cpp not installed</li>
+<li>Fixed issue where InvalidKeyException occurs during the UpdateBundleObjectLayout build task.</li>
+</ul>
+<h2 id="1215---2023-05-03">[1.21.5] - 2023-05-03</h2>
+<ul>
+<li>When the &quot;Strip Unity Version&quot; build flag is used, the Unity Version is stripped for the archive file header and serialized files in the bundle.</li>
+<li>Fixed issue when changing dependencies of an asset change from being explicit to implicit and non-recursive dependencies enabled, and cache is available. Can result in incorrect depdencies being built incorrectly.</li>
+<li>Improvements to the documentation</li>
+<li>Fixed bug where source textures were getting included in the build when a SpriteAtlas was also included</li>
+</ul>
+<h2 id="1213---2023-01-09">[1.21.3] - 2023-01-09</h2>
+<ul>
+<li>Changed calculating AssetDependency to generate dependencies by Object instead of per Asset</li>
+</ul>
+<h2 id="1211---2022-12-09">[1.21.1] - 2022-12-09</h2>
+<ul>
+<li>Fixed issue where toggling &quot;Optimize Mesh Data&quot; in Project Settings doesn't invalidate build pipeline cache</li>
+</ul>
+<h2 id="1210---2022-10-03">[1.21.0] - 2022-10-03</h2>
+<ul>
+<li>Added public APIs to support more detailed Build Layout reports</li>
+</ul>
+<h2 id="1202---2022-05-24">[1.20.2] - 2022-05-24</h2>
+<ul>
+<li>Fix an issue where Scene build ordering would cause Scenes to not load.</li>
+</ul>
+<h2 id="1201---2022-05-03">[1.20.1] - 2022-05-03</h2>
+<ul>
+<li>Fix an issue where cached Sprite state could be stale.</li>
+</ul>
+<h2 id="1200---2022-04-22">[1.20.0] - 2022-04-22</h2>
+<ul>
+<li>Adds build support for Content Files.
+<ul>
+<li>New public methods.
+<ul>
+<li>DefaultBuildTasks.ContentFileCompatible</li>
+</ul>
+</li>
+<li>New public classes.
+<ul>
+<li>ClusterOutput</li>
+<li>ContentFileIdentifiers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1196---2021-10-21">[1.19.6] - 2021-10-21</h2>
+<ul>
+<li>Fixed an issue where the Build Progress Bar would not go away after the build is complete.</li>
+</ul>
+<h2 id="1195---2021-10-21">[1.19.5] - 2021-10-21</h2>
+<ul>
+<li>Fixed an issue where MonoScript bundle will attempt to pull in data it should not have.</li>
+<li>Fixed an issue where NONRECURSIVE_DEPENDENCY_DATA would not properly calculate Shader Variants from Scenes.</li>
+<li>Improved ArchiveAndCompress path handling to detect too long paths and log errors.</li>
+<li>Improve performance of UpdateBundleObjectLayout build task.</li>
+<li>Improved BuildCache to rebuild cache entries in case of exceptions instead of failing the build.</li>
+</ul>
+<h2 id="1193---2021-09-14">[1.19.3] - 2021-09-14</h2>
+<ul>
+<li>Fixed an edge case where Link.xml ordering was not deterministic causing incremental player rebuilds to occur unnecessarily.</li>
+<li>Fixed an issue where Cache Server integration was not update to use USerializer.</li>
+</ul>
+<h2 id="1192---2021-07-20">[1.19.2] - 2021-07-20</h2>
+<ul>
+<li>Fixed an edge case where moving a scene would fail the build.</li>
+<li>Added additional details to the Trace Event Profiler output where the data was missing or unclear.</li>
+<li>Fixed an issue where NONRECURSIVE_DEPENDENCY_DATA would return NonRecursive bundle dependencies instead of the expected Recursive bundle dependencies.</li>
+<li>Updated version define for ENABLE_TYPE_HASHING to match backported Unity 2020.2.2f1 version.</li>
+<li>Fixed USerialize bug with handling of Type[] containing null values.</li>
+<li>Fixed an issue where the hash for Scene bundles would be calculated with a few missing bytes, returning an incorrect hash.</li>
+<li>Fixed an edge case with NONRECURSIVE_DEPENDENCY_DATA in which Scene Bundles would be unable to load MonoScripts and log Missing Behaviour warnings at runtime.</li>
+<li>New Project Behavior Change: PrefabPacked bundles now use a header size of 2 bytes instead of 4 bytes to reduce file identifier collision frequency in large projects.
+<ul>
+<li>Previous behavior can be restored via the Scriptable Build Pipeline Preferences window.</li>
+</ul>
+</li>
+<li>New Preference: FileID Generator Seed allows you to set a seed for file identifier generation to avoid project specific collisions.</li>
+</ul>
+<h2 id="1191---2021-06-04">[1.19.1] - 2021-06-04</h2>
+<ul>
+<li>Improved performance of the GenerateBundlePacking build task.</li>
+<li>Updated version define for NONRECURSIVE_DEPENDENCY_DATA to match backported Unity 2019.4.19f1 version.</li>
+</ul>
+<h2 id="1190---2021-05-20">[1.19.0] - 2021-05-20</h2>
+<ul>
+<li>Replaced our use of BinaryFormatter with new &quot;USerialize&quot;
+<ul>
+<li>USerializer performance in synthetic tests is about 40x faster than BinaryFormatter</li>
+<li>Real world project tests have seen about 1.8x improvement of cold cache build times, and about 6x improvement of warm cache build times.</li>
+</ul>
+</li>
+<li>Fixed a case where internal type hash was not being cached correctly causing constant cold cache hits.</li>
+<li>Fixed a case where previous build results could influence a new build incorrectly by including the wrong dlls.</li>
+<li>Fixed a case where multiple scenes in the same asset bundle could generate invalid or incorrect dependencies and not load all necessary data.</li>
+<li>Minor fix for native tep profiling results to separate the event name from the event context and to properly string escape the context.</li>
+<li>Added the DisableVisibleSubAssetRepresentations build parameter.</li>
+</ul>
+<h2 id="1180---2021-04-08">[1.18.0] - 2021-04-08</h2>
+<ul>
+<li>Added an option to build MonoScripts into their own bundle reducing duplication and potential loading errors on certain project setups.</li>
+<li>Added a type remap in Link.xml generation for UnityEditor.MonoScript to the correct runtime type.</li>
+<li>Added an option to build bundles using Non-Recursive Dependency calculation methods.
+<ul>
+<li>This approach helps reduce asset bundle rebuilds and runtime memory consumption.</li>
+</ul>
+</li>
+</ul>
+<h2 id="1170---2021-03-03">[1.17.0] - 2021-03-03</h2>
+<ul>
+<li>Added [VersionedCallback] attribute for flagging build impacting changes to IProcessScene, IProcessSceneWithReport, IPreprocessShaders, and IPreprocessComputeShaders callbacks.</li>
+<li>Fixed an IndexOutOfRange exception thrown by the GenerateSubAssetPathMaps build task.</li>
+<li>Added faster code paths for common hashing operations.</li>
+<li>2019.4+ added additional threading usage for saving BuildCache data.</li>
+<li>Fixed an edge case where SerializeReference types used across assemblies were being code stripped incorrectly.</li>
+<li>Fixed a false positive cache hit when changing Player Setting's Graphics APIs .</li>
+</ul>
+<h2 id="1161---2021-01-27">[1.16.1] - 2021-01-27</h2>
+<ul>
+<li>Handling of communication error with cache server. Build will now continue, using the local cache only.</li>
+<li>Regression fix for index out of range error on Unity 2018.4</li>
+</ul>
+<h2 id="1160---2020-10-29">[1.16.0] - 2020-10-29</h2>
+<ul>
+<li>Added caching support for DOTS Subscene building</li>
+<li>Fixed an issue where DOTS Subscene lighting information was lost</li>
+</ul>
+<h2 id="1152---2021-01-20">[1.15.2] - 2021-01-20</h2>
+<ul>
+<li>Fixes for automated testing</li>
+</ul>
+<h2 id="1151---2020-10-29">[1.15.1] - 2020-10-29</h2>
+<ul>
+<li>Added support for per type caching and incremental rebuild triggers</li>
+</ul>
+<h2 id="1140---2020-10-21">[1.14.0] - 2020-10-21</h2>
+<ul>
+<li>Added API to build player scripts to a separate location from Temp or Output Folders.</li>
+</ul>
+<h2 id="1131---2020-09-24">[1.13.1] - 2020-09-24</h2>
+<ul>
+<li>Fixed an edge case where changing PlayerSettings.mipStripping did not rebuild asset bundles as required.</li>
+<li>Fixed an edge case where changing QualitySettings.maximumLODLevel did not rebuild scene bundles as required.</li>
+<li>Reduced unnecessary bundle rebuilds due to too much data in BuildReferenceMap</li>
+<li>Removed unnecessary memory overhead when hashing large data sets for caching.</li>
+<li>Fixed SpookyHash and improved it's performance when used on Unity 2020.1 and greater versions.</li>
+<li>SpookyHash will be the default hashing method in Scriptable Build Pipeline on Unity 2021.1 and greater.</li>
+<li>Contiguous Bundles will be Opt-Out in Addressables &amp; Scriptable Build Pipeline in Unity 2021.1 and greater.</li>
+</ul>
+<h2 id="1120---2020-09-15">[1.12.0] - 2020-09-15</h2>
+<ul>
+<li>Improved caching performance of the WriteSerializedFile build task with projects using many Prefabs in Scenes.</li>
+</ul>
+<h2 id="1112---2020-08-24">[1.11.2] - 2020-08-24</h2>
+<ul>
+<li>Improved thread handling of the Cache Save, Upload, and Prune operations.</li>
+</ul>
+<h2 id="1111---2020-08-11">[1.11.1] - 2020-08-11</h2>
+<ul>
+<li>Exposed the ScriptableBuildPipeline static class to allow setting per project properties from script.</li>
+<li>Fixed an edge case where pruning the build cache would not run in Unity's batchmode.</li>
+<li>Added Cache Server Config options to the Scriptable Build Pipeline UI.</li>
+</ul>
+<h2 id="1100---2020-07-28">[1.10.0] - 2020-07-28</h2>
+<ul>
+<li>Added IBundleBuildParameters.ContiguousBundles option, which when enabled will improve asset loading times.
+<ul>
+<li>In testing, performance improvements varied from 10% improvement over all, with improvements up to 50% for large complex assets such as extensive UI prefabs.</li>
+</ul>
+</li>
+<li>Updated HashingMethods to support Unicode string hashing.</li>
+</ul>
+<h2 id="190---2020-06-17">[1.9.0] - 2020-06-17</h2>
+<ul>
+<li>Fixed a null reference exception in GenerateBundleCommands.cs when attempting to sort an empty list</li>
+<li>LinkXmlGenerator moved to the Scriptable Build Pipeline package in the UnityEditor.Build.Pipeline.Utilities namespace.</li>
+<li>Added new option WriteLinkXML to BuildParameters to write out a link.xml file containing the type information used in the asset bundles for use in the Unity manage code stripping system.</li>
+<li>Improved performance of the GenerateBundlePacking task.</li>
+<li>Adding the IBuildLogger interface and BuildLog class to capture high-level build performance data, and output it to the Trace Event Format.</li>
+</ul>
+<h2 id="186---2020-06-11">[1.8.6] - 2020-06-11</h2>
+<ul>
+<li>Improve caching performance of the WriteSerializedFiles task</li>
+<li>Fixed bug where asset bundles fail to build when not using build cache.</li>
+<li>Fixed an issue where providing additional files for asset bundles required the internal name instead of the bundle name</li>
+</ul>
+<h2 id="184---2020-05-28">[1.8.4] - 2020-05-28</h2>
+<ul>
+<li>Updated CalculateAssetDependencyData to use a new fast path API for working with Asset Representations in 2020.2 and onward.</li>
+<li>Fix issue with backslashes in trace event profiler build log report</li>
+</ul>
+<h2 id="182---2020-05-21">[1.8.2] - 2020-05-21</h2>
+<ul>
+<li>Improve incremental build performance. Avoid copying archives from the build cache when source and destination creation timestamps are identical.</li>
+<li>Fix caching bug caused by an engine SpookyHash bug. MD5 hashing will be used until this issue is resolved.</li>
+<li>Improve caching performance of the ArchiveAndCompressBundles task</li>
+</ul>
+<h2 id="173---2020-05-20">[1.7.3] - 2020-05-20</h2>
+<ul>
+<li>Fix caching bug caused by an engine SpookyHash bug. MD5 hashing will be used until this issue is resolved.</li>
+</ul>
+<h2 id="172---2020-04-07">[1.7.2] - 2020-04-07</h2>
+<ul>
+<li>Merged in DOTS specific functionality into SBP core.</li>
+<li>Scriptable Build Pipeline settings now stored in ProjectSettings/ScriptableBuildPipeline.json</li>
+<li>Added option to remove extended debugging information from WriteResults before caching for better cache performance</li>
+<li>Added option to log Cache Misses to the console</li>
+<li>Switched to SpookyHash for Unity 2019.3 and higher for most hashing methods to edge out just a bit more performance</li>
+<li>Added multi-threading support to the archive and compress task</li>
+</ul>
+<h2 id="165-preview---2020-03-06">[1.6.5-preview] - 2020-03-06</h2>
+<ul>
+<li>Updated SBP DOTs preview version with latest SBP Release changes.</li>
+</ul>
+<h2 id="164-preview---2020-02-07">[1.6.4-preview] - 2020-02-07</h2>
+<ul>
+<li>Updated SBP DOTs preview version with latest SBP Release changes.</li>
+</ul>
+<h2 id="163-preview---2019-09-13">[1.6.3-preview] - 2019-09-13</h2>
+<ul>
+<li>Fixed an issue where switching platforms caused Scene &amp; Shader callbacks to no longer be called</li>
+<li>Improved error messaging when a task fails with an exception</li>
+<li>Removed ENABLE_SUBSCENE_IMPORTER define as everything has landed as of 2019.3.0b5</li>
+</ul>
+<h2 id="162-preview---2019-09-13">[1.6.2-preview] - 2019-09-13</h2>
+<ul>
+<li>Refactor of ImportedContent to be more flexible for adding custom content</li>
+</ul>
+<h2 id="161-preview---2019-09-12">[1.6.1-preview] - 2019-09-12</h2>
+<ul>
+<li>Added check for define ENABLE_SUBSCENE_IMPORTER</li>
+</ul>
+<h2 id="160-preview---2019-09-09">[1.6.0-preview] - 2019-09-09</h2>
+<ul>
+<li>Added support for DOTS SubScene Importer based asset bundles via ImportedContent property</li>
+<li>Added support for adding custom raw files to asset bundles via AddionalFiles property</li>
+</ul>
+<h2 id="1511---2020-03-05">[1.5.11] - 2020-03-05</h2>
+<ul>
+<li>Fixed poor performance of GenerateBundleCommands with large data sets.</li>
+</ul>
+<h2 id="1510---2020-03-13">[1.5.10] - 2020-03-13</h2>
+<ul>
+<li>Fixed issue where asset bundles in the build cache weren't having the correct bundle hash assigned to it.</li>
+</ul>
+<h2 id="159---2020-02-28">[1.5.9] - 2020-02-28</h2>
+<ul>
+<li>Updated CompatibilityAssetBundleManifest so hash version is properly serializable.</li>
+<li>Renamed &quot;Build Cache&quot; options in the Preferences menu to &quot;Scriptable Build Pipeline&quot;</li>
+<li>Improved performance of the Scriptable Build Pipeline's archiving task.</li>
+</ul>
+<h2 id="157---2020-02-07">[1.5.7] - 2020-02-07</h2>
+<ul>
+<li>Updated code to remove obsolete code when used with Unity 2020.1 and newer.</li>
+</ul>
+<h2 id="156---2020-01-30">[1.5.6] - 2020-01-30</h2>
+<ul>
+<li>Fixed an issue where texture sources for non-packed sprites were being stripped incorrectly.</li>
+</ul>
+<h2 id="155---2020-01-21">[1.5.5] - 2020-01-21</h2>
+<ul>
+<li>Fixed an issue where texture sources for sprites were not being stripped from the build.</li>
+<li>Fixed an issue where scene changes weren't getting picked up in a content re-build.</li>
+</ul>
+<h2 id="154---2019-10-03">[1.5.4] - 2019-10-03</h2>
+<ul>
+<li>Fixed an edge case where Optimize Mesh would not apply to all meshes in the build.</li>
+<li>Fixed an edge case where Global Usage was not being updated with latest values from Graphics Settings.</li>
+</ul>
+<h2 id="153---2019-09-10">[1.5.3] - 2019-09-10</h2>
+<ul>
+<li>Fixed Scene Bundles not rebuilding when included prefab changes.</li>
+</ul>
+<h2 id="152---2019-07-19">[1.5.2] - 2019-07-19</h2>
+<ul>
+<li>Fixed ToString() method of CompatibilityAssetBundleManifest to properly add new line characters and section header where multiple dependencies exist</li>
+</ul>
+<h2 id="151---2019-07-15">[1.5.1] - 2019-07-15</h2>
+<ul>
+<li>remove preview tag</li>
+</ul>
+<h2 id="150-preview---2019-06-13">[1.5.0-preview] - 2019-06-13</h2>
+<ul>
+<li>Updated for API compatibility with Unity 2019.3</li>
+<li>Moved CacheServerClient package into SBP.  It turns out this package was not as globally useful as we thought, and we are pulling it in to ease support and discoverability.</li>
+</ul>
+<h2 id="141-preview---2019-04-16">[1.4.1-preview] - 2019-04-16</h2>
+<ul>
+<li>Fixed &quot;Path is empty&quot; exception in build cache</li>
+<li>Fixed an edge case where a valid cache entry could be returned for an invalid request</li>
+<li>Added BuildCache.PruneCache API to trim the cache down to a limit, called in the background after a build</li>
+<li>Moved BuildCache menu options and preferences to the &quot;Edit/Preferences...&quot; window</li>
+<li>Added SBP_PROFILER_ENABLE define to enable per task profiling output to console</li>
+<li>Fixed an issue preventing PrefabPackedIdentifiers from being passed into ContentPipeline.BuildAssetBundles</li>
+</ul>
+<h2 id="135-preview---2019-02-28">[1.3.5-preview] - 2019-02-28</h2>
+<ul>
+<li>Minimum Unity version is now 2018.3 to address a build-time bug with progressive lightmapper.</li>
+<li>Added missing version into CacheEntry calculation</li>
+<li>Fixed build error causing AssetBundle.LoadAssetWithSubAssets to return partial results</li>
+<li>Updated function implementations to be virtual for overriding</li>
+<li>Added GetOutputFilePathForIdentifier function to generate the final file path for a given build identifier</li>
+</ul>
+<h2 id="122-preview---2018-12-19">[1.2.2-preview] - 2018-12-19</h2>
+<ul>
+<li>Fixed SpritePacker failing to pack SpriteAtlas objects into AssetBundles</li>
+</ul>
+<h2 id="121-preview---2018-12-14">[1.2.1-preview] - 2018-12-14</h2>
+<ul>
+<li>Fixed a null reference error in GenerateBundleCommands::GetSortIndex</li>
+</ul>
+<h2 id="120-preview---2018-11-29">[1.2.0-preview] - 2018-11-29</h2>
+<ul>
+<li>Renamed LegacyBuildPipeline &amp; LegacyAssetBundleManifest to CompatibilityBuildPipeline &amp; CompatibilityAssetBundleManifest.</li>
+<li>Moved CompatibilityAssetBundleManifest &amp; BundleDetails into a new runtime assembly: com.unity.scriptablebuildpipeline.</li>
+<li>Changed CompatibilityAssetBundleManifest to inherit from ScriptableObject and updated it and BundleDetails to properly serialize using Unity's serialization systems.</li>
+</ul>
+<h2 id="111-preview---2018-10-20">[1.1.1-preview] - 2018-10-20</h2>
+<ul>
+<li>Reduced object duplication for scene asset bundles</li>
+<li>Fixed object order for scene asset bundles not being deterministic</li>
+<li>Fixed Shader Stripping values from Graphics Settings not applying to built data</li>
+<li>Fixed various code warnings for Unity 2018.3 and newer version</li>
+<li>Added forcing asset save on build</li>
+</ul>
+<h2 id="110-preview---2018-10-01">[1.1.0-preview] - 2018-10-01</h2>
+<ul>
+<li>Fixed an issue where a string hash was being used instead of a file hash causing data to not rebuild</li>
+</ul>
+<h2 id="101-preview---2018-08-24">[1.0.1-preview] - 2018-08-24</h2>
+<ul>
+<li>removed compile warning</li>
+<li>Fixed an issue where we were not using the addressableNames field of the AssetBundleBuild struct</li>
+</ul>
+<h2 id="100-preview---2018-08-20">[1.0.0-preview] - 2018-08-20</h2>
+<ul>
+<li>Fixed an issue in  ArchiveAndCompressBundles where previous output location was being used failing to copy cached bundles to the new location</li>
+<li>Fixed an issue in BuildCache were built in plugin dlls did not have a hash version causing cache misses</li>
+<li>Fixed invalid access errors when reading access controlled files for hashing.</li>
+<li>Fixed an issue where you could not force rebuild asset bundles using LegacyBuildPipeline</li>
+<li>Implemented IEquatable<t> on public structs</t></li>
+<li>Breaking API Change: LegacyBuildPipeline.BuildAssetBundles now returns LegacyAssetBundleManifest
+<ul>
+<li>LegacyAssetBundleManifest's API is identical to AssetBundleManifest</li>
+</ul>
+</li>
+</ul>
+<h2 id="020-preview---2018-07-23">[0.2.0-preview] - 2018-07-23</h2>
+<ul>
+<li>Removed ProjectInCleanState &amp; ValidateBundleAssignments tasks and integrated them directly indo the data validation or running methods</li>
+<li>Added build task to append hash to asset bundle files</li>
+<li>Large rework of how IBuildTasks are implemented. Now using dependency injection to handle passing data.</li>
+<li>Added reusable BuildUsageCache for usage tag calculation performance improvements</li>
+<li>
+<ul>
+<li>Unity minimum version now 2018.2.0b9</li>
+</ul>
+</li>
+<li>Improved asset bundle hash version calculation to be unity version agnostic</li>
+</ul>
+<h2 id="010-preview---2018-06-06">[0.1.0-preview] - 2018-06-06</h2>
+<ul>
+<li>Added support for Cache Server integration of the Build Cache</li>
+<li>Refactored Build Cache internals for even more performance gains</li>
+</ul>
+<h2 id="0015-preview---2018-05-21">[0.0.15-preview] - 2018-05-21</h2>
+<ul>
+<li>Hardened build cache against failures due to invalid data</li>
+</ul>
+<h2 id="0014-preview---2018-05-03">[0.0.14-preview] - 2018-05-03</h2>
+<ul>
+<li>temporarily removed progress bar as it causes a recompile on mac.  Will attempt to re-add selectively later.</li>
+</ul>
+<h2 id="0013-preview---2018-05-03">[0.0.13-preview] - 2018-05-03</h2>
+<ul>
+<li>fixed hash serialization bug.</li>
+</ul>
+<h2 id="0012-preview---2018-05-02">[0.0.12-preview] - 2018-05-02</h2>
+<ul>
+<li>Added build task for generating extra data for sprite loading edge case</li>
+</ul>
+<h2 id="0011-preview---2018-05-01">[0.0.11-preview] - 2018-05-01</h2>
+<ul>
+<li>Updated BuildAssetBundles API to also take custom context objects</li>
+<li>Added support for extracting Built-In Shaders to a common bundle</li>
+</ul>
+<h2 id="0010-preview---2018-04-26">[0.0.10-preview] - 2018-04-26</h2>
+<ul>
+<li>Added BuildAssetBundles API that takes a custom task list</li>
+<li>Added null checks for BuildSettings.typeDB &amp; AssetBundleBuild.addressableNames</li>
+</ul>
+<h2 id="009-preview---2018-04-04">[0.0.9-preview] - 2018-04-04</h2>
+<ul>
+<li>Added documentation for IWriteOperation implementations</li>
+<li>Added documentation for ReturnCodes, LegacyBuildPipeline, and ContentPipeline</li>
+<li>Ran Unity code analysis &amp; cleaned up warnings (boxing, performance issues, name consistency)</li>
+<li>Breaking api change: Changed build tasks' public static run method to private.</li>
+<li>Added null checks and ArgumentNullExceptions</li>
+</ul>
+<h2 id="008-preview---2018-03-27">[0.0.8-preview] - 2018-03-27</h2>
+<ul>
+<li>Test rename &amp; meta file cleanup</li>
+<li>Added documentation for shared classes / structs</li>
+<li>Updated inconsistent interface / class names</li>
+<li>Added missing parameter to IBuildParameters</li>
+<li>Ran spell check</li>
+<li>Moved IWriteOperation to Interfaces</li>
+<li>Update IWriteOperation properties to PascalCase</li>
+<li>Added IWriteOperation documentation</li>
+</ul>
+<h2 id="006-preview---2018-03-20">[0.0.6-preview] - 2018-03-20</h2>
+<ul>
+<li>doc updates</li>
+</ul>
+<h2 id="005-preview---2018-02-08">[0.0.5-preview] - 2018-02-08</h2>
+<ul>
+<li>Initial submission for package distribution</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

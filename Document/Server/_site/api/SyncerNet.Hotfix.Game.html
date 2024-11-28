@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Game | SyncerNet Server </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Game | SyncerNet Server ">
+      
+      <meta name="description" content="Game为全局唯一的根节点，所有World的父节点">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="SyncerNet Server">
+            SyncerNet Server
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SyncerNet.Hotfix.Game">
+
+
+
+  <h1 id="SyncerNet_Hotfix_Game" data-uid="SyncerNet.Hotfix.Game" class="text-break">
+Class Game  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SyncerNet.html">SyncerNet</a>.<a class="xref" href="SyncerNet.Hotfix.html">Hotfix</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SyncerNet.Hotfix.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Game为全局唯一的根节点，所有World的父节点</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Game</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Game</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SyncerNet_Hotfix_Game__ctor_" data-uid="SyncerNet.Hotfix.Game.#ctor*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game__ctor" data-uid="SyncerNet.Hotfix.Game.#ctor">
+  Game()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Game()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SyncerNet_Hotfix_Game_Players_" data-uid="SyncerNet.Hotfix.Game.Players*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_Players" data-uid="SyncerNet.Hotfix.Game.Players">
+  Players
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Key:NetworkId,Value:Player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentDictionary&lt;int, Player&gt; Players { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="SyncerNet.Hotfix.Player.html">Player</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_SendAction_" data-uid="SyncerNet.Hotfix.Game.SendAction*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_SendAction" data-uid="SyncerNet.Hotfix.Game.SendAction">
+  SendAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hotfix时赋值的NetworkServer的Send函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;int, ArraySegment&lt;byte&gt;, KcpChannel&gt;? SendAction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;, <span class="xref">KcpChannel</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_Worlds_" data-uid="SyncerNet.Hotfix.Game.Worlds*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_Worlds" data-uid="SyncerNet.Hotfix.Game.Worlds">
+  Worlds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Key:WorldId,Value:World</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentDictionary&lt;uint, World&gt; Worlds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="SyncerNet.Hotfix.World.html">World</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SyncerNet_Hotfix_Game_AddPlayer_" data-uid="SyncerNet.Hotfix.Game.AddPlayer*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_AddPlayer_System_Int32_System_UInt32_" data-uid="SyncerNet.Hotfix.Game.AddPlayer(System.Int32,System.UInt32)">
+  AddPlayer(int, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加Player到Game</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPlayer(int netId, uint playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>NetworkId</p>
+</dd>
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_GenerateWorldId_" data-uid="SyncerNet.Hotfix.Game.GenerateWorldId*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_GenerateWorldId" data-uid="SyncerNet.Hotfix.Game.GenerateWorldId">
+  GenerateWorldId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生成唯一WorldId</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GenerateWorldId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>WorldId</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_GetPlayer_" data-uid="SyncerNet.Hotfix.Game.GetPlayer*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_GetPlayer_System_Int32_" data-uid="SyncerNet.Hotfix.Game.GetPlayer(System.Int32)">
+  GetPlayer(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取Player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player? GetPlayer(int netId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>NetworkId</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SyncerNet.Hotfix.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_GetWorld_" data-uid="SyncerNet.Hotfix.Game.GetWorld*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_GetWorld_System_UInt32_" data-uid="SyncerNet.Hotfix.Game.GetWorld(System.UInt32)">
+  GetWorld(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取World</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public World? GetWorld(uint worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SyncerNet.Hotfix.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_OnConnected_" data-uid="SyncerNet.Hotfix.Game.OnConnected*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_OnConnected_System_Int32_" data-uid="SyncerNet.Hotfix.Game.OnConnected(System.Int32)">
+  OnConnected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnected(int netId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_OnDisconnected_" data-uid="SyncerNet.Hotfix.Game.OnDisconnected*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_OnDisconnected_System_Int32_" data-uid="SyncerNet.Hotfix.Game.OnDisconnected(System.Int32)">
+  OnDisconnected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisconnected(int netId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_OnError_" data-uid="SyncerNet.Hotfix.Game.OnError*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_OnError_System_Int32_kcp2k_ErrorCode_System_String_" data-uid="SyncerNet.Hotfix.Game.OnError(System.Int32,kcp2k.ErrorCode,System.String)">
+  OnError(int, ErrorCode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnError(int netId, ErrorCode errorCode, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>errorCode</code> <span class="xref">ErrorCode</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_ProcessMessage_" data-uid="SyncerNet.Hotfix.Game.ProcessMessage*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_ProcessMessage_System_Int32_System_ArraySegment_System_Byte__kcp2k_KcpChannel_" data-uid="SyncerNet.Hotfix.Game.ProcessMessage(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)">
+  ProcessMessage(int, ArraySegment&lt;byte&gt;, KcpChannel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessMessage(int netId, ArraySegment&lt;byte&gt; data, KcpChannel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>channel</code> <span class="xref">KcpChannel</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_Send_" data-uid="SyncerNet.Hotfix.Game.Send*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_Send_System_Int32_SyncerNet_Hotfix_NetworkMessage_kcp2k_KcpChannel_" data-uid="SyncerNet.Hotfix.Game.Send(System.Int32,SyncerNet.Hotfix.NetworkMessage,kcp2k.KcpChannel)">
+  Send(int, NetworkMessage, KcpChannel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>向指定NetworkId的玩家发送Message消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(int netId, NetworkMessage message, KcpChannel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="SyncerNet.Hotfix.NetworkMessage.html">NetworkMessage</a></dt>
+    <dd></dd>
+    <dt><code>channel</code> <span class="xref">KcpChannel</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_Send_" data-uid="SyncerNet.Hotfix.Game.Send*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_Send_System_Int32_System_ArraySegment_System_Byte__kcp2k_KcpChannel_" data-uid="SyncerNet.Hotfix.Game.Send(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)">
+  Send(int, ArraySegment&lt;byte&gt;, KcpChannel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>向指定NetworkId的玩家发送Byte[]消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(int netId, ArraySegment&lt;byte&gt; data, KcpChannel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>netId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>NetworkId</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>channel</code> <span class="xref">KcpChannel</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SyncerNet_Hotfix_Game_TryCreateWorld_" data-uid="SyncerNet.Hotfix.Game.TryCreateWorld*"></a>
+
+  <h3 id="SyncerNet_Hotfix_Game_TryCreateWorld" data-uid="SyncerNet.Hotfix.Game.TryCreateWorld">
+  TryCreateWorld()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建World</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (bool, uint) TryCreateWorld()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>)</dt>
+    <dd><p>(isSuccess,worldId)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

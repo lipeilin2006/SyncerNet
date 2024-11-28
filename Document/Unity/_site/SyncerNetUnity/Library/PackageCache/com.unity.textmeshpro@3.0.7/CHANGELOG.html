@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>These are the release notes for the TextMesh Pro UPM package which was first introduced with Unity 2018.1. Please see the following link for the Release Notes for prior versions of TextMesh Pro. <a href="http://digitalnativestudios.com/forum/index.php?topic=1363.0">http://digitalnativestudios.com/forum/index.php?topic=1363.0</a></p>
+<h2 id="307---2024-01-14">[3.0.7] - 2024-01-14</h2>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>Add support for Visions OS keyboard.</li>
+</ul>
+<h2 id="306---2021-04-23">[3.0.6] - 2021-04-23</h2>
+<h2 id="216">[2.1.6]</h2>
+<h2 id="156">[1.5.6]</h2>
+<h3 id="changes-1">Changes</h3>
+<ul>
+<li>Added compiler conditional to exclude reference to PS5 in Unity 2019.4.22f1 or older and similar for Unity 2020.2.2f1 or older.</li>
+</ul>
+<h2 id="305---2021-04-09">[3.0.5] - 2021-04-09</h2>
+<h2 id="215">[2.1.5]</h2>
+<h2 id="155">[1.5.5]</h2>
+<h3 id="changes-2">Changes</h3>
+<ul>
+<li>Added compiler conditional to address error related to missing RectMask2D padding property which was added in Unity 2019.4.12f1. See <a href="https://forum.unity.com/threads/update-textmesh-pro-to-latest-in-2019-4.945332/#post-6906851">forum post</a> for details.</li>
+<li>Fixed GetPreferredValues(string text) and GetPreferredValues(string text, float width, float height) incorrectly changing the text. See <a href="https://forum.unity.com/threads/preferred-width-height-sometimes-0.980022/#post-6991058">forum post</a> for details.</li>
+<li>Fixed potential crash when FontEngine.GetGlyphIndex is called on a font asset that was previously unloaded or deleted. See <a href="https://forum.unity.com/threads/tmpro-tmp_fontasset-addsynthesizedcharacter-causes-crash-when-calling-fontengine-getglyphindex.1071452/">forum post</a> for details.</li>
+<li>Fixed potential crash when trying to add new glyphs to a dynamic font asset whose atlas texture is set to non readable. Case #1319567</li>
+<li>Fixed Format Exception error when using the Project Text Spacing Conversion Tool when the Language Region Format is not English. Case #1320544</li>
+<li>Fixed text rendering issue due to incorrectly SDF scaling when using a CanvasScaler and resizing the game view.</li>
+<li>Fixed TextMeshPro component Sorting Layer field in the Inspector's Extra Settings not showing the correct layer. Case #1326985</li>
+<li>Fixed m_AlphaTweenRunner not initialized in TMP_Dropdown when Reload Domain is disabled in the Editor Enter Play Mode Settings. See <a href="https://forum.unity.com/threads/m_alphatweenrunner-not-initialized-in-tmp_dropdown.1071887/">forum post</a> for details.</li>
+<li>Added support for PS4 and PS5 to TMP Input Field.</li>
+</ul>
+<h2 id="304---2021-02-19">[3.0.4] - 2021-02-19</h2>
+<h2 id="214">[2.1.4]</h2>
+<h2 id="154">[1.5.4]</h2>
+<h3 id="changes-3">Changes</h3>
+<ul>
+<li>Improved sprite tag anim functionality to take into consideration the sprite character and glyph scale. Case #1309707</li>
+<li>Improved Ellipsis character insertion handling to prevent potential issues when the Ellipsis glyph ascender and descender exceed those of the primary font asset. See <a href="https://forum.unity.com/threads/ellipsis-exception.995680/#post-6472790">forum post</a> for details.</li>
+<li>Fixed text object margin handles in Scene view not behaving correctly as a result of lossy scale or object rotation. Case #1295523</li>
+<li>The &lt;mark&gt; tag padding attribute can now be defined using font units (em).</li>
+<li>Fixed text parsing issue related to recent memory overhead optimizations. Case #1295755</li>
+<li>Updated TMP Essential Resources and TMP Examples &amp; Extras.</li>
+<li>Updated TMP Sprite shader to add support for Single Pass Stereo rendering.</li>
+<li>Fixed potential iOS build failure. Case #1298753</li>
+<li>Fixed a few missing Profiler.EndSample() in the TMP_FontAsset.cs file. See <a href="https://forum.unity.com/threads/missing-profiler-endsample-error-in-textmeshpro-2-1-3.1024531/">forum post</a> for details.</li>
+<li>Fixed SetText() with formatting issue where large numbers would show a leading zero. See <a href="https://forum.unity.com/threads/tmpro-settext-with-format-incorrectly-shows-leading-zero-for-some-ints.777842/">forum post</a> for details.</li>
+<li>Updated profiling code to use the new and more efficient ProfilerMarker.</li>
+<li>Fixed incorrect text bounds. See <a href="https://forum.unity.com/threads/left-aligned-text-does-not-stay-centered-in-its-parents-layout-group-when-wrapping-is-enabled.1028755/#post-6670030">forum post</a> for details.</li>
+<li>Fixed OutOfRangeException error that could occur in the TMP Input Field when selecting all and inserting characters using IME. Case #1301059</li>
+<li>Fixed incorrect handling of Surrogate Pairs in the TMP Input Field. Case #1299798</li>
+<li>Fixed Font Asset Creator incorrectly leaving the Readable state of font asset atlas textures to readable where it should be set to non readable for static font assets. Case #1305520</li>
+<li>Added Multi Select functionality to the &quot;Create - TextMesh Pro - Font Asset&quot; context menu option. Case #1303074</li>
+<li>Revised internal handling of the various text input methods to ensure the text property is always reflective of the text content in the Inspector Text Input Box in the Editor and via the text property getter even when using a combination of the various SetText methods or the text property setter. Case #1294998 <br>Please note that using the text property getter when the text was updated via one of the SetText methods will results a string allocation.</li>
+<li>Fixed incorrect line spacing caused by preceding &lt;size=x.x&gt; tag. See <a href="https://forum.unity.com/threads/bug-asian-fonts-dont-work-correctly-since-version-2-1-0.1043410/">forum post</a> for details.</li>
+<li>Revised how the Bold Spacing which is defined per font asset will affect spacing between bold characters to ensure more uniform spacing. This change may require users to manually adjust the bold spacing value of their font assets to maintain similar spacing / layout results.</li>
+<li>Fixed linked text components not updating correctly when setting the text to null or empty. Case #1305832</li>
+<li>The vertexBufferAutoSizeReduction property will now be set to false by default. This property is used to determine if the internal data structures used in the parsing of the text should be resized when the text content shrinks by more than 256 characters which results in CG. Case #1305311</li>
+<li>Fixed animated sprites not behaving correctly when using text overflow mode Ellipsis and Truncate. Case #1303672</li>
+<li>Fixed TMP Resource Importer window stealing focus when Inspector Layout Property window is open when TMP Essential Resources have not been imported into the project. Case #1300462</li>
+<li>Fixed minor UI cosmetic issue affecting text spacing properties alignment in the Quick Search window. Case #1299587</li>
+<li>Fixed minor UI cosmetic issue in the Font Asset inspector related to the positioning of the warning when changing Generation Settings.</li>
+<li>Fixed issue where the material properties of fallback font assets are not updated when changing the material properties of the primary font asset via code. Case #1271468</li>
+<li>Fixed an issue with Text Overflow Linked mode where text would not flow correctly from one component to the other when the last character present at the break point was a linefeed &quot;\n&quot; or vertical tab &quot;\v&quot;. See <a href="https://forum.unity.com/threads/odd-line-break-behavior-in-text-with-overflow-linked.1056821/">forum post</a> for details.</li>
+</ul>
+<h2 id="303---2020-10-27">[3.0.3] - 2020-10-27</h2>
+<h2 id="213">[2.1.3]</h2>
+<h2 id="153">[1.5.3]</h2>
+<h3 id="changes-4">Changes</h3>
+<ul>
+<li>Fixed potential null reference exception in the Input Field that can occur as a result of using a workflow that involves enabling and disabling Canvases. See <a href="https://forum.unity.com/threads/tmp_inputfield-generatecaret-m_textcomponent-canvas-exception.940659/">forum post</a> for details.</li>
+<li>Fixed potential Invalid AssetDatabase path warning that can be issued when assets are imported from outside the project. See <a href="https://forum.unity.com/threads/textmesh-pro-invalid-assetdatabase-path-use-path-relative-to-the-project-folder.955731/">forum post</a> for details.</li>
+<li>Fixed &lt;TextMeshProUGUI&gt; objects not being created correctly in Prefab isolation mode when using the Create context menu. See <a href="https://forum.unity.com/threads/tmp-doesnt-like-prefabs.954186/">forum post</a> for details. Case #1266096</li>
+<li>Fixed an issue where nesting &lt;uppercase&gt; and &lt;lowercase&gt; tags didn't behaves as expected. See <a href="https://forum.unity.com/threads/nested-tags-of-same-kind-dont-act-as-expected.956364/">forum post</a> for details.</li>
+<li>Fixed Input Field incorrect handling of validation with text selection. Case #1267777</li>
+<li>Fixed potential null reference exception that could occur in the Input Field when hiding the soft keyboard on iOS or Android. Case #1273631</li>
+<li>Fixed OnScroll event not getting passed to potential parent ScrollRect when the Input Field is in Single Line mode. Case #1270241</li>
+<li>Fixed Prefab override context menu to override or revert changes not being available for some text object properties. Case #1271420</li>
+<li>The sampling point size in the Font Asset Creator will now be limited to a maximum of 16,384 points for SDF over-sampled modes. This means a maximum point size of 2048 for SDF8, 1024 for SDF16 and 512 for SDF32. Case #1253370</li>
+<li>Fixed Margin widget in the scene view not working correctly when the text object is rotated on the z-axis. Case #1263001</li>
+<li>Fixed Input Field Scrollbar not behaving correctly when set to Bottom to Top direction. Case #1179982</li>
+<li>Fixed minor UI cosmetic issue in the StyleSheet inspector. Case #1258771</li>
+<li>Fixed minor UI cosmetic issue in Material inspector texture properties. Case #1163983</li>
+<li>Fixed potential IndexOutOfRangeException that could occur when duplicating text objects that have more than 8 sub text objects.</li>
+<li>Revised and improved Input Field with Scrollbar behavior with respect to text alignment. Case #1272647</li>
+<li>Improved Input Field Name validation including adding the ability to use Hyphens. Case #1277951</li>
+<li>Fixed state of MeshRenderer potentially not being mirrored on sub text objects. Case #1278329</li>
+<li>Fixed GetPreferredValues() function returning incorrect values when called consecutively. See <a href="https://forum.unity.com/threads/preferred-width-height-sometimes-0.980022/">forum post</a> for details.</li>
+<li>Initial pass at revising some of the data structures used in the text parsing and layout process to reduce text object memory overhead.</li>
+<li>Fixed incorrect positioning of IME window when using a canvas in World Space when no camera is assigned to the canvas. Case #1043535</li>
+<li>Added new option to Font Asset Generation Settings to automatically clear dynamic data and atlas texture when creating a build.</li>
+<li>Replaced the automatic removal of the CanvasRenderer from &lt;TextMeshPro&gt; components with a warning to manually remove this now unnecessary component.</li>
+<li>Fixed text object properties not being applied correctly when instantiating a text prefab prior to importing TMP Essential Resources. Case #1271192</li>
+<li>Fixed default text object properties potentially not being set correctly when instantiating a prefab. Case #1286412</li>
+<li>Fixed incorrect parsing and display of UTF32 characters. See <a href="https://forum.unity.com/threads/several-unicode-characters-cannot-be-shown-using-tmp.970857/#post-6316422">forum post</a> for details.</li>
+<li>Fixed potential material error when updating a font asset generation settings when the font asset is using a non SDF shader. Case #1286132</li>
+<li>Fixed minor UI cosmetic issue in the Sprite Asset Sprite Glyph Table inspector. Case #1285022</li>
+</ul>
+<h2 id="301---2020-07-26">[3.0.1] - 2020-07-26</h2>
+<h2 id="211">[2.1.1]</h2>
+<h2 id="151">[1.5.1]</h2>
+<h3 id="changes-5">Changes</h3>
+<ul>
+<li>Addressed compiler warning related to the new virtual event OnPreRenderText.</li>
+<li>Added one additional layer of missing character search where in the even the missing glyph character \u0000 or space character \u0020 is not available in any font asset or potential fallbacks, the End of Text (ETX) \u0003 will be used instead.</li>
+<li>Input Field Integer or Decimal validation will now take into account the current culture. See <a href="https://forum.unity.com/threads/currentculture-decimal-separator-in-input-fields.908999/">forum post</a> for details.</li>
+<li>Added Editor only font asset post processor to handle font assets being modified outside of the Unity Editor.</li>
+<li>Fixed potential Array Out of Bounds error that could occur when using &lt;/style&gt; without first using a valid &lt;style&gt;. Case #1263787 and See <a href="https://forum.unity.com/threads/missingreferenceexception-occurs-on-selecting-a-tmp-dropdown-in-the-hierarchy-after-a-play-occurs.728018/#post-6094317">forum post</a> for details.</li>
+<li>Fixed potential issue when using multiple &lt;font&gt; tag in the same text object where these referencing several font assets derived from the same font file. Since their Default Material all have the same name, this was causing an issue in the Material Reference Manager. See <a href="https://forum.unity.com/threads/argumentexception-on-v2-1-0-unity-2019-4-4f1-identified-bug.934789/">forum post</a> for details. Case #1264596.</li>
+</ul>
+<h2 id="300---2020-06-30">[3.0.0] - 2020-06-30</h2>
+<h2 id="210">[2.1.0]</h2>
+<h2 id="150">[1.5.0]</h2>
+<h3 id="changes-6">Changes</h3>
+<ul>
+<li>Added support to control if a text object is Maskable and affected by UI Mask components. The new setting is found in the Extra Settings section of the &lt;TextMeshProUGUI&gt; component inspector.</li>
+<li>Fixed potential Null Reference Exception when trying to add characters and / or glyphs to a font asset via scripting and before it has been initialized or ReadFontAssetDefinition() has been called.</li>
+<li>Fixed incorrect preferred width values when using alternative font weight font assets. Case #1255336</li>
+<li>Enabling or disabling the Mesh Renderer of a &lt;TextMeshPro&gt; text object should now also mirror that state on any sub text object renderers as well.</li>
+<li>Fixed &lt;sprite&gt; incorrect position when this sprite is the only character in the text and when the sprite asset face info has not been defined.</li>
+<li>Fixed potential Null Reference Exception related to culling when entering play mode.</li>
+<li>Added OnPreRenderText event delegate to allow potential modification of the text geometry before it is uploaded to the mesh and rendered.</li>
+<li>Fixed missing warning when the requested character is missing from the font asset or any potential fallbacks. Case #1256879</li>
+<li>Fixed potential issue with Underline and StrikeThrough when using alternative typeface. Case #1255336</li>
+<li>Fixed potential errors in the Text StyleSheet Inspector when adding or removing Text Styles after resetting the asset. Case #1254602</li>
+<li>Fixed text Margin property values not being draggable in the Extra Settings section of the text inspector. Case #1253447</li>
+<li>It will no longer be possible to create Editor Presets for the TMP_FontAsset, TMP_SpriteAsset, TMP_StyleSheet, TMP_ColorGradient and TMP_Settings as these are persistent and runtime assets. Case #1251229</li>
+</ul>
+<h2 id="300-preview14---2020-06-08">[3.0.0-preview.14] - 2020-06-08</h2>
+<h2 id="210-preview14">[2.1.0-preview.14]</h2>
+<h2 id="150-preview14">[1.5.0-preview.14]</h2>
+<h3 id="changes-7">Changes</h3>
+<ul>
+<li>Fixed sprite character and sprite glyph scale not being reflected in the text layout. See <a href="https://forum.unity.com/threads/glyph-scale-dont-change-line-height.898817/">forum post</a> for details.</li>
+<li>Fixed potential null reference exception in the CrossFadeColor or CrossFadeAlpha functions. See <a href="https://forum.unity.com/threads/version-1-5-0-2-1-0-3-0-0-preview-13-now-available-for-testing.753587/page-4#post-5885075">forum post</a> for details.</li>
+<li>Minor improvements to the Sprite Asset Importer to improve allocations and address potential error encountered when creating multiple sprite assets.</li>
+<li>TMP GUID Remapping Tool - Removed &quot;UnityEditor.Animations.AnimatorController&quot; from the exclusion search list.</li>
+<li>Fixed potential culling issue when dynamically updating the content of child text objects of RectMask2D components. Case #1253625</li>
+<li>Fixed InvalidOperationException that could occur when changing text Overflow linked components via code. Case #1251283</li>
+</ul>
+<h2 id="300-preview13---2020-05-22">[3.0.0-preview.13] - 2020-05-22</h2>
+<h2 id="210-preview13">[2.1.0-preview.13]</h2>
+<h2 id="150-preview13">[1.5.0-preview.13]</h2>
+<h3 id="changes-8">Changes</h3>
+<ul>
+<li>Fixed potential issue where the Font Asset Creator could get stuck in the packing phase of the atlas generation process. See <a href="https://forum.unity.com/threads/font-asset-creator-stuck-at-packing-glyphs-pass-8.811863/">forum post</a> for details.</li>
+<li>Fixed issue potentially affecting text layout as a result of the width of the RectTransform being incorrectly reported. See <a href="https://forum.unity.com/threads/textmesh-pro-forcemeshupdate-true-not-working-when-object-inactive.524507/#post-5798515">forum post</a> for details.</li>
+<li>Previously created prefabs containing sub text objects will now have their HideFlags updated to HideFlags.DontSave to be consistent with newly created prefabs whose sub text objects are no longer serialized. Case #1247184</li>
+<li>Fixed culling issue where lossy scale was not considered in the determination of the bounds of the text geometry.</li>
+</ul>
+<h2 id="300-preview12---2020-05-09">[3.0.0-preview.12] - 2020-05-09</h2>
+<h2 id="210-preview12">[2.1.0-preview.12]</h2>
+<h2 id="150-preview12">[1.5.0-preview.12]</h2>
+<h3 id="changes-9">Changes</h3>
+<ul>
+<li>Added synchronization of the RaycastTarget property of the parent &lt;TextMeshProUGUI&gt; with potential child sub text objects. Case #1240784</li>
+<li>Fixed Font Asset Bold Spacing adjustment scaling based on the text object point size instead of current point size. Case #1241132</li>
+<li>Improved text alignment when using RTL in conjunction with character, word and other spacing adjustments.</li>
+<li>Fixed TMP Input Field caret potentially not being visible when reaching the right side of the viewport. See <a href="https://forum.unity.com/threads/inputfield-bug-2.879244/">forum post</a> for more details.</li>
+<li>Fixed TMP Input Field incorrect text RectTransform horizontal adjustment when using the Backspace key. See <a href="https://forum.unity.com/threads/inputfield-bug4-delete-and-backspace-bug.879283/">forum post</a> for more details.</li>
+<li>Fixed potential null reference in the TextMeshProUGUI.Cull function when using a workflow that involves enabling / disabling Canvases in the scene.</li>
+<li>Fixed ArgumentOutOfRangeException when using the &quot;Update Sprite Asset&quot; inspector option on a sprite asset that does not contain any sprites. Case #1242936</li>
+<li>Fixed incorrect culling of the text geometry by the RectMask2D component on newly created text objects. Case #1245445</li>
+<li>It is now possible to use the Material Context Menu options to Copy / Paste Material Properties or Atlas Texture originally created for TMP with all other non TMP specific materials. Case #1242671</li>
+<li>Fixed NullReferenceException when setting the Atlas Texture to None in the Debug Settings of the Material Inspector of a text object. Case #1245104</li>
+</ul>
+<h2 id="300-preview11---2020-04-22">[3.0.0-preview.11] - 2020-04-22</h2>
+<h2 id="210-preview11">[2.1.0-preview.11]</h2>
+<h2 id="150-preview11">[1.5.0-preview.11]</h2>
+<h3 id="changes-10">Changes</h3>
+<ul>
+<li>Fixed incorrect culling of text object by RectMask2D component when the parent Canvas Render Mode is set to Screen Space - Camera or World Space. Case #1240595</li>
+<li>Added special handling to ForceMeshUpdate() when the parent Canvas is disabled.</li>
+</ul>
+<h2 id="300-preview10---2020-04-21">[3.0.0-preview.10] - 2020-04-21</h2>
+<h2 id="210-preview10">[2.1.0-preview.10]</h2>
+<h2 id="150-preview10">[1.5.0-preview.10]</h2>
+<h3 id="changes-11">Changes</h3>
+<ul>
+<li>Revised caching of Preferred Width and Height to further reduce the amount of time it has to be recomputed when using a complex structure of Layout components.</li>
+<li>Fixed potential issue when using Text Overflow Ellipsis and Truncate modes when the text contains characters using superscript, subscript or using the &lt;voffset&gt; tag.</li>
+<li>Revised culling of text objects when using a RectMask2D where the bounds of the text geometry instead of the RectTransform define the culling rect.</li>
+<li>Added HDR support to material preset colors.</li>
+<li>Fixed various formatting issues in this ChangeLog.</li>
+<li>Added the ability to define a unicode value for a missing sprite character in the TMP Settings.</li>
+<li>Added support for displaying a missing sprite character when the requested sprite character is not present in the sprite asset or potential fallback(s). This new functionality is only available when trying to reference a sprite by name.</li>
+<li>Sprite Characters will now have a default Unicode value of 0xFFFE (Private NonCharacter) instead of a Unicode value of 0x0 (default unicode value for missing character).</li>
+<li>Using the sprite asset context menu option &quot;Update Sprite Asset&quot; will now remap sprite characters with unicode value of 0x0 to 0xFFFE in addition to its currently functionality.</li>
+<li>Updating TMP Essential Resources via the &quot;Window - TextMeshPro - Import TMP Essential Resources&quot; menu option will no longer override existing TMP Settings.</li>
+<li>Minor optimization where SDF Scale on some text objects could be unnecessarily updated due to floating point rounding errors in their lossy scale. Case #1230799</li>
+<li>Fixed minor issue where text objects created before importing the required TMP Essential Resources would have no default text.</li>
+<li>Improvements to line breaking for CJK and mixed Latin and CJK characters. See the following <a href="https://forum.unity.com/threads/tmp-bug.852733/#post-5688274">forum post</a> for more details.</li>
+<li>Fixed potential NullReferenceException that could occur in the TMP InputField on some platforms if the InputSystem reference is null. Case #1232433</li>
+<li>Added small padding to bitmap character geometry to prevent potential clipping.</li>
+<li>Added optimization to ignore very small RectTransform pivot changes that are usually the result of rounding errors when using Layout Components. Case #1237700</li>
+<li>Sorting Layer ID and Sorting Order properties located in the Extra Settings of &lt;TextMeshPro&gt; text objects will now serialized when creating Editor Presets. Case #1215750</li>
+<li>TextMeshProUGUI sub text objects will now be set as first sibling of their parent to prevent them from being rendered over other non text object child in the scene hierarchy.</li>
+<li>Fixed text objects becoming visible when set to empty or null as a result of a scale change. Case #1238408</li>
+<li>Fixed useMaxVisibleDescender property now getting set properly via scripting. Case #1218526</li>
+<li>Fixed SortingLayerID and SortingOrder not getting set correctly when multiple &lt;TextMeshPro&gt; objects are selected. Case #1171272</li>
+<li>Fixed default settings getting applied to disabled text objects in the scene hierarchy whose text property was set to null. Case #1151621</li>
+<li>Fixed mouse cursor flickering when hovering the Text Input Box of a text prefab with RTL enabled. Case #1206395</li>
+</ul>
+<h2 id="300-preview8---2020-03-14">[3.0.0-preview.8] - 2020-03-14</h2>
+<h2 id="210-preview8">[2.1.0-preview.8]</h2>
+<h2 id="150-preview8">[1.5.0-preview.8]</h2>
+<h3 id="changes-12">Changes</h3>
+<ul>
+<li>Fixed a minor issue where the preferred width of a text object can be incorrect when using multiple font assets, fallbacks and sprites in the same line of text.</li>
+<li>Added Alpha Fade Speed property to the TMP_DropDown inspector.</li>
+<li>Minor improvements to the LogWarning related to missing characters in a font asset or fallback being replaced by a space character.</li>
+<li>Fixed text object geometry not getting clipped when object is outside of RectMask2D.</li>
+<li>Improved search for potential missing character to include the primary font asset and potential fallbacks when the current font asset is not the primary.</li>
+<li>Ignorable / Synthesized characters in font assets will only be created if they do not exist in the source font file.</li>
+<li>Trying to use Text Overflow Ellipsis mode when no Ellipsis character is available in the primary font asset or potential fallbacks will now issue a warning and switch Text Overflow mode to Truncate.</li>
+<li>Added &amp;ltcolor=lightblue&amp;gt and &amp;ltcolor=grey&amp;gt to pre-defined rich text tag colors.</li>
+<li>Fixed compatibility issue when using TexturePacker - JSON (Array) mode and the TMP Sprite Asset Importer to create SpriteAssets.</li>
+<li>Simple fix to prevent the underline rich text tag becoming visible in the TMP Input Field when in IME composition mode with Rich Text disabled on the TMP Input Field. This is a temporary fix until a more robust and flexible solution is implemented. Case #1219969</li>
+<li>Sub Text Objects which are created when the text requires the use of a fallback font asset or sprite asset will now use HideFlags.DontSave to prevent them from being save with Prefabs as they are created on demand.</li>
+<li>Fix incorrect material reference when current font asset is not the primary or a fallback that is missing a character which is present in the primary font asset.</li>
+</ul>
+<h2 id="300-preview7---2020-03-07">[3.0.0-preview.7] - 2020-03-07</h2>
+<h2 id="210-preview7">[2.1.0-preview.7]</h2>
+<h2 id="150-preview7">[1.5.0-preview.7]</h2>
+<h3 id="changes-13">Changes</h3>
+<ul>
+<li>Reverted recent change to the TMP_SubMeshUI OnDisable() function that could result in a Missing Reference Exception in the GraphicRaycaster.cs script. See the following <a href="https://forum.unity.com/threads/version-1-5-0-2-1-0-preview-5-now-available-for-testing.753587/page-2#post-5523412">forum post</a>.</li>
+<li>Fixed glyph drawing issue in the Font Asset Inspector Glyph Adjustment Table when Multi Atlas Texture is enabled and the glyph is not located in the main atlas texture or at atlasTextures[0].</li>
+<li>Added support for &amp;ltZWSP&amp;gt tag which is internally replaced by a zero width space or \u200B.</li>
+<li>Improved line breaking handling when using &amp;ltNBSP&amp;gt and / or &amp;ltNOBR&amp;gt tags where instead of breaking these line segments per character, they will break at any possible soft breaking space when these segments exceed the width of the text container.</li>
+<li>Improved PreferredHeight calculations and handling when using Text Auto Size.</li>
+<li>Fixed incorrect color being applied to the underline or strikethrough line segments when using <u> and / or <s> tags along with a <color> tag while at the same time applying an Underline or Strikethrough font style on the whole text object.</color></s></u></li>
+<li>Fixed SDF Scale not getting updated when using SetText() with StringBuilder when the lossyScale of the text object changes. Case #1216007</li>
+<li>Added Non Breaking Space \u00A0 and Soft Hyphen \u00AD to list of synthesized characters in the event they are not present in the source font file.</li>
+<li>Fixed stack overflow issue when using TMP_FontAsset.HasCharacter and TMP_FontAsset.HasCharacters function on font assets that have circular fallback references. Case #1222574</li>
+<li>Fixed atlas texture not getting set correctly to IsReadable when switching a static font asset to dynamic in the Generation Settings of the Font Asset Inspector.</li>
+<li>Added check for RectTransform.sizeDelta change when OnRectTransformDimensionsChange() is called by the Canvas system to get around potential rounding error that erroneously trigger this callback when the RectTransform is using Stretch Anchor mode.</li>
+<li>As requested by a few users, TMP_FontAsset.faceInfo setter is now public instead of internal.</li>
+</ul>
+<h2 id="300-preview5---2020-02-25">[3.0.0-preview.5] - 2020-02-25</h2>
+<h2 id="210-preview5">[2.1.0-preview.5]</h2>
+<h2 id="150-preview5">[1.5.0-preview.5]</h2>
+<h3 id="changes-14">Changes</h3>
+<ul>
+<li>Revised SetText function formatting options to including ability to specify padding for integral part of the value. Revised format is as follows: {Arg Index:Integral Padding.Decimal Precision} Example: TMP_Text.SetText(&quot;Value = {0:000.00}&quot;, 10.375f); result in &quot;Value = 010.38&quot;.</li>
+<li>Fixed issue where <textmeshprougui> text objects isTextObjectScaleStatic property would be ignored when OnCanvasHierarchyChanged() is called.</textmeshprougui></li>
+<li>Added a Character, Glyph and Record count to those respective tables in the Font Asset Inspector.</li>
+<li>Fixed potential Null Reference Exception that would occur when using text Overflow Ellipsis mode with a primary font asset that doesn't contain the Ellipsis character. Case #1209771</li>
+<li>Fixed a potential Editor lockup when using text Overflow Page mode. Case #1219055</li>
+<li>Fixed Input Field incorrect caret vertical alignment when using the Midline / Vertical Geometry alignment option.</li>
+<li>Added initial / minimal support for the New Input System. Please use with caution and report any issues.</li>
+<li>Changes to Font Asset Generation Settings via the Font Asset Inspector will now update the existing glyphs and characters for the new settings instead of clearing them.</li>
+<li>Text object InternalUpdate() used to handle potential scale changes of text objects now uses willRenderCanvases event instead of onPreCull. This avoids a potential one frame delay in updating of <textmeshprougui> objects and no impact on <textmeshpro> objects. Case #1216007</textmeshpro></textmeshprougui></li>
+</ul>
+<h2 id="300-preview4---2020-01-31">[3.0.0-preview.4] - 2020-01-31</h2>
+<h2 id="210-preview4">[2.1.0-preview.4]</h2>
+<h2 id="150-preview4">[1.5.0-preview.4]</h2>
+<h3 id="changes-15">Changes</h3>
+<ul>
+<li>Fixed Input Field issue where scrolling events could prevent OnEndEdit event from firing. See <a href="https://forum.unity.com/threads/mouse-wheel-on-multiline-input-field-with-no-scrollbar-hangs-input-field-stops-event-firing.794607/">forum post</a> for details.</li>
+<li>Improved Input Field handling of Vertical Scrollbar in conjunction with the ResetOnDeActivation property. Using the Vertical Scrollbar no longer triggers OnEndEdit event.</li>
+<li>Fixed potential Missing Component Exception that could occur when a TMP_SubMeshUI object is created.</li>
+<li>Fixed MissingReferenceException when deleting a TMP prefab that is part of a nested prefab. Case #1207793</li>
+<li>Improved handling of allocations of newly created text objects with large amount of text. As a result of these revisions, allocations will potentially be reduce by 10X. See #1205923</li>
+<li>Fixed potential Null Reference Exception with the TMP DropDown that could occur when using the experimental Editor &quot;Enter Play Mode&quot; feature. Case #1207915</li>
+<li>Fixed potential issue with the assignment of sub text object materials.</li>
+<li>Add support for hiding the soft keyboard for Switch in the TMP Input Field.</li>
+<li>Fixed incorrect Preferred Height when Word Wrapping is disabled on text objects. See <a href="https://forum.unity.com/threads/incorrect-wordwrapping-preferredsize-textmespro-2-1-preview-3.812376/">forum post</a> for details.</li>
+<li>Added support for the new Selected state and color to the TMP Input Field. Case #1210496</li>
+<li>Fixed additional instances of TMP Resource Importer window being created when deleting the &quot;TextMesh Pro&quot; folder just after having imported them. Case #1205848</li>
+<li>Added public ITextPreprocessor textPreprocessor; property to allow setting the text preprocessor for a given text component.</li>
+</ul>
+<h2 id="300-preview3---2019-12-16">[3.0.0-preview.3] - 2019-12-16</h2>
+<h2 id="210-preview3">[2.1.0-preview.3]</h2>
+<h2 id="150-preview3">[1.5.0-preview.3]</h2>
+<h3 id="changes-16">Changes</h3>
+<ul>
+<li>Fixed potential issue with TMP Dropdown where calling Show() and Hide() in very short interval could result in additional Blockers. Case #1194114</li>
+<li>Fixed potential issues that could occur when upgrading to version 1.5.0-preview.2 or newer of the TMP package without also updating the TMP Essential Resources in the project.</li>
+<li>Added check and warning when trying to create a font asset whose source font file has &quot;Incl. Font Data&quot; disabled in the Font Import Settings. Case #1198587 and #1198112</li>
+<li>Fixed Ellipsis overflow mode issue when using small caps. Case #1198392</li>
+<li>Fixed potential layout issue when adding a Layout Group to the text object itself. Case #1197614</li>
+<li>Fixed Font Asset Creator issue where too many adjustment records with adjustment value of zero were added to the font asset.</li>
+<li>Added support for Line Separator \u2028 and Paragraph Separator \u2029.</li>
+<li>TMP shaders have been moved from &quot;TextMesh Pro/Resources/Shaders&quot; folder to &quot;TextMesh Pro/Shaders&quot; folder. See the following <a href="https://forum.unity.com/threads/version-1-5-0-2-1-0-preview-2-now-available-for-testing.753587/#post-5206853">post</a> for details.</li>
+<li>Added new experimental SDF and Mobile SDF Shaders that use Screen Space Derivatives (SSD) where these shaders no longer require SDF Scale to be passed via Vertex Attributes. These shaders have higher performance overhead but are more flexible. This overhead should only be noticeable on mobile platforms.</li>
+<li>Fixed potential text alignment issue where upgrading from package version 1.4.1 to 1.5.0-preview.2 would result in incorrect alignment on prefabs. Case #1198833</li>
+<li>Added \u061C Arabic Letter Mark, \u200E Left-to-Right Mark and \u200F Right-to-Left Mark to list of control and non renderable characters.</li>
+<li>Fixed Missing Reference Exception that would appear when expanding the Extra Settings of a TextMeshPro Preset asset. Case #1201072</li>
+<li>Fixed Missing Reference Exception that would appear when editing the Vertex Color or Color Gradient of a TMP component Preset asset. Case #1201069</li>
+<li>Fixed Inspector layout issue preventing enabling or disabling the Outline, Underlay, Lighting and Glow features when selecting a Preset asset material. Case #1196963</li>
+<li>Revised the Create Material Preset context menu option to issue a warning and ignore materials outside the project. Case #1200109</li>
+<li>Added experimental ITextPreprocessor interface to allow users to create custom components to handle text preprocessing and shaping. This interface includes a PreprocessText(string text) function that is called when the object contains a component that inherits from this interface.</li>
+<li>Added support for Unity Presets in the Editor for both <textmeshpro> and <textmeshprougui> components. Case #1191793</textmeshprougui></textmeshpro></li>
+<li>Fixed missing CanvasRenderer component issue on the Input Field Caret object.</li>
+<li>Added padding to the 2DRectMask on the TMP Input Field - Text Area object.</li>
+<li>Optimization to ensure the TMP Update Manager only rebuilds text objects once per frame regardless of the number of cameras in the scene.</li>
+</ul>
+<h2 id="210-preview2---2019-10-30">[2.1.0-preview.2] - 2019-10-30</h2>
+<h2 id="150-preview2">[1.5.0-preview.2]</h2>
+<h3 id="changes-17">Changes</h3>
+<ul>
+<li>Fixed Input Field issue when Read Only flag is set preventing the initial setting of the text. Also fixed Read Only flag not being respected when using IME input.</li>
+<li>Fixed potential infinite loop when using text overflow mode ScrollRect. See Case #1188867</li>
+<li>Fixed Input Field culling related issue(s) where text would be incorrectly culled. See <a href="https://forum.unity.com/threads/version-1-5-0-2-1-0-preview-1-now-available-for-testing.753587/#post-5023700">https://forum.unity.com/threads/version-1-5-0-2-1-0-preview-1-now-available-for-testing.753587/#post-5023700</a></li>
+<li>Revised handling and referencing of the CanvasRenderer in anticipation of an incoming change to the MaskableGraphic class where it will no longer automatically add a CanvasRenderer to components inheriting from it. As a result, <textmeshpro> objects will no longer have a CanvasRenderer.</textmeshpro></li>
+<li>Fixed potential NRE when using Overflow Truncate mode with sprites. See <a href="https://forum.unity.com/threads/tmpro-stackoverflow-caused-by-tmpro-textmeshprougui-generatetextmesh.750398/page-2#post-5042822">https://forum.unity.com/threads/tmpro-stackoverflow-caused-by-tmpro-textmeshprougui-generatetextmesh.750398/page-2#post-5042822</a></li>
+<li>Fixed issue when using font weights in combination of font styles in the editor.</li>
+<li>Fixed for potential incorrect preferred height.</li>
+<li>Improved handling of StyleSheet options to reorder, add or delete styles.</li>
+<li>Fixed Input Field Caret &amp; Selection Highlight potential culling issue when the object was instantiated outside the culling region.</li>
+<li>Fixed potential issue with registration of text objects in the TMP_UpdateManager.</li>
+<li>Optimization to suppress callback to InternalUpdate when parent Canvas is disabled. Case #1189820</li>
+<li>Fixed Fallback material not getting updated correctly when changing Generation Settings on the Fallback Font Asset.</li>
+<li>Fixed a typo in the Font Weight section of the Font Asset Editor.</li>
+<li>Fixed potential ArgumentOutOfRangeException in the Input Field when using Hide Mobile Input and deleting a long string. Case #1162514</li>
+<li>Added &quot;Is Scale Static&quot; option in the Extra Settings to exclude text objects from InternalUpdate callbacks to improve performance when the object's scale is static. This InternalUpdate callback is used to track potential changes to the scale of text objects to update their SDF Scale.</li>
+<li>Added the ability to control culling modes for the TMP Shaders. This new option is available in the Debug section of the Material Inspector. New feature requires updating the TMP Essential Resources. See the following post <a href="https://forum.unity.com/threads/not-see-textmeshpro-rendering-from-the-back.767510/#post-5112461">https://forum.unity.com/threads/not-see-textmeshpro-rendering-from-the-back.767510/#post-5112461</a>.</li>
+<li>Fixed Material Inspector issue when toggling the Record button in the Animation window. Case #1174960</li>
+<li>Improved Line Breaking handling for CJK. This also addresses a few reported issues. Case #1171603</li>
+<li>Added support for &amp;ltNBSP&amp;gt tag which is internally replaced by a non-breaking space or \u00A0.</li>
+<li>Improved performance when retrieving glyph adjustment records when using dynamic font assets.</li>
+<li>Fixed potential Null Reference Exception in the Editor when assigning new font asset to disabled game object when no previous font asset was assigned.</li>
+</ul>
+<h2 id="210-preview1---2019-09-30">[2.1.0-preview.1] - 2019-09-30</h2>
+<h2 id="150-preview1">[1.5.0-preview.1]</h2>
+<h3 id="changes-18">Changes</h3>
+<ul>
+<li>Fixed an issue when using Overflow Ellipsis mode where the Ellipsis character would not be displayed correctly when the preceding character is a sprite.</li>
+<li>Added the ability to define the Resource path for Style Sheets in the TMP Settings.</li>
+<li>TMP Style Sheets can now be assigned to text objects in the Extra Settings section of the text object inspector.</li>
+<li>Added the ability to assign a Style to text objects using the new Text Style property in the text object inspector. A new public property TMP_Text.textStyle was also added.</li>
+<li>Improved Style Sheet editor to allow sorting of styles in the style sheet.</li>
+<li>Improved handling of nested styles.</li>
+<li>Added public TMP_Style GetStyle(string name) to get the potential style by name.</li>
+<li>Revised the ForceMeshUpdate() function as follows:  public void ForceMeshUpdate(bool ignoreActiveState = false, bool forceTextReparsing = false).</li>
+<li>Fixed SubMeshUI objects text disappearing when saving a scene.</li>
+<li>Creating Material Presets via the Material Context menu with multi selection will now work as expected and assign the newly created material preset to all selected text objects.</li>
+<li>Fixed minor issue when changing Material Preset in prefab isolation mode with multiple text objects selected where the new material preset would not be assigned to disabled text objects.</li>
+<li>Revised Character, Word, Line and Paragraph spacing adjustments to be in font units (em) where a value of 1 represents 1/100 em.</li>
+<li>Added TMP_Text.onFontAssetRequest and TMP_Text.onSpriteAssetRequest events to allow users to implement custom asset loading when using the &amp;ltfont=&quot;Font Asset Name&quot;&amp;gt and &amp;ltsprite=&quot;Sprite Asset Name&quot;&amp;gt tags.</li>
+<li>Additional Shader Channels on the Canvas will be set to TexCoord1, Normal and Tangents or Mixed when using TMP Surface Shaders. Otherwise it will be set to TexCoord1 only. Case #1100696</li>
+<li>Added new attribute to the &amp;ltmark&amp;gt tag to allow users to define a padding value for the mark / highlight region. Example: &amp;ltmark color=#FFFF0080 padding=&quot;1.0,1.0,0.0,0.0&quot;&amp;gt where padding=&quot;Left, Right, Top, Bottom&quot;.</li>
+<li>Fixed an issue which could result in out of range exception when referencing sprites contained in fallback sprite assets using unicode values.</li>
+<li>Fixed an issue in the Font Asset Creator where the source font file property of the newly created font asset was not getting set.</li>
+<li>Added .blend files to exclusion asset scan list of the Project GUID Remapping tool.</li>
+<li>Fixed issue where Caret position would be incorrect when using IME. Case #1146626</li>
+<li>Clamped Outline Softness to a value of 0-1 in the TMP Distance Field shader which makes it consistent with other SDF Shaders. Case #1136161</li>
+<li>Text Auto-Sizing Min and Max values are now clamped between 0 and 32767. Case #1067717</li>
+<li>Text Font Size Min and Max values are now clamped between 0 and 32767. Case #1164407</li>
+<li>Rich Text Tag values are now limited to a maximum value of 32767.</li>
+<li>Added Placeholder option to TMP Dropdown. Placeholder text is displayed when selection value is -1. Also added example scene in the TMP Examples &amp; Extras.</li>
+<li>Added the ability to define Face Info metrics per Sprite Assets. This will provide for more consistent scaling of the sprites regardless of the font asset used. Sprite Assets with undefined Face Info will continue to inherit the Face Info metrics of the current font asset.</li>
+<li>Added Update Sprite Asset option in the header of the Sprite Asset inspector. This increases the discoverability of this option already available via the Sprite Asset Context Menu.</li>
+<li>Revised the text auto-sizing handling in regards to maximum iteration threshold which could result in a crash on some Android devices. Case #1141328</li>
+<li>Font Asset Generation Settings are now disabled in the inspector if the Source Font File is missing or if the Atlas Population Mode is set to static.</li>
+<li>Fixed vertical alignment issue when using Overflow Page mode.</li>
+<li>Improved handling of text auto-size line adjustment spacing resulting in fewer iterations and more accurate resulting point size.</li>
+<li>Added support for Layout Elements to the TMP Input Field.
+= Fixed text alignment issue with TMP Input Field when using Center alignment on the underlying text component.</li>
+<li>Setting ContentType.Custom on the TMP Input Field will no longer hide the Soft Keyboard. The Soft Keyboard can now be control independently via the shouldHideSoftKeyboard property.</li>
+<li>Added new Font Asset Context Menu option &quot;Force Upgrade To Version 1.1.0&quot; for convenience purposes in case a font asset didn't get upgraded automatically when migrating from version 1.3.0 to 1.4.x or 2.0.x.</li>
+<li>The &amp;ltgradient&amp;gt tag now as an optional attribute &quot;tint=0&quot; or &quot;tint=1&quot; controlling whether or not the gradient will be affect by vertex color. The alpha of the gradient will continue to be affected by the vertex color alpha.</li>
+<li>Added new angle=x attribute to the &amp;lti&amp;gt tag where the value of x define the italic slant angle.</li>
+<li>Since the legacy TextContainer used by TMP has been deprecated, it was removed from the Layout Context Menu options.</li>
+<li>Improved character positioning when using italic text where large angle / slant would potentially result in uneven spacing between normal and italic blocks of text.</li>
+<li>Fixed an issue where &amp;ltmspace&amp;gt and &amp;ltcspace&amp;gt tags would not be handled correctly in conjunction with word wrapping.</li>
+<li>Fixed issue in the TMP_Dropdown.cs that was affecting navigation. Case 1162600. See <a href="https://forum.unity.com/threads/huge-bug-missing-a-code-line-since-1-4-0.693421/">https://forum.unity.com/threads/huge-bug-missing-a-code-line-since-1-4-0.693421/</a></li>
+<li>Fixed an issue related to kerning where the glyph adjustment values did not account for the upsampling of the legacy SDF modes like SDF8 / SDF16 and SDF32.</li>
+<li>Made the TMP_Text.text property virtual.</li>
+<li>Fixed Material Preset of fallback materials getting modified when the TMP Settings Match Material Preset option is disabled.</li>
+<li>Added ShaderUtilities.ID_GlowInner to list of material property IDs.</li>
+<li>Fixed potential null reference exception when creating new text objects when no default font asset has been assigned in the TMP Settings and the LiberationSans SDF font asset has been deleted from the project. Case #1161120</li>
+<li>Fixed import TMP Essential Resources button being disabled when importing the TMP Examples &amp; Extras first. Case #1163979</li>
+<li>Fixed potential ArgumentOutOfRangeException when Hide Mobile Input is enabled and deleting the last character in the text. Case #1162514</li>
+<li>Improved handling of manual addition of glyph positional adjustment pairs for both dynamic and static font assets. Case #1165763</li>
+<li>Fixed issue where text in the TMP_InputField would disappear due to incorrect culling. Case #1164096</li>
+<li>Fixed potential IndexOutOfRangeException that could be thrown when using the Pinyin IME interface and typing very fast to enter Chinese text. Case #1164383</li>
+<li>Added support for Vertical Tab \v which inserts a line break but not a paragraph break.</li>
+<li>Added support for Shift Enter in the TMP Input Field which inserts a Vertical Tab in the text in Multi Line mode.</li>
+<li>Fixed text horizontal alignment when lines of text only contain the Ellipsis \u2026 Unicode character. Case #1162685</li>
+<li>Text alignment is now serialized into separate fields for horizontal and vertical alignment and can now be get / set independently via TMP_Text.horizontalAlignment and TMP_Text.verticalAlignment. The TMP_Text.alignment property remains and uses the new serialized fields for horizontal and vertical alignment.</li>
+<li>Improved handling of Soft Hyphens when using Text Auto-Size.</li>
+<li>Fixed Null character being passed to Validate method of the TMP_InputField. Case #1172102</li>
+<li>Fixed an issue where the Preferred Width and Height were not correct when using Tabs.</li>
+<li>The Cull Transparent Mesh flag on TMP_SubMeshUI objects will now mirror the settings on the parent text object's CanvasRenderer.</li>
+<li>Updated Sprite Importer to improve compatibility with Texture Packer Json Array export format.</li>
+<li>Newly created StyleSheets will be pinged in the project tab. Case #1182117</li>
+<li>Added new option in the TMP Settings to control line breaking rules for Hangul to enabled Modern line breaking or traditional line breaking.</li>
+<li>Fixed potential issue related to SDF Scaling when the scale of the text object is negative. See <a href="https://forum.unity.com/threads/version-1-4-1-preview-1-with-dynamic-sdf-for-unity-2018-3-now-available.622420/page-5#post-4958240">https://forum.unity.com/threads/version-1-4-1-preview-1-with-dynamic-sdf-for-unity-2018-3-now-available.622420/page-5#post-4958240</a> for details.</li>
+<li>Added validation check for Sprite Data Source file in the Sprite Asset Importer. Case #1186620</li>
+<li>Added warning when using Create - TextMeshPro - Sprite Asset menu when no valid texture is selected. Case #1163982</li>
+<li>Fixed potential cosmetic issue in the text component inspector when using Overflow Linked mode. Case #1177640</li>
+</ul>
+<h2 id="141---2019-04-12">[1.4.1] - 2019-04-12</h2>
+<h3 id="changes-19">Changes</h3>
+<ul>
+<li>Improved handling of font asset automatic upgrade to version 1.1.0 which is required to support the new Dynamic SDF system.</li>
+<li>Made release compatible with .Net 3.5 scripting runtime.</li>
+</ul>
+<h2 id="140---2019-03-07">[1.4.0] - 2019-03-07</h2>
+<h3 id="changes-20">Changes</h3>
+<ul>
+<li>Same release as 1.4.0-preview.3a.</li>
+</ul>
+<h2 id="140-preview3a---2019-02-28">[1.4.0-preview.3a] - 2019-02-28</h2>
+<h3 id="changes-21">Changes</h3>
+<ul>
+<li>Improved performance of the Project Files GUID Remapping Tool.</li>
+<li>Fixed an issue with the TMP_FontAsset.TryAddCharacters() functions which was resulting in an error when added characters exceeded the capacity of the atlas texture.</li>
+<li>Updated TMP_FontAsset.TryAddCharacters functions to add new overloads returning list of characters that could not be added.</li>
+<li>Added function in OnEnable of FontAsset Editor's to clean up Fallback list to remove any null / empty entries.</li>
+<li>Added support for Stereo rendering to the TMP Distance Field and Mobile Distance Field shaders.</li>
+</ul>
+<h2 id="140-preview2a---2019-02-14">[1.4.0-preview.2a] - 2019-02-14</h2>
+<h3 id="changes-22">Changes</h3>
+<ul>
+<li>Fixed an issue with SDF Scale handling where the text object would not render correctly after the object scale had been set to zero.</li>
+<li>Fixed an issue with the TMP_UpdateManager where text objects were not getting unregistered correctly.</li>
+<li>Any changes to Font Asset Creation Settings' padding, atlas width and / or atlas height will now result in all Material Presets for the given font asset to also be updated.</li>
+<li>Added new section in the TMP Settings related to the new Dynamic Font System.</li>
+<li>Added new property in the Dynamic Font System section to determine if OpenType Font Features will be retrieved from source font files at runtime as new characters are added to font assets. Glyph Adjustment Data (Kerning) is the only feature currently supported.</li>
+<li>Fix an issue where font assets created at runtime were not getting their asset version number set to &quot;1.1.0&quot;.</li>
+<li>Improved parsing of the text file used in the Font Asset Creator and &quot;Characters from File&quot; option to handle UTF16 &quot;\u&quot; and UTF32 &quot;\U&quot; escape character sequences.</li>
+<li>Fixed a Null Reference Error (NRE) that could occur when using the &amp;ltfont&amp;gt tag with an invalid font name followed by the &amp;ltsprite&amp;gt tag.</li>
+<li>The Glyph Adjustment Table presentation and internal data structure has been changed to facilitate the future addition of OpenType font features. See <a href="https://forum.unity.com/threads/version-1-4-0-preview-with-dynamic-sdf-for-unity-2018-3-now-available.622420/#post-4206595">https://forum.unity.com/threads/version-1-4-0-preview-with-dynamic-sdf-for-unity-2018-3-now-available.622420/#post-4206595</a> for more details.</li>
+<li>Fixed an issue with the &amp;ltrotate&amp;gt tag incorrectly affecting character spacing.</li>
+</ul>
+<h2 id="140-preview1---2019-01-30">[1.4.0-preview.1] - 2019-01-30</h2>
+<h3 id="changes-23">Changes</h3>
+<ul>
+<li>Renamed TMPro_FontUtilities to TMP_FontAssetCommon to more accurately reflect the content of this file.</li>
+<li>Accessing the TextMesh Pro Settings via the new Edit - Settings menu when TMP Essential Resources have not yet been imported in the project will no longer open a new window to provide the options to import these resources.</li>
+<li>Fixed an issue where using int.MaxValue, int.MinValue, float.MaxValue and float.MinValue in conjunction with SetText() would display incorrect numerical values. Case #1078521.</li>
+<li>Added public setter to the TMP Settings' missingGlyphCharacter to allow changing which character will be used for missing characters via scripting.</li>
+<li>Fixed a potential Null Reference Exception related to loading the Default Style Sheet.</li>
+<li>Added compiler conditional to TMP_UpdateManager.cs to address changes to SRP.</li>
+<li>Improved the &amp;ltmargin&amp;gt tag to make it possible to define both left and right margin values. Example: &amp;ltmargin left=10% right=10px&amp;gt.</li>
+<li>Added new menu option to allow the quick creation of a UI Button using TMP. New menu option is located in Create - UI - Button (TextMeshPro).</li>
+<li>Renamed TMP related create menu options.</li>
+<li>Fixed TMP object creation handling when using Prefab isolation mode. Case #1077392</li>
+<li>Fixed another issue related to Prefabs where some serialized properties of the text object would incorrectly show up in the Overrides prefab options. Case #1093101</li>
+<li>Fixed issue where changing the Sorting Layer or Sorting Order of a <textmeshpro> object would not dirty the scene. Case #1069776</textmeshpro></li>
+<li>Fixed a text alignment issue when setting text alignment on disabled text objects. Case #1047771</li>
+<li>Fixed an issue where text object bounds were not set correctly on newly created text objects or in some cases when setting the text to null or string.empty. Case #1093388</li>
+<li>Fixed an issue in the IntToString() function that could result in Index Out Of Bounds error. Case #1102007</li>
+<li>Changed the TMP_InputField IsValidChar function to protected virtual.</li>
+<li>The &quot;Allow Rich Text Editing&quot; property of the TMP_InputField is now set to false by default.</li>
+<li>Added new option to the Sprite Asset context menu to make it easier to update sprite glyphs edited via the Unity Sprite Editor.</li>
+<li>Added new Sharpness slider in the Debug section of the SDF Material inspector.</li>
+<li>Fixed an error that would occur when using the context menu Reset on text component. Case #1044726</li>
+<li>Fixed issue where CharacterInfo.index would be incorrect as a result of using Surrogate Pairs in the text. Case #1037828</li>
+<li>The TMP_EditorPanel and TMP_UiEditorPanel now have their &quot;UseForChildren&quot; flag set to true to enable user / custom inspectors to inherit from them.</li>
+<li>Fixed an issue where rich text tags using pixel (px) or font units (em) were not correctly accounting for orthographic camera mode. This change only affects the normal TMP text component.</li>
+<li>Fixed an inspector issue related to changes to the margin in the TMP Extra Settings panel. Case #1114253</li>
+<li>Added new property to Glyph Adjustment Pairs which determines if Character Spacing Adjustments should affect the given pair.</li>
+<li>Updated the Glyph Adjustment Table where ID now represents the unicode (hex) value for the character instead of its decimal value.</li>
+<li>Added new SetValueWithoutNotify() function to TMP_DropDown and SetTextWithoutNotify() function to TMP_InputField allowing these to be set without triggering OnValueChanged event.</li>
+<li>Geometry buffer deallocation which normally takes place when current allocations exceed those of the new text by more than 256 characters will no longer occur if the new text is set to null or string.empty.</li>
+<li>Fixed a minor issue where the underline SDF scale would be incorrect when the underline text sequence contained normal size characters and ended with a subscript or superscript character.</li>
+<li>Fixed an error that would occur when using the Reset Context menu on a Material using the SDF Surface or Mobile SDF Surface Shaders. Case #1122279</li>
+<li>Resolved a Null Reference Error that would appear when cycling through the text overflow modes. Case #1121624</li>
+</ul>
+<h2 id="130---2018-08-09">[1.3.0] - 2018-08-09</h2>
+<h3 id="changes-24">Changes</h3>
+<ul>
+<li>Revamped UI to conform to Unity Human Interface Guidelines.</li>
+<li>Updated the title text on the Font Asset Creator window tab to &quot;Font Asset Creator&quot;.</li>
+<li>Using TMP_Text.SetCharArray() with an empty char[] array will now clear the text.</li>
+<li>Made a small improvement to the TMP Input Field when using nested 2d RectMasks.</li>
+<li>Renamed symbol defines used by TMP to append TMP_ in front of the define to avoid potential conflicts with user defines.</li>
+<li>Improved the Project Files GUID Remapping tool to allow specifying a target folder to scan.</li>
+<li>Added the ability to cancel the scanning process used by the Project Files GUID Remapping tool.</li>
+<li>Moved TMP Settings to universal settings window in 2018.3 and above.</li>
+<li>Changing style sheet in the TMP Settings will now be reflected automatically on existing text objects in the editor.</li>
+<li>Added new function TMP_StyleSheet.UpdateStyleSheet() to update the internal reference to which style sheet text objects should be using in conjunction with the style tag.</li>
+</ul>
+<h2 id="124---2018-06-10">[1.2.4] - 2018-06-10</h2>
+<h3 id="changes-25">Changes</h3>
+<ul>
+<li>Fixed a minor issue when using Justified and Flush alignment in conjunction with \u00A0.</li>
+<li>The Font Asset creationSettings field is no longer an Editor only serialized field.</li>
+</ul>
+<h2 id="123---2018-05-29">[1.2.3] - 2018-05-29</h2>
+<h3 id="changes-26">Changes</h3>
+<ul>
+<li>Added new bitmap shader with support for Custom Font Atlas texture. This shader also includes a new property &quot;Padding&quot; to provide control over the geometry padding to closely fit a modified / custom font atlas texture.</li>
+<li>Fixed an issue with ForceMeshUpdate(bool ignoreActiveState) not being handled correctly.</li>
+<li>Cleaned up memory allocations from repeated use of the Font Asset Creator.</li>
+<li>Sprites are now scaled based on the current font instead of the primary font asset assigned to the text object.</li>
+<li>It is now possible to recall the most recent settings used when creating a font asset in the Font Asset Creator.</li>
+<li>Newly created font assets now contain the settings used when they were last created. This will make the process of updating / regenerating font assets much easier.</li>
+<li>New context menu &quot;Update Font Asset&quot; was added to the Font Asset inspector which will open the Font Asset Creator with the most recently used settings for that font asset.</li>
+<li>New Context Menu &quot;Create Font Asset&quot; was added to the Font inspector panel which will open the Font Asset Creator with this source font file already selected.</li>
+<li>Fixed 3 compiler warnings that would appear when using .Net 4.x.</li>
+<li>Modified the TMP Settings to place the Missing Glyph options in their own section.</li>
+<li>Renamed a symbol used for internal debugging to avoid potential conflicts with other user project defines.</li>
+<li>TMP Sprite Importer &quot;Create Sprite Asset&quot; and &quot;Save Sprite Asset&quot; options are disabled unless a Sprite Data Source, Import Format and Sprite Texture Atlas are provided.</li>
+<li>Improved the performance of the Project Files GUID Remapping tool.</li>
+<li>Users will now be prompted to import the TMP Essential Resources when using the Font Asset Creator if such resources have not already been imported.</li>
+</ul>
+<h2 id="122---2018-03-28">[1.2.2] - 2018-03-28</h2>
+<h3 id="changes-27">Changes</h3>
+<ul>
+<li>Calling SetAllDirty() on a TMP text component will now force a regeneration of the text object including re-parsing of the text.</li>
+<li>Fixed potential Null Reference Exception that could occur when assigning a new fallback font asset.</li>
+<li>Removed public from test classes.</li>
+<li>Fixed an issue where using nested links (which doesn't make sense conceptually) would result in an error. Should accidental use of nested links occurs, the last / most nested ends up being used.</li>
+<li>Fixed a potential text alignment issue where an hyphen at the end of a line followed by a new line containing a single word too long to fit the text container would result in miss alignment of the hyphen.</li>
+<li>Updated package license.</li>
+<li>Non-Breaking Space character (0xA0) will now be excluded from word spacing adjustments when using Justified or Flush text alignment.</li>
+<li>Improved handling of Underline, Strikethrough and Mark tag with regards to vertex color and Color tag alpha.</li>
+<li>Improved TMP_FontAsset.HasCharacter(char character, bool searchFallbacks) to include a recursive search of fallbacks as well as TMP Settings fallback list and default font asset.</li>
+<li>The &amp;ltgradient&amp;gt tag will now also apply to sprites provided the sprite tint attribute is set to a value of 1. Ex. &amp;ltsprite=&quot;Sprite Asset&quot; index=0 tint=1&amp;gt.</li>
+<li>Updated Font Asset Creator Plugin to allow for cancellation of the font asset generation process.</li>
+<li>Added callback to support the Scriptable Render Pipeline (SRP) with the normal TextMeshPro component.</li>
+<li>Improved handling of some non-breaking space characters which should not be ignored at the end of a line.</li>
+<li>Sprite Asset fallbacks will now be searched when using the &amp;ltsprite&amp;gt tag and referencing a sprite by Unicode or by Name.</li>
+<li>Updated EmojiOne samples from <a href="https://www.emojione.com/">https://www.emojione.com/</a> and added attribution.</li>
+<li>Removed the 32bit versions of the TMP Plugins used by the Font Asset Creator since the Unity Editor is now only available as 64bit.</li>
+<li>The isTextTruncated property is now serialized.</li>
+<li>Added new event handler to the TMP_TextEventHandler.cs script included in Example 12a to allow tracking of interactions with Sprites.</li>
+</ul>
+<h2 id="121---2018-02-14">[1.2.1] - 2018-02-14</h2>
+<h3 id="changes-28">Changes</h3>
+<ul>
+<li>Package is now backwards compatible with Unity 2018.1.</li>
+<li>Renamed Assembly Definitions (.asmdef) to new UPM package conventions.</li>
+<li>Added DisplayName for TMP UPM package.</li>
+<li>Revised Editor and Playmode tests to ignore / skip over the tests if the required resources are not present in the project.</li>
+<li>Revised implementation of Font Asset Creator progress bar to use Unity's EditorGUI.ProgressBar instead of custom texture.</li>
+<li>Fixed an issue where using the material tag in conjunction with fallback font assets was not handled correctly.</li>
+<li>Fixed an issue where changing the fontStyle property in conjunction with using alternative typefaces / font weights would not correctly trigger a regeneration of the text object.</li>
+</ul>
+<h2 id="120---2018-01-23">[1.2.0] - 2018-01-23</h2>
+<h3 id="changes-29">Changes</h3>
+<ul>
+<li>Package version # increased to 1.2.0 which is the first release for Unity 2018.2.</li>
+</ul>
+<h2 id="110---2018-01-23">[1.1.0] - 2018-01-23</h2>
+<h3 id="changes-30">Changes</h3>
+<ul>
+<li>Package version # increased to 1.1.0 which is the first release for Unity 2018.1.</li>
+</ul>
+<h2 id="1027---2018-01-16">[1.0.27] - 2018-01-16</h2>
+<h3 id="changes-31">Changes</h3>
+<ul>
+<li>Fixed an issue where setting the TMP_InputField.text property to null would result in an error.</li>
+<li>Fixed issue with Raycast Target state not getting serialized properly when saving / reloading a scene.</li>
+<li>Changed reference to PrefabUtility.GetPrefabParent() to PrefabUtility.GetCorrespondingObjectFromSource() to reflect public API change in 2018.2</li>
+<li>Option to import package essential resources will only be presented to users when accessing a TMP component or the TMP Settings file via the project menu.</li>
+</ul>
+<h2 id="1026---2018-01-10">[1.0.26] - 2018-01-10</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Removed Tizen player references in the TMP_InputField as the Tizen player is no longer supported as of Unity 2018.1.</li>
+</ul>
+<h2 id="1025---2018-01-05">[1.0.25] - 2018-01-05</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Fixed a minor issue with PreferredValues calculation in conjunction with using text auto-sizing.</li>
+<li>Improved Kerning handling where it is now possible to define positional adjustments for the first and second glyph in the pair.</li>
+<li>Renamed Kerning Info Table to Glyph Adjustment Table to better reflect the added functionality of this table.</li>
+<li>Added Search toolbar to the Glyph Adjustment Table.</li>
+<li>Fixed incorrect detection / handling of Asset Serialization mode in the Project Conversion Utility.</li>
+<li>Removed SelectionBase attribute from TMP components.</li>
+<li>Revised TMP Shaders to support the new UNITY_UI_CLIP_RECT shader keyword which can provide a performance improvement of up to 30% on some devices.</li>
+<li>Added TMP_PRESENT define as per the request of several third party asset publishers.</li>
+</ul>
+<h2 id="1023---2017-11-14">[1.0.23] - 2017-11-14</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>New menu option added to Import Examples and additional content like Font Assets, Materials Presets, etc for TextMesh Pro. This new menu option is located in &quot;Window -&gt; TextMeshPro -&gt; Import Examples and Extra Content&quot;.</li>
+<li>New menu option added to Convert existing project files and assets created with either the Source Code or DLL only version of TextMesh Pro. Please be sure to backup your project before using this option. The new menu option is located in &quot;Window -&gt; TextMeshPro -&gt; Project Files GUID Remapping Tool&quot;.</li>
+<li>Added Assembly Definitions for the TMP Runtime and Editor scripts.</li>
+<li>Added support for the UI DirtyLayoutCallback, DirtyVerticesCallback and DirtyMaterialCallback.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

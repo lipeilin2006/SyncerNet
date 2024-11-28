@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Code Editor Package for Visual Studio | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Code Editor Package for Visual Studio | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="code-editor-package-for-visual-studio">Code Editor Package for Visual Studio</h1>
+
+<h2 id="2022---2023-10-03">[2.0.22] - 2023-10-03</h2>
+<p>Integration:</p>
+<ul>
+<li>Add support for <code>XDG_DATA_DIRS</code> and <code>.desktop</code> files on Linux for <code>VS Code</code> discovery.</li>
+<li>Use compile-time platform-specifics instead of using runtime conditions.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Suppress <code>USG0001</code> warnings.</li>
+<li>Mark referenced assemblies as private (to not copy extra files to output directory when building).</li>
+<li>Add Unity capability to SDK-Style projects.</li>
+<li>Prevent circular dependency errors with SDK-Style projects.</li>
+</ul>
+<h2 id="2021---2023-09-05">[2.0.21] - 2023-09-05</h2>
+<p>Integration:</p>
+<ul>
+<li>Only disable the legacy <code>com.unity.ide.vscode</code> package going forward.</li>
+<li>Fix json parsing issues with specific non-UTF code pages.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Target <code>netstandard2.1</code> instead of <code>netstandard2.0</code>.</li>
+<li>Set <code>defaultSolution</code> in <code>settings.json</code>.</li>
+<li>Remove <code>files.exclude</code> entries for root <code>csproj</code> and <code>sln</code> files in <code>settings.json</code> when needed.</li>
+<li>Add <code>vstuc</code> launch configuration to <code>launch.json</code> when needed.</li>
+<li>Add <code>visualstudiotoolsforunity.vstuc</code> entry to <code>extensions.json</code> when needed.</li>
+<li>You can prevent the package from patching those configuration files by creating a <code>.vscode/.vstupatchdisable</code> file.</li>
+</ul>
+<h2 id="2020---2023-06-27">[2.0.20] - 2023-06-27</h2>
+<p>Integration:</p>
+<ul>
+<li>Internal API refactoring.</li>
+<li>Add support for Visual Studio Code.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Add support for Sdk Style project generation.</li>
+<li>Fix an issue related to missing properties with 2021.3.</li>
+</ul>
+<h2 id="2018---2023-03-17">[2.0.18] - 2023-03-17</h2>
+<p>Integration:</p>
+<ul>
+<li>Performance improvements with <code>EditorApplication.update</code> callbacks.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Add extra compiler options for analyzers and source generators.</li>
+</ul>
+<h2 id="2017---2022-12-06">[2.0.17] - 2022-12-06</h2>
+<p>Integration:</p>
+<ul>
+<li>Fix rare deadlocks while discovering or launching Visual Studio on Windows.</li>
+<li>Improve launching Visual Studio on macOs.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Include analyzers from response files.</li>
+<li>Update supported C# versions.</li>
+<li>Performance improvements.</li>
+</ul>
+<h2 id="2016---2022-06-08">[2.0.16] - 2022-06-08</h2>
+<p>Integration:</p>
+<ul>
+<li>Prevent ADB Refresh while being in safe-mode with a URP project</li>
+<li>Fixed an issue keeping the progress bar visible even after opening a script with Visual Studio.</li>
+</ul>
+<h2 id="2015---2022-03-21">[2.0.15] - 2022-03-21</h2>
+<p>Integration:</p>
+<ul>
+<li>Improved project generation performance.</li>
+<li>Added support for keeping file/folder structure when working with external packages.</li>
+<li>Fixed project generation not being refreshed when selecting Visual Studio as the preferred external editor.</li>
+</ul>
+<h2 id="2014---2022-01-14">[2.0.14] - 2022-01-14</h2>
+<p>Integration:</p>
+<ul>
+<li>Remove package version checking.</li>
+</ul>
+<h2 id="2013---2022-01-12">[2.0.13] - 2022-01-12</h2>
+<p>Integration:</p>
+<ul>
+<li>Fixed wrong path to analyzers in generated projects when using external packages.</li>
+<li>Fixed selective project generation not creating Analyzer/LangVersion nodes.</li>
+<li>Fixed asmdef references with Player projects.</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>Added new documentation including ToC, overview, how to use and images.</li>
+</ul>
+<h2 id="2012---2021-10-20">[2.0.12] - 2021-10-20</h2>
+<p>Integration:</p>
+<ul>
+<li>Do not block asset opening when only a VS instance without a loaded solution is found.</li>
+<li>Only check package version once per Unity session.</li>
+<li>Improved support for Visual Studio For Mac 2022.</li>
+</ul>
+<h2 id="2011---2021-07-01">[2.0.11] - 2021-07-01</h2>
+<p>Integration:</p>
+<ul>
+<li>Added support for Visual Studio and Visual Studio For Mac 2022.</li>
+<li>Fixed an issue when the package was enabled for background processes.</li>
+</ul>
+<p>Project generation:</p>
+<ul>
+<li>Use absolute paths for Analyzers and rulesets.</li>
+</ul>
+<h2 id="2010---2021-06-10">[2.0.10] - 2021-06-10</h2>
+<p>Project generation:</p>
+<ul>
+<li>Improved project generation performance when a file is moved, deleted or modified.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>Improved Inner-loop performance by avoiding to call the package manager when looking up <code>vswhere</code> utility.</li>
+<li>Fixed a network issue preventing the communication between Visual Studio and Unity on Windows.</li>
+</ul>
+<h2 id="209---2021-05-04">[2.0.9] - 2021-05-04</h2>
+<p>Project generation:</p>
+<ul>
+<li>Added support for CLI.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>Improved performance when discovering Visual Studio installations.</li>
+<li>Warn when legacy assemblies are present in the project.</li>
+<li>Warn when the package version is not up-to-date.</li>
+</ul>
+<h2 id="208---2021-04-09">[2.0.8] - 2021-04-09</h2>
+<p>Project generation:</p>
+<ul>
+<li>Improved generation performance (especially with DOTS enabled projects).</li>
+<li>Improved stability.</li>
+<li>Updated Analyzers lookup strategy.</li>
+<li>Fixed .vsconfig file not generated when using &quot;regenerate all&quot;.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>Improved automation plugins.</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>Open sourced automation plugins.</li>
+</ul>
+<h2 id="207---2021-02-02">[2.0.7] - 2021-02-02</h2>
+<p>Integration:</p>
+<ul>
+<li>Remove <code>com.unity.nuget.newtonsoft-json</code> dependency in favor of the built-in JsonUtility for the VS Test Runner.</li>
+</ul>
+<h2 id="206---2021-01-20">[2.0.6] - 2021-01-20</h2>
+<p>Project generation:</p>
+<ul>
+<li>Improved language version detection.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>Added support for the VS Test Runner.</li>
+<li>Added initial support for displaying asset usage.</li>
+<li>Fixed remaining issues with special characters in file/path.</li>
+</ul>
+<h2 id="205---2020-10-30">[2.0.5] - 2020-10-30</h2>
+<p>Integration:</p>
+<ul>
+<li>Disable legacy pdb symbol checking for Unity packages.</li>
+</ul>
+<h2 id="204---2020-10-15">[2.0.4] - 2020-10-15</h2>
+<p>Project generation:</p>
+<ul>
+<li>Added support for embedded Roslyn analyzer DLLs and ruleset files.</li>
+<li>Warn the user when the opened script is not part of the generation scope.</li>
+<li>Warn the user when the selected Visual Studio installation is not found.</li>
+<li>Generate a .vsconfig file to ensure Visual Studio installation is compatible.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>Fix automation issues on MacOS, where a new Visual Studio instance is opened every time.</li>
+</ul>
+<h2 id="203---2020-09-09">[2.0.3] - 2020-09-09</h2>
+<p>Project generation:</p>
+<ul>
+<li>Added C#8 language support.</li>
+<li>Added <code>UnityProjectGeneratorVersion</code> property.</li>
+<li>Local and Embedded packages are now selected by default for generation.</li>
+<li>Added support for asmdef root namespace.</li>
+</ul>
+<p>Integration:</p>
+<ul>
+<li>When the user disabled auto-refresh in Unity, do not try to force refresh the Asset database.</li>
+<li>Fix Visual Studio detection issues with languages using special characters.</li>
+</ul>
+<h2 id="202---2020-05-27">[2.0.2] - 2020-05-27</h2>
+<ul>
+<li>Added support for solution folders.</li>
+<li>Only bind the messenger when the VS editor is selected.</li>
+<li>Warn when unable to create the messenger.</li>
+<li>Fixed an initialization issue triggering legacy code generation.</li>
+<li>Allow package source in assembly to be generated when referenced from asmref.</li>
+</ul>
+<h2 id="201---2020-03-19">[2.0.1] - 2020-03-19</h2>
+<ul>
+<li>When Visual Studio installation is compatible with C# 8.0, setup the language version to not prompt the user with unsupported constructs. (So far Unity only supports C# 7.3).</li>
+<li>Use Unity's <code>TypeCache</code> to improve project generation speed.</li>
+<li>Properly check for a managed assembly before displaying a warning regarding legacy PDB usage.</li>
+<li>Add support for selective project generation (embedded, local, registry, git, builtin, player).</li>
+</ul>
+<h2 id="200---2019-11-06">[2.0.0] - 2019-11-06</h2>
+<ul>
+<li>Improved Visual Studio and Visual Studio for Mac automatic discovery.</li>
+<li>Added support for the VSTU messaging system (start/stop features from Visual Studio).</li>
+<li>Added support for solution roundtrip (preserves references to external projects and solution properties).</li>
+<li>Added support for VSTU Analyzers (requires Visual Studio 2019 16.3, Visual Studio for Mac 8.3).</li>
+<li>Added a warning when using legacy pdb symbol files.</li>
+<li>Fixed issues while Opening Visual Studio on Windows.</li>
+<li>Fixed issues while Opening Visual Studio on Mac.</li>
+</ul>
+<h2 id="111---2019-05-29">[1.1.1] - 2019-05-29</h2>
+<ul>
+<li>Fix Bridge assembly loading with non VS2017 editors.</li>
+</ul>
+<h2 id="110---2019-05-27">[1.1.0] - 2019-05-27</h2>
+<ul>
+<li>Move internal extension handling to package.</li>
+</ul>
+<h2 id="1011---2019-05-21">[1.0.11] - 2019-05-21</h2>
+<ul>
+<li>Fix detection of visual studio for mac installation.</li>
+</ul>
+<h2 id="1010---2019-05-04">[1.0.10] - 2019-05-04</h2>
+<ul>
+<li>Fix ignored comintegration executable.</li>
+</ul>
+<h2 id="109---2019-03-05">[1.0.9] - 2019-03-05</h2>
+<ul>
+<li>Updated MonoDevelop support, to pass correct arguments, and not import VSTU plugin.</li>
+<li>Use release build of COMIntegration for Visual Studio.</li>
+</ul>
+<h2 id="107---2019-04-30">[1.0.7] - 2019-04-30</h2>
+<ul>
+<li>Ensure asset database is refreshed when generating csproj and solution files.</li>
+</ul>
+<h2 id="106---2019-04-27">[1.0.6] - 2019-04-27</h2>
+<ul>
+<li>Add support for generating all csproj files.</li>
+</ul>
+<h2 id="105---2019-04-18">[1.0.5] - 2019-04-18</h2>
+<ul>
+<li>Fix relative package paths.</li>
+<li>Fix opening editor on mac.</li>
+</ul>
+<h2 id="104---2019-04-12">[1.0.4] - 2019-04-12</h2>
+<ul>
+<li>Fixing null reference issue for callbacks to <code>AssetPostProcessor</code>.</li>
+<li>Ensure <code>Path.GetFullPath</code> does not get an empty string.</li>
+</ul>
+<h2 id="103---2019-01-01">[1.0.3] - 2019-01-01</h2>
+<h3 id="this-is-the-first-release-of-unity-package-visualstudio_editor">This is the first release of <em>Unity Package visualstudio_editor</em>.</h3>
+<ul>
+<li>Using the newly created api to integrate Visual Studio with Unity.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

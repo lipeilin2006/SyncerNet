@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>HybridCLR | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="HybridCLR | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<ul>
+<li><a href="README.html">README 中文</a></li>
+<li><a href="README_EN.html">README English</a></li>
+</ul>
+<h1 id="hybridclr">HybridCLR</h1>
+<p><a href="https://github.com/focus-creative-games/hybridclr/blob/main/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a></p>
+<p><img src="./docs/images/logo.jpg" alt="logo"></p>
+<br>
+<br>
+<p>HybridCLR是一个<strong>特性完整、零成本、高性能、低内存</strong>的<strong>近乎完美</strong>的Unity全平台原生c#热更新解决方案。</p>
+<p>HybridCLR扩充了il2cpp运行时代码，使它由纯<a href="https://en.wikipedia.org/wiki/Ahead-of-time_compilation">AOT</a> runtime变成AOT+Interpreter 混合runtime，进而原生支持动态加载assembly，从底层彻底支持了热更新。使用HybridCLR技术的游戏不仅能在Android平台，也能在IOS、Consoles、WebGL等所有il2cpp支持的平台上高效运行。</p>
+<p>由于HybridCLR对ECMA-335规范 的良好支持以及对Unity开发工作流的高度兼容，Unity项目在接入HybridCLR后，可以几乎无缝地获得C#代码热更新的能力，开发者不需要改变日常开发习惯和要求。HybridCLR首次实现了将Unity平台的全平台代码热更新方案的工程难度降到几乎为零的水平。</p>
+<p>欢迎拥抱现代原生C#热更新技术 ！！！</p>
+<h2 id="文档">文档</h2>
+<ul>
+<li><a href="https://hybridclr.doc.code-philosophy.com/docs/intro">官方文档</a></li>
+<li><a href="https://hybridclr.doc.code-philosophy.com/docs/beginner/quickstart">快速上手</a></li>
+<li><a href="https://hybridclr.doc.code-philosophy.com/docs/other/businesscase">商业项目案例</a></li>
+</ul>
+<h2 id="特性">特性</h2>
+<ul>
+<li>近乎完整实现了<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-335/">ECMA-335规范</a>，只有极少量的<a href="https://hybridclr.doc.code-philosophy.com/docs/basic/notsupportedfeatures">不支持的特性</a>。</li>
+<li>零学习和使用成本。对绝大多数开发者来说写代码近乎没有限制。 热更新代码与AOT代码无缝工作，可以随意写继承、<strong>泛型</strong>、<strong>反射</strong>之类的代码。不需要额外写任何特殊代码、没有代码生成</li>
+<li>完全支持多线程，包含但不限于 volatile、ThreadStatic、async Task等相关功能和特性。这是其他所有热更新方案都不支持的</li>
+<li>几乎完全兼容Unity的工作流。包括且不限于支持热更新<strong>MonoBehaviour</strong>、ScriptableObject、<strong>DOTS</strong>技术，资源上挂载的热更新脚本可以正确实例化，这是其他所有热更新方案都不支持的</li>
+<li>执行高效。实现了一个极其高效的寄存器解释器，所有指标都大幅优于其他热更新方案。<a href="https://hybridclr.doc.code-philosophy.com/docs/basic/performance">性能测试报告</a></li>
+<li>内存高效。 热更新脚本中定义的类跟普通c#类占用一样的内存空间，远优于其他热更新方案。<a href="https://hybridclr.doc.code-philosophy.com/docs/basic/memory">内存占用报告</a></li>
+<li>支持MonoPInvokeCallback，可以与native代码或者其他语言如lua、javascript、python良好交互</li>
+<li>支持一些il2cpp不支持的特性，如__makeref、 __reftype、__refvalue指令</li>
+<li>支持独创的 <strong>Differential Hybrid Execution(DHE)</strong> 差分混合执行技术，即可以对AOT dll任意增删改，会智能地让未改动的函数以AOT方式运行，变化或者新增的函数以interpreter模式运行，让热更新的游戏逻辑的运行性能基本达到原生AOT的水平</li>
+<li>支持 <strong>热重载</strong> 技术，可以100%卸载程序集</li>
+<li>支持现代的dll加密技术，有效保障代码安全</li>
+</ul>
+<h2 id="支持的版本与平台">支持的版本与平台</h2>
+<ul>
+<li>支持2019.4.x、2020.3.x、2021.3.x、2022.3.x、2023.2.x、6000.0.x全系列LTS版本</li>
+<li>支持所有il2cpp支持的平台</li>
+<li>支持团结引擎和鸿蒙平台</li>
+</ul>
+<h2 id="工作原理">工作原理</h2>
+<p>HybridCLR从mono的 <a href="https://www.mono-project.com/news/2017/11/13/mono-interpreter/">mixed mode execution</a> 技术中得到启发，为unity的il2cpp之类的AOT runtime额外提供了interpreter模块，将它们由纯AOT运行时改造为&quot;AOT + Interpreter&quot;混合运行方式。</p>
+<p><img src="docs/images/architecture.png" alt="icon"></p>
+<p>更具体地说，HybridCLR做了以下几点工作：</p>
+<ul>
+<li>实现了一个高效的元数据(dll)解析库</li>
+<li>改造了元数据管理模块，实现了元数据的动态注册</li>
+<li>实现了一个IL指令集到自定义的寄存器指令集的compiler</li>
+<li>实现了一个高效的寄存器解释器</li>
+<li>额外提供大量的instinct函数，提升解释器性能</li>
+</ul>
+<h2 id="稳定性状况">稳定性状况</h2>
+<p>HybridCLR已经被广泛验证是非常高效、稳定的Unity热更新解决方案，良好满足大中型商业项目的稳定和性能要求。</p>
+<p>目前已经有数千个商业游戏项目接入了HybridCLR，其中有超过千个已经在App Store和Google Player上线，仅仅iOS免费榜前500名中就有近百款使用了HybridCLR。上线的项目中包括MMORPG、重度卡牌、重度塔防之类的游戏。国内绝大多数<strong>Top游戏公司</strong>都已经在使用HybridCLR。</p>
+<p>可查看我们已知的头部公司中使用HybridCLR并且已经上线的<a href="https://hybridclr.doc.code-philosophy.com/docs/other/businesscase">项目列表</a>。</p>
+<h2 id="支持与联系">支持与联系</h2>
+<ul>
+<li>官方1群：651188171（满）</li>
+<li>新手1群：428404198（满）</li>
+<li>新手2群：<strong>680274677（推荐）</strong></li>
+<li>discord频道 <a href="https://discord.gg/BATfNfJnm2">https://discord.gg/BATfNfJnm2</a></li>
+<li>商业合作邮箱: business#code-philosophy.com</li>
+<li><a href="https://hybridclr.doc.code-philosophy.com/docs/business/intro">商业化支持</a></li>
+</ul>
+<h2 id="关于作者">关于作者</h2>
+<p><strong>walon</strong> ：<strong>Code Philosophy（代码哲学）</strong> 创始人</p>
+<p>毕业于清华大学物理系，2006年CMO金牌，奥数国家集训队成员，保送清华基科班。专注于游戏技术，擅长开发架构和基础技术设施。</p>
+<h2 id="license">license</h2>
+<p>HybridCLR is licensed under the <a href="https://github.com/focus-creative-games/hybridclr/blob/main/LICENSE">MIT</a> license</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

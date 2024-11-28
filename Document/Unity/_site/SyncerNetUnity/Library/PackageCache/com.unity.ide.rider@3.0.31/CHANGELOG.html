@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Code Editor Package for Rider | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Code Editor Package for Rider | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="code-editor-package-for-rider">Code Editor Package for Rider</h1>
+
+<h2 id="3031---2024-06-17">[3.0.31] - 2024-06-17</h2>
+<p>fix RIDER-104519 Rider is reporting errors in scripts that work fine in Unity when utilizing DOTS - when Player project, by generating projects for all assemblies in &quot;com.unity.entities&quot;, &quot;com.unity.collections&quot;
+fix RIDER-111622 Unity Rider package is not compatible with Rider Dev builds</p>
+<h2 id="3028---2024-02-20">[3.0.28] - 2024-02-20</h2>
+<ul>
+<li>fix RIDER-103933 &quot;PlayerSettings.suppressCommonWarnings&quot; is not supported in Unity 2019.4.40f</li>
+<li>fix <a href="https://github.com/JetBrains/resharper-unity/issues/2431">https://github.com/JetBrains/resharper-unity/issues/2431</a> and <a href="https://youtrack.jetbrains.com/issue/RIDER-104221">RIDER-104221</a></li>
+</ul>
+<h2 id="3027---2023-11-30">[3.0.27] - 2023-11-30</h2>
+<ul>
+<li>Restore the ability to select Rider installation from the custom location</li>
+<li>Fix possible extra project regeneration on moving focus from Rider to Unity</li>
+<li>Improve performance of code generation for very large projects</li>
+</ul>
+<h2 id="3026---2023-10-04">[3.0.26] - 2023-10-04</h2>
+<ul>
+<li><a href="https://github.com/JetBrains/resharper-unity/issues/2421">https://github.com/JetBrains/resharper-unity/issues/2421</a></li>
+<li><a href="https://github.com/JetBrains/resharper-unity/issues/2422">https://github.com/JetBrains/resharper-unity/issues/2422</a></li>
+</ul>
+<h2 id="3025---2023-08-18">[3.0.25] - 2023-08-18</h2>
+<ul>
+<li>unification of functionality to  search JetBrains installations and open solution and file in Rider</li>
+</ul>
+<h2 id="3022---2023-05-2">[3.0.22] - 2023-05-2</h2>
+<ul>
+<li>RIDER-82999 Unity's plugin SyncAll does not regenerate project files, and instead does basically nothing.</li>
+<li>#2401 Compilation issue with Unity 2021.3.0f1</li>
+</ul>
+<h2 id="3021---2023-04-18">[3.0.21] - 2023-04-18</h2>
+<p><a href="https://youtrack.jetbrains.com/issue/RIDER-92424">RIDER-92424</a> JetBrains Rider Editor 3.0.20 package Update for Unity, Cause's Rider to Slows to a Crawl after updating
+<a href="https://youtrack.jetbrains.com/issue/RIDER-92419">RIDER-92419</a> JetBrains Rider Editor 3.0.20 for Unity has duplicate assemblies loaded into runtime</p>
+<h2 id="3020---2023-04-05">[3.0.20] - 2023-04-05</h2>
+<ul>
+<li>fix loading Rider integration EditorPlugin on first switch of External Editor to Rider, see <a href="https://youtrack.jetbrains.com/issue/RIDER-91185">RIDER-91185</a></li>
+<li>Keep the the PackageManager in sync with the Rider changes made to the manifest.json, it should help with <a href="https://youtrack.jetbrains.com/issue/RIDER-77343">RIDER-77343</a></li>
+<li>Support CompilerOptions.RoslynAdditionalFilePaths and CompilerOptions.AnalyzerConfigPath</li>
+</ul>
+<h2 id="3018---2023-01-09">[3.0.18] - 2023-01-09</h2>
+<ul>
+<li><a href="https://youtrack.jetbrains.com/issue/RIDER-74818">RIDER-74818</a> Unity doesn't get to play mode if Editor is not running and user starts debug or profiling</li>
+<li>Improve performance of project generation - avoid using Directory.Exists</li>
+<li>avoid doing ProjectGeneration twice on the first start-up</li>
+</ul>
+<h2 id="3017---2022-12-01">[3.0.17] - 2022-12-01</h2>
+<ul>
+<li>Avoid adding asset project parts to both editor and player projects, fixes the following issues:</li>
+<li><a href="https://youtrack.jetbrains.com/issue/RIDER-75500">RIDER-75500</a> Local package references completions shows duplicate entries if player projects are generated</li>
+<li><a href="https://youtrack.jetbrains.com/issue/RIDER-73795">RIDER-73795</a> Conversion to guid is not offered for assemblies with generated player projects</li>
+<li><a href="https://youtrack.jetbrains.com/issue/RIDER-71238">RIDER-71238</a> No usages can be found for the assembly if player projects are generated</li>
+</ul>
+<h2 id="3016---2022-09-09">[3.0.16] - 2022-09-09</h2>
+<ul>
+<li>Update the changelog</li>
+<li>Add folders to the generated csproj files</li>
+<li>Avoid extra RequestScriptReload call on the first start</li>
+<li>Fix shader support for folders in packages, but outside asmdef</li>
+</ul>
+<h2 id="3015---2022-05-24">[3.0.15] - 2022-05-24</h2>
+<ul>
+<li>Cleanup cache after project generation to reduce memory consumption</li>
+<li>Performance optimization</li>
+<li>RIDER-76126 Rider package should generate an empty csproj for empty Unity project</li>
+<li>RIDER-77206 Unity 2020.1.3 'PlayerSettings' does not contain a definition for 'suppressCommonWarnings</li>
+</ul>
+<h2 id="3014---2022-04-21">[3.0.14] - 2022-04-21</h2>
+<ul>
+<li>Move Rider package persisted state to Library, to avoid vcs collisions or adding it specifically to gitignore</li>
+</ul>
+<h2 id="3013---2022-03-24">[3.0.13] - 2022-03-24</h2>
+<ul>
+<li>fix RIDER-69927 &quot;Test not run&quot; status is shown for the test suite when running unit tests for Unity project</li>
+<li>fix RIDER-74676 Unity plugin &quot;JetBrainseRider Editor&quot; completely breaks &lt;= 2019.1.9</li>
+<li>fix RIDER-71503 Unity Hang on &quot;Domain Unload&quot;, caused by dispose of FileSystemWatcher</li>
+</ul>
+<h2 id="3012---2022-01-28">[3.0.12] - 2022-01-28</h2>
+<ul>
+<li>Fix bug, which was introduced in 3.0.10: New script was not added to the csproj, because cached list of assemblies was used.</li>
+</ul>
+<h2 id="3010---2021-12-09">[3.0.10] - 2021-12-09</h2>
+<ul>
+<li>Fix presentation of the TargetFramework in the csproj</li>
+<li>Fix: Auto-generated solution doesn't compile when code overrides virtual functions in other assemblies</li>
+<li>Fix RIDER-72234 Avoid full project generation, when only content of assembly was changed</li>
+<li>Fix RIDER-71985 Building large Unity projects randomly fails</li>
+<li>Fix RIDER-72174 Looking for Rider installed by dotUltimate installer</li>
+</ul>
+<h2 id="309---2021-11-09">[3.0.9] - 2021-11-09</h2>
+<ul>
+<li>Fix path for Roslyn analyser supplied with a package</li>
+<li>Minimal requirement for roslyn analyzer scope is Unity 2020.3.6f1 and above</li>
+</ul>
+<h2 id="308---2021-11-08">[3.0.8] - 2021-11-08</h2>
+<ul>
+<li>Technical release</li>
+</ul>
+<h2 id="307---2021-05-07">[3.0.7] - 2021-05-07</h2>
+<ul>
+<li>RIDER-60815 Simplify extensions lists for Rider package</li>
+<li>Fix csc.rsp <code>-nullable+</code> / <code>-nullable-</code> parsing <a href="https://github.com/van800/com.unity.ide.rider/issues/7">https://github.com/van800/com.unity.ide.rider/issues/7</a></li>
+<li>Support <code>-warnaserror</code>/<code>-warnaserror-:</code>/<code>-warnaserror+:</code> in csc.rsp</li>
+</ul>
+<h2 id="306---2021-04-06">[3.0.6] - 2021-04-06</h2>
+<ul>
+<li>Fix bug: For Unity 2021.1+ Switching external editor from VS =&gt; Rider won't create the connection between Unity and Rider.</li>
+<li>When PlayerSettings.suppressCommonWarnings is true, it is reflected in the generated csproj with NoWarn &quot;0169&quot;, &quot;0649&quot;</li>
+<li>By default include T4 templates in the generated solution (RIDER-37159)</li>
+<li>RIDER-60554 Unity crash in case of project without Unity Test Framework Package.</li>
+<li>RIDER-60445 Fix presentation of Rider external editor, when it is installed in a custom location.</li>
+<li>Improve project files generation performance</li>
+<li>RIDER-60508 Project Generation for projects without any cs files - add reference to UnityEditor/UnityEngine, so that Rider would detect Unity path and version and provide rich features for shader file.</li>
+</ul>
+<h2 id="305---2021-02-25">[3.0.5] - 2021-02-25</h2>
+<ul>
+<li>More stable in case of possible Rider product code change, improve test. Allows using &quot;Rider for Unreal&quot; with Unity projects (<a href="https://youtrack.jetbrains.com/issue/RIDER-51203">https://youtrack.jetbrains.com/issue/RIDER-51203</a>)</li>
+<li>Remove implicit dependency to Test-Framework package</li>
+<li>Fix &quot;Unreachable code detected&quot; warning (<a href="https://youtrack.jetbrains.com/issue/RIDER-57930">https://youtrack.jetbrains.com/issue/RIDER-57930</a>)</li>
+</ul>
+<h2 id="304---2021-01-26">[3.0.4] - 2021-01-26</h2>
+<ul>
+<li>Use LangVersion provided by Unity for generated csproj</li>
+<li>Improve documentation</li>
+<li>Support nullable provided in csc,rsp</li>
+<li>Avoid doing work in Unity secondary processes in UNITY_2021_1_OR_NEWER with UnityEditor.MPE.ProcessLevel.Secondary</li>
+</ul>
+<h2 id="303---2020-11-18">[3.0.3] - 2020-11-18</h2>
+<ul>
+<li>Update License</li>
+<li>Avoid connecting Rider from secondary UnityEditor instances</li>
+<li>Fix RIDER-53082 - Generate csproj without cs files, when there are any assets inside</li>
+</ul>
+<h2 id="302---2020-10-27">[3.0.2] - 2020-10-27</h2>
+<ul>
+<li>Speedup ProjectGeneration</li>
+<li>Fix RIDER-51958. Callbacks OnGeneratedCSProjectFiles would not work, but show a Warning instead.</li>
+<li>Remove release configuration</li>
+<li>Call RequestScriptReload, when External Editor is changed in Unity.</li>
+</ul>
+<h2 id="301---2020-10-02">[3.0.1] - 2020-10-02</h2>
+<ul>
+<li>RIDER-46658 Rider does not run PlayMode tests when ValueSource is combined with parameterized TestFixture</li>
+<li>RIDER-49947 Invoking <code>PlayerSettings.SetScriptingDefineSymbolsForGroup()</code> does not update definitions in Rider.</li>
+<li>Add static entrypoint <code>Packages.Rider.Editor.RiderScriptEditor.SyncSolution</code> to allow generating solution from commandline.</li>
+</ul>
+<h2 id="207---2020-08-18">[2.0.7] - 2020-08-18</h2>
+<ul>
+<li>Improve performance</li>
+<li>Add support for asmdef Root Namespace in .csproj generation</li>
+<li>ProjectGeneration for custom roslyn analysers <a href="https://docs.unity3d.com/2020.2/Documentation/Manual/roslyn-analyzers.html">https://docs.unity3d.com/2020.2/Documentation/Manual/roslyn-analyzers.html</a></li>
+<li>Switch target platform in Unity would regenerate csproj files (<a href="https://github.com/JetBrains/resharper-unity/issues/1740">https://github.com/JetBrains/resharper-unity/issues/1740</a>)</li>
+</ul>
+<h2 id="206---2020-08-10">[2.0.6] - 2020-08-10</h2>
+<ul>
+<li>Improve performance</li>
+<li>Add support for asmdef Root Namespace in .csproj generation</li>
+<li>ProjectGeneration for custom roslyn analysers <a href="https://docs.unity3d.com/2020.2/Documentation/Manual/roslyn-analyzers.html">https://docs.unity3d.com/2020.2/Documentation/Manual/roslyn-analyzers.html</a></li>
+<li>Switch target platform in Unity would regenerate csproj files (<a href="https://github.com/JetBrains/resharper-unity/issues/1740">https://github.com/JetBrains/resharper-unity/issues/1740</a>)</li>
+</ul>
+<h2 id="205---2020-05-27">[2.0.5] - 2020-05-27</h2>
+<ul>
+<li>Fix Regression in 2.0.3: In Unity 2019.2.9 on Mac, changing csproj and calling AssetDatabase.Refresh is not regenerating csproj.</li>
+<li>Regenerate projects on changes in manifest.json and Project Settings (EditorOnlyScriptingUserSettings.json) (#51)</li>
+<li>Fix: Assembly references to package assemblies break IDE projects.</li>
+<li>Fix: Reporting test duration.</li>
+</ul>
+<h2 id="202---2020-03-18">[2.0.2] - 2020-03-18</h2>
+<ul>
+<li>fix bug in searching Rider path on MacOS</li>
+</ul>
+<h2 id="201---2020-03-05">[2.0.1] - 2020-03-05</h2>
+<ul>
+<li>Speed improvements,</li>
+<li>ProjectTypeGuids for unity-generated project</li>
+<li>Improve UI for Project Generation settings</li>
+<li>Changes in csc.rsp would cause project-generation</li>
+<li>Remove NoWarn 0169 from generated csproj</li>
+<li>Support custom JetBrains Toolbox installation location</li>
+</ul>
+<h2 id="121---2019-12-09">[1.2.1] - 2019-12-09</h2>
+<ul>
+<li>Load optimised EditorPlugin version compiled to net 461, with fallback to previous version.</li>
+<li>On ExternalEditor settings page: reorder Generate all ... after Extensions handled</li>
+<li>Better presentation for Rider of some version in ExternalEditors list</li>
+<li>Initial support for Code Coverage with dotCover plugin in Rider</li>
+<li>Added support for Player Project generation</li>
+</ul>
+<h2 id="114---2019-11-21">[1.1.4] - 2019-11-21</h2>
+<ul>
+<li>Fix warning - unreachable code</li>
+</ul>
+<h2 id="113---2019-10-17">[1.1.3] - 2019-10-17</h2>
+<ul>
+<li>Update External Editor, when new toolbox build was installed</li>
+<li>Add xaml to default list of extensions to include in csproj</li>
+<li>Avoid initializing Rider package in secondary Unity process, which does Asset processing</li>
+<li>Reflect multiple csc.rsp arguments to generated csproj files: <a href="https://github.com/JetBrains/resharper-unity/issues/1337">https://github.com/JetBrains/resharper-unity/issues/1337</a></li>
+<li>Setting, which allowed to override LangVersion removed in favor of langversion in csc.rsp</li>
+<li>Environment.NewLine is used in generated project files instead of Windows line separator.</li>
+</ul>
+<h2 id="112---2019-09-18">[1.1.2] - 2019-09-18</h2>
+<p>performance optimizations:</p>
+<ul>
+<li>avoid multiple evaluations</li>
+<li>avoid reflection in DisableSyncSolutionOnceCallBack</li>
+<li>project generation optimization
+fixes:</li>
+<li>avoid compilation error with incompatible <code>Test Framework</code> package</li>
+</ul>
+<h2 id="111---2019-08-26">[1.1.1] - 2019-08-26</h2>
+<p>parse nowarn in csc.rsp
+warning, when Unity was started from Rider, but external editor was different
+improved unit test support
+workaround to avoid Unity internal project-generation (fix #28)</p>
+<h2 id="110---2019-07-02">[1.1.0] - 2019-07-02</h2>
+<p>new setting to manage list of extensions to be opened with Rider
+avoid breaking everything on any unhandled exception in RiderScriptEditor cctor
+hide Rider settings, when different Editor is selected
+dynamically load only newer rider plugins
+path detection (work on unix symlinks)
+speed up for project generation
+lots of bug fixing</p>
+<h2 id="108---2019-05-20">[1.0.8] - 2019-05-20</h2>
+<p>Fix NullReferenceException when External editor was pointing to non-existing Rider everything was broken by null-ref.</p>
+<h2 id="107---2019-05-16">[1.0.7] - 2019-05-16</h2>
+<p>Initial migration steps from rider plugin to package.
+Fix OSX check and opening of files.</p>
+<h2 id="106---2019-04-30">[1.0.6] - 2019-04-30</h2>
+<p>Ensure asset database is refreshed when generating csproj and solution files.</p>
+<h2 id="105---2019-04-27">[1.0.5] - 2019-04-27</h2>
+<p>Add support for generating all csproj files.</p>
+<h2 id="104---2019-04-18">[1.0.4] - 2019-04-18</h2>
+<p>Fix relative package paths.
+Fix opening editor on mac.</p>
+<h2 id="103---2019-04-12">[1.0.3] - 2019-04-12</h2>
+<p>Fixing null reference issue for callbacks to Asset pipeline.</p>
+<h2 id="102---2019-01-01">[1.0.2] - 2019-01-01</h2>
+<h3 id="this-is-the-first-release-of-unity-package-rider_editor">This is the first release of <em>Unity Package rider_editor</em>.</h3>
+<p>Using the newly created api to integrate Rider with Unity.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

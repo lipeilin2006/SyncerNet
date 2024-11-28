@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Settings Manager | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Settings Manager | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="settings-manager">Settings Manager</h1>
+
+<p>A framework for making any serializable field a setting, complete with an procedurally populated Settings Provider.</p>
+<p><img src="Documentation%7E/images/settings.gif" alt="in action"></p>
+<h2 id="quick-start">Quick Start</h2>
+<p>Settings are saved in <code>ISettingsRepository</code> instances. Two default implementations are provided, one for saving user settings (<code>UserSettingsRepository</code>) and one for per-project settings (<code>ProjectSettingsRepository</code>). Settings repositories are responsible for saving and loading preferences.</p>
+<p>You may work directly with <code>ISettingsRepository</code>, or create a <code>Settings</code> instance to manage them. Creating a <code>Settings</code> is convenient because it allows you to make use of the <code>UserSetting</code> class and attribute.</p>
+<p>The most common case will be for packages to create a <code>Settings</code> manager with two repositories, one for user settings (<code>SettingsScope.User</code>) and one for per-project settings (<code>SettingsScope.Project</code>).</p>
+<p>Below is an example of how most packages will use this api.</p>
+<pre><code>using UnityEditor;
+using UnityEditor.SettingsManagement;
+using UnityEngine;
+
+public class MySettings
+{
+    static Settings s_SettingsInstance;
+
+    public static Settings instance
+    {
+        get
+        {
+            if(s_SettingsInstance == null)
+                s_SettingsInstance = new Settings(&quot;com.unity.my-package&quot;);
+            return s_SettingsInstance;
+        }
+    }
+
+    // Register a new SettingsProvider that will scrape the owning assembly for [UserSetting] marked fields.
+    [SettingsProvider]
+    static SettingsProvider CreateSettingsProvider()
+    {
+        var provider = new UserSettingsProvider(&quot;Preferences/My Settings&quot;,
+            instance,
+            new [] { typeof(MySettings).Assembly });
+
+        return provider;
+    }
+}
+
+public class Test
+{
+    [UserSetting(&quot;User Settings&quot;, &quot;My User Int Value&quot;)]
+    static UserSetting&lt;int&gt; userSetting = new UserSetting&lt;int&gt;(MySettings.instance, &quot;MyInteger&quot;, 42, SettingsScope.User);
+
+    [UserSetting(&quot;Project Settings&quot;, &quot;My Project Int Value&quot;)]
+    static UserSetting&lt;int&gt; projectSetting = new UserSetting&lt;int&gt;(MySettings.instance, &quot;MyInteger&quot;, 42, SettingsScope.Project);
+
+    [MenuItem(&quot;Debug/Print Settings Values&quot;)]
+    static void PrintValues()
+    {
+        Debug.Log($&quot;User integer is: {(int) userSetting}, and project integer is {(int) projectSetting}&quot;);
+    }
+}
+</code></pre>
+<p>Values are set and retrieved using generic methods on on your <code>Settings</code> instance:</p>
+<pre><code>MySettingsManager.instance.Get&lt;float&gt;(&quot;myFloatValue&quot;, SettingsScopes.Project);
+</code></pre>
+<p>The <code>Settings</code> class will handle finding an appropriate <code>ISettingsRepository</code> for the scope (and optional repository name), while <code>key</code> and <code>T</code> are used to find the value. Setting keys are unique among types, meaning you may re-use keys as long as the setting type is different.</p>
+<pre><code>// UserSetting&lt;T&gt; is a wrapper class that handles saving and loading serializable values. It is compatible with the `[UserSetting]` attribute, which is used to automatically populate a settings provider.
+UserSetting&lt;int&gt; myIntValue = new UserSetting&lt;int&gt;(MySettingsManager.instance, &quot;MyIntegerKey&quot;, 42, SettingsScopes.User);
+</code></pre>
+<p><code>UserSetting&lt;T&gt;</code> caches the current value, and keeps a copy of the default value so that it may be reset. <code>UserSetting&lt;T&gt;</code> fields are also eligible for use with the <code>[UserSetting]</code> attribute, which lets the <code>UserSettingsProvider</code> automatically add it to a settings inspector.</p>
+<h2 id="settings-provider">Settings Provider</h2>
+<p>To register your settings in the <code>Settings Window</code> you can either write your own <code>SettingsProvider</code> implementation, or use the provided <code>UserSettingsProvider</code> and let it automatically create your interface.</p>
+<p>Making use of <code>UserSettingsProvider</code> comes with many benefits, including a uniform look for your settings UI, support for search, and per-field or mass reset support.</p>
+<pre><code>using UnityEngine;
+
+namespace UnityEditor.SettingsManagement.Examples
+{
+	static class MySettingsProvider
+	{
+        [SettingsProvider]
+        static SettingsProvider CreateSettingsProvider()
+        {
+            var provider = new UserSettingsProvider(&quot;Preferences/My Settings&quot;,
+                MySettingsManager.instance,
+                new [] { typeof(MySettingsProvider).Assembly });
+
+            return provider;
+        }
+	}
+}
+</code></pre>
+<p>To register a field with <code>UserSettingsProvider</code>, simply decorate it with <code>[UserSetting(string displayCategory, string key)]</code>. <code>[SettingAttribute]</code> is only valid for static fields.</p>
+<p>For more complex settings that require additional UI (or simply don't have a built-in editor), you can use <code>UserSettingBlockAttribute</code>. This provides access to the settings provider GUI. See <code>SettingsExamples.cs</code> for more on this.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

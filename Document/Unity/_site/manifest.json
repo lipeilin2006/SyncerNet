@@ -1,0 +1,3438 @@
+{
+  "source_base_path": "D:/SyncerNetDocument/Unity",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/bdwgc/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/bdwgc/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/bdwgc/libatomic_ops/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/bdwgc/libatomic_ops/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/xxHash/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/xxHash/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/xxHash/cmake_unofficial/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/LocalIl2CppData-WindowsEditor/il2cpp/external/xxHash/cmake_unofficial/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/bdwgc/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/bdwgc/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/bdwgc/libatomic_ops/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/bdwgc/libatomic_ops/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/xxHash/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/xxHash/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/xxHash/cmake_unofficial/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/StrippedAOTDllsTempProj/StandaloneWindows64/Il2CppOutputProject/IL2CPP/external/xxHash/cmake_unofficial/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/hybridclr_repo/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/hybridclr_repo/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/hybridclr_repo/README_EN.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/hybridclr_repo/README_EN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/HybridCLRData/il2cpp_plus_repo/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/HybridCLRData/il2cpp_plus_repo/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/README_EN.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/README_EN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/RELEASELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.code-philosophy.hybridclr@4e172129d8/RELEASELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniEvent/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniEvent/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniMachine/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniMachine/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniUtility/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/Space Shooter/ThirdParty/UniFramework/UniUtility/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/UniTask Sample/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.tuyoogame.yooasset@2.2.4-preview/Samples~/UniTask Sample/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.editorcoroutines@1.0.0/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/Documentation~/ext.nunit.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/Documentation~/ext.nunit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ext.nunit@1.0.6/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.feature.development@1.0.1/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.feature.development@1.0.1/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/using-the-jetbrains-rider-editor-package.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/Documentation~/using-the-jetbrains-rider-editor-package.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.rider@3.0.31/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/using-visual-studio-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Documentation~/using-visual-studio-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/ThirdPartyNotices.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/ThirdPartyNotices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/Documentation~/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/Documentation~/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ide.vscode@1.2.5/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Third Party Notices.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Third Party Notices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/analyzing-mulitple-datasets.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/analyzing-mulitple-datasets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/collecting-and-viewing-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/collecting-and-viewing-data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/compare-view.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/compare-view.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/comparing-frames-same-dataset.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/comparing-frames-same-dataset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/filtering-system.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/filtering-system.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/frame-range-selection.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/frame-range-selection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/frame-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/frame-summary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/marker-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/marker-summary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/ordering-frames-by-cost.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/ordering-frames-by-cost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/profile-analyzer-window.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/profile-analyzer-window.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/single-view.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/single-view.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/statistics.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/statistics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/thread-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/thread-summary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/upgrade-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/upgrade-guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/whats-new.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Documentation~/whats-new.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/BuildLogger.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/BuildLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/CacheServerClient.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/CacheServerClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/GettingStarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/GettingStarted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/TableofContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/TableofContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/Terminology.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/Terminology.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/UpgradeGuide.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/UpgradeGuide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/UsageExamples.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/UsageExamples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.scriptablebuildpipeline@2.1.3/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/Documentation~/settings-manager.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/Documentation~/settings-manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.settings-manager@2.0.1/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/edit-mode-vs-play-mode-tests.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/edit-mode-vs-play-mode-tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extending.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extending.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-get-test-results.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-get-test-results.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-retrieve-test-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-retrieve-test-list.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-run-tests.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/extension-run-tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-actions-outside-tests.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-actions-outside-tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-conditionalignore.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-conditionalignore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testmustexpectalllogs.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testmustexpectalllogs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testplayerbuildmodifier.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testplayerbuildmodifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testruncallback.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-testruncallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-unityplatform.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-unityplatform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-unitytest.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-attribute-unitytest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-command-line.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-command-line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-color.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-color.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-equals.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-equals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-float.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-float.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-quaternion.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-quaternion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector2.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector3.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector4.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-comparer-vector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-assertion.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-assertion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-attributes.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-constraints.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-constraints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-equality-comparers.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-equality-comparers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-yield-instructions.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-custom-yield-instructions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-execution-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-execution-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-filter.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-filter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-icallbacks.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-icallbacks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-ierror-callbacks.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-ierror-callbacks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-adaptor.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-adaptor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-result-adaptor.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-result-adaptor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-run-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-itest-run-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-outerunitytestaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-outerunitytestaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-recompile-scripts.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-recompile-scripts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-setup-and-cleanup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-setup-and-cleanup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-test-runner-api.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-test-runner-api.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-test-utils.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-test-utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-tests-monobehaviour.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-tests-monobehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-tests-parameterized.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-tests-parameterized.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-unitysetup-and-unityteardown.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-unitysetup-and-unityteardown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-wait-for-domain-reload.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/reference-wait-for-domain-reload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/resources.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/resources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-playmode-test.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-playmode-test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-test-assembly.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-test-assembly.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-test.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-create-test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-run-playmode-test-standalone.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-run-playmode-test-standalone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-run-test.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/Documentation~/workflow-run-test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.test-framework@1.1.33/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CodeCoverageWindow.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CodeCoverageWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageBatchmode.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageBatchmode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageRecording.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageRecording.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageTestRunner.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/CoverageTestRunner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/DocumentArchive.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/DocumentArchive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/DocumentRevisionHistory.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/DocumentRevisionHistory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/HowToInterpretResults.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/HowToInterpretResults.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/InstallingCodeCoverage.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/InstallingCodeCoverage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/Quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/Quickstart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/TechnicalDetails.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/TechnicalDetails.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/UsingCodeCoverage.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/UsingCodeCoverage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/upgrade-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/upgrade-guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/whats-new.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Documentation~/whats-new.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Samples~/Tutorial/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Samples~/Tutorial/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Third Party Notices.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/Third Party Notices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/Documentation~/TextMeshPro.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/Documentation~/TextMeshPro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.textmeshpro@3.0.7/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_add.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_blend.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_blend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_dup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_dup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_ease.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_ease.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_gap_extrap.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_gap_extrap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_insert.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_insert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_match.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_match.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_pan_zoom.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_pan_zoom.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_position.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_position.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_reset.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_reset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_select.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_select.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_speed.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_speed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_split.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_split.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_tile.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_tile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_trim.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_trim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_hide.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_hide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_add.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_del.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_del.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_edit.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_edit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_interp.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_interp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_sel.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_sel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_nav.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_nav.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_hide.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_hide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_lock.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_lock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_use.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_use.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_act.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_act.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_com.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_com.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_plyb.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_plyb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_aud.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_aud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_com.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_com.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_plyb.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_plyb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_tl.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_tl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_act.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_act.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_anim.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_anim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/play_director.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/play_director.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_annotation.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_annotation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_text.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_text.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_time.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_time.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_tween.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_tween.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_video.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_video.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_gloss.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_gloss.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_play_cntrls.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_play_cntrls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_selector.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_selector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_window.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_window.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_add.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_delete.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_delete.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_dup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_dup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_list_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_list_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_lock.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_lock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_mute.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_mute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_reorder.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_reorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_select.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_select.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/uss_styles.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/uss_styles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_about.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_about.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_char_anim.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_char_anim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_conv_infinite.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_conv_infinite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_instance.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_instance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_mask.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_mask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_nested.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_nested.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_rec_anim.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_rec_anim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.timeline@1.7.6/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/EventSystem.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/EventSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/EventSystemReference.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/EventSystemReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UICreateFromScripting.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UICreateFromScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIFitContentSize.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIFitContentSize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIMultiResolution.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIMultiResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIScreenTransition.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIScreenTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIWorldSpace.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/HOWTO-UIWorldSpace.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/InputModules.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/InputModules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/MessagingSystem.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/MessagingSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/Raycasters.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/Raycasters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/StyledText.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/StyledText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/SupportedEvents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/SupportedEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/TableOfContents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/TableOfContents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIAnimationIntegration.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIAnimationIntegration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIAutoLayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIAutoLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIBasicLayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIBasicLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UICanvas.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UICanvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIHowTos.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIHowTos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIInteractionComponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIInteractionComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIReference.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIVisualComponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/UIVisualComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-Canvas.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-Canvas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-CanvasGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-CanvasGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-CanvasRenderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-CanvasRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-RectTransform.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/class-RectTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-CanvasComponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-CanvasComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIAutoLayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIAutoLayout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIEffects.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIInteraction.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIInteraction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIVisual.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/comp-UIVisual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-AspectRatioFitter.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-AspectRatioFitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Button.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Button.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-CanvasScaler.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-CanvasScaler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ContentSizeFitter.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ContentSizeFitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Dropdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Dropdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-EventSystem.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-EventSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-EventTrigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-EventTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-GraphicRaycaster.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-GraphicRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-GridLayoutGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-GridLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-HorizontalLayoutGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-HorizontalLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Image.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Image.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-InputField.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-InputField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-LayoutElement.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-LayoutElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Mask.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Mask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Outline.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Outline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Physics2DRaycaster.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Physics2DRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-PhysicsRaycaster.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-PhysicsRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-PositionAsUV1.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-PositionAsUV1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-RawImage.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-RawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-RectMask2D.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-RectMask2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ScrollRect.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ScrollRect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Scrollbar.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Scrollbar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Selectable.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Selectable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-SelectableNavigation.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-SelectableNavigation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-SelectableTransition.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-SelectableTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Shadow.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Shadow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Slider.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Slider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-StandaloneInputModule.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-StandaloneInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Text.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Text.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Toggle.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-Toggle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ToggleGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-ToggleGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-TouchInputModule.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-TouchInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-VerticalLayoutGroup.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/script-VerticalLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/ugui.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/Documentation~/ugui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "SyncerNetUnity/Library/PackageCache/com.unity.ugui@1.0.0/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HotUpdate.UIButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HotUpdate.UIButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HotUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HotUpdate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.DataPack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.DataPack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Entity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Game.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.AddEntityRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.CreateWorldRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinGameRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.JoinWorldRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityReqMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityReqMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityRespMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.RemoveEntityRespMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.SyncerMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.SyncerMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Messages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Messages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.NetworkClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.NetworkClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.NetworkLoop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.NetworkLoop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.NetworkMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.NetworkMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.AnimatorSyncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.AnimatorSyncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.TransformSyncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.TransformSyncer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.Syncers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.Syncers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.World.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SyncerNet.Hotfix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SyncerNet.Hotfix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

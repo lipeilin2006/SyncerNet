@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Code Editor Package for Visual Studio Code | SyncerNet Unity </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Code Editor Package for Visual Studio Code | SyncerNet Unity ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="SyncerNet Unity">
+            SyncerNet Unity
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="code-editor-package-for-visual-studio-code">Code Editor Package for Visual Studio Code</h1>
+
+<h2 id="125---2022-02-07">[1.2.5] - 2022-02-07</h2>
+<ul>
+<li>Introduce OnGeneratedCSProjectFiles, OnGeneratedCSProject and OnGeneratedSlnSolution callbacks.</li>
+<li>Always use forward slash in source paths</li>
+<li>Analyzers use absolute paths</li>
+<li>Ruleset files for roslyn analyzers</li>
+<li>Extra snap search paths on Ubuntu</li>
+<li>Specific c# language version for specific unity versions</li>
+<li>No longer hide .gitignore in VSCode file explorer</li>
+</ul>
+<h2 id="123---2020-10-23">[1.2.3] - 2020-10-23</h2>
+<p>Remove workaround for VSCode omnisharp (as of <a href="https://github.com/OmniSharp/omnisharp-vscode/issues/4113">https://github.com/OmniSharp/omnisharp-vscode/issues/4113</a> we no longer need to disable the referenceoutputassemblies).</p>
+<h2 id="122---2020-09-04">[1.2.2] - 2020-09-04</h2>
+<p>VSC-14 - synchronize solution file when adding new assembly</p>
+<h2 id="121---2020-05-15">[1.2.1] - 2020-05-15</h2>
+<p>Source filtering adds support for asmref</p>
+<h2 id="120---2020-03-04">[1.2.0] - 2020-03-04</h2>
+<p>Do not reference projects that has not been generated (case 1211057)
+Only open files that exists (case 1188394)
+Add individual toggle buttons for generating csprojects for packages
+Add support for Roslyn analyzers in project generation through csc.rsp and compiled assembly references
+Remove Release build target from csproj and sln</p>
+<h2 id="114---2020-01-02">[1.1.4] - 2020-01-02</h2>
+<p>Delta project generation, only recompute the csproj files whose script modified.</p>
+<h2 id="113---2019-10-22">[1.1.3] - 2019-10-22</h2>
+<p>Exe version of vscode will use Normal ProcessWindowStyle while cmd will use Hidden</p>
+<h2 id="112---2019-08-30">[1.1.2] - 2019-08-30</h2>
+<p>Fixing OSX open command arguments</p>
+<h2 id="111---2019-08-19">[1.1.1] - 2019-08-19</h2>
+<p>Support for Player Project. Generates specific csproj files containing files, reference, defines,
+etc. that will show how the assembly will be compiled for a target platform.</p>
+<h2 id="110---2019-08-07">[1.1.0] - 2019-08-07</h2>
+<p>Adds support for choosing extensions to be opened with VSCode. This can be done through the GUI in Preferences.
+Avoids opening all extensions after the change in core unity.</p>
+<h2 id="107---2019-05-15">[1.0.7] - 2019-05-15</h2>
+<p>Fix various OSX specific issues.
+Generate project on load if they are not generated.
+Fix path recognition.</p>
+<h2 id="106---2019-04-30">[1.0.6] - 2019-04-30</h2>
+<p>Ensure asset database is refreshed when generating csproj and solution files.</p>
+<h2 id="105---2019-04-27">[1.0.5] - 2019-04-27</h2>
+<p>Add support for generating all csproj files.</p>
+<h2 id="104---2019-04-18">[1.0.4] - 2019-04-18</h2>
+<p>Fix relative package paths.
+Fix opening editor on mac.
+Add %LOCALAPPDATA%/Programs to the path of install paths.</p>
+<h2 id="103---2019-01-01">[1.0.3] - 2019-01-01</h2>
+<h3 id="this-is-the-first-release-of-unity-package-vscode_editor">This is the first release of <em>Unity Package vscode_editor</em>.</h3>
+<p>Using the newly created api to integrate Visual Studio Code with Unity.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
