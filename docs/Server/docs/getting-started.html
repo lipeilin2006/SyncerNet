@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | SyncerNet Server </title>
+      <title>快速开始 | SyncerNet Server </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | SyncerNet Server ">
+      <meta name="title" content="快速开始 | SyncerNet Server ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,8 +85,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="快速开始">快速开始</h1>
 
+<h2 id="运行指南">运行指南:</h2>
+<ol>
+<li>编译SyncerNet.Hotfix项目。这个操作会自动将生成的热更dll复制到SyncerNet项目编译输出目录。若需要更改.net版本，请自行修改copy.bat。</li>
+<li>编译并运行SyncerNet项目。</li>
+</ol>
+<h2 id="如何添加自定义syncer">如何添加自定义Syncer:</h2>
+<ol>
+<li>在SyncerNet.Hotfix项目的Syncers目录中添加新的Syncer（.cs文件），如ExampleSyncer.cs。</li>
+<li>运行Syncer.tt模板。</li>
+<li>将新的Syncer同步添加到Unity项目中，Syncer.cs中的MemoryPackUnion特性标签也需要同步进行更新。</li>
+<li>重新编译运行即可。</li>
+</ol>
 
 </article>
 

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | SyncerNet Unity </title>
+      <title>运行指南: | SyncerNet Unity </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | SyncerNet Unity ">
+      <meta name="title" content="运行指南: | SyncerNet Unity ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -85,8 +85,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="运行指南">运行指南:</h1>
 
+<h2 id="unity-editor-playmode-运行">Unity Editor PlayMode 运行</h2>
+<p>直接运行就好了</p>
+<h2 id="unity-编译">Unity 编译</h2>
+<ol start="0">
+<li>修改Asset/Scripts/Init.cs中的resourcesServer，更改为自己的文件服务器地址</li>
+<li>在UnityEditor菜单栏中点击HybridCLR-&gt;Generate-&gt;All</li>
+<li>点击SyncerNet-&gt;Generate HotUpdate Config</li>
+<li>点击SyncerNet-&gt;Copy HotUpdate Dlls</li>
+<li>打开YooAsset AssetBundle Builder窗口</li>
+<li>ClickBuild，并将编译得到的文件复制到文件服务器根目录</li>
+<li>编译Unity客户端，运行</li>
+</ol>
 
 </article>
 

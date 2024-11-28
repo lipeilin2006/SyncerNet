@@ -1676,17 +1676,12 @@
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
-    "title": "Getting Started | SyncerNet Unity",
-    "keywords": "Getting Started"
-  },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
-    "title": "Introduction | SyncerNet Unity",
-    "keywords": "Introduction"
+    "title": "运行指南: | SyncerNet Unity",
+    "keywords": "运行指南: Unity Editor PlayMode 运行 直接运行就好了 Unity 编译 修改Asset/Scripts/Init.cs中的resourcesServer，更改为自己的文件服务器地址 在UnityEditor菜单栏中点击HybridCLR->Generate->All 点击SyncerNet->Generate HotUpdate Config 点击SyncerNet->Copy HotUpdate Dlls 打开YooAsset AssetBundle Builder窗口 ClickBuild，并将编译得到的文件复制到文件服务器根目录 编译Unity客户端，运行"
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | SyncerNet Unity",
-    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "SyncerNet Unity | SyncerNet Unity",
+    "keywords": "SyncerNet Unity 运行指南: Unity Editor PlayMode 运行 直接运行就好了 Unity 编译 修改Asset/Scripts/Init.cs中的resourcesServer，更改为自己的文件服务器地址 在UnityEditor菜单栏中点击HybridCLR->Generate->All 点击SyncerNet->Generate HotUpdate Config 点击SyncerNet->Copy HotUpdate Dlls 打开YooAsset AssetBundle Builder窗口 ClickBuild，并将编译得到的文件复制到文件服务器根目录 编译Unity客户端，运行"
   }
 }

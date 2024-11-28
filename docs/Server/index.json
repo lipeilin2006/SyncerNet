@@ -271,17 +271,12 @@
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
-    "title": "Getting Started | SyncerNet Server",
-    "keywords": "Getting Started"
-  },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
-    "title": "Introduction | SyncerNet Server",
-    "keywords": "Introduction"
+    "title": "快速开始 | SyncerNet Server",
+    "keywords": "快速开始 运行指南: 编译SyncerNet.Hotfix项目。这个操作会自动将生成的热更dll复制到SyncerNet项目编译输出目录。若需要更改.net版本，请自行修改copy.bat。 编译并运行SyncerNet项目。 如何添加自定义Syncer: 在SyncerNet.Hotfix项目的Syncers目录中添加新的Syncer（.cs文件），如ExampleSyncer.cs。 运行Syncer.tt模板。 将新的Syncer同步添加到Unity项目中，Syncer.cs中的MemoryPackUnion特性标签也需要同步进行更新。 重新编译运行即可。"
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | SyncerNet Server",
-    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "SyncerNet Server | SyncerNet Server",
+    "keywords": "SyncerNet Server 快速开始 运行指南: 编译SyncerNet.Hotfix项目。这个操作会自动将生成的热更dll复制到SyncerNet项目编译输出目录。若需要更改.net版本，请自行修改copy.bat。 编译并运行SyncerNet项目。 如何添加自定义Syncer: 在SyncerNet.Hotfix项目的Syncers目录中添加新的Syncer（.cs文件），如ExampleSyncer.cs。 运行Syncer.tt模板。 将新的Syncer同步添加到Unity项目中，Syncer.cs中的MemoryPackUnion特性标签也需要同步进行更新。 重新编译运行即可。"
   }
 }
