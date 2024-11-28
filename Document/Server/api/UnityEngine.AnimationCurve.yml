@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  id: AnimationCurve
+  parent: UnityEngine
+  children:
+  - UnityEngine.AnimationCurve.keys
+  - UnityEngine.AnimationCurve.length
+  - UnityEngine.AnimationCurve.postWrapMode
+  - UnityEngine.AnimationCurve.preWrapMode
+  langs:
+  - csharp
+  - vb
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+  type: Class
+  source:
+    id: AnimationCurve
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\UnityEngine.AnimationCurve.MemoryPackFormatter.g.cs
+    startLine: 32
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  remarks: 'MemoryPack GenerateType: Object<br /><pre><code class="lang-csharp">UnityEngine.WrapMode postWrapModeUnityEngine.WrapMode preWrapModeUnityEngine.Keyframe[] keys</code></pre>'
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackable(GenerateType.Object)]
+
+      public sealed class AnimationCurve : IMemoryPackable<AnimationCurve>, IMemoryPackFormatterRegister
+    content.vb: >-
+      <MemoryPackable(GenerateType.Object)>
+
+      Public NotInheritable Class AnimationCurve Implements IMemoryPackable(Of AnimationCurve), IMemoryPackFormatterRegister
+  inheritance:
+  - System.Object
+  implements:
+  - MemoryPack.IMemoryPackable{UnityEngine.AnimationCurve}
+  - MemoryPack.IMemoryPackFormatterRegister
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: MemoryPack.MemoryPackableAttribute
+    ctor: MemoryPack.MemoryPackableAttribute.#ctor(MemoryPack.GenerateType)
+    arguments:
+    - type: MemoryPack.GenerateType
+      value: 0
+- uid: UnityEngine.AnimationCurve.postWrapMode
+  commentId: F:UnityEngine.AnimationCurve.postWrapMode
+  id: postWrapMode
+  parent: UnityEngine.AnimationCurve
+  langs:
+  - csharp
+  - vb
+  name: postWrapMode
+  nameWithType: AnimationCurve.postWrapMode
+  fullName: UnityEngine.AnimationCurve.postWrapMode
+  type: Field
+  source:
+    id: postWrapMode
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 312
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public WrapMode postWrapMode
+    return:
+      type: UnityEngine.WrapMode
+    content.vb: Public postWrapMode As WrapMode
+- uid: UnityEngine.AnimationCurve.preWrapMode
+  commentId: F:UnityEngine.AnimationCurve.preWrapMode
+  id: preWrapMode
+  parent: UnityEngine.AnimationCurve
+  langs:
+  - csharp
+  - vb
+  name: preWrapMode
+  nameWithType: AnimationCurve.preWrapMode
+  fullName: UnityEngine.AnimationCurve.preWrapMode
+  type: Field
+  source:
+    id: preWrapMode
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 313
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public WrapMode preWrapMode
+    return:
+      type: UnityEngine.WrapMode
+    content.vb: Public preWrapMode As WrapMode
+- uid: UnityEngine.AnimationCurve.keys
+  commentId: F:UnityEngine.AnimationCurve.keys
+  id: keys
+  parent: UnityEngine.AnimationCurve
+  langs:
+  - csharp
+  - vb
+  name: keys
+  nameWithType: AnimationCurve.keys
+  fullName: UnityEngine.AnimationCurve.keys
+  type: Field
+  source:
+    id: keys
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 314
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public Keyframe[] keys
+    return:
+      type: UnityEngine.Keyframe[]
+    content.vb: Public keys As Keyframe()
+- uid: UnityEngine.AnimationCurve.length
+  commentId: P:UnityEngine.AnimationCurve.length
+  id: length
+  parent: UnityEngine.AnimationCurve
+  langs:
+  - csharp
+  - vb
+  name: length
+  nameWithType: AnimationCurve.length
+  fullName: UnityEngine.AnimationCurve.length
+  type: Property
+  source:
+    id: length
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 316
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: >-
+      [MemoryPackIgnore]
+
+      public int length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <MemoryPackIgnore>
+
+      Public ReadOnly Property length As Integer
+  overload: UnityEngine.AnimationCurve.length*
+  attributes:
+  - type: MemoryPack.MemoryPackIgnoreAttribute
+    ctor: MemoryPack.MemoryPackIgnoreAttribute.#ctor
+    arguments: []
+references:
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  href: UnityEngine.html
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MemoryPack.IMemoryPackable{UnityEngine.AnimationCurve}
+  commentId: T:MemoryPack.IMemoryPackable{UnityEngine.AnimationCurve}
+  parent: MemoryPack
+  definition: MemoryPack.IMemoryPackable`1
+  href: UnityEngine.AnimationCurve.html
+  name: IMemoryPackable<AnimationCurve>
+  nameWithType: IMemoryPackable<AnimationCurve>
+  fullName: MemoryPack.IMemoryPackable<UnityEngine.AnimationCurve>
+  nameWithType.vb: IMemoryPackable(Of AnimationCurve)
+  fullName.vb: MemoryPack.IMemoryPackable(Of UnityEngine.AnimationCurve)
+  name.vb: IMemoryPackable(Of AnimationCurve)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.AnimationCurve
+    name: AnimationCurve
+    href: UnityEngine.AnimationCurve.html
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.AnimationCurve
+    name: AnimationCurve
+    href: UnityEngine.AnimationCurve.html
+  - name: )
+- uid: MemoryPack.IMemoryPackFormatterRegister
+  commentId: T:MemoryPack.IMemoryPackFormatterRegister
+  parent: MemoryPack
+  isExternal: true
+  name: IMemoryPackFormatterRegister
+  nameWithType: IMemoryPackFormatterRegister
+  fullName: MemoryPack.IMemoryPackFormatterRegister
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MemoryPack.IMemoryPackable`1
+  commentId: T:MemoryPack.IMemoryPackable`1
+  isExternal: true
+  name: IMemoryPackable<T>
+  nameWithType: IMemoryPackable<T>
+  fullName: MemoryPack.IMemoryPackable<T>
+  nameWithType.vb: IMemoryPackable(Of T)
+  fullName.vb: MemoryPack.IMemoryPackable(Of T)
+  name.vb: IMemoryPackable(Of T)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MemoryPack
+  commentId: N:MemoryPack
+  isExternal: true
+  name: MemoryPack
+  nameWithType: MemoryPack
+  fullName: MemoryPack
+- uid: UnityEngine.WrapMode
+  commentId: T:UnityEngine.WrapMode
+  parent: UnityEngine
+  href: UnityEngine.WrapMode.html
+  name: WrapMode
+  nameWithType: WrapMode
+  fullName: UnityEngine.WrapMode
+- uid: UnityEngine.Keyframe[]
+  isExternal: true
+  href: UnityEngine.Keyframe.html
+  name: Keyframe[]
+  nameWithType: Keyframe[]
+  fullName: UnityEngine.Keyframe[]
+  nameWithType.vb: Keyframe()
+  fullName.vb: UnityEngine.Keyframe()
+  name.vb: Keyframe()
+  spec.csharp:
+  - uid: UnityEngine.Keyframe
+    name: Keyframe
+    href: UnityEngine.Keyframe.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Keyframe
+    name: Keyframe
+    href: UnityEngine.Keyframe.html
+  - name: (
+  - name: )
+- uid: UnityEngine.AnimationCurve.length*
+  commentId: Overload:UnityEngine.AnimationCurve.length
+  href: UnityEngine.AnimationCurve.html#UnityEngine_AnimationCurve_length
+  name: length
+  nameWithType: AnimationCurve.length
+  fullName: UnityEngine.AnimationCurve.length
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

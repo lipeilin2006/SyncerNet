@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MemoryPack" Version="1.21.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\kcp2k\kcp2k.csproj" />
+    <ProjectReference Include="..\SyncerNet.Logging\SyncerNet.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NetworkMessage.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NetworkMessage.cs</LastGenOutput>
+    </None>
+    <None Update="Syncer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Syncer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="NetworkMessage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NetworkMessage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Syncer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Syncer.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="call copy.bat $(OutDir)" />
+  </Target>
+
+</Project>

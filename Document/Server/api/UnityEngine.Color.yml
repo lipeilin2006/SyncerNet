@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  id: Color
+  parent: UnityEngine
+  children:
+  - UnityEngine.Color.#ctor(System.Single,System.Single,System.Single)
+  - UnityEngine.Color.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - UnityEngine.Color.a
+  - UnityEngine.Color.b
+  - UnityEngine.Color.g
+  - UnityEngine.Color.r
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+  type: Struct
+  source:
+    id: Color
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\UnityEngine.Color.MemoryPackFormatter.g.cs
+    startLine: 33
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  remarks: 'MemoryPack GenerateType: unmanaged<br /><pre><code class="lang-csharp">float rfloat gfloat bfloat a</code></pre>'
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackable(GenerateType.Object)]
+
+      public struct Color : IMemoryPackable<Color>, IMemoryPackFormatterRegister
+    content.vb: >-
+      <MemoryPackable(GenerateType.Object)>
+
+      Public Structure Color Implements IMemoryPackable(Of Color), IMemoryPackFormatterRegister
+  implements:
+  - MemoryPack.IMemoryPackable{UnityEngine.Color}
+  - MemoryPack.IMemoryPackFormatterRegister
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: MemoryPack.MemoryPackableAttribute
+    ctor: MemoryPack.MemoryPackableAttribute.#ctor(MemoryPack.GenerateType)
+    arguments:
+    - type: MemoryPack.GenerateType
+      value: 0
+- uid: UnityEngine.Color.r
+  commentId: F:UnityEngine.Color.r
+  id: r
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: r
+  nameWithType: Color.r
+  fullName: UnityEngine.Color.r
+  type: Field
+  source:
+    id: r
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 198
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float r
+    return:
+      type: System.Single
+    content.vb: Public r As Single
+- uid: UnityEngine.Color.g
+  commentId: F:UnityEngine.Color.g
+  id: g
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: g
+  nameWithType: Color.g
+  fullName: UnityEngine.Color.g
+  type: Field
+  source:
+    id: g
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 199
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float g
+    return:
+      type: System.Single
+    content.vb: Public g As Single
+- uid: UnityEngine.Color.b
+  commentId: F:UnityEngine.Color.b
+  id: b
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: b
+  nameWithType: Color.b
+  fullName: UnityEngine.Color.b
+  type: Field
+  source:
+    id: b
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 200
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float b
+    return:
+      type: System.Single
+    content.vb: Public b As Single
+- uid: UnityEngine.Color.a
+  commentId: F:UnityEngine.Color.a
+  id: a
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: a
+  nameWithType: Color.a
+  fullName: UnityEngine.Color.a
+  type: Field
+  source:
+    id: a
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 201
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float a
+    return:
+      type: System.Single
+    content.vb: Public a As Single
+- uid: UnityEngine.Color.#ctor(System.Single,System.Single,System.Single)
+  commentId: M:UnityEngine.Color.#ctor(System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single)'
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: Color(float, float, float)
+  nameWithType: Color.Color(float, float, float)
+  fullName: UnityEngine.Color.Color(float, float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 203
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public Color(float r, float g, float b)
+    parameters:
+    - id: r
+      type: System.Single
+    - id: g
+      type: System.Single
+    - id: b
+      type: System.Single
+    content.vb: Public Sub New(r As Single, g As Single, b As Single)
+  overload: UnityEngine.Color.#ctor*
+  nameWithType.vb: Color.New(Single, Single, Single)
+  fullName.vb: UnityEngine.Color.New(Single, Single, Single)
+  name.vb: New(Single, Single, Single)
+- uid: UnityEngine.Color.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:UnityEngine.Color.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: UnityEngine.Color
+  langs:
+  - csharp
+  - vb
+  name: Color(float, float, float, float)
+  nameWithType: Color.Color(float, float, float, float)
+  fullName: UnityEngine.Color.Color(float, float, float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 208
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public Color(float r, float g, float b, float a)
+    parameters:
+    - id: r
+      type: System.Single
+    - id: g
+      type: System.Single
+    - id: b
+      type: System.Single
+    - id: a
+      type: System.Single
+    content.vb: Public Sub New(r As Single, g As Single, b As Single, a As Single)
+  overload: UnityEngine.Color.#ctor*
+  nameWithType.vb: Color.New(Single, Single, Single, Single)
+  fullName.vb: UnityEngine.Color.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+references:
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  href: UnityEngine.html
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MemoryPack.IMemoryPackable{UnityEngine.Color}
+  commentId: T:MemoryPack.IMemoryPackable{UnityEngine.Color}
+  parent: MemoryPack
+  definition: MemoryPack.IMemoryPackable`1
+  href: UnityEngine.Color.html
+  name: IMemoryPackable<Color>
+  nameWithType: IMemoryPackable<Color>
+  fullName: MemoryPack.IMemoryPackable<UnityEngine.Color>
+  nameWithType.vb: IMemoryPackable(Of Color)
+  fullName.vb: MemoryPack.IMemoryPackable(Of UnityEngine.Color)
+  name.vb: IMemoryPackable(Of Color)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Color
+    name: Color
+    href: UnityEngine.Color.html
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    href: UnityEngine.Color.html
+  - name: )
+- uid: MemoryPack.IMemoryPackFormatterRegister
+  commentId: T:MemoryPack.IMemoryPackFormatterRegister
+  parent: MemoryPack
+  isExternal: true
+  name: IMemoryPackFormatterRegister
+  nameWithType: IMemoryPackFormatterRegister
+  fullName: MemoryPack.IMemoryPackFormatterRegister
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MemoryPack.IMemoryPackable`1
+  commentId: T:MemoryPack.IMemoryPackable`1
+  isExternal: true
+  name: IMemoryPackable<T>
+  nameWithType: IMemoryPackable<T>
+  fullName: MemoryPack.IMemoryPackable<T>
+  nameWithType.vb: IMemoryPackable(Of T)
+  fullName.vb: MemoryPack.IMemoryPackable(Of T)
+  name.vb: IMemoryPackable(Of T)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MemoryPack
+  commentId: N:MemoryPack
+  isExternal: true
+  name: MemoryPack
+  nameWithType: MemoryPack
+  fullName: MemoryPack
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color.#ctor*
+  commentId: Overload:UnityEngine.Color.#ctor
+  href: UnityEngine.Color.html#UnityEngine_Color__ctor_System_Single_System_Single_System_Single_
+  name: Color
+  nameWithType: Color.Color
+  fullName: UnityEngine.Color.Color
+  nameWithType.vb: Color.New
+  fullName.vb: UnityEngine.Color.New
+  name.vb: New

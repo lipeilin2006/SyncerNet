@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.WrapMode
+  commentId: T:UnityEngine.WrapMode
+  id: WrapMode
+  parent: UnityEngine
+  children:
+  - UnityEngine.WrapMode.Clamp
+  - UnityEngine.WrapMode.ClampForever
+  - UnityEngine.WrapMode.Default
+  - UnityEngine.WrapMode.Loop
+  - UnityEngine.WrapMode.Once
+  - UnityEngine.WrapMode.PingPong
+  langs:
+  - csharp
+  - vb
+  name: WrapMode
+  nameWithType: WrapMode
+  fullName: UnityEngine.WrapMode
+  type: Enum
+  source:
+    id: WrapMode
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 351
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public enum WrapMode
+    content.vb: Public Enum WrapMode
+- uid: UnityEngine.WrapMode.Once
+  commentId: F:UnityEngine.WrapMode.Once
+  id: Once
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: Once
+  nameWithType: WrapMode.Once
+  fullName: UnityEngine.WrapMode.Once
+  type: Field
+  source:
+    id: Once
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 353
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: Once = 1
+    return:
+      type: UnityEngine.WrapMode
+- uid: UnityEngine.WrapMode.Loop
+  commentId: F:UnityEngine.WrapMode.Loop
+  id: Loop
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: Loop
+  nameWithType: WrapMode.Loop
+  fullName: UnityEngine.WrapMode.Loop
+  type: Field
+  source:
+    id: Loop
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 354
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: Loop = 2
+    return:
+      type: UnityEngine.WrapMode
+- uid: UnityEngine.WrapMode.PingPong
+  commentId: F:UnityEngine.WrapMode.PingPong
+  id: PingPong
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: PingPong
+  nameWithType: WrapMode.PingPong
+  fullName: UnityEngine.WrapMode.PingPong
+  type: Field
+  source:
+    id: PingPong
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 355
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: PingPong = 4
+    return:
+      type: UnityEngine.WrapMode
+- uid: UnityEngine.WrapMode.Default
+  commentId: F:UnityEngine.WrapMode.Default
+  id: Default
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: WrapMode.Default
+  fullName: UnityEngine.WrapMode.Default
+  type: Field
+  source:
+    id: Default
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 356
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: Default = 0
+    return:
+      type: UnityEngine.WrapMode
+- uid: UnityEngine.WrapMode.ClampForever
+  commentId: F:UnityEngine.WrapMode.ClampForever
+  id: ClampForever
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: ClampForever
+  nameWithType: WrapMode.ClampForever
+  fullName: UnityEngine.WrapMode.ClampForever
+  type: Field
+  source:
+    id: ClampForever
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 357
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: ClampForever = 8
+    return:
+      type: UnityEngine.WrapMode
+- uid: UnityEngine.WrapMode.Clamp
+  commentId: F:UnityEngine.WrapMode.Clamp
+  id: Clamp
+  parent: UnityEngine.WrapMode
+  langs:
+  - csharp
+  - vb
+  name: Clamp
+  nameWithType: WrapMode.Clamp
+  fullName: UnityEngine.WrapMode.Clamp
+  type: Field
+  source:
+    id: Clamp
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 358
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: Clamp = 1
+    return:
+      type: UnityEngine.WrapMode
+references:
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  href: UnityEngine.html
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.WrapMode
+  commentId: T:UnityEngine.WrapMode
+  parent: UnityEngine
+  href: UnityEngine.WrapMode.html
+  name: WrapMode
+  nameWithType: WrapMode
+  fullName: UnityEngine.WrapMode

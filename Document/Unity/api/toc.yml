@@ -1,0 +1,88 @@
+### YamlMime:TableOfContent
+items:
+- uid: HotUpdate
+  name: HotUpdate
+  type: Namespace
+  items:
+  - uid: HotUpdate.UIButtons
+    name: UIButtons
+    type: Class
+- uid: SyncerNet.Hotfix
+  name: SyncerNet.Hotfix
+  type: Namespace
+  items:
+  - uid: SyncerNet.Hotfix.DataPack
+    name: DataPack
+    type: Struct
+  - uid: SyncerNet.Hotfix.Entity
+    name: Entity
+    type: Class
+  - uid: SyncerNet.Hotfix.Game
+    name: Game
+    type: Class
+  - uid: SyncerNet.Hotfix.NetworkClient
+    name: NetworkClient
+    type: Class
+  - uid: SyncerNet.Hotfix.NetworkLoop
+    name: NetworkLoop
+    type: Class
+  - uid: SyncerNet.Hotfix.NetworkMessage
+    name: NetworkMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Syncer
+    name: Syncer
+    type: Class
+  - uid: SyncerNet.Hotfix.World
+    name: World
+    type: Class
+- uid: SyncerNet.Hotfix.Messages
+  name: SyncerNet.Hotfix.Messages
+  type: Namespace
+  items:
+  - uid: SyncerNet.Hotfix.Messages.AddEntityMessage
+    name: AddEntityMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.AddEntityReqMessage
+    name: AddEntityReqMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.AddEntityRespMessage
+    name: AddEntityRespMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.CreateWorldReqMessage
+    name: CreateWorldReqMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.CreateWorldRespMessage
+    name: CreateWorldRespMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.JoinGameReqMessage
+    name: JoinGameReqMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.JoinGameRespMessage
+    name: JoinGameRespMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.JoinWorldReqMessage
+    name: JoinWorldReqMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.JoinWorldRespMessage
+    name: JoinWorldRespMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.RemoveEntityReqMessage
+    name: RemoveEntityReqMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.RemoveEntityRespMessage
+    name: RemoveEntityRespMessage
+    type: Class
+  - uid: SyncerNet.Hotfix.Messages.SyncerMessage
+    name: SyncerMessage
+    type: Class
+- uid: SyncerNet.Hotfix.Syncers
+  name: SyncerNet.Hotfix.Syncers
+  type: Namespace
+  items:
+  - uid: SyncerNet.Hotfix.Syncers.AnimatorSyncer
+    name: AnimatorSyncer
+    type: Class
+  - uid: SyncerNet.Hotfix.Syncers.TransformSyncer
+    name: TransformSyncer
+    type: Class
+memberLayout: SamePage

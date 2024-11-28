@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Hotfix.NetworkMessage
+  commentId: T:SyncerNet.Hotfix.NetworkMessage
+  id: NetworkMessage
+  parent: SyncerNet.Hotfix
+  children:
+  - SyncerNet.Hotfix.NetworkMessage.Id
+  - SyncerNet.Hotfix.NetworkMessage.IsResponse
+  - SyncerNet.Hotfix.NetworkMessage.PlayerId
+  - SyncerNet.Hotfix.NetworkMessage.Process(SyncerNet.Hotfix.Game,kcp2k.KcpChannel)
+  - SyncerNet.Hotfix.NetworkMessage.RegisterFormatter
+  - SyncerNet.Hotfix.NetworkMessage.Token
+  langs:
+  - csharp
+  - vb
+  name: NetworkMessage
+  nameWithType: NetworkMessage
+  fullName: SyncerNet.Hotfix.NetworkMessage
+  type: Class
+  source:
+    id: NetworkMessage
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\SyncerNet.Hotfix.NetworkMessage.MemoryPackFormatter.g.cs
+    startLine: 25
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 这个类的数据结构和MemoryPack特性标签需要和服务端一致(函数除外)
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackable(GenerateType.Object)]
+
+      [MemoryPackUnion(0, typeof(AddEntityMessage))]
+
+      [MemoryPackUnion(1, typeof(AddEntityReqMessage))]
+
+      [MemoryPackUnion(2, typeof(AddEntityRespMessage))]
+
+      [MemoryPackUnion(3, typeof(CreateWorldReqMessage))]
+
+      [MemoryPackUnion(4, typeof(CreateWorldRespMessage))]
+
+      [MemoryPackUnion(5, typeof(JoinGameReqMessage))]
+
+      [MemoryPackUnion(6, typeof(JoinGameRespMessage))]
+
+      [MemoryPackUnion(7, typeof(JoinWorldReqMessage))]
+
+      [MemoryPackUnion(8, typeof(JoinWorldRespMessage))]
+
+      [MemoryPackUnion(9, typeof(RemoveEntityReqMessage))]
+
+      [MemoryPackUnion(10, typeof(RemoveEntityRespMessage))]
+
+      [MemoryPackUnion(11, typeof(SyncerMessage))]
+
+      public abstract class NetworkMessage : IMemoryPackFormatterRegister
+    content.vb: >-
+      <MemoryPackable(GenerateType.Object)>
+
+      <MemoryPackUnion(0, GetType(AddEntityMessage))>
+
+      <MemoryPackUnion(1, GetType(AddEntityReqMessage))>
+
+      <MemoryPackUnion(2, GetType(AddEntityRespMessage))>
+
+      <MemoryPackUnion(3, GetType(CreateWorldReqMessage))>
+
+      <MemoryPackUnion(4, GetType(CreateWorldRespMessage))>
+
+      <MemoryPackUnion(5, GetType(JoinGameReqMessage))>
+
+      <MemoryPackUnion(6, GetType(JoinGameRespMessage))>
+
+      <MemoryPackUnion(7, GetType(JoinWorldReqMessage))>
+
+      <MemoryPackUnion(8, GetType(JoinWorldRespMessage))>
+
+      <MemoryPackUnion(9, GetType(RemoveEntityReqMessage))>
+
+      <MemoryPackUnion(10, GetType(RemoveEntityRespMessage))>
+
+      <MemoryPackUnion(11, GetType(SyncerMessage))>
+
+      Public MustInherit Class NetworkMessage Implements IMemoryPackFormatterRegister
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SyncerNet.Hotfix.Messages.AddEntityMessage
+  - SyncerNet.Hotfix.Messages.AddEntityReqMessage
+  - SyncerNet.Hotfix.Messages.AddEntityRespMessage
+  - SyncerNet.Hotfix.Messages.CreateWorldReqMessage
+  - SyncerNet.Hotfix.Messages.CreateWorldRespMessage
+  - SyncerNet.Hotfix.Messages.JoinGameReqMessage
+  - SyncerNet.Hotfix.Messages.JoinGameRespMessage
+  - SyncerNet.Hotfix.Messages.JoinWorldReqMessage
+  - SyncerNet.Hotfix.Messages.JoinWorldRespMessage
+  - SyncerNet.Hotfix.Messages.RemoveEntityReqMessage
+  - SyncerNet.Hotfix.Messages.RemoveEntityRespMessage
+  - SyncerNet.Hotfix.Messages.SyncerMessage
+  implements:
+  - MemoryPack.IMemoryPackFormatterRegister
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: MemoryPack.MemoryPackableAttribute
+    ctor: MemoryPack.MemoryPackableAttribute.#ctor(MemoryPack.GenerateType)
+    arguments:
+    - type: MemoryPack.GenerateType
+      value: 0
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 0
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.AddEntityMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 1
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.AddEntityReqMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 2
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.AddEntityRespMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 3
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.CreateWorldReqMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 4
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.CreateWorldRespMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 5
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.JoinGameReqMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 6
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.JoinGameRespMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 7
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.JoinWorldReqMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 8
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.JoinWorldRespMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 9
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.RemoveEntityReqMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 10
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.RemoveEntityRespMessage
+  - type: MemoryPack.MemoryPackUnionAttribute
+    ctor: MemoryPack.MemoryPackUnionAttribute.#ctor(System.UInt16,System.Type)
+    arguments:
+    - type: System.UInt16
+      value: 11
+    - type: System.Type
+      value: SyncerNet.Hotfix.Messages.SyncerMessage
+- uid: SyncerNet.Hotfix.NetworkMessage.Id
+  commentId: F:SyncerNet.Hotfix.NetworkMessage.Id
+  id: Id
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: NetworkMessage.Id
+  fullName: SyncerNet.Hotfix.NetworkMessage.Id
+  type: Field
+  source:
+    id: Id
+    path: D:\SyncerNet\SyncerNetUnity\Assets\SyncerNet\Hotfix\NetworkMessage.cs
+    startLine: 24
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public uint Id
+    return:
+      type: System.UInt32
+    content.vb: Public Id As UInteger
+- uid: SyncerNet.Hotfix.NetworkMessage.PlayerId
+  commentId: F:SyncerNet.Hotfix.NetworkMessage.PlayerId
+  id: PlayerId
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: PlayerId
+  nameWithType: NetworkMessage.PlayerId
+  fullName: SyncerNet.Hotfix.NetworkMessage.PlayerId
+  type: Field
+  source:
+    id: PlayerId
+    path: D:\SyncerNet\SyncerNetUnity\Assets\SyncerNet\Hotfix\NetworkMessage.cs
+    startLine: 25
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public uint PlayerId
+    return:
+      type: System.UInt32
+    content.vb: Public PlayerId As UInteger
+- uid: SyncerNet.Hotfix.NetworkMessage.Token
+  commentId: F:SyncerNet.Hotfix.NetworkMessage.Token
+  id: Token
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: NetworkMessage.Token
+  fullName: SyncerNet.Hotfix.NetworkMessage.Token
+  type: Field
+  source:
+    id: Token
+    path: D:\SyncerNet\SyncerNetUnity\Assets\SyncerNet\Hotfix\NetworkMessage.cs
+    startLine: 26
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public string Token
+    return:
+      type: System.String
+    content.vb: Public Token As String
+- uid: SyncerNet.Hotfix.NetworkMessage.IsResponse
+  commentId: F:SyncerNet.Hotfix.NetworkMessage.IsResponse
+  id: IsResponse
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: IsResponse
+  nameWithType: NetworkMessage.IsResponse
+  fullName: SyncerNet.Hotfix.NetworkMessage.IsResponse
+  type: Field
+  source:
+    id: IsResponse
+    path: D:\SyncerNet\SyncerNetUnity\Assets\SyncerNet\Hotfix\NetworkMessage.cs
+    startLine: 27
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public bool IsResponse
+    return:
+      type: System.Boolean
+    content.vb: Public IsResponse As Boolean
+- uid: SyncerNet.Hotfix.NetworkMessage.Process(SyncerNet.Hotfix.Game,kcp2k.KcpChannel)
+  commentId: M:SyncerNet.Hotfix.NetworkMessage.Process(SyncerNet.Hotfix.Game,kcp2k.KcpChannel)
+  id: Process(SyncerNet.Hotfix.Game,kcp2k.KcpChannel)
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: Process(Game, KcpChannel)
+  nameWithType: NetworkMessage.Process(Game, KcpChannel)
+  fullName: SyncerNet.Hotfix.NetworkMessage.Process(SyncerNet.Hotfix.Game, kcp2k.KcpChannel)
+  type: Method
+  source:
+    id: Process
+    path: D:\SyncerNet\SyncerNetUnity\Assets\SyncerNet\Hotfix\NetworkMessage.cs
+    startLine: 28
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public abstract void Process(Game game, KcpChannel channel)
+    parameters:
+    - id: game
+      type: SyncerNet.Hotfix.Game
+    - id: channel
+      type: kcp2k.KcpChannel
+    content.vb: Public MustOverride Sub Process(game As Game, channel As KcpChannel)
+  overload: SyncerNet.Hotfix.NetworkMessage.Process*
+- uid: SyncerNet.Hotfix.NetworkMessage.RegisterFormatter
+  commentId: M:SyncerNet.Hotfix.NetworkMessage.RegisterFormatter
+  id: RegisterFormatter
+  parent: SyncerNet.Hotfix.NetworkMessage
+  langs:
+  - csharp
+  - vb
+  name: RegisterFormatter()
+  nameWithType: NetworkMessage.RegisterFormatter()
+  fullName: SyncerNet.Hotfix.NetworkMessage.RegisterFormatter()
+  type: Method
+  source:
+    id: RegisterFormatter
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\SyncerNet.Hotfix.NetworkMessage.MemoryPackFormatter.g.cs
+    startLine: 35
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: >-
+      [Preserve]
+
+      public static void RegisterFormatter()
+    content.vb: >-
+      <Preserve>
+
+      Public Shared Sub RegisterFormatter()
+  overload: SyncerNet.Hotfix.NetworkMessage.RegisterFormatter*
+  attributes:
+  - type: MemoryPack.Internal.PreserveAttribute
+    ctor: MemoryPack.Internal.PreserveAttribute.#ctor
+    arguments: []
+references:
+- uid: SyncerNet.Hotfix
+  commentId: N:SyncerNet.Hotfix
+  href: SyncerNet.html
+  name: SyncerNet.Hotfix
+  nameWithType: SyncerNet.Hotfix
+  fullName: SyncerNet.Hotfix
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MemoryPack.IMemoryPackFormatterRegister
+  commentId: T:MemoryPack.IMemoryPackFormatterRegister
+  parent: MemoryPack
+  isExternal: true
+  name: IMemoryPackFormatterRegister
+  nameWithType: IMemoryPackFormatterRegister
+  fullName: MemoryPack.IMemoryPackFormatterRegister
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MemoryPack
+  commentId: N:MemoryPack
+  isExternal: true
+  name: MemoryPack
+  nameWithType: MemoryPack
+  fullName: MemoryPack
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SyncerNet.Hotfix.NetworkMessage.Process*
+  commentId: Overload:SyncerNet.Hotfix.NetworkMessage.Process
+  href: SyncerNet.Hotfix.NetworkMessage.html#SyncerNet_Hotfix_NetworkMessage_Process_SyncerNet_Hotfix_Game_kcp2k_KcpChannel_
+  name: Process
+  nameWithType: NetworkMessage.Process
+  fullName: SyncerNet.Hotfix.NetworkMessage.Process
+- uid: SyncerNet.Hotfix.Game
+  commentId: T:SyncerNet.Hotfix.Game
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Game.html
+  name: Game
+  nameWithType: Game
+  fullName: SyncerNet.Hotfix.Game
+- uid: kcp2k.KcpChannel
+  commentId: T:kcp2k.KcpChannel
+  parent: kcp2k
+  name: KcpChannel
+  nameWithType: KcpChannel
+  fullName: kcp2k.KcpChannel
+- uid: kcp2k
+  commentId: N:kcp2k
+  name: kcp2k
+  nameWithType: kcp2k
+  fullName: kcp2k
+- uid: SyncerNet.Hotfix.NetworkMessage.RegisterFormatter*
+  commentId: Overload:SyncerNet.Hotfix.NetworkMessage.RegisterFormatter
+  href: SyncerNet.Hotfix.NetworkMessage.html#SyncerNet_Hotfix_NetworkMessage_RegisterFormatter
+  name: RegisterFormatter
+  nameWithType: NetworkMessage.RegisterFormatter
+  fullName: SyncerNet.Hotfix.NetworkMessage.RegisterFormatter

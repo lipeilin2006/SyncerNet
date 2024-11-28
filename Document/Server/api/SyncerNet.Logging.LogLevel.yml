@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Logging.LogLevel
+  commentId: T:SyncerNet.Logging.LogLevel
+  id: LogLevel
+  parent: SyncerNet.Logging
+  children:
+  - SyncerNet.Logging.LogLevel.Debug
+  - SyncerNet.Logging.LogLevel.Error
+  - SyncerNet.Logging.LogLevel.Fatal
+  - SyncerNet.Logging.LogLevel.Info
+  - SyncerNet.Logging.LogLevel.Warn
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: SyncerNet.Logging.LogLevel
+  type: Enum
+  source:
+    id: LogLevel
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 51
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: SyncerNet.Logging.LogLevel.Debug
+  commentId: F:SyncerNet.Logging.LogLevel.Debug
+  id: Debug
+  parent: SyncerNet.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogLevel.Debug
+  fullName: SyncerNet.Logging.LogLevel.Debug
+  type: Field
+  source:
+    id: Debug
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 53
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: Debug = 0
+    return:
+      type: SyncerNet.Logging.LogLevel
+- uid: SyncerNet.Logging.LogLevel.Info
+  commentId: F:SyncerNet.Logging.LogLevel.Info
+  id: Info
+  parent: SyncerNet.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogLevel.Info
+  fullName: SyncerNet.Logging.LogLevel.Info
+  type: Field
+  source:
+    id: Info
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 54
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: Info = 1
+    return:
+      type: SyncerNet.Logging.LogLevel
+- uid: SyncerNet.Logging.LogLevel.Warn
+  commentId: F:SyncerNet.Logging.LogLevel.Warn
+  id: Warn
+  parent: SyncerNet.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warn
+  nameWithType: LogLevel.Warn
+  fullName: SyncerNet.Logging.LogLevel.Warn
+  type: Field
+  source:
+    id: Warn
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 55
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: Warn = 2
+    return:
+      type: SyncerNet.Logging.LogLevel
+- uid: SyncerNet.Logging.LogLevel.Error
+  commentId: F:SyncerNet.Logging.LogLevel.Error
+  id: Error
+  parent: SyncerNet.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: SyncerNet.Logging.LogLevel.Error
+  type: Field
+  source:
+    id: Error
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 56
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: Error = 3
+    return:
+      type: SyncerNet.Logging.LogLevel
+- uid: SyncerNet.Logging.LogLevel.Fatal
+  commentId: F:SyncerNet.Logging.LogLevel.Fatal
+  id: Fatal
+  parent: SyncerNet.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  nameWithType: LogLevel.Fatal
+  fullName: SyncerNet.Logging.LogLevel.Fatal
+  type: Field
+  source:
+    id: Fatal
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Logging\Logger.cs
+    startLine: 57
+  assemblies:
+  - SyncerNet.Logging
+  namespace: SyncerNet.Logging
+  syntax:
+    content: Fatal = 4
+    return:
+      type: SyncerNet.Logging.LogLevel
+references:
+- uid: SyncerNet.Logging
+  commentId: N:SyncerNet.Logging
+  href: SyncerNet.html
+  name: SyncerNet.Logging
+  nameWithType: SyncerNet.Logging
+  fullName: SyncerNet.Logging
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Logging
+    name: Logging
+    href: SyncerNet.Logging.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Logging
+    name: Logging
+    href: SyncerNet.Logging.html
+- uid: SyncerNet.Logging.LogLevel
+  commentId: T:SyncerNet.Logging.LogLevel
+  parent: SyncerNet.Logging
+  href: SyncerNet.Logging.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: SyncerNet.Logging.LogLevel

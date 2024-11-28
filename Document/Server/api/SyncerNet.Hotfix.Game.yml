@@ -1,0 +1,1314 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Hotfix.Game
+  commentId: T:SyncerNet.Hotfix.Game
+  id: Game
+  parent: SyncerNet.Hotfix
+  children:
+  - SyncerNet.Hotfix.Game.#ctor
+  - SyncerNet.Hotfix.Game.AddPlayer(System.Int32,System.UInt32)
+  - SyncerNet.Hotfix.Game.GenerateWorldId
+  - SyncerNet.Hotfix.Game.GetPlayer(System.Int32)
+  - SyncerNet.Hotfix.Game.GetWorld(System.UInt32)
+  - SyncerNet.Hotfix.Game.OnConnected(System.Int32)
+  - SyncerNet.Hotfix.Game.OnDisconnected(System.Int32)
+  - SyncerNet.Hotfix.Game.OnError(System.Int32,kcp2k.ErrorCode,System.String)
+  - SyncerNet.Hotfix.Game.Players
+  - SyncerNet.Hotfix.Game.ProcessMessage(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  - SyncerNet.Hotfix.Game.Send(System.Int32,SyncerNet.Hotfix.NetworkMessage,kcp2k.KcpChannel)
+  - SyncerNet.Hotfix.Game.Send(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  - SyncerNet.Hotfix.Game.SendAction
+  - SyncerNet.Hotfix.Game.TryCreateWorld
+  - SyncerNet.Hotfix.Game.Worlds
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Game
+  fullName: SyncerNet.Hotfix.Game
+  type: Class
+  source:
+    id: Game
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 10
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: Game为全局唯一的根节点，所有World的父节点
+  example: []
+  syntax:
+    content: public class Game
+    content.vb: Public Class Game
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SyncerNet.Hotfix.Game.Worlds
+  commentId: P:SyncerNet.Hotfix.Game.Worlds
+  id: Worlds
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: Worlds
+  nameWithType: Game.Worlds
+  fullName: SyncerNet.Hotfix.Game.Worlds
+  type: Property
+  source:
+    id: Worlds
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 15
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: Key:WorldId,Value:World
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<uint, World> Worlds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.World}
+    content.vb: Public Property Worlds As ConcurrentDictionary(Of UInteger, World)
+  overload: SyncerNet.Hotfix.Game.Worlds*
+- uid: SyncerNet.Hotfix.Game.Players
+  commentId: P:SyncerNet.Hotfix.Game.Players
+  id: Players
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: Players
+  nameWithType: Game.Players
+  fullName: SyncerNet.Hotfix.Game.Players
+  type: Property
+  source:
+    id: Players
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 19
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: Key:NetworkId,Value:Player
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<int, Player> Players { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Int32,SyncerNet.Hotfix.Player}
+    content.vb: Public Property Players As ConcurrentDictionary(Of Integer, Player)
+  overload: SyncerNet.Hotfix.Game.Players*
+- uid: SyncerNet.Hotfix.Game.SendAction
+  commentId: P:SyncerNet.Hotfix.Game.SendAction
+  id: SendAction
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: SendAction
+  nameWithType: Game.SendAction
+  fullName: SyncerNet.Hotfix.Game.SendAction
+  type: Property
+  source:
+    id: SendAction
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 29
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: Hotfix时赋值的NetworkServer的Send函数
+  example: []
+  syntax:
+    content: public Action<int, ArraySegment<byte>, KcpChannel>? SendAction { get; set; }
+    parameters: []
+    return:
+      type: System.Action{System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel}
+    content.vb: Public Property SendAction As Action(Of Integer, ArraySegment(Of Byte), KcpChannel)
+  overload: SyncerNet.Hotfix.Game.SendAction*
+- uid: SyncerNet.Hotfix.Game.#ctor
+  commentId: M:SyncerNet.Hotfix.Game.#ctor
+  id: '#ctor'
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: Game()
+  nameWithType: Game.Game()
+  fullName: SyncerNet.Hotfix.Game.Game()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 31
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public Game()
+    content.vb: Public Sub New()
+  overload: SyncerNet.Hotfix.Game.#ctor*
+  nameWithType.vb: Game.New()
+  fullName.vb: SyncerNet.Hotfix.Game.New()
+  name.vb: New()
+- uid: SyncerNet.Hotfix.Game.OnConnected(System.Int32)
+  commentId: M:SyncerNet.Hotfix.Game.OnConnected(System.Int32)
+  id: OnConnected(System.Int32)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: OnConnected(int)
+  nameWithType: Game.OnConnected(int)
+  fullName: SyncerNet.Hotfix.Game.OnConnected(int)
+  type: Method
+  source:
+    id: OnConnected
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 36
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public void OnConnected(int netId)
+    parameters:
+    - id: netId
+      type: System.Int32
+    content.vb: Public Sub OnConnected(netId As Integer)
+  overload: SyncerNet.Hotfix.Game.OnConnected*
+  nameWithType.vb: Game.OnConnected(Integer)
+  fullName.vb: SyncerNet.Hotfix.Game.OnConnected(Integer)
+  name.vb: OnConnected(Integer)
+- uid: SyncerNet.Hotfix.Game.ProcessMessage(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  commentId: M:SyncerNet.Hotfix.Game.ProcessMessage(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  id: ProcessMessage(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: ProcessMessage(int, ArraySegment<byte>, KcpChannel)
+  nameWithType: Game.ProcessMessage(int, ArraySegment<byte>, KcpChannel)
+  fullName: SyncerNet.Hotfix.Game.ProcessMessage(int, System.ArraySegment<byte>, kcp2k.KcpChannel)
+  type: Method
+  source:
+    id: ProcessMessage
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 40
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public void ProcessMessage(int netId, ArraySegment<byte> data, KcpChannel channel)
+    parameters:
+    - id: netId
+      type: System.Int32
+    - id: data
+      type: System.ArraySegment{System.Byte}
+    - id: channel
+      type: kcp2k.KcpChannel
+    content.vb: Public Sub ProcessMessage(netId As Integer, data As ArraySegment(Of Byte), channel As KcpChannel)
+  overload: SyncerNet.Hotfix.Game.ProcessMessage*
+  nameWithType.vb: Game.ProcessMessage(Integer, ArraySegment(Of Byte), KcpChannel)
+  fullName.vb: SyncerNet.Hotfix.Game.ProcessMessage(Integer, System.ArraySegment(Of Byte), kcp2k.KcpChannel)
+  name.vb: ProcessMessage(Integer, ArraySegment(Of Byte), KcpChannel)
+- uid: SyncerNet.Hotfix.Game.OnDisconnected(System.Int32)
+  commentId: M:SyncerNet.Hotfix.Game.OnDisconnected(System.Int32)
+  id: OnDisconnected(System.Int32)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnected(int)
+  nameWithType: Game.OnDisconnected(int)
+  fullName: SyncerNet.Hotfix.Game.OnDisconnected(int)
+  type: Method
+  source:
+    id: OnDisconnected
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 60
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public void OnDisconnected(int netId)
+    parameters:
+    - id: netId
+      type: System.Int32
+    content.vb: Public Sub OnDisconnected(netId As Integer)
+  overload: SyncerNet.Hotfix.Game.OnDisconnected*
+  nameWithType.vb: Game.OnDisconnected(Integer)
+  fullName.vb: SyncerNet.Hotfix.Game.OnDisconnected(Integer)
+  name.vb: OnDisconnected(Integer)
+- uid: SyncerNet.Hotfix.Game.OnError(System.Int32,kcp2k.ErrorCode,System.String)
+  commentId: M:SyncerNet.Hotfix.Game.OnError(System.Int32,kcp2k.ErrorCode,System.String)
+  id: OnError(System.Int32,kcp2k.ErrorCode,System.String)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: OnError(int, ErrorCode, string)
+  nameWithType: Game.OnError(int, ErrorCode, string)
+  fullName: SyncerNet.Hotfix.Game.OnError(int, kcp2k.ErrorCode, string)
+  type: Method
+  source:
+    id: OnError
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 67
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public void OnError(int netId, ErrorCode errorCode, string message)
+    parameters:
+    - id: netId
+      type: System.Int32
+    - id: errorCode
+      type: kcp2k.ErrorCode
+    - id: message
+      type: System.String
+    content.vb: Public Sub OnError(netId As Integer, errorCode As ErrorCode, message As String)
+  overload: SyncerNet.Hotfix.Game.OnError*
+  nameWithType.vb: Game.OnError(Integer, ErrorCode, String)
+  fullName.vb: SyncerNet.Hotfix.Game.OnError(Integer, kcp2k.ErrorCode, String)
+  name.vb: OnError(Integer, ErrorCode, String)
+- uid: SyncerNet.Hotfix.Game.Send(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  commentId: M:SyncerNet.Hotfix.Game.Send(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  id: Send(System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: Send(int, ArraySegment<byte>, KcpChannel)
+  nameWithType: Game.Send(int, ArraySegment<byte>, KcpChannel)
+  fullName: SyncerNet.Hotfix.Game.Send(int, System.ArraySegment<byte>, kcp2k.KcpChannel)
+  type: Method
+  source:
+    id: Send
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 78
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 向指定NetworkId的玩家发送Byte[]消息
+  example: []
+  syntax:
+    content: public void Send(int netId, ArraySegment<byte> data, KcpChannel channel)
+    parameters:
+    - id: netId
+      type: System.Int32
+      description: NetworkId
+    - id: data
+      type: System.ArraySegment{System.Byte}
+      description: ''
+    - id: channel
+      type: kcp2k.KcpChannel
+      description: ''
+    content.vb: Public Sub Send(netId As Integer, data As ArraySegment(Of Byte), channel As KcpChannel)
+  overload: SyncerNet.Hotfix.Game.Send*
+  nameWithType.vb: Game.Send(Integer, ArraySegment(Of Byte), KcpChannel)
+  fullName.vb: SyncerNet.Hotfix.Game.Send(Integer, System.ArraySegment(Of Byte), kcp2k.KcpChannel)
+  name.vb: Send(Integer, ArraySegment(Of Byte), KcpChannel)
+- uid: SyncerNet.Hotfix.Game.Send(System.Int32,SyncerNet.Hotfix.NetworkMessage,kcp2k.KcpChannel)
+  commentId: M:SyncerNet.Hotfix.Game.Send(System.Int32,SyncerNet.Hotfix.NetworkMessage,kcp2k.KcpChannel)
+  id: Send(System.Int32,SyncerNet.Hotfix.NetworkMessage,kcp2k.KcpChannel)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: Send(int, NetworkMessage, KcpChannel)
+  nameWithType: Game.Send(int, NetworkMessage, KcpChannel)
+  fullName: SyncerNet.Hotfix.Game.Send(int, SyncerNet.Hotfix.NetworkMessage, kcp2k.KcpChannel)
+  type: Method
+  source:
+    id: Send
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 89
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 向指定NetworkId的玩家发送Message消息
+  example: []
+  syntax:
+    content: public void Send(int netId, NetworkMessage message, KcpChannel channel)
+    parameters:
+    - id: netId
+      type: System.Int32
+      description: ''
+    - id: message
+      type: SyncerNet.Hotfix.NetworkMessage
+      description: ''
+    - id: channel
+      type: kcp2k.KcpChannel
+      description: ''
+    content.vb: Public Sub Send(netId As Integer, message As NetworkMessage, channel As KcpChannel)
+  overload: SyncerNet.Hotfix.Game.Send*
+  nameWithType.vb: Game.Send(Integer, NetworkMessage, KcpChannel)
+  fullName.vb: SyncerNet.Hotfix.Game.Send(Integer, SyncerNet.Hotfix.NetworkMessage, kcp2k.KcpChannel)
+  name.vb: Send(Integer, NetworkMessage, KcpChannel)
+- uid: SyncerNet.Hotfix.Game.GenerateWorldId
+  commentId: M:SyncerNet.Hotfix.Game.GenerateWorldId
+  id: GenerateWorldId
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: GenerateWorldId()
+  nameWithType: Game.GenerateWorldId()
+  fullName: SyncerNet.Hotfix.Game.GenerateWorldId()
+  type: Method
+  source:
+    id: GenerateWorldId
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 97
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 生成唯一WorldId
+  example: []
+  syntax:
+    content: public uint GenerateWorldId()
+    return:
+      type: System.UInt32
+      description: WorldId
+    content.vb: Public Function GenerateWorldId() As UInteger
+  overload: SyncerNet.Hotfix.Game.GenerateWorldId*
+- uid: SyncerNet.Hotfix.Game.TryCreateWorld
+  commentId: M:SyncerNet.Hotfix.Game.TryCreateWorld
+  id: TryCreateWorld
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: TryCreateWorld()
+  nameWithType: Game.TryCreateWorld()
+  fullName: SyncerNet.Hotfix.Game.TryCreateWorld()
+  type: Method
+  source:
+    id: TryCreateWorld
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 111
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 创建World
+  example: []
+  syntax:
+    content: public (bool, uint) TryCreateWorld()
+    return:
+      type: System.ValueTuple{System.Boolean,System.UInt32}
+      description: (isSuccess,worldId)
+    content.vb: Public Function TryCreateWorld() As (Boolean, UInteger)
+  overload: SyncerNet.Hotfix.Game.TryCreateWorld*
+- uid: SyncerNet.Hotfix.Game.GetWorld(System.UInt32)
+  commentId: M:SyncerNet.Hotfix.Game.GetWorld(System.UInt32)
+  id: GetWorld(System.UInt32)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: GetWorld(uint)
+  nameWithType: Game.GetWorld(uint)
+  fullName: SyncerNet.Hotfix.Game.GetWorld(uint)
+  type: Method
+  source:
+    id: GetWorld
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 122
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 获取World
+  example: []
+  syntax:
+    content: public World? GetWorld(uint worldId)
+    parameters:
+    - id: worldId
+      type: System.UInt32
+      description: ''
+    return:
+      type: SyncerNet.Hotfix.World
+      description: ''
+    content.vb: Public Function GetWorld(worldId As UInteger) As World
+  overload: SyncerNet.Hotfix.Game.GetWorld*
+  nameWithType.vb: Game.GetWorld(UInteger)
+  fullName.vb: SyncerNet.Hotfix.Game.GetWorld(UInteger)
+  name.vb: GetWorld(UInteger)
+- uid: SyncerNet.Hotfix.Game.AddPlayer(System.Int32,System.UInt32)
+  commentId: M:SyncerNet.Hotfix.Game.AddPlayer(System.Int32,System.UInt32)
+  id: AddPlayer(System.Int32,System.UInt32)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: AddPlayer(int, uint)
+  nameWithType: Game.AddPlayer(int, uint)
+  fullName: SyncerNet.Hotfix.Game.AddPlayer(int, uint)
+  type: Method
+  source:
+    id: AddPlayer
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 132
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 添加Player到Game
+  example: []
+  syntax:
+    content: public void AddPlayer(int netId, uint playerId)
+    parameters:
+    - id: netId
+      type: System.Int32
+      description: NetworkId
+    - id: playerId
+      type: System.UInt32
+      description: ''
+    content.vb: Public Sub AddPlayer(netId As Integer, playerId As UInteger)
+  overload: SyncerNet.Hotfix.Game.AddPlayer*
+  nameWithType.vb: Game.AddPlayer(Integer, UInteger)
+  fullName.vb: SyncerNet.Hotfix.Game.AddPlayer(Integer, UInteger)
+  name.vb: AddPlayer(Integer, UInteger)
+- uid: SyncerNet.Hotfix.Game.GetPlayer(System.Int32)
+  commentId: M:SyncerNet.Hotfix.Game.GetPlayer(System.Int32)
+  id: GetPlayer(System.Int32)
+  parent: SyncerNet.Hotfix.Game
+  langs:
+  - csharp
+  - vb
+  name: GetPlayer(int)
+  nameWithType: Game.GetPlayer(int)
+  fullName: SyncerNet.Hotfix.Game.GetPlayer(int)
+  type: Method
+  source:
+    id: GetPlayer
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Game.cs
+    startLine: 142
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 获取Player
+  example: []
+  syntax:
+    content: public Player? GetPlayer(int netId)
+    parameters:
+    - id: netId
+      type: System.Int32
+      description: NetworkId
+    return:
+      type: SyncerNet.Hotfix.Player
+      description: ''
+    content.vb: Public Function GetPlayer(netId As Integer) As Player
+  overload: SyncerNet.Hotfix.Game.GetPlayer*
+  nameWithType.vb: Game.GetPlayer(Integer)
+  fullName.vb: SyncerNet.Hotfix.Game.GetPlayer(Integer)
+  name.vb: GetPlayer(Integer)
+references:
+- uid: SyncerNet.Hotfix
+  commentId: N:SyncerNet.Hotfix
+  href: SyncerNet.html
+  name: SyncerNet.Hotfix
+  nameWithType: SyncerNet.Hotfix
+  fullName: SyncerNet.Hotfix
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SyncerNet.Hotfix.Game.Worlds*
+  commentId: Overload:SyncerNet.Hotfix.Game.Worlds
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_Worlds
+  name: Worlds
+  nameWithType: Game.Worlds
+  fullName: SyncerNet.Hotfix.Game.Worlds
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.World}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.World}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<uint, World>
+  nameWithType: ConcurrentDictionary<uint, World>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<uint, SyncerNet.Hotfix.World>
+  nameWithType.vb: ConcurrentDictionary(Of UInteger, World)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of UInteger, SyncerNet.Hotfix.World)
+  name.vb: ConcurrentDictionary(Of UInteger, World)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.World
+    name: World
+    href: SyncerNet.Hotfix.World.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.World
+    name: World
+    href: SyncerNet.Hotfix.World.html
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: SyncerNet.Hotfix.Game.Players*
+  commentId: Overload:SyncerNet.Hotfix.Game.Players
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_Players
+  name: Players
+  nameWithType: Game.Players
+  fullName: SyncerNet.Hotfix.Game.Players
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.Int32,SyncerNet.Hotfix.Player}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.Int32,SyncerNet.Hotfix.Player}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<int, Player>
+  nameWithType: ConcurrentDictionary<int, Player>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<int, SyncerNet.Hotfix.Player>
+  nameWithType.vb: ConcurrentDictionary(Of Integer, Player)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of Integer, SyncerNet.Hotfix.Player)
+  name.vb: ConcurrentDictionary(Of Integer, Player)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Player
+    name: Player
+    href: SyncerNet.Hotfix.Player.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Player
+    name: Player
+    href: SyncerNet.Hotfix.Player.html
+  - name: )
+- uid: SyncerNet.Hotfix.Game.SendAction*
+  commentId: Overload:SyncerNet.Hotfix.Game.SendAction
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_SendAction
+  name: SendAction
+  nameWithType: Game.SendAction
+  fullName: SyncerNet.Hotfix.Game.SendAction
+- uid: System.Action{System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel}
+  commentId: T:System.Action{System.Int32,System.ArraySegment{System.Byte},kcp2k.KcpChannel}
+  parent: System
+  definition: System.Action`3
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<int, ArraySegment<byte>, KcpChannel>
+  nameWithType: Action<int, ArraySegment<byte>, KcpChannel>
+  fullName: System.Action<int, System.ArraySegment<byte>, kcp2k.KcpChannel>
+  nameWithType.vb: Action(Of Integer, ArraySegment(Of Byte), KcpChannel)
+  fullName.vb: System.Action(Of Integer, System.ArraySegment(Of Byte), kcp2k.KcpChannel)
+  name.vb: Action(Of Integer, ArraySegment(Of Byte), KcpChannel)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: kcp2k.KcpChannel
+    name: KcpChannel
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: kcp2k.KcpChannel
+    name: KcpChannel
+  - name: )
+- uid: System.Action`3
+  commentId: T:System.Action`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<T1, T2, T3>
+  nameWithType: Action<T1, T2, T3>
+  fullName: System.Action<T1, T2, T3>
+  nameWithType.vb: Action(Of T1, T2, T3)
+  fullName.vb: System.Action(Of T1, T2, T3)
+  name.vb: Action(Of T1, T2, T3)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: SyncerNet.Hotfix.Game.#ctor*
+  commentId: Overload:SyncerNet.Hotfix.Game.#ctor
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game__ctor
+  name: Game
+  nameWithType: Game.Game
+  fullName: SyncerNet.Hotfix.Game.Game
+  nameWithType.vb: Game.New
+  fullName.vb: SyncerNet.Hotfix.Game.New
+  name.vb: New
+- uid: SyncerNet.Hotfix.Game.OnConnected*
+  commentId: Overload:SyncerNet.Hotfix.Game.OnConnected
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_OnConnected_System_Int32_
+  name: OnConnected
+  nameWithType: Game.OnConnected
+  fullName: SyncerNet.Hotfix.Game.OnConnected
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SyncerNet.Hotfix.Game.ProcessMessage*
+  commentId: Overload:SyncerNet.Hotfix.Game.ProcessMessage
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_ProcessMessage_System_Int32_System_ArraySegment_System_Byte__kcp2k_KcpChannel_
+  name: ProcessMessage
+  nameWithType: Game.ProcessMessage
+  fullName: SyncerNet.Hotfix.Game.ProcessMessage
+- uid: System.ArraySegment{System.Byte}
+  commentId: T:System.ArraySegment{System.Byte}
+  parent: System
+  definition: System.ArraySegment`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<byte>
+  nameWithType: ArraySegment<byte>
+  fullName: System.ArraySegment<byte>
+  nameWithType.vb: ArraySegment(Of Byte)
+  fullName.vb: System.ArraySegment(Of Byte)
+  name.vb: ArraySegment(Of Byte)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: kcp2k.KcpChannel
+  commentId: T:kcp2k.KcpChannel
+  parent: kcp2k
+  name: KcpChannel
+  nameWithType: KcpChannel
+  fullName: kcp2k.KcpChannel
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: kcp2k
+  commentId: N:kcp2k
+  name: kcp2k
+  nameWithType: kcp2k
+  fullName: kcp2k
+- uid: SyncerNet.Hotfix.Game.OnDisconnected*
+  commentId: Overload:SyncerNet.Hotfix.Game.OnDisconnected
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_OnDisconnected_System_Int32_
+  name: OnDisconnected
+  nameWithType: Game.OnDisconnected
+  fullName: SyncerNet.Hotfix.Game.OnDisconnected
+- uid: SyncerNet.Hotfix.Game.OnError*
+  commentId: Overload:SyncerNet.Hotfix.Game.OnError
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_OnError_System_Int32_kcp2k_ErrorCode_System_String_
+  name: OnError
+  nameWithType: Game.OnError
+  fullName: SyncerNet.Hotfix.Game.OnError
+- uid: kcp2k.ErrorCode
+  commentId: T:kcp2k.ErrorCode
+  parent: kcp2k
+  name: ErrorCode
+  nameWithType: ErrorCode
+  fullName: kcp2k.ErrorCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SyncerNet.Hotfix.Game.Send*
+  commentId: Overload:SyncerNet.Hotfix.Game.Send
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_Send_System_Int32_System_ArraySegment_System_Byte__kcp2k_KcpChannel_
+  name: Send
+  nameWithType: Game.Send
+  fullName: SyncerNet.Hotfix.Game.Send
+- uid: SyncerNet.Hotfix.NetworkMessage
+  commentId: T:SyncerNet.Hotfix.NetworkMessage
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.NetworkMessage.html
+  name: NetworkMessage
+  nameWithType: NetworkMessage
+  fullName: SyncerNet.Hotfix.NetworkMessage
+- uid: SyncerNet.Hotfix.Game.GenerateWorldId*
+  commentId: Overload:SyncerNet.Hotfix.Game.GenerateWorldId
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_GenerateWorldId
+  name: GenerateWorldId
+  nameWithType: Game.GenerateWorldId
+  fullName: SyncerNet.Hotfix.Game.GenerateWorldId
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SyncerNet.Hotfix.Game.TryCreateWorld*
+  commentId: Overload:SyncerNet.Hotfix.Game.TryCreateWorld
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_TryCreateWorld
+  name: TryCreateWorld
+  nameWithType: Game.TryCreateWorld
+  fullName: SyncerNet.Hotfix.Game.TryCreateWorld
+- uid: System.ValueTuple{System.Boolean,System.UInt32}
+  commentId: T:System.ValueTuple{System.Boolean,System.UInt32}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool, uint)
+  nameWithType: (bool, uint)
+  fullName: (bool, uint)
+  nameWithType.vb: (Boolean, UInteger)
+  fullName.vb: (Boolean, UInteger)
+  name.vb: (Boolean, UInteger)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: SyncerNet.Hotfix.Game.GetWorld*
+  commentId: Overload:SyncerNet.Hotfix.Game.GetWorld
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_GetWorld_System_UInt32_
+  name: GetWorld
+  nameWithType: Game.GetWorld
+  fullName: SyncerNet.Hotfix.Game.GetWorld
+- uid: SyncerNet.Hotfix.World
+  commentId: T:SyncerNet.Hotfix.World
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.World.html
+  name: World
+  nameWithType: World
+  fullName: SyncerNet.Hotfix.World
+- uid: SyncerNet.Hotfix.Game.AddPlayer*
+  commentId: Overload:SyncerNet.Hotfix.Game.AddPlayer
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_AddPlayer_System_Int32_System_UInt32_
+  name: AddPlayer
+  nameWithType: Game.AddPlayer
+  fullName: SyncerNet.Hotfix.Game.AddPlayer
+- uid: SyncerNet.Hotfix.Game.GetPlayer*
+  commentId: Overload:SyncerNet.Hotfix.Game.GetPlayer
+  href: SyncerNet.Hotfix.Game.html#SyncerNet_Hotfix_Game_GetPlayer_System_Int32_
+  name: GetPlayer
+  nameWithType: Game.GetPlayer
+  fullName: SyncerNet.Hotfix.Game.GetPlayer
+- uid: SyncerNet.Hotfix.Player
+  commentId: T:SyncerNet.Hotfix.Player
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: SyncerNet.Hotfix.Player

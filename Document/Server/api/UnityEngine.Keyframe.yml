@@ -1,0 +1,523 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.Keyframe
+  commentId: T:UnityEngine.Keyframe
+  id: Keyframe
+  parent: UnityEngine
+  children:
+  - UnityEngine.Keyframe.#ctor(System.Single,System.Single)
+  - UnityEngine.Keyframe.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - UnityEngine.Keyframe.inTangent
+  - UnityEngine.Keyframe.outTangent
+  - UnityEngine.Keyframe.time
+  - UnityEngine.Keyframe.value
+  langs:
+  - csharp
+  - vb
+  name: Keyframe
+  nameWithType: Keyframe
+  fullName: UnityEngine.Keyframe
+  type: Struct
+  source:
+    id: Keyframe
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\UnityEngine.Keyframe.MemoryPackFormatter.g.cs
+    startLine: 33
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  remarks: 'MemoryPack GenerateType: unmanaged<br /><pre><code class="lang-csharp">float timefloat valuefloat inTangentfloat outTangent</code></pre>'
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackable(GenerateType.Object)]
+
+      public struct Keyframe : IMemoryPackable<Keyframe>, IMemoryPackFormatterRegister
+    content.vb: >-
+      <MemoryPackable(GenerateType.Object)>
+
+      Public Structure Keyframe Implements IMemoryPackable(Of Keyframe), IMemoryPackFormatterRegister
+  implements:
+  - MemoryPack.IMemoryPackable{UnityEngine.Keyframe}
+  - MemoryPack.IMemoryPackFormatterRegister
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: MemoryPack.MemoryPackableAttribute
+    ctor: MemoryPack.MemoryPackableAttribute.#ctor(MemoryPack.GenerateType)
+    arguments:
+    - type: MemoryPack.GenerateType
+      value: 0
+- uid: UnityEngine.Keyframe.time
+  commentId: F:UnityEngine.Keyframe.time
+  id: time
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: time
+  nameWithType: Keyframe.time
+  fullName: UnityEngine.Keyframe.time
+  type: Field
+  source:
+    id: time
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 326
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float time
+    return:
+      type: System.Single
+    content.vb: Public time As Single
+- uid: UnityEngine.Keyframe.value
+  commentId: F:UnityEngine.Keyframe.value
+  id: value
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: value
+  nameWithType: Keyframe.value
+  fullName: UnityEngine.Keyframe.value
+  type: Field
+  source:
+    id: value
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 328
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float value
+    return:
+      type: System.Single
+    content.vb: Public value As Single
+- uid: UnityEngine.Keyframe.inTangent
+  commentId: F:UnityEngine.Keyframe.inTangent
+  id: inTangent
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: inTangent
+  nameWithType: Keyframe.inTangent
+  fullName: UnityEngine.Keyframe.inTangent
+  type: Field
+  source:
+    id: inTangent
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 330
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float inTangent
+    return:
+      type: System.Single
+    content.vb: Public inTangent As Single
+- uid: UnityEngine.Keyframe.outTangent
+  commentId: F:UnityEngine.Keyframe.outTangent
+  id: outTangent
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: outTangent
+  nameWithType: Keyframe.outTangent
+  fullName: UnityEngine.Keyframe.outTangent
+  type: Field
+  source:
+    id: outTangent
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 332
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public float outTangent
+    return:
+      type: System.Single
+    content.vb: Public outTangent As Single
+- uid: UnityEngine.Keyframe.#ctor(System.Single,System.Single)
+  commentId: M:UnityEngine.Keyframe.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: Keyframe(float, float)
+  nameWithType: Keyframe.Keyframe(float, float)
+  fullName: UnityEngine.Keyframe.Keyframe(float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 334
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public Keyframe(float time, float value)
+    parameters:
+    - id: time
+      type: System.Single
+    - id: value
+      type: System.Single
+    content.vb: Public Sub New(time As Single, value As Single)
+  overload: UnityEngine.Keyframe.#ctor*
+  nameWithType.vb: Keyframe.New(Single, Single)
+  fullName.vb: UnityEngine.Keyframe.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: UnityEngine.Keyframe.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:UnityEngine.Keyframe.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: UnityEngine.Keyframe
+  langs:
+  - csharp
+  - vb
+  name: Keyframe(float, float, float, float)
+  nameWithType: Keyframe.Keyframe(float, float, float, float)
+  fullName: UnityEngine.Keyframe.Keyframe(float, float, float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\Shims.cs
+    startLine: 342
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: UnityEngine
+  syntax:
+    content: public Keyframe(float time, float value, float inTangent, float outTangent)
+    parameters:
+    - id: time
+      type: System.Single
+    - id: value
+      type: System.Single
+    - id: inTangent
+      type: System.Single
+    - id: outTangent
+      type: System.Single
+    content.vb: Public Sub New(time As Single, value As Single, inTangent As Single, outTangent As Single)
+  overload: UnityEngine.Keyframe.#ctor*
+  nameWithType.vb: Keyframe.New(Single, Single, Single, Single)
+  fullName.vb: UnityEngine.Keyframe.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+references:
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  href: UnityEngine.html
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MemoryPack.IMemoryPackable{UnityEngine.Keyframe}
+  commentId: T:MemoryPack.IMemoryPackable{UnityEngine.Keyframe}
+  parent: MemoryPack
+  definition: MemoryPack.IMemoryPackable`1
+  href: UnityEngine.Keyframe.html
+  name: IMemoryPackable<Keyframe>
+  nameWithType: IMemoryPackable<Keyframe>
+  fullName: MemoryPack.IMemoryPackable<UnityEngine.Keyframe>
+  nameWithType.vb: IMemoryPackable(Of Keyframe)
+  fullName.vb: MemoryPack.IMemoryPackable(Of UnityEngine.Keyframe)
+  name.vb: IMemoryPackable(Of Keyframe)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Keyframe
+    name: Keyframe
+    href: UnityEngine.Keyframe.html
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Keyframe
+    name: Keyframe
+    href: UnityEngine.Keyframe.html
+  - name: )
+- uid: MemoryPack.IMemoryPackFormatterRegister
+  commentId: T:MemoryPack.IMemoryPackFormatterRegister
+  parent: MemoryPack
+  isExternal: true
+  name: IMemoryPackFormatterRegister
+  nameWithType: IMemoryPackFormatterRegister
+  fullName: MemoryPack.IMemoryPackFormatterRegister
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: MemoryPack.IMemoryPackable`1
+  commentId: T:MemoryPack.IMemoryPackable`1
+  isExternal: true
+  name: IMemoryPackable<T>
+  nameWithType: IMemoryPackable<T>
+  fullName: MemoryPack.IMemoryPackable<T>
+  nameWithType.vb: IMemoryPackable(Of T)
+  fullName.vb: MemoryPack.IMemoryPackable(Of T)
+  name.vb: IMemoryPackable(Of T)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MemoryPack
+  commentId: N:MemoryPack
+  isExternal: true
+  name: MemoryPack
+  nameWithType: MemoryPack
+  fullName: MemoryPack
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Keyframe.#ctor*
+  commentId: Overload:UnityEngine.Keyframe.#ctor
+  href: UnityEngine.Keyframe.html#UnityEngine_Keyframe__ctor_System_Single_System_Single_
+  name: Keyframe
+  nameWithType: Keyframe.Keyframe
+  fullName: UnityEngine.Keyframe.Keyframe
+  nameWithType.vb: Keyframe.New
+  fullName.vb: UnityEngine.Keyframe.New
+  name.vb: New

@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Hotfix.Syncers
+  commentId: N:SyncerNet.Hotfix.Syncers
+  id: SyncerNet.Hotfix.Syncers
+  children:
+  - SyncerNet.Hotfix.Syncers.AnimatorSyncer
+  - SyncerNet.Hotfix.Syncers.TransformSyncer
+  langs:
+  - csharp
+  - vb
+  name: SyncerNet.Hotfix.Syncers
+  nameWithType: SyncerNet.Hotfix.Syncers
+  fullName: SyncerNet.Hotfix.Syncers
+  type: Namespace
+  assemblies:
+  - SyncerNet.Hotfix
+references:
+- uid: SyncerNet.Hotfix.Syncers.AnimatorSyncer
+  commentId: T:SyncerNet.Hotfix.Syncers.AnimatorSyncer
+  parent: SyncerNet.Hotfix.Syncers
+  href: SyncerNet.Hotfix.Syncers.AnimatorSyncer.html
+  name: AnimatorSyncer
+  nameWithType: AnimatorSyncer
+  fullName: SyncerNet.Hotfix.Syncers.AnimatorSyncer
+- uid: SyncerNet.Hotfix.Syncers.TransformSyncer
+  commentId: T:SyncerNet.Hotfix.Syncers.TransformSyncer
+  parent: SyncerNet.Hotfix.Syncers
+  href: SyncerNet.Hotfix.Syncers.TransformSyncer.html
+  name: TransformSyncer
+  nameWithType: TransformSyncer
+  fullName: SyncerNet.Hotfix.Syncers.TransformSyncer
+- uid: SyncerNet.Hotfix.Syncers
+  commentId: N:SyncerNet.Hotfix.Syncers
+  href: SyncerNet.html
+  name: SyncerNet.Hotfix.Syncers
+  nameWithType: SyncerNet.Hotfix.Syncers
+  fullName: SyncerNet.Hotfix.Syncers
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  - name: .
+  - uid: SyncerNet.Hotfix.Syncers
+    name: Syncers
+    href: SyncerNet.Hotfix.Syncers.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  - name: .
+  - uid: SyncerNet.Hotfix.Syncers
+    name: Syncers
+    href: SyncerNet.Hotfix.Syncers.html

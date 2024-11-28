@@ -1,0 +1,29 @@
+﻿<#@ template debug="false" hosetspecific="false" language="C#" #>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".cs" #>
+using MemoryPack;
+using System.Collections.Generic;
+using SyncerNet.Hotfix.Syncers;
+
+namespace SyncerNet.Hotfix
+{
+    [MemoryPackable]
+<#
+var files = Directory.GetFiles("SyncerNet.Hotfix/Syncers/");
+for(int i = 0; i < files.Length; i++)
+{
+    string name = Path.GetFileNameWithoutExtension(files[i]);
+#>
+    [MemoryPackUnion(<#= i #>,typeof(<#= name #>))]
+<#
+}
+#>
+    public abstract partial class Syncer
+    {
+        /// <summary>
+        /// 接收到SyncerMessage后，对Syncer进行更新
+        /// </summary>
+        /// <param name="entity"></param>
+        public abstract void UpdateSyncer(Entity entity);
+    }
+}

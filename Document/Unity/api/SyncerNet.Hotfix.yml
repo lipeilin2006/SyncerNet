@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Hotfix
+  commentId: N:SyncerNet.Hotfix
+  id: SyncerNet.Hotfix
+  children:
+  - SyncerNet.Hotfix.DataPack
+  - SyncerNet.Hotfix.Entity
+  - SyncerNet.Hotfix.Game
+  - SyncerNet.Hotfix.NetworkClient
+  - SyncerNet.Hotfix.NetworkLoop
+  - SyncerNet.Hotfix.NetworkMessage
+  - SyncerNet.Hotfix.Syncer
+  - SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: SyncerNet.Hotfix
+  nameWithType: SyncerNet.Hotfix
+  fullName: SyncerNet.Hotfix
+  type: Namespace
+  assemblies:
+  - SyncerNet.Hotfix
+references:
+- uid: SyncerNet.Hotfix.Entity
+  commentId: T:SyncerNet.Hotfix.Entity
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Entity.html
+  name: Entity
+  nameWithType: Entity
+  fullName: SyncerNet.Hotfix.Entity
+- uid: SyncerNet.Hotfix.Game
+  commentId: T:SyncerNet.Hotfix.Game
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Game.html
+  name: Game
+  nameWithType: Game
+  fullName: SyncerNet.Hotfix.Game
+- uid: SyncerNet.Hotfix.NetworkLoop
+  commentId: T:SyncerNet.Hotfix.NetworkLoop
+  href: SyncerNet.Hotfix.NetworkLoop.html
+  name: NetworkLoop
+  nameWithType: NetworkLoop
+  fullName: SyncerNet.Hotfix.NetworkLoop
+- uid: SyncerNet.Hotfix.NetworkMessage
+  commentId: T:SyncerNet.Hotfix.NetworkMessage
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.NetworkMessage.html
+  name: NetworkMessage
+  nameWithType: NetworkMessage
+  fullName: SyncerNet.Hotfix.NetworkMessage
+- uid: SyncerNet.Hotfix.Syncer
+  commentId: T:SyncerNet.Hotfix.Syncer
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Syncer.html
+  name: Syncer
+  nameWithType: Syncer
+  fullName: SyncerNet.Hotfix.Syncer
+- uid: SyncerNet.Hotfix.NetworkClient
+  commentId: T:SyncerNet.Hotfix.NetworkClient
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.NetworkClient.html
+  name: NetworkClient
+  nameWithType: NetworkClient
+  fullName: SyncerNet.Hotfix.NetworkClient
+- uid: SyncerNet.Hotfix.DataPack
+  commentId: T:SyncerNet.Hotfix.DataPack
+  href: SyncerNet.Hotfix.DataPack.html
+  name: DataPack
+  nameWithType: DataPack
+  fullName: SyncerNet.Hotfix.DataPack
+- uid: SyncerNet.Hotfix.World
+  commentId: T:SyncerNet.Hotfix.World
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.World.html
+  name: World
+  nameWithType: World
+  fullName: SyncerNet.Hotfix.World
+- uid: SyncerNet.Hotfix
+  commentId: N:SyncerNet.Hotfix
+  href: SyncerNet.html
+  name: SyncerNet.Hotfix
+  nameWithType: SyncerNet.Hotfix
+  fullName: SyncerNet.Hotfix
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html

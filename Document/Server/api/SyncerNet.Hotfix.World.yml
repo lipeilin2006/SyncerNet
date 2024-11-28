@@ -1,0 +1,1029 @@
+### YamlMime:ManagedReference
+items:
+- uid: SyncerNet.Hotfix.World
+  commentId: T:SyncerNet.Hotfix.World
+  id: World
+  parent: SyncerNet.Hotfix
+  children:
+  - SyncerNet.Hotfix.World.Entities
+  - SyncerNet.Hotfix.World.GenerateEntityId
+  - SyncerNet.Hotfix.World.GetEntity(System.UInt32)
+  - SyncerNet.Hotfix.World.Players
+  - SyncerNet.Hotfix.World.RemovePlayer(System.UInt32)
+  - SyncerNet.Hotfix.World.TryAddEntity(System.UInt32,System.String)
+  - SyncerNet.Hotfix.World.TryJoinPlayer(SyncerNet.Hotfix.Player)
+  - SyncerNet.Hotfix.World.TryRemoveEntity(System.UInt32)
+  - SyncerNet.Hotfix.World.TrySetEntity(SyncerNet.Hotfix.Entity)
+  - SyncerNet.Hotfix.World.WorldId
+  langs:
+  - csharp
+  - vb
+  name: World
+  nameWithType: World
+  fullName: SyncerNet.Hotfix.World
+  type: Class
+  source:
+    id: World
+    path: MemoryPack.Generator\MemoryPack.Generator.MemoryPackGenerator\SyncerNet.Hotfix.World.MemoryPackFormatter.g.cs
+    startLine: 31
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 可序列化的World，新玩家加入时，无需重复发送之前的消息，只需要将此序列化后发送给玩家，便可同步最新的World和其中的Entity
+  remarks: 'MemoryPack GenerateType: Object<br /><pre><code class="lang-csharp">uint WorldIdSystem.Collections.Concurrent.ConcurrentDictionary&lt;uint, SyncerNet.Hotfix.Entity&gt; Entities</code></pre>'
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackable(GenerateType.Object)]
+
+      public class World : IMemoryPackable<World>, IMemoryPackFormatterRegister
+    content.vb: >-
+      <MemoryPackable(GenerateType.Object)>
+
+      Public Class World Implements IMemoryPackable(Of World), IMemoryPackFormatterRegister
+  inheritance:
+  - System.Object
+  implements:
+  - MemoryPack.IMemoryPackable{SyncerNet.Hotfix.World}
+  - MemoryPack.IMemoryPackFormatterRegister
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: MemoryPack.MemoryPackableAttribute
+    ctor: MemoryPack.MemoryPackableAttribute.#ctor(MemoryPack.GenerateType)
+    arguments:
+    - type: MemoryPack.GenerateType
+      value: 0
+- uid: SyncerNet.Hotfix.World.WorldId
+  commentId: P:SyncerNet.Hotfix.World.WorldId
+  id: WorldId
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: WorldId
+  nameWithType: World.WorldId
+  fullName: SyncerNet.Hotfix.World.WorldId
+  type: Property
+  source:
+    id: WorldId
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 11
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  syntax:
+    content: public uint WorldId { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property WorldId As UInteger
+  overload: SyncerNet.Hotfix.World.WorldId*
+- uid: SyncerNet.Hotfix.World.Entities
+  commentId: P:SyncerNet.Hotfix.World.Entities
+  id: Entities
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: Entities
+  nameWithType: World.Entities
+  fullName: SyncerNet.Hotfix.World.Entities
+  type: Property
+  source:
+    id: Entities
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 15
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: Key:EntityId,Value:Entity
+  example: []
+  syntax:
+    content: public ConcurrentDictionary<uint, Entity> Entities { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Entity}
+    content.vb: Public Property Entities As ConcurrentDictionary(Of UInteger, Entity)
+  overload: SyncerNet.Hotfix.World.Entities*
+- uid: SyncerNet.Hotfix.World.Players
+  commentId: P:SyncerNet.Hotfix.World.Players
+  id: Players
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: Players
+  nameWithType: World.Players
+  fullName: SyncerNet.Hotfix.World.Players
+  type: Property
+  source:
+    id: Players
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 25
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 该World中的所有玩家
+  example: []
+  syntax:
+    content: >-
+      [MemoryPackIgnore]
+
+      public ConcurrentDictionary<uint, Player> Players { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Player}
+    content.vb: >-
+      <MemoryPackIgnore>
+
+      Public Property Players As ConcurrentDictionary(Of UInteger, Player)
+  overload: SyncerNet.Hotfix.World.Players*
+  attributes:
+  - type: MemoryPack.MemoryPackIgnoreAttribute
+    ctor: MemoryPack.MemoryPackIgnoreAttribute.#ctor
+    arguments: []
+- uid: SyncerNet.Hotfix.World.GetEntity(System.UInt32)
+  commentId: M:SyncerNet.Hotfix.World.GetEntity(System.UInt32)
+  id: GetEntity(System.UInt32)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: GetEntity(uint)
+  nameWithType: World.GetEntity(uint)
+  fullName: SyncerNet.Hotfix.World.GetEntity(uint)
+  type: Method
+  source:
+    id: GetEntity
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 33
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 获取Entity
+  example: []
+  syntax:
+    content: public Entity? GetEntity(uint entityId)
+    parameters:
+    - id: entityId
+      type: System.UInt32
+      description: ''
+    return:
+      type: SyncerNet.Hotfix.Entity
+      description: ''
+    content.vb: Public Function GetEntity(entityId As UInteger) As Entity
+  overload: SyncerNet.Hotfix.World.GetEntity*
+  nameWithType.vb: World.GetEntity(UInteger)
+  fullName.vb: SyncerNet.Hotfix.World.GetEntity(UInteger)
+  name.vb: GetEntity(UInteger)
+- uid: SyncerNet.Hotfix.World.TryJoinPlayer(SyncerNet.Hotfix.Player)
+  commentId: M:SyncerNet.Hotfix.World.TryJoinPlayer(SyncerNet.Hotfix.Player)
+  id: TryJoinPlayer(SyncerNet.Hotfix.Player)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: TryJoinPlayer(Player)
+  nameWithType: World.TryJoinPlayer(Player)
+  fullName: SyncerNet.Hotfix.World.TryJoinPlayer(SyncerNet.Hotfix.Player)
+  type: Method
+  source:
+    id: TryJoinPlayer
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 43
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 将Player加入到该World
+  example: []
+  syntax:
+    content: public bool TryJoinPlayer(Player player)
+    parameters:
+    - id: player
+      type: SyncerNet.Hotfix.Player
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function TryJoinPlayer(player As Player) As Boolean
+  overload: SyncerNet.Hotfix.World.TryJoinPlayer*
+- uid: SyncerNet.Hotfix.World.RemovePlayer(System.UInt32)
+  commentId: M:SyncerNet.Hotfix.World.RemovePlayer(System.UInt32)
+  id: RemovePlayer(System.UInt32)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayer(uint)
+  nameWithType: World.RemovePlayer(uint)
+  fullName: SyncerNet.Hotfix.World.RemovePlayer(uint)
+  type: Method
+  source:
+    id: RemovePlayer
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 54
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 将Player从该World中移除
+  example: []
+  syntax:
+    content: public void RemovePlayer(uint playerId)
+    parameters:
+    - id: playerId
+      type: System.UInt32
+      description: ''
+    content.vb: Public Sub RemovePlayer(playerId As UInteger)
+  overload: SyncerNet.Hotfix.World.RemovePlayer*
+  nameWithType.vb: World.RemovePlayer(UInteger)
+  fullName.vb: SyncerNet.Hotfix.World.RemovePlayer(UInteger)
+  name.vb: RemovePlayer(UInteger)
+- uid: SyncerNet.Hotfix.World.GenerateEntityId
+  commentId: M:SyncerNet.Hotfix.World.GenerateEntityId
+  id: GenerateEntityId
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: GenerateEntityId()
+  nameWithType: World.GenerateEntityId()
+  fullName: SyncerNet.Hotfix.World.GenerateEntityId()
+  type: Method
+  source:
+    id: GenerateEntityId
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 70
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 生成唯一EntityId
+  example: []
+  syntax:
+    content: public uint GenerateEntityId()
+    return:
+      type: System.UInt32
+      description: EntityId
+    content.vb: Public Function GenerateEntityId() As UInteger
+  overload: SyncerNet.Hotfix.World.GenerateEntityId*
+- uid: SyncerNet.Hotfix.World.TryAddEntity(System.UInt32,System.String)
+  commentId: M:SyncerNet.Hotfix.World.TryAddEntity(System.UInt32,System.String)
+  id: TryAddEntity(System.UInt32,System.String)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: TryAddEntity(uint, string)
+  nameWithType: World.TryAddEntity(uint, string)
+  fullName: SyncerNet.Hotfix.World.TryAddEntity(uint, string)
+  type: Method
+  source:
+    id: TryAddEntity
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 86
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 添加Entity
+  example: []
+  syntax:
+    content: public (bool, uint) TryAddEntity(uint ownerId, string prfabPath)
+    parameters:
+    - id: ownerId
+      type: System.UInt32
+      description: 所有者的PlayerId
+    - id: prfabPath
+      type: System.String
+      description: ''
+    return:
+      type: System.ValueTuple{System.Boolean,System.UInt32}
+      description: (isSuccess,EntityId)
+    content.vb: Public Function TryAddEntity(ownerId As UInteger, prfabPath As String) As (Boolean, UInteger)
+  overload: SyncerNet.Hotfix.World.TryAddEntity*
+  nameWithType.vb: World.TryAddEntity(UInteger, String)
+  fullName.vb: SyncerNet.Hotfix.World.TryAddEntity(UInteger, String)
+  name.vb: TryAddEntity(UInteger, String)
+- uid: SyncerNet.Hotfix.World.TrySetEntity(SyncerNet.Hotfix.Entity)
+  commentId: M:SyncerNet.Hotfix.World.TrySetEntity(SyncerNet.Hotfix.Entity)
+  id: TrySetEntity(SyncerNet.Hotfix.Entity)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: TrySetEntity(Entity)
+  nameWithType: World.TrySetEntity(Entity)
+  fullName: SyncerNet.Hotfix.World.TrySetEntity(SyncerNet.Hotfix.Entity)
+  type: Method
+  source:
+    id: TrySetEntity
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 102
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 设置Entity
+  example: []
+  syntax:
+    content: public bool TrySetEntity(Entity entity)
+    parameters:
+    - id: entity
+      type: SyncerNet.Hotfix.Entity
+      description: ''
+    return:
+      type: System.Boolean
+      description: isSuccess
+    content.vb: Public Function TrySetEntity(entity As Entity) As Boolean
+  overload: SyncerNet.Hotfix.World.TrySetEntity*
+- uid: SyncerNet.Hotfix.World.TryRemoveEntity(System.UInt32)
+  commentId: M:SyncerNet.Hotfix.World.TryRemoveEntity(System.UInt32)
+  id: TryRemoveEntity(System.UInt32)
+  parent: SyncerNet.Hotfix.World
+  langs:
+  - csharp
+  - vb
+  name: TryRemoveEntity(uint)
+  nameWithType: World.TryRemoveEntity(uint)
+  fullName: SyncerNet.Hotfix.World.TryRemoveEntity(uint)
+  type: Method
+  source:
+    id: TryRemoveEntity
+    path: D:\SyncerNet\SyncerNet\SyncerNet.Hotfix\World.cs
+    startLine: 117
+  assemblies:
+  - SyncerNet.Hotfix
+  namespace: SyncerNet.Hotfix
+  summary: 移除Entity
+  example: []
+  syntax:
+    content: public bool TryRemoveEntity(uint entityId)
+    parameters:
+    - id: entityId
+      type: System.UInt32
+      description: ''
+    return:
+      type: System.Boolean
+      description: isSuccess
+    content.vb: Public Function TryRemoveEntity(entityId As UInteger) As Boolean
+  overload: SyncerNet.Hotfix.World.TryRemoveEntity*
+  nameWithType.vb: World.TryRemoveEntity(UInteger)
+  fullName.vb: SyncerNet.Hotfix.World.TryRemoveEntity(UInteger)
+  name.vb: TryRemoveEntity(UInteger)
+references:
+- uid: SyncerNet.Hotfix
+  commentId: N:SyncerNet.Hotfix
+  href: SyncerNet.html
+  name: SyncerNet.Hotfix
+  nameWithType: SyncerNet.Hotfix
+  fullName: SyncerNet.Hotfix
+  spec.csharp:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+  spec.vb:
+  - uid: SyncerNet
+    name: SyncerNet
+    href: SyncerNet.html
+  - name: .
+  - uid: SyncerNet.Hotfix
+    name: Hotfix
+    href: SyncerNet.Hotfix.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MemoryPack.IMemoryPackable{SyncerNet.Hotfix.World}
+  commentId: T:MemoryPack.IMemoryPackable{SyncerNet.Hotfix.World}
+  parent: MemoryPack
+  definition: MemoryPack.IMemoryPackable`1
+  href: SyncerNet.Hotfix.World.html
+  name: IMemoryPackable<World>
+  nameWithType: IMemoryPackable<World>
+  fullName: MemoryPack.IMemoryPackable<SyncerNet.Hotfix.World>
+  nameWithType.vb: IMemoryPackable(Of World)
+  fullName.vb: MemoryPack.IMemoryPackable(Of SyncerNet.Hotfix.World)
+  name.vb: IMemoryPackable(Of World)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - uid: SyncerNet.Hotfix.World
+    name: World
+    href: SyncerNet.Hotfix.World.html
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SyncerNet.Hotfix.World
+    name: World
+    href: SyncerNet.Hotfix.World.html
+  - name: )
+- uid: MemoryPack.IMemoryPackFormatterRegister
+  commentId: T:MemoryPack.IMemoryPackFormatterRegister
+  parent: MemoryPack
+  isExternal: true
+  name: IMemoryPackFormatterRegister
+  nameWithType: IMemoryPackFormatterRegister
+  fullName: MemoryPack.IMemoryPackFormatterRegister
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MemoryPack.IMemoryPackable`1
+  commentId: T:MemoryPack.IMemoryPackable`1
+  isExternal: true
+  name: IMemoryPackable<T>
+  nameWithType: IMemoryPackable<T>
+  fullName: MemoryPack.IMemoryPackable<T>
+  nameWithType.vb: IMemoryPackable(Of T)
+  fullName.vb: MemoryPack.IMemoryPackable(Of T)
+  name.vb: IMemoryPackable(Of T)
+  spec.csharp:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MemoryPack.IMemoryPackable`1
+    name: IMemoryPackable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MemoryPack
+  commentId: N:MemoryPack
+  isExternal: true
+  name: MemoryPack
+  nameWithType: MemoryPack
+  fullName: MemoryPack
+- uid: SyncerNet.Hotfix.World.WorldId*
+  commentId: Overload:SyncerNet.Hotfix.World.WorldId
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_WorldId
+  name: WorldId
+  nameWithType: World.WorldId
+  fullName: SyncerNet.Hotfix.World.WorldId
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: SyncerNet.Hotfix.World.Entities*
+  commentId: Overload:SyncerNet.Hotfix.World.Entities
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_Entities
+  name: Entities
+  nameWithType: World.Entities
+  fullName: SyncerNet.Hotfix.World.Entities
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Entity}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Entity}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<uint, Entity>
+  nameWithType: ConcurrentDictionary<uint, Entity>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<uint, SyncerNet.Hotfix.Entity>
+  nameWithType.vb: ConcurrentDictionary(Of UInteger, Entity)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of UInteger, SyncerNet.Hotfix.Entity)
+  name.vb: ConcurrentDictionary(Of UInteger, Entity)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Entity
+    name: Entity
+    href: SyncerNet.Hotfix.Entity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Entity
+    name: Entity
+    href: SyncerNet.Hotfix.Entity.html
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: SyncerNet.Hotfix.World.Players*
+  commentId: Overload:SyncerNet.Hotfix.World.Players
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_Players
+  name: Players
+  nameWithType: World.Players
+  fullName: SyncerNet.Hotfix.World.Players
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Player}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.UInt32,SyncerNet.Hotfix.Player}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<uint, Player>
+  nameWithType: ConcurrentDictionary<uint, Player>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<uint, SyncerNet.Hotfix.Player>
+  nameWithType.vb: ConcurrentDictionary(Of UInteger, Player)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of UInteger, SyncerNet.Hotfix.Player)
+  name.vb: ConcurrentDictionary(Of UInteger, Player)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Player
+    name: Player
+    href: SyncerNet.Hotfix.Player.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: ','
+  - name: " "
+  - uid: SyncerNet.Hotfix.Player
+    name: Player
+    href: SyncerNet.Hotfix.Player.html
+  - name: )
+- uid: SyncerNet.Hotfix.World.GetEntity*
+  commentId: Overload:SyncerNet.Hotfix.World.GetEntity
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_GetEntity_System_UInt32_
+  name: GetEntity
+  nameWithType: World.GetEntity
+  fullName: SyncerNet.Hotfix.World.GetEntity
+- uid: SyncerNet.Hotfix.Entity
+  commentId: T:SyncerNet.Hotfix.Entity
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Entity.html
+  name: Entity
+  nameWithType: Entity
+  fullName: SyncerNet.Hotfix.Entity
+- uid: SyncerNet.Hotfix.World.TryJoinPlayer*
+  commentId: Overload:SyncerNet.Hotfix.World.TryJoinPlayer
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_TryJoinPlayer_SyncerNet_Hotfix_Player_
+  name: TryJoinPlayer
+  nameWithType: World.TryJoinPlayer
+  fullName: SyncerNet.Hotfix.World.TryJoinPlayer
+- uid: SyncerNet.Hotfix.Player
+  commentId: T:SyncerNet.Hotfix.Player
+  parent: SyncerNet.Hotfix
+  href: SyncerNet.Hotfix.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: SyncerNet.Hotfix.Player
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SyncerNet.Hotfix.World.RemovePlayer*
+  commentId: Overload:SyncerNet.Hotfix.World.RemovePlayer
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_RemovePlayer_System_UInt32_
+  name: RemovePlayer
+  nameWithType: World.RemovePlayer
+  fullName: SyncerNet.Hotfix.World.RemovePlayer
+- uid: SyncerNet.Hotfix.World.GenerateEntityId*
+  commentId: Overload:SyncerNet.Hotfix.World.GenerateEntityId
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_GenerateEntityId
+  name: GenerateEntityId
+  nameWithType: World.GenerateEntityId
+  fullName: SyncerNet.Hotfix.World.GenerateEntityId
+- uid: SyncerNet.Hotfix.World.TryAddEntity*
+  commentId: Overload:SyncerNet.Hotfix.World.TryAddEntity
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_TryAddEntity_System_UInt32_System_String_
+  name: TryAddEntity
+  nameWithType: World.TryAddEntity
+  fullName: SyncerNet.Hotfix.World.TryAddEntity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueTuple{System.Boolean,System.UInt32}
+  commentId: T:System.ValueTuple{System.Boolean,System.UInt32}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool, uint)
+  nameWithType: (bool, uint)
+  fullName: (bool, uint)
+  nameWithType.vb: (Boolean, UInteger)
+  fullName.vb: (Boolean, UInteger)
+  name.vb: (Boolean, UInteger)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: SyncerNet.Hotfix.World.TrySetEntity*
+  commentId: Overload:SyncerNet.Hotfix.World.TrySetEntity
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_TrySetEntity_SyncerNet_Hotfix_Entity_
+  name: TrySetEntity
+  nameWithType: World.TrySetEntity
+  fullName: SyncerNet.Hotfix.World.TrySetEntity
+- uid: SyncerNet.Hotfix.World.TryRemoveEntity*
+  commentId: Overload:SyncerNet.Hotfix.World.TryRemoveEntity
+  href: SyncerNet.Hotfix.World.html#SyncerNet_Hotfix_World_TryRemoveEntity_System_UInt32_
+  name: TryRemoveEntity
+  nameWithType: World.TryRemoveEntity
+  fullName: SyncerNet.Hotfix.World.TryRemoveEntity
