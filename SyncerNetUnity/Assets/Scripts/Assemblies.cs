@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +11,10 @@ public class Assemblies
         "mscorlib.dll",
         "System.dll",
         "System.Core.dll" ,
-        "MemoryPack.Core.dll"
-    };
+        "MemoryPack.Core.dll",
+		"Unity.InputSystem.dll",
+		"Unity.InputSystem.ForUI.dll"
+	};
     public static string[] HotUpdateAssemblies =
     {
         "SyncerNet.Hotfix.dll",

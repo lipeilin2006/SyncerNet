@@ -6,6 +6,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 using YooAsset;
+using UnityEngine.InputSystem;
 
 
 public class Init : MonoBehaviour

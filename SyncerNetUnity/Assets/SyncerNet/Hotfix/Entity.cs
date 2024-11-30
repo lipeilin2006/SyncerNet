@@ -23,8 +23,6 @@ namespace SyncerNet.Hotfix
         public GameObject? GameObject { get; set; }
         [MemoryPackIgnore]
         public bool IsLocal => OwnerId == PlayerConfigs.PlayerId;
-        [MemoryPackIgnore]
-        public bool Initialized = false;
 
         [MemoryPackConstructor]
         private Entity(uint entityId, uint worldId, uint ownerId, string prefabPath, ConcurrentDictionary<Type, Syncer> syncers)
@@ -48,15 +46,13 @@ namespace SyncerNet.Hotfix
 
         public void Initialize()
         {
-            if (Initialized) return;
-            Debug.Log("Initialized");
+			if (GameObject != null) return;
             if (!string.IsNullOrEmpty(PrefabPath))
             {
                 GameObject = YooAssets.GetPackage("DefaultPackage")
                 .LoadAssetSync<GameObject>(PrefabPath)
                 .InstantiateSync();
             }
-            Initialized = true;
         }
 
         public void AddSyncer<T>() where T : Syncer, new()
@@ -88,14 +84,13 @@ namespace SyncerNet.Hotfix
 
         public void Reset()
         {
-            Initialized = false;
             if (GameObject != null) GameObject.Destroy(GameObject);
             GameObject = null;
         }
 
         public void NetworkEarlyUpdate()
         {
-            if (!Initialized) Initialize();
+			if (GameObject == null) Initialize();
             foreach (var syncer in Syncers.Values)
             {
                 syncer.NetworkEarlyUpdate(this);
@@ -104,7 +99,7 @@ namespace SyncerNet.Hotfix
 
         public void NetworkLateUpdate()
         {
-            if (!Initialized) Initialize();
+			if (GameObject == null) Initialize();
             foreach (var syncer in Syncers.Values)
             {
                 syncer.NetworkLateUpdate(this);

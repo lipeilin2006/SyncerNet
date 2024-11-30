@@ -1,1 +1,1 @@
-{"Aot":["mscorlib.dll","System.dll","System.Core.dll","MemoryPack.Core.dll"],"HotUpdate":["EntitySync.Hotfix.dll","HotUpdate.dll"]}
+{"Aot":["mscorlib.dll","System.dll","System.Core.dll","MemoryPack.Core.dll","Unity.InputSystem.dll","Unity.InputSystem.ForUI.dll"],"HotUpdate":["SyncerNet.Hotfix.dll","HotUpdate.dll"]}

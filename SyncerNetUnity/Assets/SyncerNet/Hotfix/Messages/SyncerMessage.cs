@@ -1,4 +1,4 @@
-using kcp2k;
+﻿using kcp2k;
 using MemoryPack;
 using UnityEngine;
 
@@ -22,7 +22,6 @@ namespace SyncerNet.Hotfix.Messages
 
         public override void Process(Game game, KcpChannel channel)
         {
-            Debug.Log("Syncer");
             if (Syncer == null) return;
             World? world = game.GetWorld(WorldId);
             if (world == null) return;

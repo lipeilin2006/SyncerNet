@@ -1,4 +1,4 @@
-using SyncerNet.Hotfix.Messages;
+ï»¿using SyncerNet.Hotfix.Messages;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,7 +51,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ¿ÉÓĞ¿ÉÎŞµÄĞ­³Ì£¬»ù±¾ÓÃ²»ÉÏ
+        /// å¯æœ‰å¯æ— çš„åç¨‹ï¼ŒåŸºæœ¬ç”¨ä¸ä¸Š
         /// </summary>
         /// <param name="routine"></param>
         /// <returns></returns>
@@ -60,43 +60,43 @@ namespace SyncerNet.Hotfix
             return StartCoroutineFunc.Invoke(routine);
         }
 
-        /// <summary>
-        /// Òì²½¼ÓÔØ³¡¾°Í¬Ê±¼¤»îWorld
-        /// </summary>
-        /// <param name="sceneLocation">³¡¾°Â·¾¶</param>
-        /// <param name="worldId"></param>
-        /// <returns>SceneHandle¿ÉÓÃÓÚ»ñÈ¡³¡¾°¼ÓÔØ½ø¶È</returns>
-        public SceneHandle? LoadSceneForWorld(string sceneLocation, uint worldId)
-        {
-            World? world = GetWorld(worldId);
-            if (world != null)
-            {
-                IsReady = false;
-                CurrentWorld?.SetActive(false);
-                CurrentWorld = world;
+		/// <summary>
+		/// å¼‚æ­¥åŠ è½½åœºæ™¯åŒæ—¶æ¿€æ´»World
+		/// </summary>
+		/// <param name="sceneLocation">åœºæ™¯è·¯å¾„</param>
+		/// <param name="worldId"></param>
+		/// <returns>SceneHandleå¯ç”¨äºè·å–åœºæ™¯åŠ è½½è¿›åº¦</returns>
+		public SceneHandle? LoadSceneForWorld(string sceneLocation, uint worldId)
+		{
+			World? world = GetWorld(worldId);
+			if (world != null)
+			{
+				IsReady = false;
+				CurrentWorld?.SetActive(false);
+				CurrentWorld = world;
 
-                SceneHandle handle = YooAssets.GetPackage("DefaultPackage").LoadSceneAsync(sceneLocation);
-                handle.Completed += Handle_Completed;
-                return handle;
-            }
-            return null;
-        }
+				SceneHandle handle = YooAssets.GetPackage("DefaultPackage").LoadSceneAsync(sceneLocation);
+				handle.Completed += Handle_Completed;
+				return handle;
+			}
+			return null;
+		}
+
+		/// <summary>
+		/// åœºæ™¯åŠ è½½å®Œæˆåçš„å›è°ƒ
+		/// </summary>
+		/// <param name="obj"></param>
+		private void Handle_Completed(SceneHandle obj)
+		{
+			CurrentWorld?.SetActive(true);
+			IsReady = true;
+			var package = YooAssets.GetPackage("DefaultPackage");
+			package.UnloadUnusedAssetsAsync();
+			Debug.Log($"Loaded Scene {obj.SceneName}");
+		}
 
         /// <summary>
-        /// ³¡¾°¼ÓÔØÍê³ÉºóµÄ»Øµ÷
-        /// </summary>
-        /// <param name="obj"></param>
-        private void Handle_Completed(SceneHandle obj)
-        {
-            CurrentWorld?.SetActive(true);
-            IsReady = true;
-            var package = YooAssets.GetPackage("DefaultPackage");
-            package.UnloadUnusedAssetsAsync();
-            Debug.Log($"Loaded Scene {obj.SceneName}");
-        }
-
-        /// <summary>
-        /// ¼ÓÈëÓÎÏ·¡£½øĞĞÈÎºÎ²Ù×÷Ö®Ç°¶¼Ó¦¸ÃÏÈ¼ÓÈëÓÎÏ·¡£
+        /// åŠ å…¥æ¸¸æˆã€‚è¿›è¡Œä»»ä½•æ“ä½œä¹‹å‰éƒ½åº”è¯¥å…ˆåŠ å…¥æ¸¸æˆã€‚
         /// </summary>
         /// <returns></returns>
         public async Task<bool> TryJoinGame()
@@ -110,7 +110,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ´´½¨World
+        /// åˆ›å»ºWorld
         /// </summary>
         /// <returns>(isSuccess,WorldId)</returns>
         public async Task<(bool, uint)> CreateWorld()
@@ -125,7 +125,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ¼ÓÈëWorld
+        /// åŠ å…¥World
         /// </summary>
         /// <param name="worldId"></param>
         /// <returns>isSuccess</returns>
@@ -149,7 +149,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// »ñÈ¡World,Ç°ÌáÊÇÒÑ¾­¼ÓÈëÕâ¸öWorld
+        /// è·å–World,å‰ææ˜¯å·²ç»åŠ å…¥è¿™ä¸ªWorld
         /// </summary>
         /// <param name="worldId">WorldId</param>
         /// <returns></returns>

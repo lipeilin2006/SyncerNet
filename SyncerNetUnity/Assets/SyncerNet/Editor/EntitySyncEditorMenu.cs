@@ -1,4 +1,4 @@
-using HybridCLR.Editor.Settings;
+﻿using HybridCLR.Editor.Settings;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +9,7 @@ namespace SyncerNet
 {
     public class SyncerNetEditorMenu : MonoBehaviour
     {
-        [MenuItem("SyncerNet/Copy Hotfix Dlls")]
+        [MenuItem("SyncerNet/Copy HotUpdate Dlls")]
         static void CopyHotfixDll()
         {
             string hotfixDir = HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir;
@@ -28,7 +28,7 @@ namespace SyncerNet
             Debug.Log("Finished");
         }
 
-        [MenuItem("SyncerNet/Clear Hotfix Dlls")]
+        [MenuItem("SyncerNet/Clear HotUpdate Dlls")]
         static void ClearHotfixDll()
         {
             foreach (string dll in Directory.GetFiles("Assets/HotUpdate/HotfixAssemblies/Aot/"))

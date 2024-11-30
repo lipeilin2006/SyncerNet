@@ -1,4 +1,4 @@
-using kcp2k;
+ï»¿using kcp2k;
 using MemoryPack;
 using System;
 using System.Collections;
@@ -10,7 +10,7 @@ using UnityEngine;
 namespace SyncerNet.Hotfix
 {
     /// <summary>
-    /// ÍøÂç¿Í»§¶Ë
+    /// ç½‘ç»œå®¢æˆ·ç«¯
     /// </summary>
     public class NetworkClient : MonoBehaviour
     {
@@ -51,6 +51,9 @@ namespace SyncerNet.Hotfix
         // Start is called before the first frame update
         private void Awake()
         {
+#if !UNITY_EDITOR
+			NetworkLoop.RuntimeInitializeOnLoad();
+#endif
             _game = Game.Instance;
             DontDestroyOnLoad(this);
             _client = new(
@@ -77,12 +80,12 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ·¢ËÍMessageÏûÏ¢
+        /// å‘é€Messageæ¶ˆæ¯
         /// </summary>
-        /// <param name="message">ÏûÏ¢</param>
-        /// <param name="needToResponse">ÊÇ·ñĞèÒªÏìÓ¦</param>
-        /// <param name="timeout">ÏìÓ¦³¬Ê±Ê±¼ä</param>
-        /// <returns>Èç¹û²»ĞèÒªÏìÓ¦£¬Ôò·µ»Ønull¡£Èç¹ûĞèÒªÏìÓ¦£¬ÔòÔÚÊÕµ½ÏìÓ¦Ê±·µ»ØÏìÓ¦ÏûÏ¢£¬·ñÔò·µ»Ønull¡£</returns>
+        /// <param name="message">æ¶ˆæ¯</param>
+        /// <param name="needToResponse">æ˜¯å¦éœ€è¦å“åº”</param>
+        /// <param name="timeout">å“åº”è¶…æ—¶æ—¶é—´</param>
+        /// <returns>å¦‚æœä¸éœ€è¦å“åº”ï¼Œåˆ™è¿”å›nullã€‚å¦‚æœéœ€è¦å“åº”ï¼Œåˆ™åœ¨æ”¶åˆ°å“åº”æ—¶è¿”å›å“åº”æ¶ˆæ¯ï¼Œå¦åˆ™è¿”å›nullã€‚</returns>
         public async Task<NetworkMessage?> Send(NetworkMessage message, bool needToResponse = false, int timeout = 10000)
         {
             try
@@ -142,7 +145,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// Éú³ÉÎ¨Ò»ÏûÏ¢Id
+        /// ç”Ÿæˆå”¯ä¸€æ¶ˆæ¯Id
         /// </summary>
         /// <returns></returns>
         private uint GenerateMessageId()
@@ -150,7 +153,7 @@ namespace SyncerNet.Hotfix
             while (true)
             {
                 uint id = (uint)_random.Next();
-                //0Îª±£ÁôÏûÏ¢Id£¬ÓÃÓÚ²»ĞèÒªÏìÓ¦µÄÏûÏ¢
+                //0ä¸ºä¿ç•™æ¶ˆæ¯Idï¼Œç”¨äºä¸éœ€è¦å“åº”çš„æ¶ˆæ¯
                 if (!_responses.ContainsKey(id) && id != 0)
                 {
                     return id;
@@ -195,7 +198,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ÔÚUnityµÄUpdateÖ®Ç°µ÷ÓÃ
+        /// åœ¨Unityçš„Updateä¹‹å‰è°ƒç”¨
         /// </summary>
         public void NetworkEarlyUpdate()
         {
@@ -204,7 +207,7 @@ namespace SyncerNet.Hotfix
         }
 
         /// <summary>
-        /// ÔÚUnityµÄLateUpdateÖ®ºóµ÷ÓÃ
+        /// åœ¨Unityçš„LateUpdateä¹‹åè°ƒç”¨
         /// </summary>
         public void NetworkLateUpdate()
         {

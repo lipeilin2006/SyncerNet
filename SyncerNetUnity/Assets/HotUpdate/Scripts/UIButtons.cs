@@ -1,4 +1,4 @@
-using SyncerNet.Hotfix;
+﻿using SyncerNet.Hotfix;
 using SyncerNet.Hotfix.Syncers;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,30 +38,41 @@ namespace HotUpdate
             (bool isSuccess, uint worldId) = await Game.Instance.CreateWorld();
             if (isSuccess)
             {
-                Game.Instance.LoadSceneForWorld("Assets/HotUpdate/Resources/Scenes/GamePlay", worldId);
-            }
+				await Game.Instance.LoadSceneForWorld("Assets/HotUpdate/Resources/Scenes/GamePlay", worldId).Task;
+
+				(bool success, uint entityId) = await Game.Instance.CurrentWorld.TryAddEntity("Assets/HotUpdate/Resources/Prefabs/Player.prefab");
+				if (success)
+				{
+					Entity entity = Game.Instance.CurrentWorld.GetEntity(entityId);
+
+					entity.Initialize();
+					entity.GameObject.AddComponent<LocalPlayer>();
+
+					entity.AddSyncer<AnimatorSyncer>();
+					entity.AddSyncer<TransformSyncer>();
+				}
+			}
         }
 
         public async void JoinWorldBtnClick()
         {
             uint worldId = uint.Parse(worldIdInput.text);
-            bool isSuccess = await Game.Instance.JoinWorld(worldId);
-            if (isSuccess)
-            {
-                Game.Instance.LoadSceneForWorld("Assets/HotUpdate/Resources/Scenes/GamePlay", worldId);
-            }
-        }
+			if (await Game.Instance.JoinWorld(worldId))
+			{
+				await Game.Instance.LoadSceneForWorld("Assets/HotUpdate/Resources/Scenes/GamePlay", worldId).Task;
 
-        public async void AddEntityBtnClick()
-        {
-            (bool isSuccess, uint entityId) = await Game.Instance.CurrentWorld.TryAddEntity("Assets/HotUpdate/Resources/Prefabs/Cube.prefab");
-            if (isSuccess)
-            {
-                Entity entity = Game.Instance.CurrentWorld.GetEntity(entityId);
+				(bool isSuccess, uint entityId) = await Game.Instance.CurrentWorld.TryAddEntity("Assets/HotUpdate/Resources/Prefabs/Player.prefab");
+				if (isSuccess)
+				{
+					Entity entity = Game.Instance.CurrentWorld.GetEntity(entityId);
 
-                entity.AddSyncer<AnimatorSyncer>();
-                entity.AddSyncer<TransformSyncer>();
-            }
+					entity.Initialize();
+					entity.GameObject.AddComponent<LocalPlayer>();
+
+					entity.AddSyncer<AnimatorSyncer>();
+					entity.AddSyncer<TransformSyncer>();
+				}
+			}
         }
     }
 }

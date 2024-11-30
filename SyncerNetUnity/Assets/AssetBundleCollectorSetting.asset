@@ -32,7 +32,7 @@ MonoBehaviour:
       - CollectPath: Assets/HotUpdate/Resources
         CollectorGUID: da5de374761b9cb4fa33654cccef2235
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
@@ -40,7 +40,7 @@ MonoBehaviour:
       - CollectPath: Assets/HotUpdate/HotfixAssemblies
         CollectorGUID: 37b65f593d17d384d9aa00f078c811da
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
