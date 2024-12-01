@@ -1,4 +1,4 @@
-using MemoryPack;
+﻿using MemoryPack;
 using System;
 using UnityEngine;
 
@@ -61,98 +61,63 @@ namespace SyncerNet.Hotfix.Syncers
         {
             if (entity.GameObject == null) return;
 
-            if (entity.GameObject.TryGetComponent(out Animator animator))
-            {
-                int parameterCount = animator.parameterCount;
-                int layerCount = animator.layerCount;
+			if (entity.GameObject.TryGetComponent(out Animator animator))
+			{
+				int parameterCount = animator.parameterCount;
+				int layerCount = animator.layerCount;
 
-                if (_intParameters == null) { _intParameters = new int[parameterCount]; IsChanged = true; }
-                if (_floatParameters == null) { _floatParameters = new float[parameterCount]; IsChanged = true; }
-                if (_boolParameters == null) { _boolParameters = new bool[parameterCount]; IsChanged = true; }
+				if (_intParameters == null) { _intParameters = new int[parameterCount]; IsChanged = true; }
+				if (_floatParameters == null) { _floatParameters = new float[parameterCount]; IsChanged = true; }
+				if (_boolParameters == null) { _boolParameters = new bool[parameterCount]; IsChanged = true; }
 
-                if (_animationHash == null) { _animationHash = new int[layerCount]; IsChanged = true; }
-                if (_transitionHash == null) { _transitionHash = new int[layerCount]; IsChanged = true; }
-                if (_stateHash == null) { _stateHash = new int[layerCount]; IsChanged = true; }
-                if (_layerWeight == null) { _layerWeight = new float[layerCount]; IsChanged = true; }
-                if (_normalizedTime == null) { _normalizedTime = new float[layerCount]; IsChanged = true; }
+				if (_animationHash == null) { _animationHash = new int[layerCount]; IsChanged = true; }
+				if (_transitionHash == null) { _transitionHash = new int[layerCount]; IsChanged = true; }
+				if (_stateHash == null) { _stateHash = new int[layerCount]; IsChanged = true; }
+				if (_layerWeight == null) { _layerWeight = new float[layerCount]; IsChanged = true; }
+				if (_normalizedTime == null) { _normalizedTime = new float[layerCount]; IsChanged = true; }
 
-                //Speed
-                float newSpeed = animator.speed;
-                if (Mathf.Abs(_animatorSpeed - newSpeed) > 0.001f)
-                {
-                    _animatorSpeed = newSpeed;
-                    IsChanged = true;
-                }
+				//Speed
+				_animatorSpeed = animator.speed;
 
-                //Parameters
-                for (int i = 0; i < animator.parameterCount; i++)
-                {
-                    var parameter = animator.parameters[i];
-                    if (parameter.type == AnimatorControllerParameterType.Int)
-                    {
-                        int value = animator.GetInteger(parameter.nameHash);
-                        if (_intParameters[i] != value)
-                        {
-                            _intParameters[i] = value;
-                            IsChanged = true;
-                        }
-                    }
-                    else if (parameter.type == AnimatorControllerParameterType.Float)
-                    {
-                        float value = animator.GetFloat(parameter.nameHash);
-                        if (Math.Abs(_intParameters[i] - value) > 0.001f)
-                        {
-                            _floatParameters[i] = value;
-                            IsChanged = true;
-                        }
-                    }
-                    else if (parameter.type == AnimatorControllerParameterType.Bool)
-                    {
-                        bool value = animator.GetBool(parameter.nameHash);
-                        if (_boolParameters[i] != value)
-                        {
-                            _boolParameters[i] = value;
-                            IsChanged = true;
-                        }
-                    }
-                }
+				//Parameters
+				for (int i = 0; i < animator.parameterCount; i++)
+				{
+					var parameter = animator.parameters[i];
+					if (parameter.type == AnimatorControllerParameterType.Int)
+					{
+						_intParameters[i] = animator.GetInteger(parameter.nameHash);
+					}
+					else if (parameter.type == AnimatorControllerParameterType.Float)
+					{
+						_floatParameters[i] = animator.GetFloat(parameter.nameHash);
+					}
+					else if (parameter.type == AnimatorControllerParameterType.Bool)
+					{
+						_boolParameters[i] = animator.GetBool(parameter.nameHash);
+					}
+				}
 
-                //State
-                for (int i = 0; i < animator.layerCount; i++)
-                {
-                    float layerWeight = animator.GetLayerWeight(i);
-                    if (Mathf.Abs(layerWeight - _layerWeight[i]) > 0.001f)
-                    {
-                        _layerWeight[i] = layerWeight;
-                        IsChanged = true;
-                    }
+				//State
+				for (int i = 0; i < animator.layerCount; i++)
+				{
+					_layerWeight[i] = animator.GetLayerWeight(i);
 
-                    if (animator.IsInTransition(i))
-                    {
-                        AnimatorTransitionInfo transitionInfo = animator.GetAnimatorTransitionInfo(i);
-                        if (transitionInfo.fullPathHash != _transitionHash[i])
-                        {
-                            _transitionHash[i] = transitionInfo.fullPathHash;
-                            _animationHash[i] = 0;
+					if (animator.IsInTransition(i))
+					{
+						AnimatorTransitionInfo transitionInfo = animator.GetAnimatorTransitionInfo(i);
+						_transitionHash[i] = transitionInfo.fullPathHash;
+						_animationHash[i] = 0;
+					}
 
-                            IsChanged = true;
-                        }
-                        return;
-                    }
+					AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(i);
+					_animationHash[i] = stateInfo.fullPathHash;
+					_transitionHash[i] = 0;
+					_stateHash[i] = stateInfo.fullPathHash;
+					_normalizedTime[i] = stateInfo.normalizedTime;
 
-                    AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(i);
-                    if (stateInfo.fullPathHash != _animationHash[i])
-                    {
-                        _animationHash[i] = stateInfo.fullPathHash;
-                        _transitionHash[i] = 0;
-                        _stateHash[i] = stateInfo.fullPathHash;
-                        _normalizedTime[i] = stateInfo.normalizedTime;
-
-                        IsChanged = true;
-                        return;
-                    }
-                }
-            }
+					IsChanged = true;
+				}
+			}
         }
 
         private void RemoteToLocal(Entity entity)
