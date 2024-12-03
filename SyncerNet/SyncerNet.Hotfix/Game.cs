@@ -42,7 +42,6 @@ namespace SyncerNet.Hotfix
 		{
 			try
 			{
-				Logger.Debug(data.Count);
 				NetworkMessage? message = MemoryPackSerializer.Deserialize<NetworkMessage>(data);
 				if (message != null)
 				{

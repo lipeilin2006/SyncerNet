@@ -20,7 +20,6 @@ namespace SyncerNet.Hotfix.Messages
 
 		public override void Process(Game game, int netId, KcpChannel channel)
 		{
-			Logger.Debug(Syncer.GetType().Name);
 			if (Syncer == null) return;
 			World? world = game.GetWorld(WorldId);
 			if (world == null) return;

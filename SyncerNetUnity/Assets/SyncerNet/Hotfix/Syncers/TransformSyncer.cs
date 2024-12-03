@@ -1,4 +1,4 @@
-using MemoryPack;
+﻿using MemoryPack;
 using UnityEngine;
 
 #nullable enable
@@ -46,8 +46,6 @@ namespace SyncerNet.Hotfix.Syncers
 
         private void LocalToRemote(Entity entity)
         {
-            if (entity.GameObject == null) return;
-
             if (
                 Vector3.Distance(entity.GameObject.transform.position, _position) > _positionAccuracy ||
                 Vector3.Distance(entity.GameObject.transform.eulerAngles, _eulerAngles) > _rotationAccuracy ||
@@ -63,8 +61,6 @@ namespace SyncerNet.Hotfix.Syncers
 
         private void RemoteToLocal(Entity entity)
         {
-            if (entity.GameObject == null) return;
-
             entity.GameObject.transform.position = _position;
             entity.GameObject.transform.eulerAngles = _eulerAngles;
             entity.GameObject.transform.localScale = _localScale;

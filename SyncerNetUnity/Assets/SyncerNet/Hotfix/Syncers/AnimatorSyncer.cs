@@ -32,8 +32,8 @@ namespace SyncerNet.Hotfix.Syncers
         [MemoryPackIgnore]
         private int[]? _transitionHash;
 
-        [MemoryPackIgnore]
-        private bool _used = false;
+		[MemoryPackIgnore]
+		private bool _used = false;
 
         public override void UpdateSyncer(Entity entity)
         {
@@ -59,8 +59,6 @@ namespace SyncerNet.Hotfix.Syncers
 
         private void LocalToRemote(Entity entity)
         {
-            if (entity.GameObject == null) return;
-
 			if (entity.GameObject.TryGetComponent(out Animator animator))
 			{
 				int parameterCount = animator.parameterCount;
@@ -122,9 +120,7 @@ namespace SyncerNet.Hotfix.Syncers
 
         private void RemoteToLocal(Entity entity)
         {
-            if (_used) return;
-            if (entity.GameObject == null) return;
-
+			if (_used) return;
             if (entity.GameObject.TryGetComponent(out Animator animator))
             {
                 //Speed
@@ -136,7 +132,6 @@ namespace SyncerNet.Hotfix.Syncers
                 if (_boolParameters == null) return;
 
                 //State
-                if (_animationHash == null) return;
                 if (_stateHash == null) return;
                 if (_layerWeight == null) return;
                 if (_normalizedTime == null) return;
@@ -166,8 +161,9 @@ namespace SyncerNet.Hotfix.Syncers
                     animator.SetLayerWeight(i, _layerWeight[i]);
                     animator.Play(_stateHash[i], i, _normalizedTime[i]);
                 }
+
+				_used = true;
             }
-            _used = true;
         }
     }
 }
