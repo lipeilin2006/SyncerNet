@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using YooAsset;
 
+/// <summary>
+/// 记录热更新需要使用的dll
+/// </summary>
 public class Assemblies
 {
     public static string[] AotAssemblies =

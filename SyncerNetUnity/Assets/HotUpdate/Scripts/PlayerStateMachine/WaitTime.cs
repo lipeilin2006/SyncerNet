@@ -1,7 +1,7 @@
-using UnityEngine;
+锘縰sing UnityEngine;
 
 /// <summary>
-/// 用于等待时间，配合状态机使用
+/// 鐢ㄤ簬绛夊緟鏃堕棿锛岄厤鍚堢姸鎬佹満浣跨敤
 /// </summary>
 public class WaitTime
 {
@@ -12,9 +12,9 @@ public class WaitTime
 
 	public bool isStarted { get; private set; } = false;
 	/// <summary>
-	/// 实例化函数
+	/// WaitTime
 	/// </summary>
-	/// <param name="waitTime">等待的时长，单位：秒</param>
+	/// <param name="waitTime">绛夊緟鐨勬椂闀匡紝鍗曚綅锛氱</param>
 	public WaitTime(float waitTime)
 	{
 		this.waitTime = waitTime;

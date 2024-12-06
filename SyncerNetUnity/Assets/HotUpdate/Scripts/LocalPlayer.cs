@@ -6,10 +6,19 @@ using UnityEngine.InputSystem;
 public class LocalPlayer : MonoBehaviour
 {
 	[HideInInspector]
-	public float direction;
+	public Vector2 direction;
 
 	[HideInInspector]
 	public Vector2 cameraRot;
+
+	[HideInInspector]
+	public bool isSprint = false;
+
+	[HideInInspector]
+	public bool isAim = false;
+
+	[HideInInspector]
+	public bool isSpeedZero = false;
 
 	public float camSpeedX = 1.0f;
 	public float camSpeedY = 0.5f;
@@ -17,9 +26,19 @@ public class LocalPlayer : MonoBehaviour
     void Start()
     {
 		PlayerStateMachine stateMachine = GetComponent<PlayerStateMachine>();
-		stateMachine.AddState("Idle", new IdleState());
-		stateMachine.AddState("Walking", new WalkingState());
-		stateMachine.Init("Idle");
+
+		PlayerStateLayer upperLayer = new PlayerStateLayer();
+		PlayerStateLayer lowerLayer = new PlayerStateLayer();
+		stateMachine.AddLayer(upperLayer);
+		stateMachine.AddLayer(lowerLayer);
+
+		upperLayer.AddState("Idle", new UpperIdleState());
+		upperLayer.AddState("Aim", new UpperAimState());
+
+		lowerLayer.AddState("Normal", new LowerNormalState());
+
+		upperLayer.Init("Idle");
+		lowerLayer.Init("Normal");
 	}
 
     // Update is called once per frame
@@ -30,13 +49,21 @@ public class LocalPlayer : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		Camera.main.transform.eulerAngles = cameraRot;
-		Camera.main.transform.position = this.transform.position + new Vector3(0, 3, 0) - Camera.main.transform.forward * 2;
 	}
 
-	public void OnWS(InputValue inputValue)
+	private void LateUpdate()
 	{
-		direction = inputValue.Get<float>();
+		Camera.main.transform.eulerAngles = cameraRot;
+		Camera.main.transform.position = transform.position + new Vector3(0, 1.2f, 0) - Camera.main.transform.forward * 1;
+		if (isAim || !isSpeedZero)
+		{
+			transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0);
+		}
+	}
+
+	public void OnMove(InputValue inputValue)
+	{
+		direction = inputValue.Get<Vector2>();
 	}
 
 	public void OnMouseMove(InputValue inputValue)
@@ -54,5 +81,15 @@ public class LocalPlayer : MonoBehaviour
 		{
 			cameraRot.y += 360;
 		}
+	}
+
+	public void OnShift(InputValue inputValue)
+	{
+		isSprint = !isSprint;
+	}
+
+	public void OnAim(InputValue inputValue)
+	{
+		isAim = !isAim;
 	}
 }

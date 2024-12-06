@@ -1,4 +1,5 @@
-﻿using HybridCLR.Editor.Settings;
+﻿using HybridCLR.Editor.Commands;
+using HybridCLR.Editor.Settings;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -9,10 +10,12 @@ namespace SyncerNet
 {
     public class SyncerNetEditorMenu : MonoBehaviour
     {
-        [MenuItem("SyncerNet/Copy HotUpdate Dlls")]
-        static void CopyHotfixDll()
+        [MenuItem("SyncerNet/Generate HotUpdate Dlls")]
+        static void GenerateHotfixDll()
         {
-            string hotfixDir = HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir;
+			PrebuildCommand.GenerateAll();
+
+			string hotfixDir = HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir;
             string metadataDir = HybridCLRSettings.Instance.strippedAOTDllOutputRootDir;
             string target = EditorUserBuildSettings.activeBuildTarget.ToString();
 
@@ -43,7 +46,7 @@ namespace SyncerNet
             Debug.Log("Finished");
         }
 
-        [MenuItem("SyncerNet/Generate HotUpdate Config")]
+        [MenuItem("SyncerNet/Generate HotUpdate Json Config")]
         static void GenHotUpdateConfig()
         {
             File.WriteAllText("Assets/HotUpdate/HotfixAssemblies/HotUpdateConfig.json", JsonConvert.SerializeObject(new Dictionary<string, string[]>() { { "Aot", Assemblies.AotAssemblies }, { "HotUpdate", Assemblies.HotUpdateAssemblies } }));

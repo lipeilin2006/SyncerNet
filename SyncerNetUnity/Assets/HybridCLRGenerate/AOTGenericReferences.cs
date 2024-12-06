@@ -202,11 +202,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Threading.Tasks.TaskFactory<object>
 	// System.ValueTuple<byte,uint>
 	// UnityEngine.InputSystem.InputBindingComposite<UnityEngine.Vector2>
-	// UnityEngine.InputSystem.InputBindingComposite<float>
 	// UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>
-	// UnityEngine.InputSystem.InputControl<float>
 	// UnityEngine.InputSystem.InputProcessor<UnityEngine.Vector2>
-	// UnityEngine.InputSystem.InputProcessor<float>
 	// UnityEngine.InputSystem.Utilities.InlinedArray<object>
 	// }}
 
@@ -338,21 +335,15 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// float& System.Runtime.InteropServices.MemoryMarshal.GetReference<float>(System.Span<float>)
 		// int& System.Runtime.InteropServices.MemoryMarshal.GetReference<int>(System.Span<int>)
 		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
-		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<float>(float&)
 		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
-		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<float>()
 		// object UnityEngine.Component.GetComponent<object>()
 		// object UnityEngine.GameObject.AddComponent<object>()
 		// object UnityEngine.GameObject.GetComponent<object>()
 		// bool UnityEngine.GameObject.TryGetComponent<object>(object&)
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.CallbackContext.ReadValue<UnityEngine.Vector2>()
-		// float UnityEngine.InputSystem.InputAction.CallbackContext.ReadValue<float>()
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ApplyProcessors<UnityEngine.Vector2>(int,UnityEngine.Vector2,UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>)
-		// float UnityEngine.InputSystem.InputActionState.ApplyProcessors<float>(int,float,UnityEngine.InputSystem.InputControl<float>)
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ReadValue<UnityEngine.Vector2>(int,int,bool)
-		// float UnityEngine.InputSystem.InputActionState.ReadValue<float>(int,int,bool)
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputValue.Get<UnityEngine.Vector2>()
-		// float UnityEngine.InputSystem.InputValue.Get<float>()
 		// YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetSync<object>(string)
 	}
 }
